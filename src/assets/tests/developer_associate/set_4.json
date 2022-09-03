@@ -1,0 +1,556 @@
+[
+    {
+        "question": "Your are running a video website and provide users with S3 pre-signed URLs allowing your users to securely upload their video content onto your buckets. The average file size uploaded to your buckets is 500MB and you would like your users to efficiently send the content. What would you recommend doing in the client SDK?",
+        "options": [
+            "Do a multi-part upload",
+            "Upload as one part",
+            "Use SSE-S3 encryption",
+            "Zip the video file before sending"
+        ],
+        "answer": [
+            "Do a multi-part upload"
+        ]
+    },
+    {
+        "question": "You would like to run the X-Ray daemon for your Docker containers deployed using AWS(Amazon Web Service) Fargate. What do you need to do to ensure the setup will work? (select two)",
+        "options": [
+            "Deploy the X-Ray daemon agent as a process on your EC2 instance",
+            "Deploy the X-Ray daemon agent as a daemon set on ECS",
+            "Provide the correct IAM task role to the X-Ray container",
+            "Deploy the X-Ray daemon agent as a sidecar container",
+            "Provide the correct IAM instance role to the EC2 instance"
+        ],
+        "answer": [
+            "Provide the correct IAM task role to the X-Ray container",
+            "Deploy the X-Ray daemon agent as a sidecar container"
+        ]
+    },
+    {
+        "question": "Your Lambda function must use the Node.js drivers to connect to your RDS PostgreSQL database in your VPC. As such, how do you bundle your Lambda function to add the dependencies?",
+        "options": [
+            "Zip the function as is with a package.json file so that AWS(Amazon Web Service) Lambda can resolve the dependencies for you",
+            "Upload the code through the AWS(Amazon Web Service) console and upload the dependencies as a zip",
+            "Zip the function and the dependencies separately and upload them in AWS(Amazon Web Service) Lambda as two parts",
+            "Put the function and the dependencies in one folder and zip them together"
+        ],
+        "answer": [
+            "Put the function and the dependencies in one folder and zip them together"
+        ]
+    },
+    {
+        "question": "You would like to retrieve a subset of your dataset stored in S3 with the CSV format. You would like to retrieve a month of data and only 3 columns out of the 10. You need to minimize compute and network costs for this, what should you use?",
+        "options": [
+            "S3 Inventory",
+            "S3 Select",
+            "S3 Analytics",
+            "S3 Access Logs"
+        ],
+        "answer": [
+            "S3 Select"
+        ]
+    },
+    {
+        "question": "Your company wants to move away from manually managing Lambda in the AWS(Amazon Web Service) console and wants to upload and update them using AWS(Amazon Web Service) CloudFormation. How do you declare an AWS(Amazon Web Service) Lambda function in CloudFormation? (select two)",
+        "options": [
+            "Upload all the code to CodeCommit and refer to the CodeCommit Repository in AWS::Lambda::Function block",
+            "Upload all the code as a zip to S3 and refer the object in AWS::Lambda::Function block",
+            "Upload all the code as a folder to S3 and refer the folder in AWS::Lambda::Function block",
+            "Write the AWS(Amazon Web Service) Lambda code inline in CloudFormation in the AWS::Lambda::Function block and reference the dependencies as a zip file stored in S3.",
+            "Write the AWS(Amazon Web Service) Lambda code inline in CloudFormation in the AWS::Lambda::Function block as long as there are no dependencies."
+        ],
+        "answer": [
+            "Upload all the code as a zip to S3 and refer the object in AWS::Lambda::Function block",
+            "Write the AWS(Amazon Web Service) Lambda code inline in CloudFormation in the AWS::Lambda::Function block as long as there are no dependencies."
+        ]
+    },
+    {
+        "question": "One of your Kinesis Stream is experiencing increased traffic due to a sale day. Therefore your Kinesis Administrator has split shards and thus you went from having 6 shards to having 10 shards in your Kinesis Stream. Your consuming application is running a KCL-based application on EC2 instances. What is the maximum number of EC2 instances that can be deployed to process the shards?",
+        "options": [
+            "1",
+            "6",
+            "10",
+            "20"
+        ],
+        "answer": [
+            "10"
+        ]
+    },
+    {
+        "question": "Your client wants to deploy a service on EC2 instances, and as EC2 instances are added into an ASG, each EC2 instance should be running 3 different Docker Containers simultaneously. What Elastic Beanstalk platform should they choose?",
+        "options": [
+            "Docker single-container platform",
+            "Custom platform",
+            "Third-party platform",
+            "Docker multi-container platform"
+        ],
+        "answer": [
+            "Docker multi-container platform"
+        ]
+    },
+    {
+        "question": "Which of the following CLI options will allow you to retrieve a subset of the attributes coming from a DynamoDB scan?",
+        "options": [
+            "--filter-expression",
+            "--projection-expression",
+            "--page-size",
+            "--max-items"
+        ],
+        "answer": [
+            "--projection-expression"
+        ]
+    },
+    {
+        "question": "You are implementing a banking application in which you need to update the Exchanges DynamoDB table and the AccountBalance DynamoDB table at the same time or not at all. Which DynamoDB feature should you use?",
+        "options": [
+            "DynamoDB Indexes",
+            "DynamoDB Transactions",
+            "DynamoDB TTL",
+            "DynamoDB Streams"
+        ],
+        "answer": [
+            "DynamoDB Transactions"
+        ]
+    },
+    {
+        "question": "As part of your video processing application, you are looking to perform a set of repetitive and scheduled tasks asynchronously. Your application is deployed on Elastic Beanstalk. Which Elastic Beanstalk environment should you setup for performing the repetitive tasks?",
+        "options": [
+            "Setup a Worker environment and a cron.yaml file",
+            "Setup a Web Server environment and a cron.yaml file",
+            "Setup a Worker environment and a .ebextensions file",
+            "Setup a Web Server environment and a .ebextensions file"
+        ],
+        "answer": [
+            "Setup a Worker environment and a cron.yaml file"
+        ]
+    },
+    {
+        "question": "An EC2 instance has an IAM instance role attached to it, providing it read and write access to the S3 bucket 'my_bucket'. You have tested the IAM instance role and both reads and writes are working. You then remove the IAM role from the EC2 instance and test both read and write again. Writes stopped working but Reads are still working. What is the likely cause of this behavior?",
+        "options": [
+            "The EC2 instance is using cached temporary IAM credentials",
+            "Removing an instance role from an EC2 instance can take a few minutes before being active",
+            "When a read is done on a bucket, there's a grace period of 5 minutes to do the same read again",
+            "The S3 bucket policy authorizes reads"
+        ],
+        "answer": [
+            "The S3 bucket policy authorizes reads"
+        ]
+    },
+    {
+        "question": "Your company likes to operate multiple AWS(Amazon Web Service) accounts so that teams have their own environments. Services deployed across these accounts interact with one-another, and now there's a requirement to implement X-Ray traces across all your applications deployed on EC2 instances and AWS(Amazon Web Service) accounts. As such, you would like to have a unified account to view all the traces. What should you in your X-Ray daemon setup to make this work? (select two)",
+        "options": [
+            "Create a role in the target unified account and allow roles in each sub account to assume the role.",
+            "Configure the X-Ray daemon to use an IAM instance role",
+            "Create a user in the target unified account and generate access and secret keys",
+            "Configure the X-Ray daemon to use access and secret keys",
+            "Enable Cross Account collection in the X-Ray console"
+        ],
+        "answer": [
+            "Create a role in the target unified account and allow roles in each sub account to assume the role.",
+            "Configure the X-Ray daemon to use an IAM instance role"
+        ]
+    },
+    {
+        "question": "You are deploying Lambda functions that operate on your S3 buckets in order to read files and extract key metadata. The Lambda functions are managed using SAM. Which Policy should you insert in your serverless model template to give buckets access for read access?",
+        "options": [
+            "SQSPollerPolicy",
+            "S3CrudPolicy",
+            "S3ReadPolicy",
+            "LambdaInvokePolicy"
+        ],
+        "answer": [
+            "S3ReadPolicy"
+        ]
+    },
+    {
+        "question": "You are running a web application where users can author blogs and share them with their followers. Most of the workflow is read based, but when a blog is updated, you would like to ensure that the latest data is served to the users (no stale data). The Developer has already suggested using ElastiCache to cope with the read load, but has asked you to implement a caching strategy that complies with the requirements of the site. Which strategy would you recommend?",
+        "options": [
+            "Use a Lazy Loading strategy with TTL",
+            "Use a Write Through strategy",
+            "Use a Lazy Loading strategy without TTL",
+            "Use DAX"
+        ],
+        "answer": [
+            "Use a Write Through strategy"
+        ]
+    },
+    {
+        "question": "You have created a DynamoDB table to support your application and provisioned RCU and WCU to it, so that your application has been running for over a year now without any throttling issues. Your application now requires a second type of queries over your table and as such, you have decided to create an LSI and a GSI on a new table to support that use case. One month after having implemented such indexes, it seems your table is experiencing throttling. Upon looking at the table's metrics, it seems the RCU and WCU provisioned are still sufficient. What's happening?",
+        "options": [
+            "The LSI is throttling so you need to provision more RCU and WCU to the LSI",
+            "Metrics are lagging in your CloudWatch dashboard and you should see the RCU and WCU peaking for the main table in a few minutes",
+            "Adding both an LSI and a GSI to a table is not recommended by AWS(Amazon Web Service) best practices as this is a known cause for creating throttles",
+            "The GSI is throttling so you need to provision more RCU and WCU to the GSI"
+        ],
+        "answer": [
+            "The GSI is throttling so you need to provision more RCU and WCU to the GSI"
+        ]
+    },
+    {
+        "question": "You need to load SSL certificates onto your Load Balancers and also have EC2 instances dynamically retrieve them when needed for service to service two way TLS communication. What service should you use to centrally manage these SSL certificates?",
+        "options": [
+            "ACM",
+            "S3",
+            "KMS",
+            "IAM"
+        ],
+        "answer": [
+            "ACM"
+        ]
+    },
+    {
+        "question": "Your Lambda function processes files for your customers and as part of that process, it creates a lot of intermediary files it needs to store on its disk and then discard. What is the best way to store temporary files for your Lambda functions that will be discarded when the function stops running?",
+        "options": [
+            "Use the local directory /opt",
+            "Create a tmp/ directory in the source zip file and use it",
+            "Use an S3 bucket",
+            "Use the local directory /tmp"
+        ],
+        "answer": [
+            "Use the local directory /tmp"
+        ]
+    },
+    {
+        "question": "You are using AWS(Amazon Web Service) SQS FIFO queues in order to get ordering of messages on a per user_id basis. As a developer, which message parameter should you set the value of to user_id in order to guarantee the ordering?",
+        "options": [
+            "MessageGroupId",
+            "MessageDeduplicationId",
+            "MessageOrderId",
+            "MessageHash"
+        ],
+        "answer": [
+            "MessageGroupId"
+        ]
+    },
+    {
+        "question": "You would like to paginate the results of a S3 List in order to show 100 results per page to your users, and minimize the number of API calls that you will use. Which CLI options should you use? (select two)",
+        "options": [
+            "--page-size",
+            "--max-items",
+            "--next-token",
+            "--starting-token",
+            "--limit"
+        ],
+        "answer": [
+            "--max-items",
+            "--starting-token"
+        ]
+    },
+    {
+        "question": "You are using AWS(Amazon Web Service) SQS FIFO queues in order to get ordering of messages on a per user_id basis. On top of this, you would like to make sure that duplicate messages should not be sent to SQS as this would cause an application failure. As a developer, which message parameter should you set the value of in order to deduplicate messages?",
+        "options": [
+            "ReceiveRequestAttemptId",
+            "MessageGroupId",
+            "MessageDeduplicationId",
+            "ContentBasedDeduplication"
+        ],
+        "answer": [
+            "MessageDeduplicationId"
+        ]
+    },
+    {
+        "question": "You would like to have a one-stop dashboard for all the CICD needs of one of your projects. You don't need heavy control of the individual configuration of each components in your CICD, but need to be able to get a holistic view of your projects. Which service do you recommend?",
+        "options": [
+            "CodeBuild",
+            "CodeDeploy",
+            "CodeStar",
+            "CodePipeline"
+        ],
+        "answer": [
+            "CodeStar"
+        ]
+    },
+    {
+        "question": "Your client has tasked you with finding a service that would enable you to get cross-account tracing and visualization. Which service do you recommend?",
+        "options": [
+            "AWS X-Ray",
+            "VPC Flow Logs",
+            "CloudWatch Events",
+            "CloudTrail"
+        ],
+        "answer": [
+            "AWS X-Ray"
+        ]
+    },
+    {
+        "question": "You are looking to invoke an AWS(Amazon Web Service) Lambda function every hour (similar to a cron job) in a serverless way. Which event source should you use for your AWS(Amazon Web Service) Lambda function?",
+        "options": [
+            "Amazon S3",
+            "CloudWatch Events",
+            "SQS",
+            "Kinesis"
+        ],
+        "answer": [
+            "CloudWatch Events"
+        ]
+    },
+    {
+        "question": "You are storing bids information on your betting application and you would like to automatically expire DynamoDB table data after one week. What should you use?",
+        "options": [
+            "Use DynamoDB Streams",
+            "Use DAX",
+            "Use TTL",
+            "Use a Lambda function"
+        ],
+        "answer": [
+            "Use TTL"
+        ]
+    },
+    {
+        "question": "You would like your Elastic Beanstalk environment to expose an HTTPS endpoint and an HTTP endpoint. The HTTPS endpoint should be used in order to get in-flight encryption between your clients and your web servers, while the HTTP endpoint should only be used to redirect traffic to HTTPS and support URLs starting with http: //. What must be done to configure this setup? (select three)",
+        "options": [
+            "Open up port 80 & port 443",
+            "Configure your EC2 instances to redirect HTTPS traffic to HTTP",
+            "Configure your EC2 instances to redirect HTTP traffic to HTTPS",
+            "Only open up port 443",
+            "Only open up port 80",
+            "Assign an SSL certificate to the Load Balancer"
+        ],
+        "answer": [
+            "Open up port 80 & port 443",
+            "Configure your EC2 instances to redirect HTTP traffic to HTTPS",
+            "Assign an SSL certificate to the Load Balancer"
+        ]
+    },
+    {
+        "question": "You have created a test environment in Elastic Beanstalk and as part of that environment, you have created an RDS database. How can you make sure the database can be explored after the environment is destroyed?",
+        "options": [
+            "Change the Elastic Beanstalk environment variables",
+            "Make a selective delete in Elastic Beanstalk",
+            "Make a snapshot of the database before it gets deleted",
+            "Convert the Elastic Beanstalk environment to a worker environment"
+        ],
+        "answer": [
+            "Make a snapshot of the database before it gets deleted"
+        ]
+    },
+    {
+        "question": "You are creating a web application in which users can follow each other. Some users will be more popular than others and thus their data will be requested very often. Currently the user data sits in RDS and it has been recommended by your Developer to use ElastiCache as a caching layer to improve the read performance. The whole dataset of users cannot sit in ElastiCache without incurring tremendous costs and therefore you would like to cache only the most often requested users profiles there. As your website is high traffic, it is accepted to have stale data for users for a while, as long as the stale data is less than a minute old. What caching strategy do you recommend implementing?",
+        "options": [
+            "Use a Lazy Loading strategy with TTL",
+            "Use a Lazy Loading strategy without TTL",
+            "Use a Write Through strategy with TTL",
+            "Use a Write Through strategy without TTL"
+        ],
+        "answer": [
+            "Use a Lazy Loading strategy with TTL"
+        ]
+    },
+    {
+        "question": "Which environment variable can be used by AWS(Amazon Web Service) X-Ray SDK to ensure that the daemon is correctly discovered on ECS?",
+        "options": [
+            "AWS_XRAY_TRACING_NAME",
+            "AWS_XRAY_CONTEXT_MISSING",
+            "AWS_XRAY_DAEMON_ADDRESS",
+            "AWS_XRAY_DEBUG_MODE"
+        ],
+        "answer": [
+            "AWS_XRAY_DAEMON_ADDRESS"
+        ]
+    },
+    {
+        "question": "A senior cloud engineer designs and deploys online fraud detection solutions for credit card companies processing millions of transactions daily. The Elastic Beanstalk application sends files to Amazon S3 and then sends a message to an Amazon SQS queue containing the path of the uploaded file in S3. A solution architect recommended that since PUTS of existing objects in S3 deliver eventual consistency and we want to minimize the risk of consumers reading old data, it would be preferable to introduce a per message lag so that consumers won't find a message in SQS until it has been in the queue for at least 10 seconds. Which SQS features should the developer leverage?",
+        "options": [
+            "Implement application-side delay",
+            "Use DelaySeconds parameter",
+            "Enable ConsumerReadDelay",
+            "Enable LongPolling"
+        ],
+        "answer": [
+            "Use DelaySeconds parameter"
+        ]
+    },
+    {
+        "question": "A communication platform serves millions of customers and deploys features in production daily to AWS. You are reviewing scripts for the deployment process located in the AppSec file. Which of the below options lists the correct order of lifecycle events?",
+        "options": [
+            "DownloadBundle => BeforeInstall => ApplicationStart => ValidateService",
+            "BeforeInstall => ApplicationStart => DownloadBundle => ValidateService",
+            "ValidateService => BeforeInstall =>DownloadBundle => ApplicationStart",
+            "BeforeInstall => ValidateService =>DownloadBundle => ApplicationStart"
+        ],
+        "answer": [
+            "DownloadBundle => BeforeInstall => ApplicationStart => ValidateService"
+        ]
+    },
+    {
+        "question": "You are assigned as the new project lead for a web application that processes orders for customers. You want to integrate event-driven processing anytime data is modified or deleted and use a serverless approach using AWS(Amazon Web Service) Lambda for processing stream events. Which of the following databases should you choose from?",
+        "options": [
+            "DynamoDB",
+            "RDS",
+            "ElastiCache",
+            "Kinesis"
+        ],
+        "answer": [
+            "DynamoDB"
+        ]
+    },
+    {
+        "question": "Your company has developers worldwide with access to the company's Amazon Simple Storage Service (S3) buckets. The objects in the buckets are encrypted at the server-side but need more flexibility with access control, auditing, rotation and deletion of keys. You would also like to limit who can use the key. Which encryption mechanism best fits your needs?",
+        "options": [
+            "SSE-S3",
+            "SSE-C",
+            "Client Side Encryption",
+            "SSE-KMS"
+        ],
+        "answer": [
+            "SSE-KMS"
+        ]
+    },
+    {
+        "question": "Your company manages hundreds of EC2 instances running Linux. The instances are configured in several Availability Zones in the eu-west-3 region. Your manager has requested to collect system memory metrics on all EC2 instances using a script. Which of the following solutions will help you collect this data?",
+        "options": [
+            "Use a cron job on the instances that push the EC2 RAM metric as a Custom metric",
+            "Use instance metadata ram disk-id",
+            "Access as a standard CloudWatch metric",
+            "Use X-Ray"
+        ],
+        "answer": [
+            "Use a cron job on the instances that push the EC2 RAM metric as a Custom metric"
+        ]
+    },
+    {
+        "question": "An organization uses Alexa as its intelligent assistant to improve productivity throughout the organization. A group of developers manages custom Alexa Skills written in Node.Js to control conference-room equipment settings and start meetings using voice activation. The manager has made a request to developers that all functions code should be monitored for error rates with the possibility of creating alarms on top of them. Which of the below options should be chosen? (select two)",
+        "options": [
+            "CloudWatch Metrics",
+            "X-Ray",
+            "CloudWatch Alarms",
+            "CloudTrail",
+            "SSM"
+        ],
+        "answer": [
+            "CloudWatch Metrics",
+            "CloudWatch Alarms"
+        ]
+    },
+    {
+        "question": "You are working on a project that has over 100 dependencies. Every time your AWS(Amazon Web Service) CodeBuild runs a build step it has to resolve Java dependencies from external Ivy repositories which take a long time. Your manager wants to speed this process up in AWS(Amazon Web Service) CodeBuild. Which of the following will help you do this with minimal effort?",
+        "options": [
+            "Setup a Nexus repository in EC2 that will act as an internal dependency cache",
+            "Reduce the number of dependencies",
+            "Ship all the dependencies as part of the source code",
+            "Enable S3 caching"
+        ],
+        "answer": [
+            "Enable S3 caching"
+        ]
+    },
+    {
+        "question": "You are running a public DNS service on an EC2 instance where the DNS name is pointing to the IP address of the instance. You wish to upgrade your DNS service but would like to do it without any downtime. Which of the below options will help you accomplish this?",
+        "options": [
+            "Use Route 53",
+            "Create a Load Balancer and an auto scaling group",
+            "Provide a static private IP",
+            "Elastic IP"
+        ],
+        "answer": [
+            "Elastic IP"
+        ]
+    },
+    {
+        "question": "You are a cloud security engineer for a popular cyber exposure company that offers vulnerability scanning solutions to government contractors. The scanning solutions are integrated with AWS(Amazon Web Service) resources to monitor EC2 and S3 API calls which then display results to users on an analytical dashboard. Which of the following AWS(Amazon Web Service) services makes this possible?",
+        "options": [
+            "IAM",
+            "S3 Access Logs",
+            "VPC Flow Logs",
+            "CloudTrail"
+        ],
+        "answer": [
+            "CloudTrail"
+        ]
+    },
+    {
+        "question": "Your company is shifting towards Elastic Container Service (ECS) to deploy applications. The process should be automated using the AWS(Amazon Web Service) CLI to create a service where at least ten instances of a task definition are kept running under the default cluster. Which of the following commands should be executed?",
+        "options": [
+            "docker-compose create ecs-simple-service",
+            "aws ecr create-service --service-name ecs-simple-service --task-definition ecs-demo --desired-count 10",
+            "aws ecs create-service --service-name ecs-simple-service --task-definition ecs-demo --desired-count 10",
+            "aws ecs run-task --cluster default --task-definition ecs-demo"
+        ],
+        "answer": [
+            "aws ecs create-service --service-name ecs-simple-service --task-definition ecs-demo --desired-count 10"
+        ]
+    },
+    {
+        "question": "A development team uses the AWS(Amazon Web Service) SDK for Java to maintain an application that stores data in AWS(Amazon Web Service) DynamoDB. The application makes use of scan operations to return several items from a 25 GB table. There is no possibility of creating indexes to retrieve these items in a predictable way. Developers are trying to get the content from DynamoDB as fast as possible. Which of the below options can be used to improve performance?",
+        "options": [
+            "Use a Query",
+            "Use a ProjectionExpression",
+            "Use a FilterExpression",
+            "Use parallel scans"
+        ],
+        "answer": [
+            "Use parallel scans"
+        ]
+    },
+    {
+        "question": "Your organization has a single Amazon Simple Storage Service (S3) bucket that contains folders labeled with customer names. Several administrators have IAM access to the S3 bucket and versioning is enabled to easily recover from unintended user actions. Which of the following statements about versioning is NOT true based on this scenario?",
+        "options": [
+            "Any file that was unversioned before enabling versioning will have the 'null' version",
+            "Overwriting a file increases its versions",
+            "Deleting a file is a recoverable operation",
+            "Versioning can be enabled only for a specific folder"
+        ],
+        "answer": [
+            "Versioning can be enabled only for a specific folder"
+        ]
+    },
+    {
+        "question": "You are a manager for a tech company that has just hired a team of developers to work on the company's AWS(Amazon Web Service) infrastructure. All the developers are reporting to you that when using the AWS(Amazon Web Service) CLI to execute commands it fails with the following exception: You are not authorized to perform this operation. Encoded authorization failure message: 6h34GtpmGjJJUm946eDVBfzWQJk6z5GePbbGDs9Z2T8xZj9EZtEduSnTbmrR7pMqpJrVYJCew2m8YBZQf4HRWEtrpncANrZMsnzk. Which of the following actions will help developers decode the message?",
+        "options": [
+            "AWS IAM decode-authorization-message",
+            "AWS STS decode-authorization-message",
+            "Use KMS decode-authorization-message",
+            "AWS Cognito Decoder"
+        ],
+        "answer": [
+            "AWS STS decode-authorization-message"
+        ]
+    },
+    {
+        "question": "After reviewing your monthly AWS(Amazon Web Service) bill you notice that the cost of using Amazon SQS has gone up substantially after creating new queues; however, you know that your queue clients do not have a lot of traffic and are receiving empty responses. Which of the following actions should you take?",
+        "options": [
+            "Use a FIFO queue",
+            "Increase the VisibilityTimeout",
+            "Use LongPolling",
+            "Decrease DelaySeconds"
+        ],
+        "answer": [
+            "Use LongPolling"
+        ]
+    },
+    {
+        "question": "Your company stores confidential data on an Amazon Simple Storage Service (S3) bucket. New security compliance guidelines require that files be stored with server-side encryption. The encryption used must be Advanced Encryption Standard (AES-256) and the company does not want to manage S3 encryption keys. Which of the below options should you use?",
+        "options": [
+            "SSE-S3",
+            "SSE-C",
+            "Client Side Encryption",
+            "SSE-KMS"
+        ],
+        "answer": [
+            "SSE-S3"
+        ]
+    },
+    {
+        "question": "Your company had a recent data breach where an ex-employee had gained access to your Windows Server using credentials that were never revoked after termination. The perpetrator removed all web.config files from all production web application root directories, leaving web applications down for hours. There were no backups of the secret keys being stored in the configuration files or any EC2 snapshots to recover the information. Using AWS(Amazon Web Service) Parameter Store how can you add secret application data and notify the security audit team when changes are made?",
+        "options": [
+            "SES",
+            "SQS",
+            "SNS",
+            "CloudTrail"
+        ],
+        "answer": [
+            "SNS"
+        ]
+    },
+    {
+        "question": "You have an Amazon Kinesis Data stream with 10 shards, and from the metrics, you are well below the throughput utilization of 10 MB per second to send data. You send 3 MB per second of data and yet you are receiving ProvisionedThroughputExceededException errors frequently. What is the likely cause of this?",
+        "options": [
+            "Metrics are slow to update",
+            "The partition key that you have selected isn't distributed enough",
+            "You have too many shards",
+            "The data retention period is too long"
+        ],
+        "answer": [
+            "The partition key that you have selected isn't distributed enough"
+        ]
+    }
+]

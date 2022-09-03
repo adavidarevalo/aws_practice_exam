@@ -1,0 +1,549 @@
+[
+    {
+        "question": "Your company stores security reports in Amazon Simple Storage Service (S3) but is worried that after storing 10 years' worth of documents they will have to migrate their data to another service provider due to storage limits. Your team lead has asked you to look into this matter, what is the maximum storage limit per S3 buckets?",
+        "options": [
+            "25 TB",
+            "10 TB",
+            "unlimited",
+            "5 TB"
+        ],
+        "answer": [
+            "unlimited"
+        ]
+    },
+    {
+        "question": "You are a developer working on a web application written in Java and would like to use AWS(Amazon Web Service) Elastic Beanstalk for deployment because it would handle deployment, capacity provisioning, load balancing, auto-scaling, and application health monitoring. In the past, you connected to your provisioned instances through SSH to issue configuration commands but instead would like a configuration file that automatically applies settings for you. Which of the below options would help do this?",
+        "options": [
+            "Use SSM parameter store as an input to your Elastic Beanstalk Configurations",
+            "Deploy a CloudFormation wrapper",
+            "Include config files in .ebextensions/ at the root of your source code",
+            "Use an AWS(Amazon Web Service) Lambda hook"
+        ],
+        "answer": [
+            "Include config files in .ebextensions/ at the root of your source code"
+        ]
+    },
+    {
+        "question": "You are the owner of a small company running workloads on AWS(Amazon Web Service) and recently lost all your developers. You need to provision more resources for a client and while going through existing AWS(Amazon Web Service) CloudFormation templates you decide that you need to change several major sections to fulfill a request. Which of the following sections in an AWS(Amazon Web Service) CloudFormation template is not valid?",
+        "options": [
+            "Metadata",
+            "Parameters",
+            "Mappings",
+            "Groups"
+        ],
+        "answer": [
+            "Groups"
+        ]
+    },
+    {
+        "question": "You are a Developer for a company that has multiple AWS(Amazon Web Service) accounts managed with AWS(Amazon Web Service) Organizations. You are in the process of creating an Amazon Simple Storage Service (S3) bucket named 'prod' in one account that will contain log files from EC2 instances in production. When creating the bucket an error message displays 'Bucket name already exists'. You check your current account for a duplicate name and none exists. What is the most likely reason for this?",
+        "options": [
+            "Someone else in the world already created a bucket named 'prod'",
+            "You have the wrong IAM permissions",
+            "The bucket name is too short",
+            "'prod' is a reserved bucket name"
+        ],
+        "answer": [
+            "Someone else in the world already created a bucket named 'prod'"
+        ]
+    },
+    {
+        "question": "You are an administrator for a video on demand web application where content creators upload videos directly into S3. Recent support requests from customers state that uploading video files near 500GB size causes the website to break. After doing some investigation you find the following error: 'Your proposed upload exceeds the maximum allowed size'. What must you do to solve this error?",
+        "options": [
+            "Your IAM permissions are incorrect",
+            "The maximum file size is 5 GB",
+            "You need to use multi-part upload for large files",
+            "You need to place a service limit request increase with AWS"
+        ],
+        "answer": [
+            "You need to use multi-part upload for large files"
+        ]
+    },
+    {
+        "question": "You are the administrator for a software development company specializing in medical algorithms. and have created an AWS(Amazon Web Service) CodePipeline pipeline through the AWS(Amazon Web Service) Management Console. You would like to view a list of API calls performed by your pipeline because many changes have been made by you and other administrators. Which AWS(Amazon Web Service) service will provide this information?",
+        "options": [
+            "CloudWatch Logs",
+            "CodePipeline Logs",
+            "IAM",
+            "CloudTrail"
+        ],
+        "answer": [
+            "CloudTrail"
+        ]
+    },
+    {
+        "question": "Recently in your organization, the AWS(Amazon Web Service) X-Ray SDK was bundled into each function to record outgoing calls for tracing purposes. When your team lead goes to the X-Ray service in the AWS(Amazon Web Service) Management Console to get an overview of the information collected, they discover that no data is available. What is the most likely reason for this?",
+        "options": [
+            "X-Ray only works with AWS(Amazon Web Service) Lambda aliases",
+            "Enable X-Ray sampling",
+            "Fix the IAM Role",
+            "Change the security groups rules"
+        ],
+        "answer": [
+            "Fix the IAM Role"
+        ]
+    },
+    {
+        "question": "You are an administrator setting permissions to other IAM users with limited permissions. On the AWS(Amazon Web Service) Management Console, you created a dev group where new developers will be added to and on your workstation you configured a developer profile. You would like to test that this user cannot terminate instances. Which of the below options would you execute?",
+        "options": [
+            "Using the CLI, create a dummy EC2 and delete it using another CLI call",
+            "Use the AWS(Amazon Web Service) CLI --test option",
+            "Retrieve the policy using the EC2 meta data service and use the IAM policy simulator",
+            "Use the AWS(Amazon Web Service) CLI --dry-run option"
+        ],
+        "answer": [
+            "Use the AWS(Amazon Web Service) CLI --dry-run option"
+        ]
+    },
+    {
+        "question": "A company has hired you as a team lead over a group of developers working on security applications. Developers will work within Linux executing commands with the AWS(Amazon Web Service) CLI. When developers receive authorization exceptions which of the following services will not assist in resolving the issue?",
+        "options": [
+            "STS",
+            "IAM",
+            "CloudTrail",
+            "CloudWatch"
+        ],
+        "answer": [
+            "CloudWatch"
+        ]
+    },
+    {
+        "question": "A weather app for the Android phone assists citizens with preparation tips for Hurricanes in Florida before hurricanes land. The next version of the weather app will include notification messages directly to mobile apps notifying of updates and of upcoming developing storms. Which of the following technologies will help with the second version?",
+        "options": [
+            "Lambda",
+            "SQS",
+            "Kinesis",
+            "SNS"
+        ],
+        "answer": [
+            "SNS"
+        ]
+    },
+    {
+        "question": "You have a workload that requires persistent block storage for Microsoft SQL Server. High availability and durability is a requirement. The solution must allow for daily snapshots and be mountable to other EC2 instances in case of instance failures. Which of the following storage options should you choose?",
+        "options": [
+            "S3",
+            "EBS",
+            "FTP",
+            "RDS"
+        ],
+        "answer": [
+            "EBS"
+        ]
+    },
+    {
+        "question": "You are a cloud architect consultant in a Silicon Valley type like city. Many companies in the city have mobile apps that capture and send data to Amazon Kinesis Data Streams. They have been getting a ProvisionedThroughputExceededException exception. You have been contacted to help and upon careful analysis, you are seeing that messages are being sent one by one, while being sent at a high rate. Which of the below options will help with the exception while keeping costs at a minimum?",
+        "options": [
+            "Batch messages",
+            "Decrease the Stream retention duration",
+            "Increase the number of shards",
+            "Use Exponential Backoff"
+        ],
+        "answer": [
+            "Batch messages"
+        ]
+    },
+    {
+        "question": "A company's application is deployed by AWS(Amazon Web Service) Elastic Beanstalk to EC2 instances in two availability zones. The application makes API requests to AWS(Amazon Web Service) API Gateway and the security team requested that authentication be added to these requests. Which of the following authentication methods will fulfill the requirement?",
+        "options": [
+            "IAM permissions with sigv4",
+            "Lambda Authorizer",
+            "Cognito User Pools",
+            "API Gateway User Pools"
+        ],
+        "answer": [
+            "IAM permissions with sigv4"
+        ]
+    },
+    {
+        "question": "A developer in your company was just promoted to Developer and will be in charge of code deployment using AWS(Amazon Web Service) CodeCommit and AWS(Amazon Web Service) CodeDeploy. New requirements have been given to control deployment details by changing file permissions when applications are deployed and verifying the deployment success. Which of the following actions should the new Developer take?",
+        "options": [
+            "define a .appspec file in the codebuild/ directory",
+            "define a .buildspec file in the root directory",
+            "define a .buildspec file in the codebuild/ directory",
+            "define a .appspec file in the root directory"
+        ],
+        "answer": [
+            "define a .appspec file in the root directory"
+        ]
+    },
+    {
+        "question": "A university has created a student portal that is accessible through a smartphone app and web application. The smartphone app is available in both Android and IOS and the web application works on most major browsers. Students will be able to do group study online and create forum questions. All changes made in smartphone devices should be available even when offline and should synchronize with other devices. Which of the following AWS(Amazon Web Service) services will meet these requirements?",
+        "options": [
+            "S3",
+            "Cognito Identity Pools",
+            "Cognito Sync",
+            "EFS"
+        ],
+        "answer": [
+            "Cognito Sync"
+        ]
+    },
+    {
+        "question": "You have been hired to work for a company that produces open-source software. In the last year, the company has been working with its cloud engineers to build server applications. Your task will be to work with other developers in creating a REST API following the serverless approach. All the developers in the company only develop in the Node.Js language. Which of the following technologies should you choose?",
+        "options": [
+            "API Gateway + Lambda",
+            "ELB + EC2",
+            "ALB + ECS on EC2",
+            "Route 53 + EC2"
+        ],
+        "answer": [
+            "API Gateway + Lambda"
+        ]
+    },
+    {
+        "question": "Which of the following statements is true about AWS(Amazon Web Service) CloudFormation?",
+        "options": [
+            "CloudFormation templates are static and do not allow parameters",
+            "The order in which resources are created does not need to be specified.",
+            "CloudFormation templates can only be valid for one region and account",
+            "CloudFormation templates lock the configuration of the created resources"
+        ],
+        "answer": [
+            "The order in which resources are created does not need to be specified."
+        ]
+    },
+    {
+        "question": "A pipeline was created from the AWS(Amazon Web Service) Management Console using service AWS(Amazon Web Service) CodePipeline. The process consists of pulling code changes committed to GitHub, generating a build with AWS(Amazon Web Service) CodeBuild and deploying to an AWS(Amazon Web Service) Elastic Beanstalk environment. Unexpectedly, your unchanged CodePipeline broke because it cannot find or use the target Elastic Beanstalk environment to deploy your application to. What should you do to find the root cause of this problem? (select three)",
+        "options": [
+            "Look in IAM for Policy changes",
+            "Look in CloudFormation for deletions",
+            "Look in CloudTrail for a 'delete' event in Elastic Beanstalk",
+            "Look in CodePipeline for changes",
+            "Look in S3 for access logs"
+        ],
+        "answer": [
+            "Look in CloudTrail for a 'delete' event in Elastic Beanstalk",
+            "Look in CloudFormation for deletions",
+            "Look in IAM for Policy changes"
+        ]
+    },
+    {
+        "question": "As a senior architect, you are responsible for the development, support, maintenance and implementation of all database applications written using NoSQL technology. A new project demands a throughput requirement of 10 strongly consistent reads per second of 6KB in size each. How many read capacity units will you need when configuring your DynamoDB table?",
+        "options": [
+            "10",
+            "60",
+            "30",
+            "20"
+        ],
+        "answer": [
+            "20"
+        ]
+    },
+    {
+        "question": "The AWS(Amazon Web Service) account administrator for the company gave you web access to their AWS(Amazon Web Service) Management Console. You need to create several API Gateway API's to assist developers in waiting to retrieve data from the company's database. Your developers have worked on the API in the development environment, but it seems that the changes they did are not reflected in the API. What needs to happen?",
+        "options": [
+            "Check IAM permissions",
+            "Enable Custom Authorizer",
+            "Use Stage Variables",
+            "Deploy to a stage"
+        ],
+        "answer": [
+            "Deploy to a stage"
+        ]
+    },
+    {
+        "question": "You are a Developer working with data on an EC2 instance running Windows. You have installed Kinesis Agent for Windows to stream JSON-formatted log files to Amazon Simple Storage Service (S3) via Amazon Kinesis Data Firehose. You gathered a list of all available sink types to change the destination of the log if needed. Which of the following sink types is not supported by Kinesis Firehose?",
+        "options": [
+            "ElasticSearch",
+            "S3",
+            "Redshift",
+            "ElastiCache"
+        ],
+        "answer": [
+            "ElastiCache"
+        ]
+    },
+    {
+        "question": "An AWS(Amazon Web Service) Lambda function written in Golang was deployed six months ago and recently a new version was released that included the use of the X-Ray SDK. The change called for permissions to be altered to the IAM role of the Lambda function to allow the X-Ray SDK to send data to X-Ray. While testing you find that data is not being sent to X-Ray, what is a likely reason?",
+        "options": [
+            "Authorize Lambda source in the X-Ray console",
+            "The IAM permissions",
+            "Lambda X-Ray active tracing must be enabled",
+            "The X-Ray agent must be loaded with the code"
+        ],
+        "answer": [
+            "Lambda X-Ray active tracing must be enabled"
+        ]
+    },
+    {
+        "question": "You are a Developer working with Amazon ECS container instances and would like to isolate credentials so that a container never has access to credentials intended for another container belonging to another task. Which of the following actions must you take to achieve that?",
+        "options": [
+            "Use the parameter store to pass in AWS(Amazon Web Service) credentials",
+            "Assign an IAM role to the EC2 instance",
+            "Load the credentials within the docker container",
+            "Create an IAM Role for ECS and assign it to the tasks"
+        ],
+        "answer": [
+            "Create an IAM Role for ECS and assign it to the tasks"
+        ]
+    },
+    {
+        "question": "You are a Developer at a company and are responsible for the data management of the AWS(Amazon Web Service) Kinesis streams. The security team has required stricter requirements by leveraging security mechanisms available with the Kinesis Data Streams service that won't require code changes on your end. Which of the following features meet the requirements? (select two)",
+        "options": [
+            "Envelope Encryption",
+            "SSE-C encryption",
+            "Encryption in flight with HTTPS endpoint",
+            "Client Side Encryption",
+            "KMS encryption for data at rest"
+        ],
+        "answer": [
+            "Encryption in flight with HTTPS endpoint",
+            "KMS encryption for data at rest"
+        ]
+    },
+    {
+        "question": "Your team lead has asked you to learn AWS(Amazon Web Service) CloudFormation to create a collection of related AWS(Amazon Web Service) resources and provision them in an orderly fashion. You decide to provide AWS-specific parameter types to catch invalid values. When specifying parameters which of the following is not a valid Parameter type?",
+        "options": [
+            "String",
+            "DependentParameter",
+            "CommaDelimitedList",
+            "AWS: :EC2: :KeyPair: :KeyName"
+        ],
+        "answer": [
+            "DependentParameter"
+        ]
+    },
+    {
+        "question": "You have set up an internet facing load balancer to route requests to virtual machines inside a private VPC. The virtual machines will be launched from a single custom Amazon Machine Image (AMI), private to your organization, with pre-installed software. Which of the following AWS(Amazon Web Service) services will help you create your virtual machines?",
+        "options": [
+            "ElastiCache",
+            "RDS",
+            "EC2",
+            "DynamoDB"
+        ],
+        "answer": [
+            "EC2"
+        ]
+    },
+    {
+        "question": "You are producing data to AWS(Amazon Web Service) Kinesis using AWS(Amazon Web Service) Lambda which sits behind an API Gateway. Data represents a clickstream from the users navigating your website. What in case you want to make sure your Kinesis stream can scale over time due to increased volume, what would you need to do? (select two)",
+        "options": [
+            "The partition key must take a great number of different values",
+            "You need to add shards",
+            "You need to enable auto-scaling",
+            "The partition key must only take few values",
+            "You need to remove shards"
+        ],
+        "answer": [
+            "The partition key must take a great number of different values",
+            "You need to add shards"
+        ]
+    },
+    {
+        "question": "You have launched several AWS(Amazon Web Service) Lambda functions written in Java. A new requirement was given that over 1MB of data should be passed to the functions and should be encrypted and decrypted at runtime. Which of the below methods is suitable for encrypting the data?",
+        "options": [
+            "KMS direct encryption and store as file",
+            "Envelope Encryption and store as file within the code",
+            "Envelope Encryption and store as environment variable",
+            "KMS Encryption and store as environment variable"
+        ],
+        "answer": [
+            "Envelope Encryption and store as file within the code"
+        ]
+    },
+    {
+        "question": "You have created a continuous delivery service model with automated steps using AWS(Amazon Web Service) CodePipeline. Your pipeline uses your code, maintained in a CodeCommit repository, AWS(Amazon Web Service) CodeBuild, and AWS(Amazon Web Service) Elastic Beanstalk to automatically deploy your code every time there is a code change. However, the deployment part to Elastic Beanstalk is taking a very long time due to resolving dependencies on all of your 100 target EC2 instances. Which of the following actions should you take to improve performance with limited code changes?",
+        "options": [
+            "Store the dependencies in S3",
+            "Bundle the dependencies in the source code in CodeCommit",
+            "Bundle the dependencies in the source code during the last stage of CodeBuild",
+            "Create a custom platform for Elastic Beanstalk"
+        ],
+        "answer": [
+            "Bundle the dependencies in the source code during the last stage of CodeBuild"
+        ]
+    },
+    {
+        "question": "An organization has a requirement to send emails to multiple users from their application hosted on an EC2 instance in a private VPC. Email recipients should not be IAM users and you will reuse the organization's email template for use in the email. Which of the following AWS(Amazon Web Service) services should you use?",
+        "options": [
+            "SNS",
+            "SES",
+            "SQS with Lambda",
+            "Kinesis"
+        ],
+        "answer": [
+            "SES"
+        ]
+    },
+    {
+        "question": "A company uses AWS(Amazon Web Service) CodeDeploy to deploy applications from GitHub to EC2 instances running Amazon Linux. The deployment process uses a file called appspec.yml for specifying deployment hooks. A final lifecycle event should be specified to verify the deployment success. Which of the following hook events should be used to verify the success of the deployment?",
+        "options": [
+            "ValidateService",
+            "AfterInstall",
+            "ApplicationStart",
+            "AllowTraffic"
+        ],
+        "answer": [
+            "ValidateService"
+        ]
+    },
+    {
+        "question": "A company has created an Amazon S3 bucket that holds customer data that gets accessed by the company's internal software application and other developers. The team lead has enabled access logging to track requests and learn more about the requester, actions and the response status of requests. Before access logging was turned on the bucket size was 1GB and in a few days, it grew to 100 GB. The team lead is puzzled because no new files have been added lately. Which of the following reasons explains this behavior?",
+        "options": [
+            "Without bucket policies the bucket will grow in size rapidly",
+            "You experienced a DDOS on your S3 bucket",
+            "Encryption has been enabled",
+            "S3 access logging is pointing to the same bucket and you are getting exponential growth"
+        ],
+        "answer": [
+            "S3 access logging is pointing to the same bucket and you are getting exponential growth"
+        ]
+    },
+    {
+        "question": "You are a team lead on a company that has an application using Amazon Relational Database Service (RDS) Multi-AZ. The marketing department has informed you about an upcoming ad that will drive thousands of new visitors to the website. Which of the following will help you handle the load?",
+        "options": [
+            "RDS Multi AZ",
+            "RDS Read Replicas",
+            "RDS backups",
+            "RDS Maintenance Upgrades"
+        ],
+        "answer": [
+            "RDS Read Replicas"
+        ]
+    },
+    {
+        "question": "Your security company requires that all data sent to external storage be encrypted before being sent. Your external storage is an Amazon Simple Storage Service (Amazon S3) bucket. Which of the following encryption solutions will meet this requirement?",
+        "options": [
+            "SSE-S3",
+            "SSE-C",
+            "Client Side Encryption",
+            "SSE-KMS"
+        ],
+        "answer": [
+            "Client Side Encryption"
+        ]
+    },
+    {
+        "question": "You are a developer working remotely from home. The company has given you an IAM user account with an access key and secret access key that allows permissions to a few AWS(Amazon Web Service) services. When running a build with AWS(Amazon Web Service) CodeBuild, it fails and you need to run a CLI command to view the logs of the failed build. Which steps should you take to do that?",
+        "options": [
+            "Use CloudWatch Events",
+            "Use AWS(Amazon Web Service) Lambda integration",
+            "Enable S3 and CloudWatch integration",
+            "Use Kinesis"
+        ],
+        "answer": [
+            "Enable S3 and CloudWatch integration"
+        ]
+    },
+    {
+        "question": "A sports media company has hired you to help with their microservices architecture. The company needs help writing applications in Node. Js that run on the cloud without managing any servers. They would also like to have dev, test and production environments for the developers to work with. Most importantly, you were asked to help developers debug their microservices if issues come up with development and deployment. Which of the following services will you implement?",
+        "options": [
+            "CloudWatch Logs",
+            "CloudTrail",
+            "X-Ray",
+            "Systems Manager"
+        ],
+        "answer": [
+            "X-Ray"
+        ]
+    },
+    {
+        "question": "A developer with access to the AWS(Amazon Web Service) Management Console terminated an instance in the us-east-1a region. The attached EBS volume remained and is now available for attachment to other instances. Your colleague launches a new Linux EC2 instance in the us-east-1e region and is attempting to attach the EBS volume. Your colleague informs you that it is not possible and need your help. Which of the following explanations would you provide to them?",
+        "options": [
+            "He's missing IAM permissions",
+            "EBS volumes are region locked",
+            "EBS volumes are AZ locked",
+            "The EBS volume is encrypted"
+        ],
+        "answer": [
+            "EBS volumes are AZ locked"
+        ]
+    },
+    {
+        "question": "Your web application front end consists of 5 EC2 instances behind an Application Load Balancer. You have configured your web application to capture the IP address of the client making requests. When viewing the data captured you notice that every IP address being captured is the same, which also happens to be the IP address of the Application Load Balancer. What should you do to identify the true IP address of the client?",
+        "options": [
+            "Look into the X-Forwarded-Proto header in the backend",
+            "Modify the front-end of the website so that the users send their IP in the requests",
+            "Look into the X-Forwarded-For header in the backend",
+            "Look into the client's cookie"
+        ],
+        "answer": [
+            "Look into the X-Forwarded-For header in the backend"
+        ]
+    },
+    {
+        "question": "You create an Auto Scaling group to work with an Application Load Balancer. The scaling group is configured with a minimum size value of 5, a maximum value of 20 and a desired capacity value of 10. One of the 10 EC2 instances has been reported as unhealthy. Which of the following actions will take place?",
+        "options": [
+            "The ASG will terminate the EC2 Instance",
+            "The ASG will detach the EC2 instance from the group, and leave it running",
+            "The ASG will keep the instance running and re-start the application",
+            "The ASG will format the root EBS drive on the EC2 instance and run the User Data again"
+        ],
+        "answer": [
+            "The ASG will terminate the EC2 Instance"
+        ]
+    },
+    {
+        "question": "A company has a cloud system in AWS(Amazon Web Service) with components that send and receive messages using SQS queues. While reviewing the system you see that it processes a lot of information and would like to be aware of any limits of the system. Which of the following is the maximum number of messages that can be stored in an SQS queue?",
+        "options": [
+            "no limit",
+            "10000",
+            "100000",
+            "10000000"
+        ],
+        "answer": [
+            "no limit"
+        ]
+    },
+    {
+        "question": "You have been collecting AWS(Amazon Web Service) X-Ray traces across multiple applications and you would now like to index your XRay traces in order to search and filter through them efficiently. What should you use in your instrumentation?",
+        "options": [
+            "Annotations",
+            "Sampling",
+            "Segments",
+            "Metadata"
+        ],
+        "answer": [
+            "Annotations"
+        ]
+    },
+    {
+        "question": "You would like your Elastic Beanstalk environment to expose an HTTPS endpoint instead of an HTTP endpoint in order to get in-flight encryption between your clients and your web servers. What must be done to setup HTTPS on Beanstalk?",
+        "options": [
+            "Create an .ebextensions file to configure the Load Balancer",
+            "Use a separate CloudFormation template to load the SSL certificate onto the Load Balancer",
+            "Open up the port 80 for the security group",
+            "Configure Health Checks"
+        ],
+        "answer": [
+            "Create an .ebextensions file to configure the Load Balancer"
+        ]
+    },
+    {
+        "question": "Your AWS(Amazon Web Service) account is now growing to 200 users and you would like to provide each of these users a personal space in the S3 bucket 'my_company_space' with the prefix /home/<username>, where they have read/write access. How can you do this efficiently?",
+        "options": [
+            "Create one customer managed policy with dynamic variables and attach it to a group of all users",
+            "Create inline policies for each user as they are on-boarded",
+            "Create one customer managed policy per user and attach them to the relevant users",
+            "Create an S3 bucket policy and change it as users are added and removed"
+        ],
+        "answer": [
+            "Create one customer managed policy with dynamic variables and attach it to a group of all users"
+        ]
+    },
+    {
+        "question": "You would like to deploy a Lambda function globally so that requests are filtered at the AWS(Amazon Web Service) edge locations. Which Lambda deployment mode do you need?",
+        "options": [
+            "Use a Lambda@Edge",
+            "Use a Global DynamoDB table as a Lambda source",
+            "Deploy Lambda in a Global VPC",
+            "Deploy Lambda in S3"
+        ],
+        "answer": [
+            "Use a Lambda@Edge"
+        ]
+    },
+    {
+        "question": "Your organization has setup a full CICD pipeline leveraging CodePipeline and the deployment is done on Elastic Beanstalk. This pipeline has worked for over a year now but you are approaching the limits of Elastic Beanstalk in terms of how many versions can be stored in the service. How can you remove older versions that are not used by Elastic Beanstalk so that new versions can be created for your applications?",
+        "options": [
+            "Setup an .ebextensions files",
+            "Define a Lambda function",
+            "Use a Lifecycle Policy",
+            "Use Worker Environments"
+        ],
+        "answer": [
+            "Use a Lifecycle Policy"
+        ]
+    }
+]

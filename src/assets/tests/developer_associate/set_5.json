@@ -1,0 +1,554 @@
+[
+    {
+        "question": "Bigdog is a firm that uses AWS(Amazon Web Service) CloudFormation templates to provision their AWS(Amazon Web Service) infrastructure for Amazon EC2, Amazon VPC, and Amazon S3 resources. Using cross-stack referencing, a developer creates a stack name called NetworkStack which will export the subnetId that can be used when creating EC2 instances in another stack. To use the exported value in another stack which of the following functions must be used?",
+        "options": [
+            "!Ref",
+            "!ImportValue",
+            "!GetAtt",
+            "!Sub"
+        ],
+        "answer": [
+            "!ImportValue"
+        ]
+    },
+    {
+        "question": "A developer has pushed a Lambda function that pushes data into an RDS MySQL database with the following Python code:\n def handler(event, context):",
+        "question_2": "On the first execution, the Lambda functions takes 2 seconds to execute. On the second execution and all the subsequent ones, the Lambda functions take 1.9 seconds to execute.\n What can be done to improve the execution time of the Lamdba function?",
+        "url": "https://i.ibb.co/zhgYNcQ/Screen-Shot-2022-09-01-at-23-53-54.png",
+        "options": [
+            "Upgrade the MySQL instance type",
+            "Change the runtime to Node.js",
+            "Increase the Lambda function RAM",
+            "Move the database connection out of the handler"
+        ],
+        "answer": [
+            "Move the database connection out of the handler"
+        ]
+    },
+    {
+        "question": "A firm uses AWS(Amazon Web Service) DynamoDB to store information about people's favorite sports teams and allow the information to be searchable from their home page. There is a requirement on a daily basis that all 10 million records in the table should be deleted then re-loaded at 2:00 AM each night. Which option is an efficient way to delete with minimal costs?",
+        "options": [
+            "Scan and call BatchDeleteItem",
+            "Scan and call DeleteItem",
+            "Delete then re-create the table",
+            "Call PurgeTable"
+        ],
+        "answer": [
+            "Delete then re-create the table"
+        ]
+    },
+    {
+        "question": "You have a popular web application that accesses data stored in an Amazon Simple Storage Service (S3) bucket. Developers use the SDK to maintain the application and add new features. Security compliance requests that all new objects uploaded to S3 be encrypted using SSE-S3 at the time of upload. Which of the following headers must the developers add to their request?",
+        "options": [
+            "'x-amz-server-side-encryption': 'AES256'",
+            "x-amz-server-side-encryption': 'SSE-S3'",
+            "'x-amz-server-side-encryption': 'SSE-KMS'",
+            "'x-amz-server-side-encryption': 'aws:kms'"
+        ],
+        "answer": [
+            "'x-amz-server-side-encryption': 'AES256'"
+        ]
+    },
+    {
+        "question": "Your development team uses the AWS(Amazon Web Service) SDK for Java on a web application that uploads files to several Amazon Simple Storage Service (S3) buckets using the SSE-KMS encryption mechanism. Developers are reporting that they are receiving permission errors when trying to push their objects over HTTP. Which of the following headers should they include in their request?",
+        "options": [
+            "'x-amz-server-side-encryption': 'SSE-KMS'",
+            "'x-amz-server-side-encryption': 'SSE-S3'",
+            "'x-amz-server-side-encryption': 'aws:kms'",
+            "'x-amz-server-side-encryption': 'AES256'"
+        ],
+        "answer": [
+            "'x-amz-server-side-encryption': 'aws:kms'"
+        ]
+    },
+    {
+        "question": "A startup company was acquired by a technology innovator whose applications run on Docker. You are responsible for packaging the runtime and tools for your AWS(Amazon Web Service) CodeBuild build into a Docker image and upload it to the Amazon EC2 Container Registry (ECR). The team lead has requested you add a trigger notification when your build fails or succeeds. Which of the below options can you use to implement the notification?",
+        "options": [
+            "AWS CloudWatch Alarms + SNS",
+            "AWS CloudWatch Events + SNS",
+            "Kinesis",
+            "CloudTrail"
+        ],
+        "answer": [
+            "AWS CloudWatch Events + SNS"
+        ]
+    },
+    {
+        "question": "You are a system administrator whose company recently moved its production application to AWS(Amazon Web Service) and migrated data from MySQL to AWS(Amazon Web Service) DynamoDB. You are adding new tables to AWS(Amazon Web Service) DynamoDB and need to allow your application to query your data by the primary key and an alternate key. This option must be added when first creating tables otherwise changes cannot be made afterward. Which of the following actions should you take?",
+        "options": [
+            "Create a GSI",
+            "Call Scan",
+            "Create a LSI",
+            "Migrate away from DynamoDB"
+        ],
+        "answer": [
+            "Create a LSI"
+        ]
+    },
+    {
+        "question": "As part of internal regulations, you must ensure that all communications to Amazon S3 are encrypted. For which of the following encryption mechanisms will a request get rejected if the connection is not using HTTPS?",
+        "options": [
+            "SSE-KMS",
+            "SSE-C",
+            "Client Side Encryption",
+            "SSE-S3"
+        ],
+        "answer": [
+            "SSE-C"
+        ]
+    },
+    {
+        "question": "You have moved your on-premise infrastructure to AWS(Amazon Web Service) and are in the process of configuring an AWS(Amazon Web Service) Elastic Beanstalk deployment environment for production, development, and testing. You have configured your production environment to use a rolling deployment to prevent your application from becoming unavailable to users. For the development and testing environment, you would like to deploy quickly and are not concerned about downtime. Which of the following deployment policies meet your needs?",
+        "options": [
+            "immutable",
+            "rolling",
+            "rolling with additional batches",
+            "all at once",
+            "blue/green"
+        ],
+        "answer": [
+            "all at once"
+        ]
+    },
+    {
+        "question": "You have uploaded a zip file to AWS(Amazon Web Service) Lambda that contains code files written in Node.Js. When your function is executed you receive the following output, 'Error: Memory Size: 3008 MB Max Memory Used'. Which of the following explains the problem?",
+        "options": [
+            "The uncompressed zip file exceeds AWS(Amazon Web Service) Lambda limits",
+            "You have uploaded a zip file larger than 50 MB to AWS(Amazon Web Service) Lambda",
+            "Your Lambda function ran out of RAM",
+            "Your zip file is corrupt"
+        ],
+        "answer": [
+            "Your Lambda function ran out of RAM"
+        ]
+    },
+    {
+        "question": "An organization recently began using AWS(Amazon Web Service) CodeCommit for its source control service. A compliance security team visiting the organization was auditing the software development process and noticed developers making many git push commands within their development machines. The compliance team requires that encryption be used for this activity. How can the organization ensure source code is encrypted in transit and at rest?",
+        "options": [
+            "Use a git command line hook to encrypt the code client side",
+            "Enable KMS encryption",
+            "Use AWS(Amazon Web Service) Lambda as a hook to encrypt the pushed code",
+            "Repositories are automatically encrypted at rest"
+        ],
+        "answer": [
+            "Repositories are automatically encrypted at rest"
+        ]
+    },
+    {
+        "question": "A voting system hosted on-premise was recently migrated to AWS(Amazon Web Service) to lower cost, gain scalability and to better serve thousands of concurrent users. When one of the AWS(Amazon Web Service) resource state changes, it generates an event and will need to trigger AWS(Amazon Web Service) Lambda. The AWS(Amazon Web Service) resource whose state changed and AWS(Amazon Web Service) Lambda does not have direct integration. Which of the below methods can be used to trigger AWS(Amazon Web Service) Lambda?",
+        "options": [
+            "Open a support ticket with AWS",
+            "AWS Lambda Custom Sources",
+            "CloudWatch Event Rules with AWS(Amazon Web Service) Lambda",
+            "Cron jobs to trigger AWS(Amazon Web Service) Lambda to check the state of your service"
+        ],
+        "answer": [
+            "CloudWatch Event Rules with AWS(Amazon Web Service) Lambda"
+        ]
+    },
+    {
+        "question": "You have a web application hosted on EC2 that makes GET and PUT request for objects stored in Amazon Simple Storage Service (S3) using the SDK for PHP. As the security team completed the final review of your application for vulnerabilities, they noticed that your application passes your IAM access key and secret access key to AWS(Amazon Web Service) services. They recommend that you distribute, store and rotate these credentials in a more secure way. How do you accomplish that?",
+        "options": [
+            "Use the SSM parameter store",
+            "Use environment variables",
+            "Hardcode the credentials in the application code",
+            "Use an IAM Instance Role"
+        ],
+        "answer": [
+            "Use an IAM Instance Role"
+        ]
+    },
+    {
+        "question": "You just signed a year contract with a client maintaining a three-tier web application who has steady traffic throughout the day. You need the application instances to be stable and not terminated abruptly as you believe this will impact your users. Which of the below options should you choose?",
+        "options": [
+            "EC2 Spot Instances",
+            "EC2 On Demand Instances",
+            "EC2 Reserved Instances",
+            "Bring your own EC2 instance"
+        ],
+        "answer": [
+            "EC2 Reserved Instances"
+        ]
+    },
+    {
+        "question": "You manage a group of developers that are experienced with the AWS(Amazon Web Service) SDK for Java. You have given them a requirement to build a state machine workflow where each state executes an AWS(Amazon Web Service) Lambda function written in Java. Data payloads of 1KB in size will be passed between states and should allow for two retry attempts it the state fails. Which of the below options will assist your developers with this requirement?",
+        "options": [
+            "AWS Step Functions",
+            "CloudWatch Rules",
+            "AWS SWF",
+            "AWS ECS"
+        ],
+        "answer": [
+            "AWS Step Functions"
+        ]
+    },
+    {
+        "question": "Which of the following are key differences between an Amazon SQS standard queue and Amazon Simple Workflow Service (SWF)? (Select two)",
+        "options": [
+            "SQS is task oriented API and SWF is message-oriented API",
+            "SQS ensures the task is assigned only once while SWF may deliver the message multiple times",
+            "SWF ensures the task is assigned only once while SQS may deliver the message multiple times",
+            "SWF is task oriented API and SQS is message-oriented API"
+        ],
+        "answer": [
+            "SWF ensures the task is assigned only once while SQS may deliver the message multiple times",
+            "SWF is task oriented API and SQS is message-oriented API"
+        ]
+    },
+    {
+        "question": "A company has configured an Auto Scaling group with health checks. The configuration is set to the desired capacity value of 3 and maximum capacity value of 3. The EC2 instances of your Auto Scaling group are configured to scale when CPU utilization is at 60 percent and is now running at 80 percent utilization. Which of the following will take place?",
+        "options": [
+            "System will trigger CloudWatch alarms to AWS(Amazon Web Service) support",
+            "The desired capacity will go up to 4 and the maximum will stay at 3",
+            "The desired capacity will go up to 4 and the maximum will stay at 4",
+            "System will keep running as is"
+        ],
+        "answer": [
+            "System will keep running as is"
+        ]
+    },
+    {
+        "question": "Your application sends messages to an Amazon Simple Queue Service (SQS) queue frequently, which are then polled by another application that specifies which message to retrieve. Which of the below options describe the maximum number of messages that can be retrieved at one time?",
+        "options": [
+            "100",
+            "5",
+            "20",
+            "10"
+        ],
+        "answer": [
+            "10"
+        ]
+    },
+    {
+        "question": "Your application is deployed automatically using AWS(Amazon Web Service) Elastic Beanstalk. Your YAML configuration files are stored in the folder .ebextensions and new files are added or updated often. The DevOps team does not want to re-deploy the application every time there are configuration changes, instead, they would rather manage configuration externally, securely and have it load dynamically into the application at runtime. What option allows you to do this?",
+        "options": [
+            "Use S3",
+            "Use Environment variables",
+            "Use Stage Variables",
+            "Use SSM Parameter Store"
+        ],
+        "answer": [
+            "Use SSM Parameter Store"
+        ]
+    },
+    {
+        "question": "As a site reliability engineer, you work on building and running large-scale, distributed, fault-tolerant systems in the cloud using automation. You currently replaced the company's Jenkins based CI/CD platform with AWS(Amazon Web Service) CodeBuild and would like to programmatically define your build steps. Which of the below options should you choose?",
+        "options": [
+            "define a .appspec file in the root directory",
+            "define a .buildspec file in the root directory",
+            "define a .buildspec file in the codebuild/ directory",
+            "define a .appspec file in the codebuild/ directory"
+        ],
+        "answer": [
+            "define a .buildspec file in the root directory"
+        ]
+    },
+    {
+        "question": "You are a software engineer working for an IT company and are asked to contribute to a growing internal application that includes dashboards for data visualization. You are provisioning your AWS(Amazon Web Service) DynamoDB table and need to perform 10 strongly consistent reads per second of 4 KB in size each. How many read capacity units (RCUs) are needed?",
+        "options": [
+            "10",
+            "40",
+            "20",
+            "5"
+        ],
+        "answer": [
+            "10"
+        ]
+    },
+    {
+        "question": "A developer new to the cloud is learning to reap the benefits of elasticity, horizontal scalability and high availability. They inherited a web application running in the us-east-1 region with three availability zones (us-east-1a, us-east1-b and us-east-1c) whose incoming web traffic is routed by a load balancer. When one of the EC2 instances hosting the web application crashes, they realize that the load balancer continues to route traffic to that instance causing intermittent issues. Which of the following should the developer do to minimize this problem?",
+        "options": [
+            "Enable Health Checks",
+            "Enable Stickiness",
+            "Enable Multi AZ deployments",
+            "Enable SSL"
+        ],
+        "answer": [
+            "Enable Health Checks"
+        ]
+    },
+    {
+        "question": "You are working for a technology startup building web and mobile applications. You would like to pull Docker images from the ECR repository called demo so you can start running local tests against the latest application version. Which of the following commands must you run to pull existing Docker images from ECR? (Select two)",
+        "options": [
+            "docker pull 1234567890.dkr.ecr.eu-west-1.amazonaws.com/demo:latest",
+            "$(aws ecr get-login --no-include-email)",
+            "docker login -u $AWS_ACCESS_KEY_ID -p $AWS_SECRET_ACCESS_KEY",
+            "aws docker push 1234567890.dkr.ecr.eu-west-1.amazonaws.com/demo:latest",
+            "docker build -t 1234567890.dkr.ecr.eu-west-1.amazonaws.com/demo:latest",
+            "$(aws ecr get-login --no-include-email)"
+        ],
+        "answer": [
+            "docker pull 1234567890.dkr.ecr.eu-west-1.amazonaws.com/demo:latest"
+        ]
+    },
+    {
+        "question": "You are storing your video files in a separate S3 bucket than your main static website in an S3 bucket. When accessing the video URLs directly the users are able to view the videos on the browser, but it is impossible for them to play the videos while visiting the main website. What is the root cause of this problem?",
+        "options": [
+            "Enable CORS",
+            "Change the bucket policy",
+            "Amend the IAM policy",
+            "Disable Server-Side Encryption"
+        ],
+        "answer": [
+            "Enable CORS"
+        ]
+    },
+    {
+        "question": "A company developed an app-based service for citizens to book transportation rides in the local community. The platform is running on AWS(Amazon Web Service) EC2 instances and uses Amazon Relational Database Service (RDS) for storing transportation data. A new feature has been requested where receipts would be emailed to customers with PDF attachments retrieved from Amazon Simple Storage Service (S3). Which of the below options will allow EC2 instances permissions to perform these actions?",
+        "options": [
+            "CloudFormation",
+            "EC2 User Data",
+            "Run aws configure on the EC2 instance",
+            "IAM Roles for EC2"
+        ],
+        "answer": [
+            "IAM Roles for EC2"
+        ]
+    },
+    {
+        "question": "Your company has been hired to build a resilient mobile voting app for an upcoming music award show that expects to have 5 to 20 million viewers. The mobile voting app will be marketed heavily months in advance so you are expected to handle millions of messages in the system. You are configuring Amazon Simple Queue Service (SQS) queues for your architecture that should receive messages from 20 KB to 200 KB. Is it possible to send these messages to SQS?",
+        "options": [
+            "Yes, the max message size is 512KB",
+            "Yes, the max message size is 256KB",
+            "No, the max message size is 128KB",
+            "No, the max message size is 64KB"
+        ],
+        "answer": [
+            "Yes, the max message size is 256KB"
+        ]
+    },
+    {
+        "question": "You are getting ready for an event to show off your Alexa skill written in Python. As you are testing your voice activation commands you find that some intents are not invoking as they should and you are struggling to figure out what is happening. You included the following code console.log(JSON.stringify(this.event)) in hopes of getting more details about the request to your Alexa skill. You would like the logs stored in an Amazon Simple Storage Service (S3) bucket named MyAlexaLog. How do you achieve this?",
+        "options": [
+            "Use CloudWatch integration feature with Kinesis",
+            "Use CloudWatch integration feature with S3",
+            "Use CloudWatch integration feature with Lambda",
+            "Use CloudWatch integration feature with Glue"
+        ],
+        "answer": [
+            "Use CloudWatch integration feature with S3"
+        ]
+    },
+    {
+        "question": "You have a Java-based application running on EC2 instances loaded with AWS(Amazon Web Service) CodeDeploy agents. You are considering different options for deployment, one is the flexibility that allows for incremental deployment of your new application versions and replaces existing versions in the EC2 instances. The other option is a strategy in which an Auto Scaling group is used to perform a deployment. Which of the below options will allow you to deploy in this manner? (Select two)",
+        "options": [
+            "Cattle Deployment",
+            "Classic Deployment",
+            "In-place Deployment",
+            "Blue/green Deployment"
+        ],
+        "answer": [
+            "In-place Deployment",
+            "Blue/green Deployment"
+        ]
+    },
+    {
+        "question": "DevOps engineers are developing an order processing system where notifications are sent to a department whenever an order is placed for a product. The system also pushes identical notifications of the new order to a processing module that would allow EC2 instances to handle the fulfillment of the order. In case of processing errors, the messages should be allowed to be re-processed at a later stage and never lost. How can this be achieved?",
+        "options": [
+            "SNS + Kinesis",
+            "SNS + SQS",
+            "SNS + Lambda",
+            "SQS + SES"
+        ],
+        "answer": [
+            "SNS + SQS"
+        ]
+    },
+    {
+        "question": "You are planning to build a fleet of EBS-optimized EC2 instances to handle the load of your new application. Due to security compliance, your organization wants any secret strings used in the application to be encrypted to prevent exposing values as clear text. The solution requires that decryption events be audited and API calls to be simple. How can this be achieved? (select two)",
+        "options": [
+            "Encrypt first with KMS then store in SSM Parameter store",
+            "Store the secret as SecureString in SSM Parameter Store",
+            "Store the secret as PlainText in SSM Parameter Store",
+            "Audit using CloudTrail",
+            "Audit using SSM Audit Trail"
+        ],
+        "answer": [
+            "Store the secret as SecureString in SSM Parameter Store",
+            "Audit using CloudTrail"
+        ]
+    },
+    {
+        "question": "A .NET developer team works with many ASP.NET web applications that use EC2 instances to host them on IIS. The deployment process needs to be configured so that multiple versions of the application can run in AWS(Amazon Web Service) Elastic Beanstalk. One version would be used for development, testing and another version for load testing. Which of the below methods do you recommend?",
+        "options": [
+            "Create an Application Load Balancer to route based on hostname so you can pass on parameters to the development Elastic Beanstalk environment.",
+            "Create a file in .ebextensions/ in order to know how to handle the traffic coming from the ALB",
+            "You cannot have multiple development environment in Elastic Beanstalk, just one development and one production environment",
+            "Use only one Beanstalk environment and perform configuration changes using an Ansible script",
+            "Define a dev environment with a single instance and a 'load test' environment that has settings close to production"
+        ],
+        "answer": [
+            "Define a dev environment with a single instance and a 'load test' environment that has settings close to production"
+        ]
+    },
+    {
+        "question": "An application that processes orders on a nightly basis runs on an EC2 instance. This EC2 instance needs to access the orders that are stored in S3. How would you recommend the EC2 instance access the orders securely?",
+        "options": [
+            "Use EC2 User Data",
+            "Create an IAM programmatic user and store the access key and secret access key on the EC2 ~/.aws/credentials file.",
+            "Use an IAM role",
+            "Create an S3 bucket policy which authorises public access"
+        ],
+        "answer": [
+            "Use an IAM role"
+        ]
+    },
+    {
+        "question": "You are designing a high-performance application that requires millions of connections. You have several EC2 instances running Apache2 web servers and the application will require capturing the user's original source IP address and source port without the use of X-Forwarded-For. Which of the below options will meet your needs?",
+        "options": [
+            "Application Load Balancer",
+            "Network Load Balancer",
+            "Elastic Load Balancer",
+            "Classic Load Balancer"
+        ],
+        "answer": [
+            "Network Load Balancer"
+        ]
+    },
+    {
+        "question": "Your company leverages Amazon CloudFront to provide content via the internet to customers with low latency. Aside from latency, security is another concern and you are looking for help in enforcing end-to-end connections using HTTPS so that content is protected. Which of the below options is available for HTTPS in AWS(Amazon Web Service) CloudFront?",
+        "options": [
+            "Between clients and CloudFront only",
+            "Between clients and CloudFront and CloudFront and backend",
+            "Between CloudFront and backend only",
+            "Nowhere"
+        ],
+        "answer": [
+            "Between clients and CloudFront and CloudFront and backend"
+        ]
+    },
+    {
+        "question": "As a site reliability engineer, you are responsible for improving the company's deployment by scaling and automating applications. As new application versions are ready for production you ensure that the application gets deployed to different sets of EC2 instances at different times allowing for a smooth transition. Using AWS(Amazon Web Service) CodeDeploy, which of the below options will allow you to do this?",
+        "options": [
+            "CodeDeploy Hooks",
+            "CodeDeploy Agent",
+            "CodeDeploy Deployment Groups",
+            "Define multiple CodeDeploy Applications"
+        ],
+        "answer": [
+            "CodeDeploy Deployment Groups"
+        ]
+    },
+    {
+        "question": "Your company has a load balancer in a VPC configured to be internet facing. The public DNS name assigned to the load balancer is myDns-1234567890.us-east-1.elb.amazonaws.com. When your client applications first load they capture the load balancer DNS name and resolve it to the IP address. The DNS name is a value used throughout other actions in the application. At load, client applications work well but unexpectedly stop working after a while. What is the reason for this?",
+        "options": [
+            "The load balancer is highly available and its public IP may change. The DNS is constant",
+            "Your security groups are not stable",
+            "You need to enable stickiness",
+            "You need to disable multi AZ deployments"
+        ],
+        "answer": [
+            "The load balancer is highly available and its public IP may change. The DNS is constant"
+        ]
+    },
+    {
+        "question": "A firm maintains a highly available application that receives HTTPS traffic from mobile devices and web browsers. The main Developer would like to set up the Load Balancer routing to route traffic from web servers to smart.com/api and from mobile devices to smart.com/mobile. A developer advises that the previous recommendation is not needed and that requests should be sent to api.smart.com and mobile.smart.com instead. Which of the following routing options were discussed? (select two)",
+        "options": [
+            "url path",
+            "cookie value",
+            "client IP",
+            "web browser version",
+            "hostname"
+        ],
+        "answer": [
+            "url path",
+            "hostname"
+        ]
+    },
+    {
+        "question": "You have a popular three-tier web application that is used by users throughout the entire globe receiving thousands of incoming requests daily. You have AWS(Amazon Web Service) Route 53 policies to automatically distribute weighted traffic to the API resources located at URL api.global.com. What is an alternative way of distributing traffic to a web application?",
+        "options": [
+            "S3",
+            "CloudFront",
+            "ELB",
+            "Auto Scaling"
+        ],
+        "answer": [
+            "ELB"
+        ]
+    },
+    {
+        "question": "You have been hired at a company that needs an experienced developer to help with a continuous integration/continuous delivery (CD/CD) workflow on AWS. You configure the company's workflow to run an AWS(Amazon Web Service) CodePipeline pipeline whenever the application's source code changes in a repository hosted in AWS(Amazon Web Service) Code Commit and compiles source code with AWS(Amazon Web Service) Code Build. You are configuring ProjectArtifacts in your build stage. Which of the following should you do?",
+        "options": [
+            "Configure AWS(Amazon Web Service) CodeBuild to store output artifacts on EC2 servers",
+            "Give AWS(Amazon Web Service) CodeBuild permission to upload the build output to your Amazon S3 bucket",
+            "Give AWS(Amazon Web Service) CodeCommit permission to upload the build output to your Amazon S3 bucket",
+            "Contact AWS(Amazon Web Service) Support to allow AWS(Amazon Web Service) CodePipeline to manage build outputs"
+        ],
+        "answer": [
+            "Give AWS(Amazon Web Service) CodeBuild permission to upload the build output to your Amazon S3 bucket"
+        ]
+    },
+    {
+        "question": "Your company manages MySQL databases on EC2 instances to have full control. Applications on other EC2 instances managed by an ASG make requests to these databases to get information that displays data on dashboards viewed on mobile phones, tablets, and web browsers. Your manager would like to scale your Auto Scaling group based on the number of requests per minute. How can you achieve this?",
+        "options": [
+            "You create a CloudWatch custom metric and build an alarm to scale your ASG",
+            "Attach an Elastic Load Balancer",
+            "Attach additional Elastic File Storage",
+            "You enable detailed monitoring and use that to scale your ASG"
+        ],
+        "answer": [
+            "You create a CloudWatch custom metric and build an alarm to scale your ASG"
+        ]
+    },
+    {
+        "question": "Your mobile application needs to perform API calls to DynamoDB. You do not want to store AWS(Amazon Web Service) secret and access keys onto the mobile devices and need all the calls to DynamoDB made with a different identity per mobile device. Which of the following services allows you to achieve this?",
+        "options": [
+            "Cognito Identity Pools",
+            "Cognito User Pools",
+            "Cognito Sync",
+            "IAM"
+        ],
+        "answer": [
+            "Cognito Identity Pools"
+        ]
+    },
+    {
+        "question": "You are revising options that would be best for monitoring a few EC2 instances you currently manage. Amazon CloudWatch has metrics available to monitor your EC2 instances for CPU load, I/O and network I/O. Your budget does not allow for spending on monitoring so using the default monitoring available is your preferred choice. With default monitoring, at what interval will these metrics be collected?",
+        "options": [
+            "1 minute",
+            "10 minutes",
+            "2 minutes",
+            "5 minutes"
+        ],
+        "answer": [
+            "5 minutes"
+        ]
+    },
+    {
+        "question": "Your organization is looking into making a change to all virtual machines in the cloud. They would like to take advantage of running a bootstrap script for their Windows Server 2012 Base AMI virtual machines when they first boot. Which of the below options will allow the organization to achieve this?",
+        "options": [
+            "Custom AMI",
+            "Mount EFS network drives",
+            "EC2 Meta Data",
+            "EC2 User Data"
+        ],
+        "answer": [
+            "EC2 User Data"
+        ]
+    },
+    {
+        "question": "Your company is in the process of building a DevOps culture and is moving all of their on-premise resources to the cloud using serverless architectures and automated deployments. You have created a CloudFormation template in YAML that uses an AWS(Amazon Web Service) Lambda function to pull html files from GitHub and place them into an Amazon Simple Storage Service (S3) bucket that you specify. Which of the following AWS(Amazon Web Service) CLI commands can you use to upload AWS(Amazon Web Service) Lambda functions and AWS(Amazon Web Service) CloudFormation templates to AWS?",
+        "options": [
+            "cloudformation zip and cloudformation deploy",
+            "cloudformation package and cloudformation upload",
+            "cloudformation zip and cloudformation upload",
+            "cloudformation package and cloudformation deploy"
+        ],
+        "answer": [
+            "cloudformation package and cloudformation deploy"
+        ]
+    },
+    {
+        "question": "Your AWS(Amazon Web Service) CodeDeploy deployment to T2 instances succeed. An application running on those instances makes API calls to other AWS(Amazon Web Service) services however the application is not working as expected and you were assigned to troubleshoot the issue. Which of the following should you do?",
+        "options": [
+            "Fix the IAM permissions for the CodeDeploy service role",
+            "Fix the IAM permissions for the EC2 instance role",
+            "Make the S3 bucket public",
+            "Enable CodeDeploy Proxy"
+        ],
+        "answer": [
+            "Fix the IAM permissions for the EC2 instance role"
+        ]
+    }
+]
