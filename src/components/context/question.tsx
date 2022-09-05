@@ -5,7 +5,7 @@ export type QuestionsContextState = {
     setQuestionLists: React.Dispatch<React.SetStateAction<IQuestionsLists | null>>
 };
 import React, { createContext, useState, FC } from "react";
-import { TFormType } from "../utils/axios";
+import { IGallery, TFormType } from "../utils/axios";
 
 const contextDefaultValues: QuestionsContextState = {
     state: {
@@ -13,7 +13,8 @@ const contextDefaultValues: QuestionsContextState = {
         activeFlags: [],
         answers: [],
         language: "es",
-        isFinishExam: false
+        isFinishExam: false,
+        galleryExam: []
     },
     setState: () => { },
     questionLists: null,
@@ -54,6 +55,7 @@ export interface IState {
     }[],
     language: TLanguage;
     isFinishExam: boolean
+    galleryExam: IGallery[]
 }
 
 
@@ -64,7 +66,8 @@ const QuestionProvider = ({ children }: { children: JSX.Element }) => {
         activeFlags: [],
         answers: [],
         language: "es",
-        isFinishExam: false
+        isFinishExam: false,
+        galleryExam: [],
     })
 
     const [questionLists, setQuestionLists] = useState<IQuestionsLists | null>(null)

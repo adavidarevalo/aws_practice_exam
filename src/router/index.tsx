@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import PrincipalHeader from '../components/layout/principal_header'
 import Home from '../containers/home'
@@ -16,7 +15,7 @@ export default function PrincipalRouter() {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/practice-exam" element={<TestPracticeMenu />} />
-                        <Route path="/practice-exam/:id" element={<PracticeExams />} />
+                        <Route path="/practice-exam/:formType/:id" element={<PracticeExams />} />
                         <Route path="/documentation" element={<ServicesDocumentation />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>

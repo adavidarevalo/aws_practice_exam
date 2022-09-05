@@ -1,7 +1,7 @@
-import React from 'react'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
 import { IProps } from './accordion_options';
+import style from './result.module.sass'
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -35,7 +35,9 @@ export default function Chart({ answerValidated }: IProps) {
 
 
     return (
-        <div style={{ maxWidth: "450px" }}>
+        <div
+            className={style.chart}
+        >
             <Pie data={data} width={50} height={50} />
         </div>
     )

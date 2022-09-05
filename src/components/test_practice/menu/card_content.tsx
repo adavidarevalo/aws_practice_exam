@@ -1,27 +1,53 @@
-import React from 'react'
+import _ from 'lodash'
+import { useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Button, Card, Icon, Image } from 'semantic-ui-react'
+import { IGallery } from '../../utils/axios'
+import { toggleStore } from '../../utils/store'
 
-export default function CardContent() {
+export interface IProps {
+    exam: IGallery,
+    favoritesExams: {
+        id: string,
+        type: string
+    }[],
+    getFavorites: () => void
+}
+
+export default function CardContent({ exam, favoritesExams, getFavorites }: IProps) {
+    const { type, id, image } = exam
+
     const navigate = useNavigate()
 
     const handleClick = () => {
-        navigate(`/practice-exam/${1}`)
+        navigate(`/practice-exam/${type}/${id}`)
     }
+
+    const handleStoreClick = () => {
+        toggleStore(type, id, 'favoritesExams')
+        getFavorites()
+    }
+
+    const isFavoriteExam = useMemo(() => {
+        const result = favoritesExams.find(exam => exam.type === type && exam.id === id)
+        return !!result
+    }, [favoritesExams])
 
     return (
         <Card>
-            <Image src='https://1.bp.blogspot.com/-8EL2uKz9WEw/X7yBJbpRmDI/AAAAAAAAkiw/kNcgkYoi20Q3Zl7CLUXu1E7TzXBqNlC8gCLcBGAsYHQ/w1200-h630-p-k-no-nu/AWS%2BDeveloper%2BAssociate%2BFree%2BCourses.png' wrapped ui={false} />
+            <Image src={image} wrapped ui={false} />
             <Card.Content>
-                <Card.Header>Test 1</Card.Header>
+                <Card.Header>Test {id}</Card.Header>
                 <Card.Description>
-                    Desarrollar Asociado
+                    {_.startCase(type.replace('_', ' '))}
                 </Card.Description>
             </Card.Content>
             <Card.Content extra>
-                <a>
-                    <Icon name='star' />
-                    1 Favorite
+                <a
+                    style={{ color: isFavoriteExam ? "#0041ab" : "grey" }}
+                    onClick={handleStoreClick}>
+                    <Icon name='star' color={isFavoriteExam ? "yellow" : "grey"} />
+                    Favorite
                 </a>
                 <Button
                     basic

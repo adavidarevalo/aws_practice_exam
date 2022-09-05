@@ -4,6 +4,17 @@ import _ from "lodash"
 import { IQuestion, IState, QuestionContext } from '../../context/question'
 import ChangeLanguageButton from '../../change_language_button'
 
+interface IQuestionData {
+    question: string,
+    options: {
+        value: string;
+        id: String;
+    }[]
+    question_2?: string,
+    url?: string,
+    id: string
+}
+
 export default function Question() {
     const {
         state,
@@ -13,11 +24,11 @@ export default function Question() {
 
     const { actualQuestion, activeFlags } = state
 
-    const { question, options } = useMemo(() => {
+    const { question, options, question_2, url } = useMemo<IQuestionData>(() => {
         return {
             ...(questionLists?.questions || [])[actualQuestion - 1][state.language],
             id: (questionLists?.questions || [])[actualQuestion - 1].id,
-        }
+        } as IQuestionData
     }, [actualQuestion, state.language])
 
     const handleNextQuestion = () => {
@@ -69,7 +80,7 @@ export default function Question() {
     const handleSelect = (value: string) => {
         setState(prevState => {
             const stateCloned = _.cloneDeep(prevState)
-            if (stateCloned.answers.find(({ questionId }: any) => questionId === actualQuestion.toString())) {
+            if (stateCloned.answers.find(({ questionId }) => questionId === actualQuestion.toString())) {
                 return modifyAnswer(stateCloned, value)
             }
             stateCloned.answers.push({
@@ -113,15 +124,17 @@ export default function Question() {
                 </Button>
                 <div style={{ width: "80%", margin: "0 auto", maxWidth: "800px" }}>
                     <h3>{question}</h3>
+                    {url && <img src={url} alt={actualQuestion.toString()} />}
+                    {question_2 && <h3>{question_2}</h3>}
                     <Form style={{ marginTop: "30px" }}>
-                        {options.map((option: any) => (
-                            <Form.Field>
+                        {options.map((option) => (
+                            <Form.Field key={option.id as string}>
                                 <Checkbox
                                     radio
                                     label={option.value}
                                     name='checkboxRadioGroup'
-                                    value={option.id}
-                                    checked={state.answers.find(({ questionId }) => questionId === actualQuestion.toString())?.solutionId.includes(option.id)}
+                                    value={option.id as string}
+                                    checked={state.answers.find(({ questionId }) => questionId === actualQuestion.toString())?.solutionId.includes(option.id as string)}
                                     onClick={(e, { value }) => handleSelect(value as string)}
                                 />
                             </Form.Field>

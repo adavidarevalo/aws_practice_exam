@@ -18,6 +18,20 @@ export interface IResultValidateExam {
     score: number;
 }
 
+export interface IGallery {
+    id: string;
+    type: string;
+    image: string
+}
+
+interface IValidatePayload {
+    formId: string;
+    type: TFormType;
+    answers: {
+        questionId: string;
+        solutionId: string[];
+    }[]
+}
 
 class MainApi extends HttpClient {
     public constructor() {
@@ -26,7 +40,8 @@ class MainApi extends HttpClient {
 
     public getForm = (fromType: TFormType, formId: string) => this.instance.get<IQuestionsLists>(`/form/${fromType}/${formId}`);
 
-    public validateExam = (value: any) => this.instance.post<IResultValidateExam>(`/form/validate`, value);
+    public validateExam = (value: IValidatePayload) => this.instance.post<IResultValidateExam>(`/form/validate`, value);
+    public getGallery = () => this.instance.get<IGallery[]>(`/gallery`);
 }
 
 export default new MainApi()

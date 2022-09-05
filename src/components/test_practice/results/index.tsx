@@ -1,12 +1,13 @@
 import { useContext, useEffect, useState } from 'react'
-import ChangeLanguageButton from '../../change_language_button'
+import { useParams } from "react-router-dom";
 import { QuestionContext } from '../../context/question'
 import AccordionLists from './accordion'
 import Chart from './chart'
 import ConfettiParty from './Confetti'
-import MainApi, { IResultValidateExam } from "./../../utils/axios"
+import MainApi, { IResultValidateExam, TFormType } from "./../../utils/axios"
 import Loading from '../../loading'
 import AccordionOptions from './accordion_options'
+import style from './result.module.sass'
 
 export default function Result() {
     const {
@@ -14,12 +15,13 @@ export default function Result() {
     } = useContext(QuestionContext)
 
     const [answerValidated, setAnswerValidated] = useState<IResultValidateExam | null>(null)
+    const { formType, id } = useParams();
 
     const validateExam = async () => {
         try {
             const result = await MainApi.validateExam({
-                "formId": "1",
-                "type": "developer_associate",
+                "formId": id as string,
+                "type": formType as TFormType,
                 "answers": state.answers
             })
             setAnswerValidated(result)
@@ -36,14 +38,16 @@ export default function Result() {
         <>
             {!!answerValidated === false && <Loading />}
             {!!answerValidated && (
-                <div style={{ width: "100vw" }}>
+                <div
+                    className={style.resultPage}
+                >
                     {answerValidated.passExam && <ConfettiParty />}
                     <h1>{
                         answerValidated.passExam
                             ? "Paso el Examen 🎉🎉🎉"
                             : "No paso, intentalo nuevamente 😥😥😥"
                     }</h1>
-                    <h3>Puntuación: {answerValidated.score}</h3>
+                    <h3>Puntuación: {answerValidated.score} / 1000</h3>
                     <Chart answerValidated={answerValidated} />
                     <AccordionOptions answerValidated={answerValidated} />
                     <AccordionLists answerValidated={answerValidated.answerValidated} />

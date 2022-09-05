@@ -14,7 +14,7 @@ export default function AccordionLists({ answerValidated }: IProps) {
     } = useContext(QuestionContext)
 
     return (
-        <Accordion fluid styled style={{ width: "90%" }}>
+        <Accordion fluid styled>
             {questionLists?.questions.map(question => (
                 <AccordionItem
                     question={question}

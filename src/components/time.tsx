@@ -1,23 +1,30 @@
-import React from 'react'
+import React, { useContext } from 'react'
 // import { useStopwatch } from "react-timer-hook";
 import { useTimer } from "react-timer-hook";
+import { QuestionContext } from './context/question';
 
 export default function TimeClock() {
     const time = new Date();
     time.setSeconds(time.getSeconds() + 7800);
+
+    const {
+        setState
+    } = useContext(QuestionContext)
+
+    const handleFinishExam = () => {
+        setState(prevState => ({
+            ...prevState,
+            isFinishExam: true
+        }))
+    }
+
     const {
         seconds,
         minutes,
-        hours,
-        days,
-        isRunning,
-        start,
-        pause,
-        resume,
-        restart
+        hours
     } = useTimer({
         expiryTimestamp: time,
-        onExpire: () => console.warn("onExpire called")
+        onExpire: handleFinishExam
     });
 
     const hourTime = hours < 10 ? `0${hours}` : `${hours}`;
