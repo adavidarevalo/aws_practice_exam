@@ -1,9 +1,10 @@
 export type QuestionsContextState = {
     state: IState,
     setState: React.Dispatch<React.SetStateAction<IState>>,
-    questionLists: IQuestionsLists | null,
-    setQuestionLists: React.Dispatch<React.SetStateAction<IQuestionsLists | null>>
+    examsList: IExam[],
+    setExams: React.Dispatch<React.SetStateAction<IExam[]>>
 };
+
 import React, { createContext, useState, FC } from "react";
 import { IGallery, TFormType } from "../utils/axios";
 
@@ -12,14 +13,16 @@ const contextDefaultValues: QuestionsContextState = {
         actualQuestion: 1,
         activeFlags: [],
         answers: [],
-        language: "es",
+        language: "en",
         isFinishExam: false,
         galleryExam: []
     },
     setState: () => { },
-    questionLists: null,
-    setQuestionLists: () => { }
+    examsList: [],
+    setExams: () => { }
 };
+
+export type examList = "developer_associate1"
 
 export const QuestionContext = createContext<QuestionsContextState>(contextDefaultValues);
 
@@ -44,7 +47,8 @@ export interface IQuestionsLists {
     }[]
 }
 
-export type TLanguage = "es" | "en"
+// export type TLanguage = "es" | "en"
+export type TLanguage = "en"
 
 export interface IState {
     actualQuestion: number;
@@ -58,6 +62,29 @@ export interface IState {
     galleryExam: IGallery[]
 }
 
+export interface IExam {
+    en: {
+        options: {
+            id: number,
+            value: string
+        }[]
+        question1: string;
+        question2?: string;
+        question3?: string;
+        question4?: string;
+        question5?: string;
+        question6?: string;
+        question7?: string;
+        question8?: string;
+        question9?: string;
+        question10?: string;
+        question11?: string;
+        question12?: string;
+    },
+    answers: number[],
+    id: string
+}
+
 
 const QuestionProvider = ({ children }: { children: JSX.Element }) => {
 
@@ -65,20 +92,20 @@ const QuestionProvider = ({ children }: { children: JSX.Element }) => {
         actualQuestion: 1,
         activeFlags: [],
         answers: [],
-        language: "es",
+        language: "en",
         isFinishExam: false,
         galleryExam: [],
     })
 
-    const [questionLists, setQuestionLists] = useState<IQuestionsLists | null>(null)
+    const [examsList, setExams] = useState<IExam[]>([])
 
     return (
         <QuestionContext.Provider
             value={{
                 state,
                 setState,
-                questionLists,
-                setQuestionLists
+                examsList,
+                setExams
             }}
         >
             {children}

@@ -5,49 +5,44 @@ import {
 import Loading from '../../loading'
 import Footer from './footer'
 import Question from "./question"
-import { QuestionContext } from '../../context/question'
-import MainApi, { TFormType } from "./../../utils/axios"
+import { examList, IExam, QuestionContext } from '../../context/question'
 import Result from '../results'
+import exams from './../../../assets/exams/index'
 
-export interface IQuestionsLists {
-    question: String,
-    question_2?: String,
-    options: string[],
-    answer: string[],
-    id: string
-}
+// export interface IQuestionsLists {
+//     question: String,
+//     question_2?: String,
+//     options: string[],
+//     answer: string[],
+//     id: string
+// }
 
-export interface IState {
-    actualQuestion: number;
-    activeFlags: number[]
-    answers: {
-        questionId: string,
-        solutionId: string[]
-    }[]
-}
+// export interface IState {
+//     actualQuestion: number;
+//     activeFlags: number[]
+//     answers: {
+//         questionId: string,
+//         solutionId: string[]
+//     }[]
+// }
 
 export default function Exam() {
     const {
         state,
         setState,
-        questionLists,
-        setQuestionLists
+        examsList,
+        setExams
     } = useContext(QuestionContext)
     const { formType, id } = useParams();
 
     const getExam = async () => {
-        try {
-            const result = await MainApi.getForm(formType as TFormType, id as string)
-            setQuestionLists(result)
-        } catch ({ message }) {
-            //TODO: Add modal fot the error
-        }
+        const exam = exams[`${formType?.replace("aws_", "")}${id}` as examList]
+        setExams(exam as any[])
     }
 
     useEffect(() => {
         getExam()
         return () => {
-            setQuestionLists(null)
             setState(prevState => ({
                 ...prevState,
                 actualQuestion: 1,
@@ -59,14 +54,13 @@ export default function Exam() {
 
     return (
         <div>
-            {questionLists === null && <Loading />}
-            {(questionLists !== null && state.isFinishExam === false) && (
+            {(state.isFinishExam === false) && (
                 <>
                     <Question />
                     <Footer />
                 </>
             )}
-            {(questionLists !== null && state.isFinishExam) && (
+            {state.isFinishExam && (
                 <Result />
             )}
         </div>

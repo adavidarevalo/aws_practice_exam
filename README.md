@@ -8,7 +8,7 @@
 ## How to install the project
 ### - Requirements
 
-- Node version: 14.1.0
+- Node version: 14.18.1
 ### - Process
 
 - Clone the project 

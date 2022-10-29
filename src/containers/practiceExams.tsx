@@ -9,12 +9,12 @@ export default function PracticeExams() {
     return (
         <>
             <HelmetMetaData title="AWS Exam" />
-            {
-                statePage === 1 && (<StartExam
+            {statePage === 1 && (
+                <StartExam
                     accepted={() => {
                         setStatePage(2)
-                    }} />)
-            }
+                    }} />
+            )}
             {
                 statePage === 2 && (<Exam />)
             }

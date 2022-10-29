@@ -1,0 +1,1556 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use pagination"
+                },
+                {
+                    "id": 2,
+                    "value": "Use quoting strings"
+                },
+                {
+                    "id": 3,
+                    "value": "Use shorthand syntax"
+                },
+                {
+                    "id": 4,
+                    "value": "Use parameter values"
+                }
+            ],
+            "question1": "You work as a Developer at �decodesskills� and is using AWS CLI to list attributes of DynamoDB table. When running list commands on a large number of resources, it got time out.",
+            "question2": "Which of the following can be used to avoid this time-out?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Lambda Event Rules"
+                },
+                {
+                    "id": 2,
+                    "value": "Use CloudTrail Event rules with Amazon Simple Email Service (SES)"
+                },
+                {
+                    "id": 3,
+                    "value": "Use CloudWatch Event Rules"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Lambda function with Amazon Simple Notification Service (SNS)"
+                }
+            ],
+            "question1": "Your organization has developers that merge code changes regularly to an AWS CodeCommit repository. Your pipeline has AWS CodeCommit as the source and you would like to configure a rule that reacts to changes in CodeCommit.",
+            "question2": "Which of the following options do you choose for this type of integration?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Your notification action is writing to the same bucket that triggers the notification"
+                },
+                {
+                    "id": 2,
+                    "value": "Someone could have created a new notification configuration and that has overridden your existing configuration"
+                },
+                {
+                    "id": 3,
+                    "value": "Versioning is enabled on the S3 bucket and event notifications are getting fired for only one version"
+                },
+                {
+                    "id": 4,
+                    "value": "If two writes are made to a single non-versioned object at the same time, it is possible that only a single event notification will be sent"
+                }
+            ],
+            "question1": "Your team-mate has configured an Amazon S3 event notification for an S3 bucket that holds sensitive audit data of a firm. As the Team Lead, you are receiving the SNS notifications for every event in this bucket. After validating the event data, you realized that few events are missing.",
+            "question2": "What could be the reason for this behavior and how to avoid this in the future?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Doesn�t rollback"
+                },
+                {
+                    "id": 2,
+                    "value": "To non-failed instances"
+                },
+                {
+                    "id": 3,
+                    "value": "To failed instances"
+                },
+                {
+                    "id": 4,
+                    "value": "To new instances"
+                }
+            ],
+            "question1": "You work as a Developer Associate at an e-commerce company which uses CodeDeploy to automate deployment of application on EC2 instances. The application deployment consists of configuration files and source code. Whenever a deployment is failed it gets rolled back to the last known working application version by the AWS CodeDeploy.",
+            "question2": "Which of the following options is correct based on which instances does AWS CodeDeploy deploys the application first during rollback?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Specify ProjectionExpression"
+                },
+                {
+                    "id": 2,
+                    "value": "Specify a FilterExpression"
+                },
+                {
+                    "id": 3,
+                    "value": "Use a key"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the --query parameter"
+                }
+            ],
+            "question1": "You work at a mobile game development company which uses NoSQL DynamoDB database. While retrieving data from DynamoDB using GetItem operation, all attributes are returned in the output, but you want to fetch only few attributes.",
+            "question2": "Which of the following should you use to get the attributes you want?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS::Serverless::Api"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS::Serverless::SimpleTable"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS::Serverless::UserPool"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS::Serverless::LayerVersion"
+                }
+            ],
+            "question1": "You are new to the company and assigned to the cloud team for serverless development. The development team uses AWS Serverless Application Model (AWS SAM) and you are given an AWS SAM template file to work on in-order to implement a serverless architecture. You gave your script to fellow developer for code review, he found a mistake in a resource type.",
+            "question2": "Which of the following serverless resource type is invalid?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use AWS X-Ray tracing to charge for API�s"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Lambda Usage plans"
+                },
+                {
+                    "id": 3,
+                    "value": "Use AWS Cognito Identity Pool"
+                },
+                {
+                    "id": 4,
+                    "value": "Use API Gateway Usage Plans"
+                }
+            ],
+            "question1": "You work at an IT company which provides many features to its users. Recently the development team has created a new feature for which the company decided to charge from the users. The company uses REST API�s as endpoint for the new feature.",
+            "question2": "As a developer Associate which of the following options will you suggest to the team for offering paid features?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Increase the minimum instance capacity of the scaling group to 2"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Redis Elastic Cache"
+                },
+                {
+                    "id": 3,
+                    "value": "Increase the minimum instance capacity of the scaling group to 7"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable RDS Multi-AZ"
+                }
+            ],
+            "question1": "Your company decodeskills has an application which runs on multiple EC2 instances. You as a part of developer team has configured an Auto Scaling group with maximum capacity of 6 and minimum capacity of 1 across 3 Availability zones. At night when utilization was low one of the Availability Zone went down due to which the application faced downtime.",
+            "question2": "As a Developer Associate what will to do to make the application highly available?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Run the output of the following: aws ecr get-login and then run: docker pull REPOSITORY URI : TAG"
+                },
+                {
+                    "id": 2,
+                    "value": "Run the following: aws ecr get-login and then run: docker pull REPOSITORY URI : TAG"
+                },
+                {
+                    "id": 3,
+                    "value": "Run the output of the following: aws ecr get-download-url-for-layer and then run: docker pull REPOSITORY URI : TAG"
+                },
+                {
+                    "id": 4,
+                    "value": "Run the following: docker pull REPOSITORY URI : TAG"
+                }
+            ],
+            "question1": "You are using AWS CodeBuild builds code for an application which creates the Docker image, pushes the image to Amazon Elastic Container Registry (Amazon ECR), and tags the image with a unique identier.",
+            "question2": "How can the Docker images be pulled to the workstations If the Developers already have AWS CLI congured on their workstations ?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use AWS Data pipeline"
+                },
+                {
+                    "id": 2,
+                    "value": "Use DynamoDB on demand backups"
+                },
+                {
+                    "id": 3,
+                    "value": "Use AWS Glue"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS EMR"
+                }
+            ],
+            "question1": "You work at a mobile game development company which uses NoSQL DynamoDB database. The team decided to make backups of some DynamoDB table data on AWS S3 so that they can use it for some analytics after downloading it locally.",
+            "question2": "Which of the following options is NOT feasible for this use case?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use AWS::Include to reference publicly-hosted template files."
+                },
+                {
+                    "id": 2,
+                    "value": "Use nested stacks for common template patterns."
+                },
+                {
+                    "id": 3,
+                    "value": "Remove mappings to decrease the number of variables."
+                },
+                {
+                    "id": 4,
+                    "value": "Embed credentials to prevent typos."
+                }
+            ],
+            "question1": "Your development team has an AWS CloudFormation template that is stored as a single file which is used to launch and create a full infrastructure stack.",
+            "question2": "Which if the following best practice would increase the maintainability of the template?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Server-side encryption with AWS KMS-managed keys"
+                },
+                {
+                    "id": 2,
+                    "value": "Client-side encryption with AWS KMS-managed keys"
+                },
+                {
+                    "id": 3,
+                    "value": "Server-side encryption using S3-managed keys"
+                },
+                {
+                    "id": 4,
+                    "value": "Client-side encryption with a client-side symmetric master key"
+                }
+            ],
+            "question1": "You want to encrypt new objects uploaded to an AWS S3 bucket from the application you are working on in your company �decodeskills�. You also want an audit trail of users who used the key during this process and that should not affect the performance of the application.",
+            "question2": "Which of the following type of encryption can be used for this use-case?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Implement exponential backoffs in the application."
+                },
+                {
+                    "id": 2,
+                    "value": "Use ALB."
+                },
+                {
+                    "id": 3,
+                    "value": "Add a 2 second delay to each API call."
+                },
+                {
+                    "id": 4,
+                    "value": "Move the application to Amazon EC2."
+                }
+            ],
+            "question1": "In your company the on-premises application is making repeated calls to store files on Amazon S3 due to which \"LimitExceeded\" errors are being logged.",
+            "question2": "Which of the following should be done to fix this error?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Status Code"
+                },
+                {
+                    "id": 2,
+                    "value": "Device ID"
+                },
+                {
+                    "id": 3,
+                    "value": "User ID"
+                },
+                {
+                    "id": 4,
+                    "value": "Game Type"
+                }
+            ],
+            "question1": "You are using NoSql DynamoDb database in one of the game streaming application developed at your company �decodeskills�",
+            "question2": "Which of the following is an example of a good DynamoDB hash key schema for provisioned throughput efficiency?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "IAM policy"
+                },
+                {
+                    "id": 2,
+                    "value": "Bucket policy"
+                },
+                {
+                    "id": 3,
+                    "value": "Routing Policy"
+                },
+                {
+                    "id": 4,
+                    "value": "Pre-signed URL"
+                }
+            ],
+            "question1": "Which of the following options will give access to the objects in a private S3 bucket that will enable people to access some objects as needed with a time policy constraint?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Write data to Amazon Elastic Block Store."
+                },
+                {
+                    "id": 2,
+                    "value": "Write data to Amazon ElastiCache."
+                },
+                {
+                    "id": 3,
+                    "value": "Write data to Amazon EC2 Instance Store."
+                },
+                {
+                    "id": 4,
+                    "value": "Write data to the root Filesystem."
+                }
+            ],
+            "question1": "Your company is using an application that runs on multiple EC2 instances behind an AWS ELB.",
+            "question2": "Where should the session data best written so that it can be served reliably across multiple requests?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Add an attribute with the expiration time; name the attribute ItemExpiration."
+                },
+                {
+                    "id": 2,
+                    "value": "Each day, create a new table to hold session data; delete the previous day's table."
+                },
+                {
+                    "id": 3,
+                    "value": "Add an attribute with the expiration time; enable the Time To Live feature based on that attribute."
+                },
+                {
+                    "id": 4,
+                    "value": "Write a script that deletes old records; schedule the scripts as a cron job on an Amazon EC2 instance"
+                }
+            ],
+            "question1": "Your company uses DynamoDB table to store caches session information for a web application in an AWS Cloud.",
+            "question2": "As a Developer Associate which of the following will you use to automate a way to delete old items from the table?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Increase the memory available to Lambda function"
+                },
+                {
+                    "id": 2,
+                    "value": "Change runtime of Lambda function"
+                },
+                {
+                    "id": 3,
+                    "value": "Decrease Lambda function timeout"
+                },
+                {
+                    "id": 4,
+                    "value": "Increase Lambda function timeout"
+                }
+            ],
+            "question1": "A company \"decodeskills\" uses Kinesis Data Firehose which invokes AWS Lambda functions to process heavy big data analytics workloads. The developers noticed that Lambda functions are not giving good performance.",
+            "question2": "As a Developer Associate what would you suggest to the developers to enhance the performance of lambda functions without any code changes?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Transform"
+                },
+                {
+                    "id": 2,
+                    "value": "Mappings"
+                },
+                {
+                    "id": 3,
+                    "value": "Resources"
+                },
+                {
+                    "id": 4,
+                    "value": "Conditions"
+                }
+            ],
+            "question1": "Which of the following sections in a Serverless Application Model (SAM) Template are mandatory? (Select two)"
+        },
+        "answers": [
+            1,
+            3
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS CodeStar"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS CodeCommit"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS CodePipeline"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS CodeBuild"
+                }
+            ],
+            "question1": "A company �decodeskills� needs to implement an AWS source control service which ensures that revision control synchronizes multiple distributed repositories by exchanging change sets peer-to-peer and users should be able to work even when not connected to a same network.",
+            "question2": "As a Developer Associate which of the following AWS service would you suggest to use?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "EBS volumes are Region locked"
+                },
+                {
+                    "id": 2,
+                    "value": "You do not have the required IAM permissions"
+                },
+                {
+                    "id": 3,
+                    "value": "EBS volumes are Availability Zone locked"
+                },
+                {
+                    "id": 4,
+                    "value": "EBS volume is encrypted using KMS"
+                }
+            ],
+            "question1": "Your manager asked you to attach an EBS volume present in us-east-1a to an instance running in us-east-1b, but you couldn�t find a way for it.",
+            "question2": "What could be the reason for this?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable EC2 detailed monitoring"
+                },
+                {
+                    "id": 2,
+                    "value": "Simply get it from the CloudWatch Metrics"
+                },
+                {
+                    "id": 3,
+                    "value": "Open a support ticket with AWS"
+                },
+                {
+                    "id": 4,
+                    "value": "Create a high-resolution custom metric and push the data using a script triggered every 10 seconds"
+                }
+            ],
+            "question1": "A telecommunications company that provides internet service for mobile device users maintains over 100 c4.large instances in the us-east-1 region. The EC2 instances run complex algorithms. The manager would like to track CPU utilization of the EC2 instances as frequently as every 10 seconds.",
+            "question2": "Which of the following represents the BEST solution for the given use-case?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Deploy using Immutable"
+                },
+                {
+                    "id": 2,
+                    "value": "Deploy using All at once"
+                },
+                {
+                    "id": 3,
+                    "value": "Deploy using Rolling"
+                },
+                {
+                    "id": 4,
+                    "value": "Deploy using Rolling with additional batch"
+                }
+            ],
+            "question1": "An e-commerce company uses AWS Elastic Beanstalk to manage its infrastructure. The Manager wants the developer to deploy new version of the application which requires high availability and has high traffic flow. In new deployment the availability and performance should not be affected.",
+            "question2": "Which of the deployment policy is the most cost effective and optimal way to achieve this?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Amazon Cognito identity pool to associate unauthenticated users with an IAM role that has limited access to resources"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Amazon Cognito user pool to associate unauthenticated users with an IAM role that has limited access to resources"
+                },
+                {
+                    "id": 3,
+                    "value": "Create an AWS Lambda function to create an IAM user when a user accesses the application."
+                },
+                {
+                    "id": 4,
+                    "value": "Use an identity provider to securely authenticate with the application."
+                }
+            ],
+            "question1": "You are developing a mobile application that will require millions of users to log in using AWS service.",
+            "question2": "What of the following AWS service is the most efficient to grant users access to AWS resources?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS CloudTrail"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS CloudWatch Metrics"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS X-Ray"
+                },
+                {
+                    "id": 4,
+                    "value": "ALB Access Logs"
+                }
+            ],
+            "question1": "Which of the following AWS services can be used to determine the users who are making KMS API calls?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "At 16 TiB"
+                },
+                {
+                    "id": 2,
+                    "value": "At 5.3 TiB"
+                },
+                {
+                    "id": 3,
+                    "value": "At 2.6 TiB"
+                },
+                {
+                    "id": 4,
+                    "value": "At 4 TiB"
+                }
+            ],
+            "question1": "When does an environment using General purpose SSD volume hits the max IOPS?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon DynamoDB Accelerator (DAX)"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon CloudFront"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon EMR"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon Kinesis"
+                }
+            ],
+            "question1": "You are working on an application which uses NoSQL database in AWS Cloud and Auto Scaling is used to scale the application. Your application is getting a lot of repeated DynamoDB read requests.",
+            "question2": "What will you use to scale DynamoDB tier to cache repeated read requests?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Amazon CloudFront with AWS [email protected]"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Amazon API Gateway and AWS Lambda to control access to an S3 bucket"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a dedicated Amazon CloudFront Distribution for each customer"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Amazon CloudFront with signed URLs for Amazon S3"
+                }
+            ],
+            "question1": "Your company needs to distribute updates to its customers around the world.",
+            "question2": "Which of the following AWS service will allow easy and secure control of the access to the downloads at the lowest cost?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "By default, CloudTrail tracks only bucket-level actions. To track object-level actions, you need to enable Amazon S3 data events"
+                },
+                {
+                    "id": 2,
+                    "value": "Member accounts do not have access to organization trail, neither do they have access to the Amazon S3 bucket that logs the files"
+                },
+                {
+                    "id": 3,
+                    "value": "There is nothing called Organization Trail. The master account can, however, enable CloudTrail logging, to keep track of all activities across AWS accounts"
+                },
+                {
+                    "id": 4,
+                    "value": "By default, CloudTrail event log files are not encrypted"
+                },
+                {
+                    "id": 5,
+                    "value": "Member accounts will be able to see the Organization trail, but cannot modify or delete it"
+                }
+            ],
+            "question1": "A multi-national enterprise uses AWS Organizations to manage its users across different divisions. Even though CloudTrail is enabled on the member accounts, managers have noticed that access issues to CloudTrail logs across different divisions and AWS Regions is becoming a bottleneck in troubleshooting issues. They have decided to use the organization trail to keep things simple.",
+            "question2": "What are the important points to remember when configuring an organization trail? (Select two)"
+        },
+        "answers": [
+            1,
+            5
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CodeDeploy"
+                },
+                {
+                    "id": 2,
+                    "value": "Serverless Application Model"
+                },
+                {
+                    "id": 3,
+                    "value": "Elastic Beanstalk"
+                },
+                {
+                    "id": 4,
+                    "value": "CloudFormation"
+                }
+            ],
+            "question1": "The manager at an IT company has asked developer to create an e-commerce application and deploy it to EC2 instances. The developer is working on another project also and therefore just want to write application code without server configuration, provisioning and deployment.",
+            "question2": "Which AWS service should the developer use to make his task simpler?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 30
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Migrate your application to AWS Elastic BeanStalk"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable detailed monitoring for EC2 to fetch memory usage data and create a CloudWatch Alarm based on it"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a custom metric in CloudWatch, then send data from instances using PutMetricData and create an alarm in CloudWatch based on this matrix"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS X-Ray"
+                }
+            ],
+            "question1": "The manager at your company wants you to display and scale the instances based on the �average Memory usage� matrix for all AWS EC2 instances.",
+            "question2": "Which of the following methods will allow auto-scaling group to scale based in this matrix?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 31
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable X-Ray sampling"
+                },
+                {
+                    "id": 2,
+                    "value": "Custom configuration for the X-Ray agents"
+                },
+                {
+                    "id": 3,
+                    "value": "Implement a network sampling rule"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Filter Expressions in the X-Ray console"
+                }
+            ],
+            "question1": "An IT company has its serverless stack integrated with AWS X-Ray. The developer at the company has noticed a high volume of data going into X-Ray and the AWS monthly usage charges have skyrocketed as a result. The developer has requested changes to mitigate the issue.",
+            "question2": "As a Developer Associate, which of the following solutions would you recommend to obtain tracing trends while reducing costs with minimal disruption?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 32
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon Cognito user pools"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS IAM"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon Cognito Sync"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Mobile Hub user data storage"
+                }
+            ],
+            "question1": "You are developing a mobile application which allows new millions of users to create accounts using their email addresses and store their details.",
+            "question2": "Which of the following AWS services should be used to achieve the design goals?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 33
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use multi-part upload"
+                },
+                {
+                    "id": 2,
+                    "value": "S3 has storage limit of 5GB"
+                },
+                {
+                    "id": 3,
+                    "value": "Request for service limit increase"
+                },
+                {
+                    "id": 4,
+                    "value": "You do not have enough IAM permissions to upload file"
+                }
+            ],
+            "question1": "You are working on your personal application deployed on AWS Cloud which used AWS S3 for storage of data. When you tried to upload a file of size 200GB the applications crashed and upon checking the issue you find below error:",
+            "question2": "<Error>",
+            "question3": "<Code>EntityTooLarge</Code>",
+            "question4": "<Message>Your proposed upload exceeds the maximum allowed size</Message>",
+            "question5": "<ProposedSize>200374138340</ProposedSize>",
+            "question6": "...",
+            "question7": "<MaxSizeAllowed>5368709120</MaxSizeAllowed>",
+            "question8": "</Error>",
+            "question9": "What should you do to resolve this error?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 34
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS CodeBuild"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS CloudFormation"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Elastic Beanstalk"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon S3"
+                }
+            ],
+            "question1": "You developed a web application and want it to be deployed on an Apache server on AWS cloud quickly without managing the underlying infrastructure.",
+            "question2": "What of the following AWS Service can be used to deploy the application?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 35
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Elastic Beanstalk"
+                },
+                {
+                    "id": 2,
+                    "value": "CodeBuild"
+                },
+                {
+                    "id": 3,
+                    "value": "Codecommit"
+                },
+                {
+                    "id": 4,
+                    "value": "CodeDeploy"
+                }
+            ],
+            "question1": "Your company decodeskills follows Comtinuous Integration & Continuous Delivery, and as a Developer Associate you need to automate deployment of application to on-premise virtual servers and on AWS EC2 instances as well.",
+            "question2": "Which of the following AWS service is best to meet the requirements?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 36
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Lambda Authorizer"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Cognito User Pool for sticky sessions"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable stickiness at Application Load Balancer"
+                },
+                {
+                    "id": 4,
+                    "value": "Forward client�s Ip to EC2 instances"
+                }
+            ],
+            "question1": "You have recently shifted your e-commerce startup website on AWS cloud and the application is hosted in multiple EC2 instances to increase availability and scalability. Request to the AWS EC2 instances are routed using AWS application load balancer. In testing-phase the team found that the website asks for re-authentication again whenever they open new page in website, there was no such issue on the local dev-environment.",
+            "question2": "As a Developer Associate what would you suggest the developers to mitigate this issue?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 37
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Add logging statements to the Lambda functions and use Amazon CloudWatch to view the logs."
+                },
+                {
+                    "id": 2,
+                    "value": "Use AWS X-Ray, then examine the segments and errors"
+                },
+                {
+                    "id": 3,
+                    "value": "Run Amazon Inspector agents and then analyze performance"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS Cloud Trail and then examine the logs"
+                }
+            ],
+            "question1": "You developed production-distributed applications written as AWS Lambda functions using python language. These distributed Lambda applications invoke other components that make up the applications.",
+            "question2": "As a Developer Associate how should you identify and troubleshoot the root cause of the performance issues in production environment?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 38
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Specify a larger compute capacity when calling the Lambda function."
+                },
+                {
+                    "id": 2,
+                    "value": "Increase the allocated memory for the Lambda function"
+                },
+                {
+                    "id": 3,
+                    "value": "Increase the maximum execution time."
+                },
+                {
+                    "id": 4,
+                    "value": "Run on a larger instance size with more compute capacity."
+                }
+            ],
+            "question1": "You have created a Lambda function but upon executing it is taking longer to complete than expected. After some debugging, you discovered that increasing compute capacity would improve its performance. How can the you increase the Lambda compute resources?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 39
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS STS decode-authorization-message"
+                },
+                {
+                    "id": 2,
+                    "value": "Cannot be decoded"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS IAM decode-authorization-message"
+                },
+                {
+                    "id": 4,
+                    "value": "Use KMS decode-authorization-message"
+                }
+            ],
+            "question1": "An AWS CLI fails with the following exception:",
+            "question2": "�You are not authorized to perform this operation. Encoded authorization failure message: hbjhafjkn4785y98r4yu5g877298fbsjhbf23yi7y982u40122wbr3iuuy523u49021uebkjbwjyhkvsdjb3RHDR�",
+            "question3": "Which of the following actions would work for decoding the message?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 40
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Scan and call DeleteItem"
+                },
+                {
+                    "id": 2,
+                    "value": "Delete then re-create the table"
+                },
+                {
+                    "id": 3,
+                    "value": "Call PurgeTable API"
+                },
+                {
+                    "id": 4,
+                    "value": "Scan and call BatchDeleteItem"
+                }
+            ],
+            "question1": "A huge organization �decodeskills� uses AWS DynamoDB to store information about atheir employees� lunch and dinner meals and allow the information to be searchable from their home page. There is a daily requirement that all 1 million records in the table should be deleted then re-loaded at 1:00 AM each night.",
+            "question2": "Which option is an efficient way to delete with minimal costs?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 41
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "!Ref"
+                },
+                {
+                    "id": 2,
+                    "value": "!Join"
+                },
+                {
+                    "id": 3,
+                    "value": "!ImportValue"
+                },
+                {
+                    "id": 4,
+                    "value": "!Sub"
+                }
+            ],
+            "question1": "You are newly assigned to a cloud team which uses CloudFormation templated for provisioning of serverless architecture. To make the provisioning more dynamic your lead asked to use parameters so that values can be changed later.",
+            "question2": "Which intrinsic function can be used to refer the parameters used in the template?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 42
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Make database client initialization outside the function handler"
+                },
+                {
+                    "id": 2,
+                    "value": "Use environment variables"
+                },
+                {
+                    "id": 3,
+                    "value": "Increase RAM of the function"
+                },
+                {
+                    "id": 4,
+                    "value": "Reduce RAM of the function"
+                }
+            ],
+            "question1": "Your work at an IT company which implements AWS security Orchestration and Automation for its clients. AWS lambda functions written in python are used to handle violations and security misconfigurations. The team lead reviewed the code written by one of the Developer and suggested him to make reuse of execution context to enhance AWS Lambda performance.",
+            "question2": "As a Developer Associate which of the following will you suggest to the developer?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 43
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CodeDeploy"
+                },
+                {
+                    "id": 2,
+                    "value": "CodeCommit"
+                },
+                {
+                    "id": 3,
+                    "value": "CodePipeline"
+                },
+                {
+                    "id": 4,
+                    "value": "CodeBuild"
+                }
+            ],
+            "question1": "Your company decodeskills is shifting to AWS cloud and for applications�s fast deployment cycle for which as a Developer associate you suggested to implement version control system with incremental changes. It should also support Git repositories as well.",
+            "question2": "Which of the following AWS service will meet these requirements?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 44
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable KMS encryption"
+                },
+                {
+                    "id": 2,
+                    "value": "Use AWS Lambda to encrypt the pushed code"
+                },
+                {
+                    "id": 3,
+                    "value": "Repositories are automatically encrypted at rest"
+                },
+                {
+                    "id": 4,
+                    "value": "Use git command line to encrypt the code client side"
+                }
+            ],
+            "question1": "As a lead of your project, you noticed that developers in your team make many git push commands within their development machines, but no encryption is used for this activity. This leads to low compliance and security standards.",
+            "question2": "As a developer associate, what recommendations would you make to ensure that source code is encrypted in transit as well as at rest?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 45
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Lambda will receive each record in the exact order it was placed into the stream in FIFO order"
+                },
+                {
+                    "id": 2,
+                    "value": "The Developer can select FIFO, LIFO, random, or request specific record using getRecords API"
+                },
+                {
+                    "id": 3,
+                    "value": "Lambda will receive each record in the reverse order it was placed into the stream in LIFO order"
+                },
+                {
+                    "id": 4,
+                    "value": "Lambda will receive each record in the exact order it was placed into the shard in FIFO order, but there is no guarantee of order across shards"
+                }
+            ],
+            "question1": "A Developer has setup an Amazon Kinesis Stream with 4 shards to ingest a maximum of 2500 records per second. A Lambda function has been configured to process these records.",
+            "question2": "In which order will these records be processed?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 46
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Pass the access key id and secret access key as parameters for each AWS CLI command."
+                },
+                {
+                    "id": 2,
+                    "value": "Sign the AWS CLI command using the signature version 4 process."
+                },
+                {
+                    "id": 3,
+                    "value": "Run the aws configure AWS CLI command and specify the access key id and secret access key."
+                },
+                {
+                    "id": 4,
+                    "value": "Specify a role for the EC2 instance with the necessary privileges."
+                }
+            ],
+            "question1": "You are working on an application running on an EC2 instance which needs to manage the AWS infrastructure.",
+            "question2": "How can you configure the EC2 instance to make AWS API calls securely?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 47
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "You configured an AWS WAF web access control list (web ACL) and there was an error executing the web ACL rules."
+                },
+                {
+                    "id": 2,
+                    "value": "The target is a Lambda function and the request body exceeds 1 MB."
+                },
+                {
+                    "id": 3,
+                    "value": "The target is a Lambda function and the response body exceeds 1 MB."
+                },
+                {
+                    "id": 4,
+                    "value": "The target groups for the load balancer have no registered targets."
+                }
+            ],
+            "question1": "You made an application and configured ALB for fleet of EC2 instances. But you are getting Error HTTP 413 when you tested the application.",
+            "question2": "Which of the following could be the reason for it?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 48
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "First encrypt with KMS and then store in SSM Parameter store"
+                },
+                {
+                    "id": 2,
+                    "value": "Store the secret as �SecureString� in SSM Parameter Store"
+                },
+                {
+                    "id": 3,
+                    "value": "Audit using CloudTrail"
+                },
+                {
+                    "id": 4,
+                    "value": "Audit using SSM Audit Trail"
+                },
+                {
+                    "id": 5,
+                    "value": "Store the secret as PlainText in SSM Parameter Store"
+                }
+            ],
+            "question1": "Your company �decodeskills� uses a fleet of EBS-optimized EC2 instances to handle the load of an application. For enhancement of security, your team lead wants encryption of any secret strings used in the application.",
+            "question2": "As a developer associate, you have to recommend a solution that requires decryption events to be audited and API calls to be simple. How will you achieve this? (select two)"
+        },
+        "answers": [
+            2,
+            3
+        ],
+        "id": 49
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Implement exponential backoffs in the application."
+                },
+                {
+                    "id": 2,
+                    "value": "Load balance the reads to the table using an Application Load Balancer."
+                },
+                {
+                    "id": 3,
+                    "value": "Create a global secondary index with a minimum set of projected attributes."
+                },
+                {
+                    "id": 4,
+                    "value": "Batch all the writes and perform the write operations when no or few reads are being performed."
+                }
+            ],
+            "question1": "You developed an application which uses DynamoDB but to the table are consuming a large amount of read capacity as table has significant number of large attributes. You do not need all those attributes.",
+            "question2": "How can DynamoDB costs be minimized while maximizing application performance?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 50
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Cannot be done"
+                },
+                {
+                    "id": 2,
+                    "value": "Run aws configure on the EC2 instance"
+                },
+                {
+                    "id": 3,
+                    "value": "EC2 User Data"
+                },
+                {
+                    "id": 4,
+                    "value": "Create an IAM Role for EC2 instances"
+                }
+            ],
+            "question1": "An application is running on AWS EC2 instances which uses Amazon Relational Database Service (RDS) for storing data. A new amendment in the application has been requested for which data has to be retrieved from Amazon Simple Storage Service (S3).",
+            "question2": "Which of the following options will provide EC2 instances with the right permissions to upload files to Amazon S3 and generate S3 Signed URL?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 51
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "SSM parameter store"
+                },
+                {
+                    "id": 2,
+                    "value": "IAM Instance Role"
+                },
+                {
+                    "id": 3,
+                    "value": "Environment variables"
+                },
+                {
+                    "id": 4,
+                    "value": "Hardcode the credentials in the application code"
+                }
+            ],
+            "question1": "A junior developer in your team recently created an application that uses hardcoded IAM access key and secret access key to gain access to AWS services. Application makes use of GET and POST requests. As a developer associate, you recommend him to leverage a more secure setup, which should use temporary credentials if possible.",
+            "question2": "Which of the following options should he use?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 52
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create an IAM user with Administrator access and configure AWS credentials for this user on the given EC2 instance"
+                },
+                {
+                    "id": 2,
+                    "value": "Run application code with AWS account root user credentials to ensure full access to all AWS services"
+                },
+                {
+                    "id": 3,
+                    "value": "Not possible"
+                },
+                {
+                    "id": 4,
+                    "value": "Create an IAM role with an �AmazonDynamoDBReadOnlyAccess� policy and apply it to the EC2 instance profile"
+                }
+            ],
+            "question1": "You have created an application running on Amazon EC2 instances that needs read-only access to a table in Amazon DynamoDB.",
+            "question2": "As a Developer Associate, what is the best-practice solution you would recommend accomplishing this task?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 53
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Rolling deployment policy"
+                },
+                {
+                    "id": 2,
+                    "value": "Rolling with additional batches deployment policy"
+                },
+                {
+                    "id": 3,
+                    "value": "Immutable deployment policy"
+                },
+                {
+                    "id": 4,
+                    "value": "All at Once deployment policy"
+                }
+            ],
+            "question1": "A developer of company decodeskills is asked to create an application which can be deployed across a fleet of EC2 instances using Elastic Beanstalk. The company wants that the old application should be accessible from some instances and other instances should serve requests to new application when deployment is executed.",
+            "question2": "Which deployment policy can be used to meet above requirement without additional costs?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 54
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Within the same Region an auto Scaling group cannot have more than 1 EC2 instances in 1 or more Availability Zones"
+                },
+                {
+                    "id": 2,
+                    "value": "Within the same Region an auto Scaling group can have more than 1 EC2 instances in 1 or more Availability Zones"
+                },
+                {
+                    "id": 3,
+                    "value": "Auto Scaling groups can span across multiple Regions"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS EC2 instances are launched in subnets if Auto Scaling group is in a VPC"
+                }
+            ],
+            "question1": "Which of the following scenarios are correct about EC2 Auto Scaling? (Select two)"
+        },
+        "answers": [
+            2,
+            4
+        ],
+        "id": 55
+    }
+]

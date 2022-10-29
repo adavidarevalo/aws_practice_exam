@@ -7,7 +7,7 @@ type nav = "Home" | "Documentation" | "Exam"
 
 export default function Header() {
     const [navSelected, setNavSelected] = useState<nav>("Home")
-    const menuItems: nav[] = ["Home", "Documentation", "Exam"]
+    const menuItems: nav[] = ["Home", "Exam"]
 
     useEffect(() => {
         const queryString = window.location.pathname;
@@ -32,7 +32,7 @@ export default function Header() {
     }
 
     const {
-        questionLists,
+        examsList,
         state,
         setState
     } = useContext(QuestionContext)
@@ -59,22 +59,22 @@ export default function Header() {
                     {item}
                 </Menu.Item>
             ))}
-            {(questionLists !== null) && (
+            {(examsList.length > 0) && (
                 <Menu.Item position='right'>
                     <Dropdown
                         button
                         floating
                         disabled={state.isFinishExam}
                         onChange={handleChangeQuestion}
-                        options={questionLists.questions.map(option => {
+                        options={examsList.map((question) => {
                             return ({
-                                text: <p>Pregunta {option.id} {state.activeFlags.includes(Number(option.id)) ? <Icon name='flag' color="yellow" /> : <Label>Omitido</Label>}</p>,
-                                value: option.id,
-                                key: option.id
+                                text: <p>Pregunta {question.id} {state.activeFlags.includes(Number(question.id)) ? <Icon name='flag' color="yellow" /> : <Label>Omitido</Label>}</p>,
+                                value: question.id,
+                                key: question.id
                             })
                         })}
                         direction="left"
-                        text={`Preguntas (${questionLists.questions.length})`}
+                        text={`Preguntas (${examsList.length})`}
                     />
                 </Menu.Item>
             )}

@@ -10,12 +10,12 @@ interface IProps {
 
 export default function AccordionLists({ answerValidated }: IProps) {
     const {
-        questionLists,
+        examsList,
     } = useContext(QuestionContext)
 
     return (
         <Accordion fluid styled>
-            {questionLists?.questions.map(question => (
+            {examsList?.questions.map(question => (
                 <AccordionItem
                     question={question}
                     answerValidated={answerValidated}
