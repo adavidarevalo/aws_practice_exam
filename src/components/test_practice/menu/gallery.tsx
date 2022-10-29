@@ -9,11 +9,6 @@ import { Accordion, Icon } from 'semantic-ui-react'
 import _ from 'lodash'
 
 export default function Gallery() {
-    const {
-        state,
-        setState
-    } = useContext(QuestionContext)
-
     const [activeIndex, setActiveIndex] = useState(NaN)
 
     const [favoritesExams, setFavoritesExams] = useState<{
@@ -60,7 +55,7 @@ export default function Gallery() {
                                             exam={{
                                                 type: exam.type,
                                                 image: exam.image,
-                                                id: examContainer._id,
+                                                id: examContainer.id,
                                             }}
                                             favoritesExams={favoritesExams}
                                             getFavorites={getFavorites}

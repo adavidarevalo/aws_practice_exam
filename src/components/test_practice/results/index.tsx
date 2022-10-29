@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useMemo, useState } from 'react'
 import { useParams } from "react-router-dom";
 import { QuestionContext } from '../../context/question'
 import AccordionLists from './accordion'
@@ -8,51 +8,57 @@ import MainApi, { IResultValidateExam, TFormType } from "./../../utils/axios"
 import Loading from '../../loading'
 import AccordionOptions from './accordion_options'
 import style from './result.module.sass'
+import _ from 'lodash';
 
 export default function Result() {
     const {
-        state
+        state,
+        examsList
     } = useContext(QuestionContext)
 
-    const [answerValidated, setAnswerValidated] = useState<IResultValidateExam | null>(null)
-    const { formType, id } = useParams();
+    const { answers } = state
 
-    const validateExam = async () => {
-        try {
-            const result = await MainApi.validateExam({
-                "formId": id as string,
-                "type": formType as TFormType,
-                "answers": state.answers
-            })
-            setAnswerValidated(result)
-        } catch (error) {
-            //TODO: Add modal fot the error
+    const score = useMemo(() => {
+        const questionScoreValue = 1000 / examsList.length
+        let score = 0
+        let passExam = false
+        examsList.forEach(question => {
+            const element = answers.filter(({ questionId }) => questionId === question.id.toString())
+            if (element.length === 0) return
+
+            if (_.difference(question.answers.map(x => x.toString), element[0].solutionId as any[])) {
+                score += questionScoreValue
+            }
+        })
+
+        score > 720 && {
+            passExam: true
         }
-    }
 
-    useEffect(() => {
-        validateExam()
-    }, [])
+        return {
+            passExam,
+            score
+        }
+    }, [
+        examsList
+    ])
 
     return (
         <>
-            {!!answerValidated === false && <Loading />}
-            {!!answerValidated && (
-                <div
-                    className={style.resultPage}
-                >
-                    {answerValidated.passExam && <ConfettiParty />}
-                    <h1>{
-                        answerValidated.passExam
-                            ? "Paso el Examen 🎉🎉🎉"
-                            : "No paso, intentalo nuevamente 😥😥😥"
-                    }</h1>
-                    <h3>Puntuación: {answerValidated.score} / 1000</h3>
-                    <Chart answerValidated={answerValidated} />
-                    <AccordionOptions answerValidated={answerValidated} />
-                    <AccordionLists answerValidated={answerValidated.answerValidated} />
-                </div>
-            )}
+            <div
+                className={style.resultPage}
+            >
+                {score.passExam && <ConfettiParty />}
+                <h1>{
+                    score.passExam
+                        ? "Paso el Examen 🎉🎉🎉"
+                        : "No paso, intentalo nuevamente 😥😥😥"
+                }</h1>
+                <h3>Puntuación: {score.score.toFixed(2)} / 1000</h3>
+                {/*        <Chart answerValidated={answerValidated} />*/}
+                {/* <AccordionOptions answerValidated={answerValidated} /> */}
+                {/* <AccordionLists answerValidated={answerValidated.answerValidated} /> */}
+            </div>
         </>
     )
 }
