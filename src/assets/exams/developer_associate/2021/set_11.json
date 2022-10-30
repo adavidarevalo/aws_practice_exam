@@ -1,0 +1,1257 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Cognito Authentication via Cognito Identity Pools for ALB"
+                },
+                {
+                    "id": 2,
+                    "value": "Cognito Authentication via Cognito User Pools for CloudFront distribution"
+                },
+                {
+                    "id": 3,
+                    "value": "Cognito Authentication via Cognito User Pools for ALB"
+                },
+                {
+                    "id": 4,
+                    "value": "Cognito Authentication via Cognito Identity Pools for CloudFront distribution"
+                }
+            ],
+            "question1": "A video sharing mobile application uses AWS ALB for fleet of EC2 servers and CloudFront for traffic. The manager wants to separate the user authentication process from the servers doing business logic for less load on them.",
+            "question2": "Which of the following can be used to address this with minimal development effort?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "!Ref::FindInMap [ MapName, TopLevelKey, SecondLevelKey]"
+                },
+                {
+                    "id": 2,
+                    "value": "!FindInMap [ MapName, TopLevelKey, SecondLevelKey ]"
+                },
+                {
+                    "id": 3,
+                    "value": "!FindInMap [ MapName, TopLevelKey ]"
+                },
+                {
+                    "id": 4,
+                    "value": "!Ref::FindInMap [ MapName, TopLevelKey]"
+                }
+            ],
+            "question1": "Which of the following is the correct syntax to invoke the!FindInMap function used in AWS CloudFormation template?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Pascal"
+                },
+                {
+                    "id": 2,
+                    "value": "Java"
+                },
+                {
+                    "id": 3,
+                    "value": "PHP"
+                },
+                {
+                    "id": 4,
+                    "value": "Perl"
+                },
+                {
+                    "id": 5,
+                    "value": "SQL"
+                }
+            ],
+            "question1": "Which of the following programming languages have officially supported AWS SDK? (Select two.)"
+        },
+        "answers": [
+            2,
+            3
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS ECR"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS EBS"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS S3"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS EFS"
+                }
+            ],
+            "question1": "Your company �decodeskills� has created AWS CloudFormation templates that take input parameters to name resources based on client IDs.",
+            "question2": "Which would be the best option to save your templates on the cloud?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Retry with an exponential backoff"
+                },
+                {
+                    "id": 2,
+                    "value": "Increase the number of shards"
+                },
+                {
+                    "id": 3,
+                    "value": "Do not use Kinesis Producer Library"
+                },
+                {
+                    "id": 4,
+                    "value": "Use SNS + SQS"
+                },
+                {
+                    "id": 5,
+                    "value": "Use AWS SQS inplace of Kinesis Data Streams"
+                }
+            ],
+            "question1": "You are a developer in a game streaming company and live scores of users are streamed and processed using Kinesis Producer Library. The live scores are then sent to an Application which uses Kinesis Data stream. You saw an exception saying ProvisionedThroughputExceeded and data processing in the application stopped.",
+            "question2": "As a developer associate which of the following action will you take to mitigate this issue? (Select two)"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "appspec.yml"
+                },
+                {
+                    "id": 2,
+                    "value": "buildspec.yml"
+                },
+                {
+                    "id": 3,
+                    "value": "appspec.yaml"
+                },
+                {
+                    "id": 4,
+                    "value": "cron.yml"
+                }
+            ],
+            "question1": "You are preparing to deploy a Docker container to Amazon ECS using CodeDeploy. You have defined the deployment actions in a file. What should be the name of the file?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon Organizations Service Control Policies"
+                },
+                {
+                    "id": 2,
+                    "value": "Access control list"
+                },
+                {
+                    "id": 3,
+                    "value": "Permissions boundary"
+                },
+                {
+                    "id": 4,
+                    "value": "Trust policy"
+                }
+            ],
+            "question1": "Which of the following is the only resource-based policy that the AWS IAM service supports?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a dedicated Amazon CloudFront Distribution for each customer"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Amazon CloudFront with signed URLs for Amazon S3"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Amazon CloudFront with AWS [email protected]"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Amazon API Gateway and AWS Lambda to control access to an S3 bucket"
+                }
+            ],
+            "question1": "Your company needs to distribute updates to its customers around the world.",
+            "question2": "Which of the following AWS service will allow easy and secure control of the access to the downloads at the lowest cost?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS::AccountId"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS::Region"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS::URLSuffix"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS::StackName"
+                }
+            ],
+            "question1": "Which CloudFormation Pseudo parameter can be used by AWS Certified developers to get the account number as an output from the CloudFormation script executed in an AWS account?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Define an appspec.yml file in the root directory"
+                },
+                {
+                    "id": 2,
+                    "value": "Define an appspec.yml file in the codebuild/ directory"
+                },
+                {
+                    "id": 3,
+                    "value": "Define a buildspec.yml file in the codebuild/ directory"
+                },
+                {
+                    "id": 4,
+                    "value": "Define a buildspec.yml file in the root directory"
+                }
+            ],
+            "question1": "Your company decodeskills is using AWS CodeCommit and AWS CodeDeploy for code deployment on EC2 instances. The developer read the functional specification document and found that there is a requirement which specifies that the deployment process should verify the deployment success and should be able to change permissions for the deployed files as well.",
+            "question2": "As a Developer Associate which of the following action would you suggest to the developer?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Change the Elastic Beanstalk environment variables"
+                },
+                {
+                    "id": 2,
+                    "value": "Make a selective delete in Elastic Beanstalk"
+                },
+                {
+                    "id": 3,
+                    "value": "Convert the Elastic Beanstalk environment to a worker environment"
+                },
+                {
+                    "id": 4,
+                    "value": "Make a snapshot of the database before it gets deleted"
+                }
+            ],
+            "question1": "How can you make sure the RDS database created inside an environment in Elastic Beanstalk can be explored even after the environment is destroyed?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CloudWatch Events"
+                },
+                {
+                    "id": 2,
+                    "value": "CloudTrail"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS X-Ray"
+                },
+                {
+                    "id": 4,
+                    "value": "VPC Flow Logs"
+                }
+            ],
+            "question1": "Which service do you recommend for getting cross-account tracing and visualization?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Lambda with CloudWatch Events"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon RDS with PostrgreSQL"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon EC2 with PostgreSQL"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Elastic Beanstalk"
+                }
+            ],
+            "question1": "Recently you developed an application on-premises that uses Linux servers and a relational database using PostgreSQL.",
+            "question2": "Which combination of services would you prefer to use that will take care of capacity provisioning, load balancing, and auto-scaling while migrating the application to AWS? (Select TWO.)"
+        },
+        "answers": [
+            2,
+            4
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Messages will be delivered exactly once and messages will be delivered in FIFO order"
+                },
+                {
+                    "id": 2,
+                    "value": "Messages will be delivered one or more times and messages will be delivered in FIFO order"
+                },
+                {
+                    "id": 3,
+                    "value": "Messages will be delivered exactly once and message delivery order is indeterminate"
+                },
+                {
+                    "id": 4,
+                    "value": "Messages will be delivered one or more times and message delivery order is indeterminate"
+                }
+            ],
+            "question1": "Which of the following statements is true about Amazon SQS ?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Stop the Spot Instance"
+                },
+                {
+                    "id": 2,
+                    "value": "Hibernate the Spot Instance"
+                },
+                {
+                    "id": 3,
+                    "value": "Terminate the Spot Instance"
+                },
+                {
+                    "id": 4,
+                    "value": "Reboot the Spot Instance"
+                }
+            ],
+            "question1": "You have recently joined the company and given a research task to find out what does an AWS EC2 do when it interrupts a Spot Instance.",
+            "question2": "Which of the following are valid options for interruption behavior? (Select three)"
+        },
+        "answers": [
+            1,
+            2,
+            3
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CodeStar"
+                },
+                {
+                    "id": 2,
+                    "value": "CodeCommit"
+                },
+                {
+                    "id": 3,
+                    "value": "CodePipeline"
+                },
+                {
+                    "id": 4,
+                    "value": "CodeDeploy"
+                }
+            ],
+            "question1": "Which service do you recommend to get a comprehensive view of all your projects in one place?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Conditional writes"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Scan operation"
+                },
+                {
+                    "id": 3,
+                    "value": "Concurrent Writes"
+                },
+                {
+                    "id": 4,
+                    "value": "Batch writes"
+                }
+            ],
+            "question1": "Developers at your company developed an application which used NoSQL DynamoDB for its database and passed it to the testing team for quality assurance, but it was found in testing phase that some write operations are overwriting existing data.",
+            "question2": "As a Developer Associate which of the following DynamoDB write option should you suggest to the developers inorder to resolve this issue?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "You configured an AWS WAF web access control list and there was an error executing the web ACL rules."
+                },
+                {
+                    "id": 2,
+                    "value": "The target groups for the load balancer have no registered targets."
+                },
+                {
+                    "id": 3,
+                    "value": "The target is a Lambda function and the request body exceeds 1 MB."
+                },
+                {
+                    "id": 4,
+                    "value": "The target is a Lambda function and the response body exceeds 1 MB."
+                }
+            ],
+            "question1": "You made an application and configured ALB for fleet of EC2 instances. But you are getting Error HTTP 413 when you tested the application.",
+            "question2": "Which of the following could be the reason for it?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Docker single-container platform"
+                },
+                {
+                    "id": 2,
+                    "value": "Third-party platform"
+                },
+                {
+                    "id": 3,
+                    "value": "Custom platform"
+                },
+                {
+                    "id": 4,
+                    "value": "Docker multi-container platform"
+                }
+            ],
+            "question1": "A new developer has recently joined your company which uses CICD principles using AWS CodeCommit, CodeDeploy, CodeBuild for its projects. He created a build spec for new project and executed build from AWS CodeBuild management console, but CodeBuild failed to pull Docker image into build environment.",
+            "question2": "As a Developer Associate what would you say about the possible cause to the developer?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Linear"
+                },
+                {
+                    "id": 2,
+                    "value": "Canary"
+                },
+                {
+                    "id": 3,
+                    "value": "Blue/green"
+                },
+                {
+                    "id": 4,
+                    "value": "In-place"
+                }
+            ],
+            "question1": "You want to complete the code update to Amazon ECS using AWS CodeDeploy as quick as possible. Which of the following deployment types would you use?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "spread"
+                },
+                {
+                    "id": 2,
+                    "value": "binpack"
+                },
+                {
+                    "id": 3,
+                    "value": "random"
+                },
+                {
+                    "id": 4,
+                    "value": "weighted"
+                }
+            ],
+            "question1": "Which task placement strategy should be chosen to MINIMIZE the number of instances that are used in a microservices architecture on Amazon ECS?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Dead Letter Queues (DLQ)"
+                },
+                {
+                    "id": 2,
+                    "value": "FIFO Queues"
+                },
+                {
+                    "id": 3,
+                    "value": "Delay Queues"
+                },
+                {
+                    "id": 4,
+                    "value": "Visibility timeout"
+                }
+            ],
+            "question1": "An IT company is using three-tier architecture which includes SQS queues also. Developers found that the consumers need some additional time for processing of messages.",
+            "question2": "Which of the following will you use in-order postpone the delivery of new messages to the queue for some seconds?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "A new deployment of the last known working version of the application is deployed with a new deployment ID"
+                },
+                {
+                    "id": 2,
+                    "value": "The last known working deployment is automatically restored using the snapshot stored in Amazon S3"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS CodePipeline promotes the most recent working deployment with a SUCCEEDED status to production"
+                },
+                {
+                    "id": 4,
+                    "value": "CodeDeploy switches the Route 53 alias records back to the known good green deployment and terminates the failed blue deployment"
+                }
+            ],
+            "question1": "What occurs if the deployment of the new version fails, provided you have configured automatic rollbacks while deploying a new version of application to Amazon EC2?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "An event-source mapping has to be created on the Lambda side to associate the DynamoDB stream with the Lambda function"
+                },
+                {
+                    "id": 2,
+                    "value": "CloudFormation template has to be updated to map the DynamoDB stream to the Lambda function"
+                },
+                {
+                    "id": 3,
+                    "value": "An event-source mapping has to be created on the DynamoDB side to associate the DynamoDB stream with the Lambda function"
+                },
+                {
+                    "id": 4,
+                    "value": "An alarm has to be created in CloudWatch that sends a notification to Lambda when a new entry is added to the DynamoDB stream"
+                }
+            ],
+            "question1": "As a developer associate, you have been asked by your project lead to set up a Lambda function that will process events from a DynamoDB stream. You have created the Lambda function and enabled a stream. But your project lead says that there is something still missing for this solution to work. What would that be?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a single pod specification. Include both containers in the specification. Mount a persistent volume to both containers"
+                },
+                {
+                    "id": 2,
+                    "value": "Create two task definitions. Make one to include the application container and the other to include the other container. Mount a shared volume between the two tasks"
+                },
+                {
+                    "id": 3,
+                    "value": "Create two pod specifications. Make one to include the application container and the other to include the other container. Link the two pods together"
+                },
+                {
+                    "id": 4,
+                    "value": "Create one task definition. Specify both containers in the definition. Mount a shared volume between those two containers"
+                }
+            ],
+            "question1": "As a developer associate, you are assigned a task to run container workloads on Amazon ECS such that each application container shares data with another container to collect logs and metrics.",
+            "question2": "What should be your approach to meet these requirements?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS X-Ray"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS S3 Analytics"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS IAM Access Analyzer"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Access Advisor on IAM console"
+                }
+            ],
+            "question1": "You work as an AWS Security engineer at your company and check for security of IAM users, IAM roles and S3 buckets.",
+            "question2": "Which of the following features you will use to check if there is any security risk/issue in IAM roles or S3 buckets?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Scan operation using strongly-consistent reads"
+                },
+                {
+                    "id": 2,
+                    "value": "Query operation using strongly-consistent reads"
+                },
+                {
+                    "id": 3,
+                    "value": "Query operation using eventually-consistent reads"
+                },
+                {
+                    "id": 4,
+                    "value": "Scan operation using eventually-consistent reads"
+                }
+            ],
+            "question1": "In your current project you want to find a list of items in Global Secondary Index (GSI) from a DynamoDB table. Which of the following DynamoDB API call can you use in order to consume the LEAST number of read capacity units?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "It is not possible"
+                },
+                {
+                    "id": 2,
+                    "value": "Request for service limit increase"
+                },
+                {
+                    "id": 3,
+                    "value": "Use MultiPart"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS SQS Extended Client"
+                }
+            ],
+            "question1": "Your company want to send messages of about 500KB in size using AWS Simple Queue Service (SQS) in its application.",
+            "question2": "As a Developer Associate how will you make the queue accept larger size messages?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "ALBRequestCountPerTarget"
+                },
+                {
+                    "id": 2,
+                    "value": "ASGAverageNetworkOut"
+                },
+                {
+                    "id": 3,
+                    "value": "ASGAverageCPUUtilization"
+                },
+                {
+                    "id": 4,
+                    "value": "ApproximateNumberOfMessagesVisible"
+                }
+            ],
+            "question1": "Which of the following below metrics is NOT part of Target Tracking Scaling Policy in an AWS EC2 auto scaling group?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Add a 2 second delay to each API call."
+                },
+                {
+                    "id": 2,
+                    "value": "Implement exponential backoffs in the application."
+                },
+                {
+                    "id": 3,
+                    "value": "Move the application to Amazon EC2."
+                },
+                {
+                    "id": 4,
+                    "value": "Use ALB."
+                }
+            ],
+            "question1": "In your company the on-premises application is making repeated calls to store files on Amazon S3 due to which \"LimitExceeded\" errors are being logged.",
+            "question2": "Which of the following should be done to fix this error?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 30
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "us-central-1"
+                },
+                {
+                    "id": 2,
+                    "value": "ap-northeast-1"
+                },
+                {
+                    "id": 3,
+                    "value": "us-east-1"
+                },
+                {
+                    "id": 4,
+                    "value": "us-west-2"
+                }
+            ],
+            "question1": "You are using API Gateway in one of the application developed at your company �decodeskills� Which of the following is chosen as the default region when making an API call with an AWS SDK?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 31
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Hardcode the credentials in the application code"
+                },
+                {
+                    "id": 2,
+                    "value": "Environment variables"
+                },
+                {
+                    "id": 3,
+                    "value": "SSM parameter store"
+                },
+                {
+                    "id": 4,
+                    "value": "IAM Instance Role"
+                }
+            ],
+            "question1": "A developer in your team recently created an application that uses hardcoded IAM access key and secret access key to gain access to AWS services.",
+            "question2": "As a developer associate which of the following options should you recommend him to leverage a more secure setup such that it use temporary credentials if possible?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 32
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "5"
+                },
+                {
+                    "id": 2,
+                    "value": "40"
+                },
+                {
+                    "id": 3,
+                    "value": "20"
+                },
+                {
+                    "id": 4,
+                    "value": "10"
+                }
+            ],
+            "question1": "As a Developer Associate you are supposed to decide the Read Capacity Units (RCU) of the NoSQL DynamoDB database based on the throughput requirements. The new application on which you are working on requires throughput of 5 strong consistent reads of 8KB in size each.",
+            "question2": "How many RCU will you use when configuring DynamoDB table?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 33
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "For PutItem operation use ConsistentRead = false"
+                },
+                {
+                    "id": 2,
+                    "value": "For UpdateItem operation use ConsistentRead = true"
+                },
+                {
+                    "id": 3,
+                    "value": "For GetItem operation use ConsistentRead = true"
+                },
+                {
+                    "id": 4,
+                    "value": "For UpdateItem operation use ConsistentRead = true"
+                }
+            ],
+            "question1": "Developers at your company developed an application which uses NoSQL DynamoDB as database for storing real-time scores of a gaming tournament and scores are fetched to get the leaderboard. Score of different teams is changing in near real-time.",
+            "question2": "As a Developer Associate which of the following will you tell the developers to use so that the latest last score of the team is fetched in the application for leaderboard?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 34
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CodeBuild cannot work with custom Docker images"
+                },
+                {
+                    "id": 2,
+                    "value": "The Docker image is missing some tags"
+                },
+                {
+                    "id": 3,
+                    "value": "Missing IAM permissions for the CodeBuild Service"
+                },
+                {
+                    "id": 4,
+                    "value": "The Docker image is too big"
+                }
+            ],
+            "question1": "Your have finished creating a CodeBuild project in the management console and a build spec has been defined for the project. After the build is run, CodeBuild fails to pull a Docker image into the build environment.",
+            "question2": "What is the most likely cause?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 35
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "You terminated the container instance while it was in STOPPED state, that lead to this synchronization issues"
+                },
+                {
+                    "id": 2,
+                    "value": "A custom software on the container instance could have failed and resulted in the container hanging in an unhealthy state till restarted again"
+                },
+                {
+                    "id": 3,
+                    "value": "The container instance has been terminated with AWS CLI, whereas, for ECS instances, Amazon ECS CLI should be used to avoid any synchronization issues"
+                },
+                {
+                    "id": 4,
+                    "value": "You terminated the container instance while it was in RUNNING state, that lead to this synchronization issues"
+                }
+            ],
+            "question1": "A junior developer working on ECS instances terminated a container instance in Amazon Elastic Container Service (Amazon ECS) as per instructions from the team lead. But the container instance continues to appear as a resource in the ECS cluster.",
+            "question2": "As a Developer Associate, which of the following solutions would you recommend to fix this behavior?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 36
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use a separate function for development and production"
+                },
+                {
+                    "id": 2,
+                    "value": "Use layers for storing the database connection strings"
+                },
+                {
+                    "id": 3,
+                    "value": "Use environment variables for the database connection strings"
+                },
+                {
+                    "id": 4,
+                    "value": "Include the resources in the function code"
+                }
+            ],
+            "question1": "You developed an AWS Lambda function that has been packaged for deployment to multiple environments including development, test, and production. The Lambda function uses an Amazon RDS MySQL database for storing data. Each environment has a different RDS MySQL database.",
+            "question2": "What configuration would you do in Lambda function package to ensure the correct database connection string is used for each environment?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 37
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Each day, create a new table to hold session data; delete the previous day's table."
+                },
+                {
+                    "id": 2,
+                    "value": "Add an attribute with the expiration time; name the attribute ItemExpiration."
+                },
+                {
+                    "id": 3,
+                    "value": "Write a script that deletes old records; schedule the scripts as a cron job on an Amazon EC2 instance"
+                },
+                {
+                    "id": 4,
+                    "value": "Add an attribute with the expiration time; enable the Time To Live feature based on that attribute."
+                }
+            ],
+            "question1": "Your company uses DynamoDB table to store caches session information for a web application in an AWS Cloud.",
+            "question2": "As a Developer Associate which of the following will you use to automate a way to delete old items from the table?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 38
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "1MB"
+                },
+                {
+                    "id": 2,
+                    "value": "8KB"
+                },
+                {
+                    "id": 3,
+                    "value": "16KB"
+                },
+                {
+                    "id": 4,
+                    "value": "4KB"
+                }
+            ],
+            "question1": "A developer at your company wants to encrypt the data on server side for one of the application he is working on. But he is not sure about the limit on size of data supported by KMS.",
+            "question2": "As an Associate Developer can you tell him what is the maximum data size supported by AWS KMS ?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 39
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Deploy using Rolling"
+                },
+                {
+                    "id": 2,
+                    "value": "Deploy using Immutable"
+                },
+                {
+                    "id": 3,
+                    "value": "Deploy using All at once"
+                },
+                {
+                    "id": 4,
+                    "value": "Deploy using Rolling with additional batch"
+                }
+            ],
+            "question1": "You work at an e-commerce company �decodeskills� which uses AWS Elastic Beanstalk to manage its infrastructure. You want to deploy a new version of the application which requires high availability and has high traffic flow. The new deployment must have minimal impact and rollback as soon as possible.",
+            "question2": "Which of the deployment policy should be used to achieve this?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 40
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS_XRAY_DEBUG_MODE"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS_XRAY_CONTEXT_MISSING"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS_XRAY_DAEMON_ADDRESS"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS_XRAY_TRACING_NAME"
+                }
+            ],
+            "question1": "As a developer associate, you have been asked to suggest that which environment variable can be used by AWS X-Ray SDK to ensure that the daemon is correctly discovered on ECS?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 41
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Amazon IAM roles instead of access keys where possible."
+                },
+                {
+                    "id": 2,
+                    "value": "Delete all access keys for the account root user."
+                },
+                {
+                    "id": 3,
+                    "value": "Embed and encrypt access keys in code for continuous deployment."
+                },
+                {
+                    "id": 4,
+                    "value": "Use the same access key in all applications for consistency."
+                }
+            ],
+            "question1": "Which of the following is correct about how access keys should be managed in AWS according to best practices? (Select two.)"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 42
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Access Advisor feature on IAM console"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS IAM Access Analyzer"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS S3 Analytics"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon Inspector"
+                }
+            ],
+            "question1": "Which of the following feature can be used to identify and remove unused AWS IAM roles without disrupting any service?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 43
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The ECS agent Docker image must be re-built to connect to the other clusters"
+                },
+                {
+                    "id": 2,
+                    "value": "The security groups on the EC2 instance are pointing to the wrong ECS cluster"
+                },
+                {
+                    "id": 3,
+                    "value": "The cluster name Parameter has not been updated in the file /etc/ecs/ecs.config during bootstrap"
+                },
+                {
+                    "id": 4,
+                    "value": "The EC2 instance is missing IAM permissions to join the other clusters"
+                }
+            ],
+            "question1": "You are working for a shipping company that is automating the creation of ECS clusters with an Auto Scaling Group using an AWS CloudFormation template that accepts cluster name as its parameters. Initially, you launch the template with input value 'MainCluster', which deployed five instances across two availability zones. The second time, you launch the template with an input value 'SecondCluster'. However, the instances created in the second run were also launched in 'MainCluster' even after specifying a different cluster name.",
+            "question2": "What is the root cause of this issue?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 44
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon Cognito user pools"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS IAM"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Mobile Hub user data storage"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon Cognito Sync"
+                }
+            ],
+            "question1": "You are developing a mobile application which allows new millions of users to create accounts using their email addresses and store their details.",
+            "question2": "Which of the following AWS services should be used to achieve the design goals?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 45
+    }
+]

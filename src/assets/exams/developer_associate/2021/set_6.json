@@ -1,0 +1,1297 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "It is not possible to migrate Elastic Beanstalk environment from one AWS account to the other"
+                },
+                {
+                    "id": 2,
+                    "value": "Create a saved configuration in Team A's account and download it to your local machine. Make the account-specific parameter changes and upload to the S3 bucket in Team B's account. From Elastic Beanstalk console, create an application from 'Saved Configurations'"
+                },
+                {
+                    "id": 3,
+                    "value": "Create an export configuration from the Elastic Beanstalk console from Team A's account. This configuration has to be shared with the IAM Role of Team B's account. The import option of Team B's account will show the saved configuration, that can be used to create a new Beanstalk application"
+                },
+                {
+                    "id": 4,
+                    "value": "Create a saved configuration in Team A's account and configure it to Export. Now, log into Team B's account and choose the Import option. Here, you need to specify the name of the saved configuration and allow the system to create the new application. This takes a little time based on the Regions the two accounts belong to"
+                }
+            ],
+            "question1": "A multi-national company maintains separate AWS accounts for different verticals in their organization. The project manager of a team wants to migrate the Elastic Beanstalk environment from Team A's AWS account into Team B's AWS account. As a Developer, you have been roped in to help him in this process.",
+            "question2": "Which of the following will you suggest?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "1MB"
+                },
+                {
+                    "id": 2,
+                    "value": "10MB"
+                },
+                {
+                    "id": 3,
+                    "value": "4KB"
+                },
+                {
+                    "id": 4,
+                    "value": "16KB"
+                }
+            ],
+            "question1": "A developer at a university is encrypting a large XML payload transferred over the network using AWS KMS and wants to test the application before going to production.",
+            "question2": "What is the maximum data size supported by AWS KMS?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The ECS instances are misconfigured and must contain additional data in /etc/ecs/ecs.config"
+                },
+                {
+                    "id": 2,
+                    "value": "The IAM permissions are wrong for the CodeBuild service"
+                },
+                {
+                    "id": 3,
+                    "value": "The ECR repository is stale, you must delete and re-create it"
+                },
+                {
+                    "id": 4,
+                    "value": "CodeBuild cannot talk to ECR because of security group issues"
+                }
+            ],
+            "question1": "Your e-commerce company needs to improve its software delivery process and is moving away from the waterfall methodology. You decided that every application should be built using the best CI/CD practices and every application should be packaged and deployed as a Docker container. The Docker images should be stored in ECR and pushed with AWS CodePipeline and AWS CodeBuild.",
+            "question2": "When you attempt to do this, the last step fails with an authorization issue. What is the most likely issue?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Cognito Authentication via Cognito User Pools for your CloudFront distribution"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Cognito Authentication via Cognito Identity Pools for your Application Load Balancer"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Cognito Authentication via Cognito User Pools for your Application Load Balancer"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Cognito Authentication via Cognito Identity Pools for your CloudFront distribution"
+                }
+            ],
+            "question1": "A photo-sharing application manages its EC2 server fleet running behind an Application Load Balancer and the traffic is fronted by a CloudFront distribution. The development team wants to decouple the user authentication process for the application so that the application servers can just focus on the business logic.",
+            "question2": "As a Developer Associate, which of the following solutions would you recommend to address this use-case with minimal development effort?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "X-Forwarded-For"
+                },
+                {
+                    "id": 2,
+                    "value": "X-Forwarded-IP"
+                },
+                {
+                    "id": 3,
+                    "value": "X-Forwarded-Port"
+                },
+                {
+                    "id": 4,
+                    "value": "X-Forwarded-Proto"
+                }
+            ],
+            "question1": "A cyber forensics application, running behind an ALB, wants to analyze patterns for the client IPs.",
+            "question2": "Which of the following headers can be used for this requirement?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "!Ref"
+                },
+                {
+                    "id": 2,
+                    "value": "!Sub"
+                },
+                {
+                    "id": 3,
+                    "value": "!GetAtt"
+                },
+                {
+                    "id": 4,
+                    "value": "!FindInMap"
+                }
+            ],
+            "question1": "As an AWS Certified Developer Associate, you are writing a CloudFormation template in YAML. The template consists of an EC2 instance creation and one RDS resource. Once your resources are created you would like to output the connection endpoint for the RDS database.",
+            "question2": "Which intrinsic function returns the value needed?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "KMS encryption for data at rest"
+                },
+                {
+                    "id": 2,
+                    "value": "Client-Side Encryption"
+                },
+                {
+                    "id": 3,
+                    "value": "SSE-C encryption"
+                },
+                {
+                    "id": 4,
+                    "value": "Envelope Encryption"
+                },
+                {
+                    "id": 5,
+                    "value": "Encryption in flight with HTTPS endpoint"
+                }
+            ],
+            "question1": "As a Developer Associate, you are responsible for the data management of the AWS Kinesis streams at your company. The security team has mandated stricter security requirements by leveraging mechanisms available with the Kinesis Data Streams service that won't require code changes on your end.",
+            "question2": "Which of the following features meet the given requirements? (Select two)"
+        },
+        "answers": [
+            1,
+            5
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "EC2 Auto Scaling groups are regional constructs. They span across Availability Zones and AWS regions"
+                },
+                {
+                    "id": 2,
+                    "value": "Every time you create an Auto Scaling group from an existing instance, it creates a new AMI (Amazon Machine Image)"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon EC2 Auto Scaling cannot add a volume to an existing instance if the existing volume is approaching capacity"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon EC2 Auto Scaling works with both Application Load Balancers and Network Load Balancers"
+                },
+                {
+                    "id": 5,
+                    "value": "You cannot use Amazon EC2 Auto Scaling for health checks (to replace unhealthy instances) if you are not using Elastic Load Balancing (ELB)"
+                }
+            ],
+            "question1": "A new recruit is trying to understand the nuances of EC2 Auto Scaling. As an AWS Certified Developer Associate, you have been asked to mentor the new recruit.",
+            "question2": "Can you identify and explain the correct statements about Auto Scaling to the new recruit? (Select two)."
+        },
+        "answers": [
+            3,
+            4
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "SSE-S3"
+                },
+                {
+                    "id": 2,
+                    "value": "SSE-KMS"
+                },
+                {
+                    "id": 3,
+                    "value": "SSE-C"
+                },
+                {
+                    "id": 4,
+                    "value": "Client Side Encryption"
+                }
+            ],
+            "question1": "A company stores confidential data on an Amazon Simple Storage Service (S3) bucket. New regulatory guidelines require that files be stored with server-side encryption. The encryption used must be Advanced Encryption Standard (AES-256) and the company does not want to manage S3 encryption keys.",
+            "question2": "Which of the following options should you use?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Set up reserved concurrency for the Lambda function B so that it throttles if it goes above a certain concurrency limit"
+                },
+                {
+                    "id": 2,
+                    "value": "Set up provisioned concurrency for the Lambda function B so that it throttles if it goes above a certain concurrency limit"
+                },
+                {
+                    "id": 3,
+                    "value": "Use a Cloudfront Distribution instead of an Application Load Balancer (ALB) for Lambda function A"
+                },
+                {
+                    "id": 4,
+                    "value": "Use an API Gateway instead of an Application Load Balancer (ALB) for Lambda function A"
+                }
+            ],
+            "question1": "The development team at an IT company has configured an Application Load Balancer (ALB) with a Lambda function A as the target but the Lambda function A is not able to process any request from the ALB. Upon investigation, the team finds that there is another Lambda function B in the AWS account that is exceeding the concurrency limits.",
+            "question2": "How can the development team address this issue?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Run AWS CodeBuild locally using CodeBuild Agent"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable detailed monitoring"
+                },
+                {
+                    "id": 3,
+                    "value": "SSH into the CodeBuild Docker container"
+                },
+                {
+                    "id": 4,
+                    "value": "Freeze the CodeBuild during its next execution"
+                }
+            ],
+            "question1": "A developer in your company has configured a build using AWS CodeBuild. The build fails and the developer needs to quickly troubleshoot the issue to see which commands or settings located in the BuildSpec file are causing an issue.",
+            "question2": "Which approach will help them accomplish this?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "20"
+                },
+                {
+                    "id": 2,
+                    "value": "5"
+                },
+                {
+                    "id": 3,
+                    "value": "100"
+                },
+                {
+                    "id": 4,
+                    "value": "10"
+                }
+            ],
+            "question1": "Your application sends messages to an Amazon Simple Queue Service (SQS) queue frequently, which are then polled by another application that specifies which message to retrieve.",
+            "question2": "Which of the following options describe the maximum number of messages that can be retrieved at one time?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Call Scan"
+                },
+                {
+                    "id": 2,
+                    "value": "Create a GSI"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a LSI"
+                },
+                {
+                    "id": 4,
+                    "value": "Migrate away from DynamoDB"
+                }
+            ],
+            "question1": "You are a system administrator whose company recently moved its production application to AWS and migrated data from MySQL to AWS DynamoDB. You are adding new tables to AWS DynamoDB and need to allow your application to query your data by the primary key and an alternate sort key. This option must be added when first creating tables otherwise changes cannot be made afterward.",
+            "question2": "Which of the following actions should you take?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "30"
+                },
+                {
+                    "id": 2,
+                    "value": "24"
+                },
+                {
+                    "id": 3,
+                    "value": "15"
+                },
+                {
+                    "id": 4,
+                    "value": "46"
+                }
+            ],
+            "question1": "You are a DynamoDB developer for an aerospace company that requires you to write 6 objects per second of 4.5KB in size each.",
+            "question2": "What write capacity unit is needed for your project?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "ECS_CLUSTER"
+                },
+                {
+                    "id": 2,
+                    "value": "ECS_AVAILABLE_LOGGING_DRIVERS"
+                },
+                {
+                    "id": 3,
+                    "value": "ECS_ENGINE_AUTH_DATA"
+                },
+                {
+                    "id": 4,
+                    "value": "ECS_ENABLE_TASK_IAM_ROLE"
+                }
+            ],
+            "question1": "A company wants to automate the creation of ECS clusters using CloudFormation. The process has worked for a while, but after creating task definitions and assigning roles, the development team discovers that the tasks for containers are not using the permissions assigned to them.",
+            "question2": "Which ECS config must be set in /etc/ecs/ecs.config to allow ECS tasks to use IAM roles?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS CloudTrail"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon CloudWatch"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS X-Ray"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon Inspector"
+                }
+            ],
+            "question1": "An AWS CodePipeline was configured to be triggered by Amazon CloudWatch Events. Recently the pipeline failed and upon investigation, the Team Lead noticed that the source was changed from AWS CodeCommit to Amazon Simple Storage Service (S3). The Team Lead has requested you to find the user who had made the changes.",
+            "question2": "Which service will help you solve this?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Define an appspec.yml file in the codebuild/ directory"
+                },
+                {
+                    "id": 2,
+                    "value": "Define a buildspec.yml file in the codebuild/ directory"
+                },
+                {
+                    "id": 3,
+                    "value": "Define an appspec.yml file in the root directory"
+                },
+                {
+                    "id": 4,
+                    "value": "Define a buildspec.yml file in the root directory"
+                }
+            ],
+            "question1": "As a site reliability engineer, you work on building and running large-scale, distributed, fault-tolerant systems in the cloud using automation. You have just replaced the company's Jenkins based CI/CD platform with AWS CodeBuild and would like to programmatically define your build steps.",
+            "question2": "Which of the following options should you choose?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "When there�s a cache hit, CloudFront routes the request to the primary origin in the origin group"
+                },
+                {
+                    "id": 2,
+                    "value": "To set up origin failover, you must have a distribution with at least three origins"
+                },
+                {
+                    "id": 3,
+                    "value": "CloudFront fails over to the secondary origin only when the HTTP method of the viewer request is GET, HEAD or OPTIONS"
+                },
+                {
+                    "id": 4,
+                    "value": "In the Origin Group of your distribution, all the origins are defined as primary for automatic failover in case an origin fails"
+                },
+                {
+                    "id": 5,
+                    "value": "CloudFront routes all incoming requests to the primary origin, even when a previous request failed over to the secondary origin"
+                }
+            ],
+            "question1": "A video streaming application uses Amazon CloudFront for its data distribution. The development team has decided to use CloudFront with origin failover for high availability.",
+            "question2": "Which of the following options are correct while configuring CloudFront with Origin Groups? (Select two)"
+        },
+        "answers": [
+            3,
+            5
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon Simple Workflow Service"
+                },
+                {
+                    "id": 2,
+                    "value": "CloudWatch Rules"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS ECS"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Step Functions"
+                }
+            ],
+            "question1": "You manage a group of developers that are experienced with the AWS SDK for Java. You have given them a requirement to build a state machine workflow where each state executes an AWS Lambda function written in Java. Data payloads of 1KB in size will be passed between states and should allow for two retry attempts if the state fails.",
+            "question2": "Which of the following options will assist your developers with this requirement?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable Multi AZ deployments"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable SSL"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable Health Checks"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable Stickiness"
+                }
+            ],
+            "question1": "A development team has inherited a web application running in the us-east-1 region with three availability zones (us-east-1a, us-east1-b, and us-east-1c) whose incoming web traffic is routed by a load balancer. When one of the EC2 instances hosting the web application crashes, the team realizes that the load balancer continues to route traffic to that instance causing intermittent issues.",
+            "question2": "Which of the following should the development team do to minimize this problem?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "EFS"
+                },
+                {
+                    "id": 2,
+                    "value": "ECR"
+                },
+                {
+                    "id": 3,
+                    "value": "EBS"
+                },
+                {
+                    "id": 4,
+                    "value": "S3"
+                }
+            ],
+            "question1": "A development team has created AWS CloudFormation templates that are reusable by taking advantage of input parameters to name resources based on client names.",
+            "question2": "You would like to save your templates on the cloud, which storage option should you choose?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "A process deletes an existing object and immediately lists keys within its bucket. The object could still be visible for few more minutes till the change propagates"
+                },
+                {
+                    "id": 2,
+                    "value": "A process deletes an existing object and immediately tries to read it. Amazon S3 will not return any data as the object has been deleted"
+                },
+                {
+                    "id": 3,
+                    "value": "If you delete a bucket and immediately list all buckets, the deleted bucket might still appear in the list"
+                },
+                {
+                    "id": 4,
+                    "value": "A process deletes an existing object and immediately tries to read it. Amazon S3 can return data as the object deletion has not yet propagated completely"
+                },
+                {
+                    "id": 5,
+                    "value": "A process replaces an existing object and immediately tries to read it. Amazon S3 might return the old data"
+                }
+            ],
+            "question1": "A development team has been using Amazon S3 service as an object store. With Amazon S3 turning strongly consistent, the team wants to understand the impact of this change on its data storage practices.",
+            "question2": "As a developer associate, can you identify the key characteristics of the strongly consistent data model followed by S3? (Select two)"
+        },
+        "answers": [
+            2,
+            3
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The ping path field of the Load Balancer is configured incorrectly"
+                },
+                {
+                    "id": 2,
+                    "value": "Health check parameters were configured for checking the instance health alone. The instance failed because of application failure which was not configured as a parameter for health check status"
+                },
+                {
+                    "id": 3,
+                    "value": "The health check type of your instance's Auto Scaling group, must be changed from EC2 to ELB by using a configuration file"
+                },
+                {
+                    "id": 4,
+                    "value": "Auto Scaling group doesn't automatically replace the unhealthy instances marked by the load balancer. They have to be manually replaced from AWS Console"
+                }
+            ],
+            "question1": "A startup manages its Cloud resources with Elastic Beanstalk. The environment consists of few Amazon EC2 instances, an Auto Scaling Group (ASG), and an Elastic Load Balancer. Even after the Load Balancer marked an EC2 instance as unhealthy, the ASG has not replaced it with a healthy instance.",
+            "question2": "As a Developer, suggest the necessary configurations to automate the replacement of unhealthy instance."
+        },
+        "answers": [
+            3
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "You need to disable multi-AZ deployments"
+                },
+                {
+                    "id": 2,
+                    "value": "The load balancer is highly available and its public IP may change. The DNS name is constant"
+                },
+                {
+                    "id": 3,
+                    "value": "You need to enable stickiness"
+                },
+                {
+                    "id": 4,
+                    "value": "Your security groups are not stable"
+                }
+            ],
+            "question1": "Your company has a load balancer in a VPC configured to be internet facing. The public DNS name assigned to the load balancer is myDns-1234567890.us-east-1.elb.amazonaws.com. When your client applications first load they capture the load balancer DNS name and then resolve the IP address for the load balancer so that they can directly reference the underlying IP.",
+            "question2": "It is observed that the client applications work well but unexpectedly stop working after a while. What is the reason for this?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Reduce connection pooling, which keeps the connections alive even when user requests are not present, thereby, blocking the services"
+                },
+                {
+                    "id": 2,
+                    "value": "Consider using Global tables if your application is accessed by globally distributed users"
+                },
+                {
+                    "id": 3,
+                    "value": "Use DynamoDB Accelerator (DAX) for businesses with heavy write-only workloads"
+                },
+                {
+                    "id": 4,
+                    "value": "Increase the request timeout settings, so the client gets enough time to complete the requests, thereby reducing retries on the system"
+                },
+                {
+                    "id": 5,
+                    "value": "Use eventually consistent reads in place of strongly consistent reads whenever possible"
+                }
+            ],
+            "question1": "An organization with high data volume workloads have successfully moved to DynamoDB after having many issues with traditional database systems. However, a few months into production, DynamoDB tables are consistently recording high latency.",
+            "question2": "As a Developer Associate, which of the following would you suggest to reduce the latency? (Select two)"
+        },
+        "answers": [
+            2,
+            5
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon SQS"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Kinesis Data Streams"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Kinesis Data Firehose"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Kinesis Data Analytics"
+                }
+            ],
+            "question1": "A data analytics company wants to use clickstream data for Machine Learning tasks, develop algorithms, and create visualizations and dashboards to support the business stakeholders. Each of these business units works independently and would need real-time access to this clickstream data for their applications.",
+            "question2": "As a Developer Associate, which of the following AWS services would you recommend such that it provides a highly available and fault-tolerant solution to capture the clickstream events from the source and then provide a simultaneous feed of the data stream to the consumer applications?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The instance could have been a part of Application Load Balancer and hence was automatically started"
+                },
+                {
+                    "id": 2,
+                    "value": "The user did not have the right permissions to shutdown the instance. User needs root permissions to terminate an instance"
+                },
+                {
+                    "id": 3,
+                    "value": "The instance could have been a part of Network Load Balancer and hence was automatically started"
+                },
+                {
+                    "id": 4,
+                    "value": "Instance might be part of Auto Scaling Group and hence re-launched similar instance"
+                }
+            ],
+            "question1": "A developer while working on Amazon EC2 instances, realized that an instance was not needed and had shut it down. But another instance of the same type automatically got launched in the account.",
+            "question2": "Which of the following options can attribute the given sequence of actions?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)"
+                },
+                {
+                    "id": 2,
+                    "value": "Client-Side Encryption with data encryption is done on the client-side before sending it to Amazon S3"
+                },
+                {
+                    "id": 3,
+                    "value": "Server-Side Encryption with Customer-Provided Keys (SSE-C)"
+                },
+                {
+                    "id": 4,
+                    "value": "Server-Side Encryption with Customer Master Keys (CMKs) Stored in AWS Key Management Service (SSE-KMS)"
+                }
+            ],
+            "question1": "An IT company has a HealthCare application with data security requirements such that the encryption key must be stored in a custom application running on-premises. The company wants to offload the data storage as well as the encryption process to Amazon S3 but continue to use the existing encryption keys.",
+            "question2": "Which of the following S3 encryption options allows the company to leverage Amazon S3 for storing data with given constraints?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Encryption by default is an AZ specific setting. If you enable it for an AZ, you cannot disable it for individual volumes or snapshots in that AZ"
+                },
+                {
+                    "id": 2,
+                    "value": "You can encrypt an existing unencrypted volume or snapshot by using AWS Key Management Service (KMS) AWS SDKs"
+                },
+                {
+                    "id": 3,
+                    "value": "A volume restored from an encrypted snapshot, or a copy of an encrypted snapshot is always encrypted"
+                },
+                {
+                    "id": 4,
+                    "value": "A snapshot of an encrypted volume can be encrypted or unencrypted"
+                },
+                {
+                    "id": 5,
+                    "value": "Encryption by default is a Region-specific setting. If you enable it for a Region, you cannot disable it for individual volumes or snapshots in that Region"
+                }
+            ],
+            "question1": "A Company uses a large set of EBS volumes for their fleet of Amazon EC2 instances. As an AWS Certified Developer Associate, your help has been requested to understand the security features of the EBS volumes. The company does not want to build or maintain their own encryption key management infrastructure.",
+            "question2": "Can you help them understand what works for Amazon EBS encryption? (Select two)"
+        },
+        "answers": [
+            3,
+            5
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use an API Gateway Lambda authorizer to route API clients to the correct API version"
+                },
+                {
+                    "id": 2,
+                    "value": "Use an X-Version header to identify which version is being called and pass that header to the Lambda function"
+                },
+                {
+                    "id": 3,
+                    "value": "Set up an API Gateway resource policy to identify the API versions and provide context to the Lambda function"
+                },
+                {
+                    "id": 4,
+                    "value": "Deploy the API versions as unique stages with unique endpoints and use stage variables to provide the context to identify the API versions"
+                }
+            ],
+            "question1": "A developer is creating a RESTful API service using an Amazon API Gateway with AWS Lambda integration. The service must support different API versions for testing purposes.",
+            "question2": "As a Developer Associate, which of the following would you suggest as the best way to accomplish this?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 30
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Using IAM policy"
+                },
+                {
+                    "id": 2,
+                    "value": "Using bucket policy"
+                },
+                {
+                    "id": 3,
+                    "value": "Using Routing Policy"
+                },
+                {
+                    "id": 4,
+                    "value": "Using pre-signed URL"
+                }
+            ],
+            "question1": "You're a developer maintaining a web application written in .NET. The application makes references to public objects in a public S3 accessible bucket using a public URL. While doing a code review your colleague advises that the approach is not a best practice because some of the objects contain private data. After the administrator makes the S3 bucket private you can no longer access the S3 objects but you would like to create an application that will enable people to access some objects as needed with a time policy constraint.",
+            "question2": "Which of the following options will give access to the objects?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 31
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Put the two containers into two separate task definitions using a Fargate Launch Type"
+                },
+                {
+                    "id": 2,
+                    "value": "Put the two containers into a single task definition using an EC2 Launch Type"
+                },
+                {
+                    "id": 3,
+                    "value": "Put the two containers into a single task definition using a Fargate Launch Type"
+                },
+                {
+                    "id": 4,
+                    "value": "Put the two containers into two separate task definitions using an EC2 Launch Type"
+                }
+            ],
+            "question1": "The development team at an e-commerce company wants to run a serverless data store service on two docker containers that share resources.",
+            "question2": "Which of the following ECS configurations can be used to facilitate this use-case?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 32
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "sample.test.com"
+                },
+                {
+                    "id": 2,
+                    "value": "test.sample.com"
+                },
+                {
+                    "id": 3,
+                    "value": "SAMPLE.COM"
+                },
+                {
+                    "id": 4,
+                    "value": "sample.com"
+                }
+            ],
+            "question1": "A development team has configured an Elastic Load Balancer for host-based routing. The idea is to support multiple subdomains and different top-level domains.",
+            "question2": "The rule *.sample.com matches which of the following?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 33
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "movie_language"
+                },
+                {
+                    "id": 2,
+                    "value": "movie_id"
+                },
+                {
+                    "id": 3,
+                    "value": "lead_actor_name"
+                },
+                {
+                    "id": 4,
+                    "value": "producer_name"
+                }
+            ],
+            "question1": "You're a developer for 'Movie Gallery', a company that just migrated to the cloud. A database must be created using NoSQL technology to hold movies that are listed for public viewing. You are taking an important step in designing the database with DynamoDB and need to choose the appropriate partition key.",
+            "question2": "Which of the following unique attributes satisfies this requirement?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 34
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use a dead-letter queue to handle message processing failures"
+                },
+                {
+                    "id": 2,
+                    "value": "Use a temporary queue to handle message processing failures"
+                },
+                {
+                    "id": 3,
+                    "value": "Use long polling to handle message processing failures"
+                },
+                {
+                    "id": 4,
+                    "value": "Use short polling to handle message processing failures"
+                }
+            ],
+            "question1": "An e-commerce company uses Amazon SQS queues to decouple their application architecture. The development team has observed message processing failures for an edge case scenario when a user places an order for a particular product ID, but the product ID is deleted, thereby causing the application code to fail.",
+            "question2": "As a Developer Associate, which of the following solutions would you recommend to address such message failures?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 35
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The maximum retention period of SQS messages is 7 days, therefore retention period of 12 days is not possible"
+                },
+                {
+                    "id": 2,
+                    "value": "Use a FIFO SQS queue"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable Long Polling for the SQS queue"
+                },
+                {
+                    "id": 4,
+                    "value": "Change the queue message retention setting"
+                }
+            ],
+            "question1": "As a Developer, you are working on a mobile application that utilizes Amazon Simple Queue Service (SQS) for sending messages to downstream systems for further processing. One of the requirements is that the messages should be stored in the queue for a period of 12 days.",
+            "question2": "How will you configure this requirement?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 36
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon EC2 On Demand Instances"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon EC2 Reserved Instances"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon EC2 Spot Instances"
+                },
+                {
+                    "id": 4,
+                    "value": "On-premise EC2 instance"
+                }
+            ],
+            "question1": "Your team has just signed up an year-long contract with a client maintaining a three-tier web application, that needs to be moved to AWS Cloud. The application has steady traffic throughout the day and needs to be on a reliable system with no down-time or access issues. The solution needs to be cost-optimal for this startup.",
+            "question2": "Which of the following options should you choose?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 37
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Increase the Lambda function timeout"
+                },
+                {
+                    "id": 2,
+                    "value": "Increase the RAM assigned to your Lambda function"
+                },
+                {
+                    "id": 3,
+                    "value": "Change the instance type for your Lambda function"
+                },
+                {
+                    "id": 4,
+                    "value": "Change your Lambda function runtime to use Golang"
+                }
+            ],
+            "question1": "A company has AWS Lambda functions where each is invoked by other AWS services such as Amazon Kinesis Data Firehose, Amazon API Gateway, Amazon Simple Storage Service, or Amazon CloudWatch Events. What these Lambda functions have in common is that they process heavy workloads such as big data analysis, large file processing, and statistical computations.",
+            "question2": "What should you do to improve the performance of your AWS Lambda functions without changing your code?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 38
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Look into the client's cookie"
+                },
+                {
+                    "id": 2,
+                    "value": "Look into the X-Forwarded-Proto header in the backend"
+                },
+                {
+                    "id": 3,
+                    "value": "Modify the front-end of the website so that the users send their IP in the requests"
+                },
+                {
+                    "id": 4,
+                    "value": "Look into the X-Forwarded-For header in the backend"
+                }
+            ],
+            "question1": "Your web application front end consists of 5 EC2 instances behind an Application Load Balancer. You have configured your web application to capture the IP address of the client making requests. When viewing the data captured you notice that every IP address being captured is the same, which also happens to be the IP address of the Application Load Balancer.",
+            "question2": "What should you do to identify the true IP address of the client?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 39
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon RDS automatically initiates a failover to the standby, in case primary database fails for any reason"
+                },
+                {
+                    "id": 2,
+                    "value": "To enhance read scalability, a Multi-AZ standby instance can be used to serve read requests"
+                },
+                {
+                    "id": 3,
+                    "value": "For automated backups, I/O activity is suspended on your primary DB since backups are not taken from standby DB"
+                },
+                {
+                    "id": 4,
+                    "value": "Updates to your DB Instance are asynchronously replicated across the Availability Zone to the standby in order to keep both in sync"
+                },
+                {
+                    "id": 5,
+                    "value": "RDS applies OS updates by performing maintenance on the standby, then promoting the standby to primary and finally performing maintenance on the old primary, which becomes the new standby"
+                }
+            ],
+            "question1": "The development team at a health-care company is planning to migrate to AWS Cloud from the on-premises data center. The team is evaluating Amazon RDS as the database tier for its flagship application.",
+            "question2": "Which of the following would you identify as correct for RDS Multi-AZ? (Select two)"
+        },
+        "answers": [
+            1,
+            5
+        ],
+        "id": 40
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Kinesis Firehose to ingest data and Amazon Athena to generate leaderboard scores and time-series analytics"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Kinesis Firehose to ingest data and Kinesis Data Analytics to generate leaderboard scores and time-series analytics"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Kinesis Data Streams to ingest data and Amazon Kinesis Client Library to the application logic to generate leaderboard scores and time-series analytics"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Kinesis Data Streams to ingest data and Kinesis Data Analytics to generate leaderboard scores and time-series analytics"
+                }
+            ],
+            "question1": "An investment firm wants to continuously generate time-series analytics of the stocks being purchased by its customers. The firm wants to build a live leaderboard with real-time analytics for these in-demand stocks.",
+            "question2": "Which of the following represents a fully managed solution to address this use-case?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 41
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Contact AWS support to request an increase in the number of shards"
+                },
+                {
+                    "id": 2,
+                    "value": "The put data calls will be rejected with a AccessDeniedException exception once the limit is reached"
+                },
+                {
+                    "id": 3,
+                    "value": "Data is lost unless the partition key of the data records is changed in order to write data to a different shard in the stream"
+                },
+                {
+                    "id": 4,
+                    "value": "The put data calls will be rejected with a ProvisionedThroughputExceeded exception"
+                }
+            ],
+            "question1": "A development team is configuring Kinesis Data Streams for ingesting real-time data from various appliances. The team has declared a shard capacity of one to test the configuration.",
+            "question2": "What happens if the capacity limits of an Amazon Kinesis data stream are exceeded while the data producer adds data to the data stream?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 42
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "5"
+                },
+                {
+                    "id": 2,
+                    "value": "10"
+                },
+                {
+                    "id": 3,
+                    "value": "20"
+                },
+                {
+                    "id": 4,
+                    "value": "40"
+                }
+            ],
+            "question1": "You are a software engineer working for an IT company and are asked to contribute to a growing internal application that includes dashboards for data visualization. You are provisioning your AWS DynamoDB table and need to perform 10 strongly consistent reads per second of 4 KB in size each.",
+            "question2": "How many Read Capacity Units (RCUs) are needed?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 43
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The attribute cannot be updated when the instance is running. Stop the instance from Amazon EC2 console and then update the flag"
+                },
+                {
+                    "id": 2,
+                    "value": "Set the DeleteOnTermination attribute to False using the command line"
+                },
+                {
+                    "id": 3,
+                    "value": "Update the attribute using AWS management console. Select the EC2 instance and then uncheck the Delete On Termination check box for the root EBS volume"
+                },
+                {
+                    "id": 4,
+                    "value": "Set the DisableApiTermination attribute of the instance using the API"
+                }
+            ],
+            "question1": "A development team has noticed that one of the EC2 instances has been wrongly configured with the 'DeleteOnTermination' attribute set to True for its root EBS volume.",
+            "question2": "As a developer associate, can you suggest a way to disable this flag while the instance is still running?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 44
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "System will trigger CloudWatch alarms to AWS support"
+                },
+                {
+                    "id": 2,
+                    "value": "The desired capacity will go up to 4 and the maximum capacity will stay at 3"
+                },
+                {
+                    "id": 3,
+                    "value": "The desired capacity will go up to 4 and the maximum capacity will also go up to 4"
+                },
+                {
+                    "id": 4,
+                    "value": "System will keep running as is"
+                }
+            ],
+            "question1": "A company has configured an Auto Scaling group with health checks. The configuration is set to the desired capacity value of 3 and maximum capacity value of 3. The EC2 instances of your Auto Scaling group are configured to scale when CPU utilization is at 60 percent and is now running at 80 percent utilization.",
+            "question2": "Which of the following will take place?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 45
+    }
+]

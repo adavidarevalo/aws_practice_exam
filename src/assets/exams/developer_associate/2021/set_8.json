@@ -1,0 +1,1288 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The dead-letter queue of a FIFO queue must also be a FIFO queue. Whereas, the dead-letter queue of a standard queue can be a standard queue or a FIFO queue"
+                },
+                {
+                    "id": 2,
+                    "value": "The visibility timeout value for the queue is in seconds, which defaults to 30 seconds"
+                },
+                {
+                    "id": 3,
+                    "value": "The length of time, in seconds, for which the delivery of all messages in the queue is delayed is configured using MessageRetentionPeriod attribute"
+                },
+                {
+                    "id": 4,
+                    "value": "Queue tags are case insensitive. A new tag with a key identical to that of an existing tag overwrites the existing tag"
+                },
+                {
+                    "id": 5,
+                    "value": "You can't change the queue type after you create it"
+                }
+            ],
+            "question1": "Amazon Simple Queue Service (SQS) has a set of APIs for various actions supported by the service.",
+            "question2": "As a developer associate, which of the following would you identify as correct regarding the CreateQueue API? (Select two)"
+        },
+        "answers": [
+            2,
+            5
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "It represents a Lambda function definition"
+                },
+                {
+                    "id": 2,
+                    "value": "It represents an intrinsic function"
+                },
+                {
+                    "id": 3,
+                    "value": "Presence of Transform section indicates it is a CloudFormation Parameter"
+                },
+                {
+                    "id": 4,
+                    "value": "Presence of Transform section indicates it is a Serverless Application Model (SAM) template"
+                }
+            ],
+            "question1": "As an AWS Certified Developer Associate, you are given a document written in YAML that represents the architecture of a serverless application. The first line of the document contains Transform: 'AWS::Serverless-2016-10-31'.",
+            "question2": "What does the Transform section in the document represent?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The route for the health check is misconfigured"
+                },
+                {
+                    "id": 2,
+                    "value": "The security group of the EC2 instance does not allow for traffic from the security group of the Application Load Balancer"
+                },
+                {
+                    "id": 3,
+                    "value": "The EBS volumes have been improperly mounted"
+                },
+                {
+                    "id": 4,
+                    "value": "Your web-app has a runtime that is not supported by the Application Load Balancer"
+                },
+                {
+                    "id": 5,
+                    "value": "You need to attach Elastic IP to the EC2 instances"
+                }
+            ],
+            "question1": "You have created an Elastic Load Balancer that has marked all the EC2 instances in the target group as unhealthy. Surprisingly, when you enter the IP address of the EC2 instances in your web browser, you can access your website.",
+            "question2": "What could be the reason your instances are being marked as unhealthy? (Select two)"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": ".config/.ebextensions"
+                },
+                {
+                    "id": 2,
+                    "value": ".ebextensions/.config"
+                },
+                {
+                    "id": 3,
+                    "value": ".config_.ebextensions"
+                },
+                {
+                    "id": 4,
+                    "value": ".ebextensions_.config"
+                }
+            ],
+            "question1": "You have chosen AWS Elastic Beanstalk to upload your application code and allow it to handle details such as provisioning resources and monitoring.",
+            "question2": "When creating configuration files for AWS Elastic Beanstalk which naming convention should you follow?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create the app from a template provided by AWS CloudFormation -> Add code to the app to create resources within stacks -> Build the app (optional) -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account"
+                },
+                {
+                    "id": 2,
+                    "value": "Create the app from a template provided by AWS CloudFormation -> Add code to the app to create resources within stacks -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account -> Build the app"
+                },
+                {
+                    "id": 3,
+                    "value": "Create the app from a template provided by AWS CDK -> Add code to the app to create resources within stacks -> Build the app (optional) -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account"
+                },
+                {
+                    "id": 4,
+                    "value": "Create the app from a template provided by AWS CDK -> Add code to the app to create resources within stacks -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account -> Build the app"
+                }
+            ],
+            "question1": "As a developer, you are working on creating an application using AWS Cloud Development Kit (CDK).",
+            "question2": "Which of the following represents the correct order of steps to be followed for creating an app using AWS CDK?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS::Serverless::Function"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS::Serverless::UserPool"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS::Serverless::Api"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS::Serverless::SimpleTable"
+                }
+            ],
+            "question1": "You are a developer in a manufacturing company that has several servers on-site. The company decides to move new development to the cloud using serverless technology. You decide to use the AWS Serverless Application Model (AWS SAM) and work with an AWS SAM template file to represent your serverless architecture.",
+            "question2": "Which of the following is NOT a valid serverless resource type?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Access keys"
+                },
+                {
+                    "id": 2,
+                    "value": "Key pairs"
+                },
+                {
+                    "id": 3,
+                    "value": "Multi-Factor Authentication (MFA)"
+                },
+                {
+                    "id": 4,
+                    "value": "Root user credentials"
+                }
+            ],
+            "question1": "A developer at a company is trying to create a digital signature for SSH'ing into the Amazon EC2 instances.",
+            "question2": "Which of the following entities can be used to facilitate this use-case?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "S3 Analytics"
+                },
+                {
+                    "id": 2,
+                    "value": "Access Advisor feature on IAM console"
+                },
+                {
+                    "id": 3,
+                    "value": "S3 Object Lock"
+                },
+                {
+                    "id": 4,
+                    "value": "IAM Access Analyzer"
+                }
+            ],
+            "question1": "A Developer has been entrusted with the job of securing certain S3 buckets that are shared by a large team of users. Last time, a bucket policy was changed, the bucket was erroneously available for everyone, outside the organization too.",
+            "question2": "Which feature/service will help the developer identify similar security issues with minimum effort?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Set up the application to use an alias that points to the current version. Deploy the new version of the code and configure the alias to send 10% of the users to this new version. If the deployment goes wrong, reset the alias to point all traffic to the current version"
+                },
+                {
+                    "id": 2,
+                    "value": "Set up the application to directly deploy the new Lambda version. If the deployment goes wrong, reset the application back to the current version using the version number in the ARN"
+                },
+                {
+                    "id": 3,
+                    "value": "Set up the application to use an alias that points to the current version. Deploy the new version of the code and configure alias to send all users to this new version. If the deployment goes wrong, reset the alias to point to the current version"
+                },
+                {
+                    "id": 4,
+                    "value": "Set up the application to have multiple alias of the Lambda function. Deploy the new version of the code. Configure a new alias that points to the current alias of the Lambda function for handling 10% of the traffic. If the deployment goes wrong, reset the new alias to point all traffic to the most recent working alias of the Lambda function"
+                }
+            ],
+            "question1": "A development team at a social media company uses AWS Lambda for its serverless stack on AWS Cloud. For a new deployment, the Team Lead wants to send only a certain portion of the traffic to the new Lambda version. In case the deployment goes wrong, the solution should also support the ability to roll back to a previous version of the Lambda function, with MIMINUM downtime for the application.",
+            "question2": "As a Developer Associate, which of the following options would you recommend to address this use-case?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "By default, scripts entered as user data are executed with root user privileges"
+                },
+                {
+                    "id": 2,
+                    "value": "By default, scripts entered as user data do not have root user privileges for executing"
+                },
+                {
+                    "id": 3,
+                    "value": "By default, user data is executed every time an EC2 instance is re-started"
+                },
+                {
+                    "id": 4,
+                    "value": "By default, user data runs only during the boot cycle when you first launch an instance"
+                },
+                {
+                    "id": 5,
+                    "value": "When an instance is running, you can update user data by using root user credentials"
+                }
+            ],
+            "question1": "A firm runs its technology operations on a fleet of Amazon EC2 instances. The firm needs a certain software to be available on the instances to support their daily workflows. The developer team has been told to use the user data feature of EC2 instances.",
+            "question2": "Which of the following are true about the user data EC2 configuration? ( Select two)"
+        },
+        "answers": [
+            1,
+            4
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CloudTrail"
+                },
+                {
+                    "id": 2,
+                    "value": "CloudWatch Metrics"
+                },
+                {
+                    "id": 3,
+                    "value": "X-Ray"
+                },
+                {
+                    "id": 4,
+                    "value": "Config"
+                }
+            ],
+            "question1": "Certification : AWS(Amazon Web Service) Certified Solutions Architect Associate",
+            "question2": "A financial services company is undergoing a compliance audit by the regulator. The company has hundreds of IAM users that make API calls but specifically it needs to be determined who is making KMS API calls.",
+            "question3": "Which of the following services should the audit team use?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "ECS"
+                },
+                {
+                    "id": 2,
+                    "value": "Step Functions"
+                },
+                {
+                    "id": 3,
+                    "value": "Lambda"
+                },
+                {
+                    "id": 4,
+                    "value": "ECR"
+                }
+            ],
+            "question1": "The development team at an IT company wants to make changes to a current application written in Node.js and deployed on a Linux server. The team lead would like to decouple the application into microservices, package the application to a Docker container which is then run on the AWS infrastructure.",
+            "question2": "Which AWS service is best suited for this change?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "VPC Flow Logs"
+                },
+                {
+                    "id": 2,
+                    "value": "CloudWatch Events"
+                },
+                {
+                    "id": 3,
+                    "value": "CloudTrail"
+                },
+                {
+                    "id": 4,
+                    "value": "X-Ray"
+                }
+            ],
+            "question1": "A multi-national company has multiple business units with each unit having its own AWS account. The development team at the company would like to debug and trace data across accounts and visualize it in a centralized account.",
+            "question2": "As a Developer Associate, which of the following solutions would you suggest for the given use-case?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Serverless Application Model (SAM)"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Cloud Development Kit (CDK)"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS CodeDeploy"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS CloudFormation"
+                }
+            ],
+            "question1": "A development team wants to build an application using serverless architecture. The team plans to use AWS Lambda functions extensively to achieve this goal. The developers of the team work on different programming languages like Python, .NET and Javascript. The team wants to model the cloud infrastructure using any of these programming languages.",
+            "question2": "Which AWS service/tool should the team use for the given use-case?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "DeleteQueue"
+                },
+                {
+                    "id": 2,
+                    "value": "RemovePermission"
+                },
+                {
+                    "id": 3,
+                    "value": "RemoveQueue"
+                },
+                {
+                    "id": 4,
+                    "value": "PurgeQueue"
+                }
+            ],
+            "question1": "A developer is testing Amazon Simple Queue Service (SQS) queues in a development environment. The queue along with all its contents has to be deleted after testing.",
+            "question2": "Which SQS API should be used for this requirement?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "{ \"Version\":\"2012-10-17\", \"Id\":\"PutObjectPolicy\", \"Statement\":[{ \"Sid\":\"DenyUnEncryptedObjectUploads\", \"Effect\":\"Deny\", \"Principal\":\"*\", \"Action\":\"s3:PutObject\", \"Resource\":\"arn:aws:s3:::examplebucket/*\", \"Condition\":{ \"StringNotEquals\":{ \"s3:x-amz-server-side-encryption\":\"aws:kms\" } } } ] }"
+                },
+                {
+                    "id": 2,
+                    "value": "{ \"Version\":\"2012-10-17\", \"Id\":\"PutObjectPolicy\", \"Statement\":[{ \"Sid\":\"DenyUnEncryptedObjectUploads\", \"Effect\":\"Deny\", \"Principal\":\"*\", \"Action\":\"s3:PutObject\", \"Resource\":\"arn:aws:s3:::examplebucket/*\", \"Condition\":{ \"StringNotEquals\":{ \"s3:x-amz-server-side-encryption\":\"false\" } } } ] }"
+                },
+                {
+                    "id": 3,
+                    "value": "{ \"Version\":\"2012-10-17\", \"Id\":\"PutObjectPolicy\", \"Statement\":[{ \"Sid\":\"DenyUnEncryptedObjectUploads\", \"Effect\":\"Deny\", \"Principal\":\"*\", \"Action\":\"s3:GetObject\", \"Resource\":\"arn:aws:s3:::examplebucket/*\", \"Condition\":{ \"StringNotEquals\":{ \"s3:x-amz-server-side-encryption\":\"aws:AES256\" } } } ] }"
+                },
+                {
+                    "id": 4,
+                    "value": "{ \"Version\":\"2012-10-17\", \"Id\":\"PutObjectPolicy\", \"Statement\":[{ \"Sid\":\"DenyUnEncryptedObjectUploads\", \"Effect\":\"Deny\", \"Principal\":\"*\", \"Action\":\"s3:PutObject\", \"Resource\":\"arn:aws:s3:::examplebucket/*\", \"Condition\":{ \"StringEquals\":{ \"s3:x-amz-server-side-encryption\":\"aws:kms\" } } } ] }"
+                }
+            ],
+            "question1": "A developer is configuring a bucket policy that denies upload object permission to any requests that do not include the x-amz-server-side-encryption header requesting server-side encryption with SSE-KMS for an Amazon S3 bucket - examplebucket.",
+            "question2": "Which of the following policies is the right fit for the given requirement?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "!FindInMap [ MapName, TopLevelKey, SecondLevelKey, ThirdLevelKey ]"
+                },
+                {
+                    "id": 2,
+                    "value": "!FindInMap [ MapName, TopLevelKey ]"
+                },
+                {
+                    "id": 3,
+                    "value": "!FindInMap [ MapName, TopLevelKey, SecondLevelKey ]"
+                },
+                {
+                    "id": 4,
+                    "value": "!FindInMap [ MapName ]"
+                }
+            ],
+            "question1": "You are creating a Cloud Formation template to deploy your CMS application running on an EC2 instance within your AWS account. Since the application will be deployed across multiple regions, you need to create a map of all the possible values for the base AMI.",
+            "question2": "How will you invoke the !FindInMap function to fulfill this use case?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Elastic Beanstalk"
+                },
+                {
+                    "id": 2,
+                    "value": "CodeDeploy"
+                },
+                {
+                    "id": 3,
+                    "value": "CodePipeline"
+                },
+                {
+                    "id": 4,
+                    "value": "CodeBuild"
+                }
+            ],
+            "question1": "A developer has been asked to create an application that can be deployed across a fleet of EC2 instances. The configuration must allow for full control over the deployment steps using the blue-green deployment.",
+            "question2": "Which service will help you achieve that?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Elastic Beanstalk will not replace the failed instances"
+                },
+                {
+                    "id": 2,
+                    "value": "Elastic Beanstalk will replace the failed instances with instances running the application version from the oldest successful deployment"
+                },
+                {
+                    "id": 3,
+                    "value": "Elastic Beanstalk will replace the failed instances with instances running the application version from the most recent successful deployment"
+                },
+                {
+                    "id": 4,
+                    "value": "Elastic Beanstalk will replace the failed instances after the application version to be installed is manually chosen from AWS Console"
+                }
+            ],
+            "question1": "When running a Rolling deployment in Elastic Beanstalk environment, only two batches completed the deployment successfully, while rest of the batches failed to deploy the updated version. Following this, the development team terminated the instances from the failed deployment.",
+            "question2": "What will be the status of these failed instances post termination?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a CNAME record"
+                },
+                {
+                    "id": 2,
+                    "value": "Create a PTR record"
+                },
+                {
+                    "id": 3,
+                    "value": "Create an Alias Record"
+                },
+                {
+                    "id": 4,
+                    "value": "Create an A record"
+                }
+            ],
+            "question1": "An application is hosted by a 3rd party and exposed at yourapp.3rdparty.com. You would like to have your users access your application using www.mydomain.com, which you own and manage under Route 53.",
+            "question2": "What Route 53 record should you create?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "EBS"
+                },
+                {
+                    "id": 2,
+                    "value": "ECR"
+                },
+                {
+                    "id": 3,
+                    "value": "S3"
+                },
+                {
+                    "id": 4,
+                    "value": "ECS"
+                }
+            ],
+            "question1": "The development team at an IT company would like to provision their own Docker images that can be used as input sources for CodeBuild. These images will contain cached dependencies as well as special tooling for builds that are proprietary to the company.",
+            "question2": "Which of the following services can be used to store and deploy these Docker images?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "You need to activate IAM user access to the Billing and Cost Management console for all the users who need access"
+                },
+                {
+                    "id": 2,
+                    "value": "IAM user should be created under AWS Billing and Cost Management and not under AWS account to have access to Billing console"
+                },
+                {
+                    "id": 3,
+                    "value": "The users might have another policy that restricts them from accessing the Billing information"
+                },
+                {
+                    "id": 4,
+                    "value": "Only root user has access to AWS Billing and Cost Management console"
+                }
+            ],
+            "question1": "The development team has just configured and attached the IAM policy needed to access AWS Billing and Cost Management for all users under the Finance department. But, the users are unable to see AWS Billing and Cost Management service in the AWS console.",
+            "question2": "What could be the reason for this issue?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Deploy using 'All at once' deployment policy"
+                },
+                {
+                    "id": 2,
+                    "value": "Deploy using 'Rolling' deployment policy"
+                },
+                {
+                    "id": 3,
+                    "value": "Deploy using 'Immutable' deployment policy"
+                },
+                {
+                    "id": 4,
+                    "value": "Deploy using 'Rolling with additional batch' deployment policy"
+                }
+            ],
+            "question1": "As an AWS Certified Developer Associate, you been asked to create an AWS Elastic Beanstalk environment to handle deployment for an application that has high traffic and high availability needs. You need to deploy the new version using Beanstalk while making sure that performance and availability are not affected.",
+            "question2": "Which of the following is the MOST optimal way to do this while keeping the solution cost-effective?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use a Lambda custom interceptor"
+                },
+                {
+                    "id": 2,
+                    "value": "Use an API Gateway stage variable"
+                },
+                {
+                    "id": 3,
+                    "value": "Deploy an interceptor shell script"
+                },
+                {
+                    "id": 4,
+                    "value": "Use API Gateway Mapping Templates"
+                }
+            ],
+            "question1": "You are a developer working on AWS Lambda functions that are invoked via REST API's using Amazon API Gateway. Currently, when a GET request is invoked by the consumer, the entire data-set returned by the Lambda function is visible. Your team lead asked you to format the data response.",
+            "question2": "Which feature of the API Gateway can be used to solve this issue?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use AWS CloudWatch Events"
+                },
+                {
+                    "id": 2,
+                    "value": "Use VPC Flow Logs"
+                },
+                {
+                    "id": 3,
+                    "value": "Use AWS Lambda"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable CodeBuild timeouts"
+                }
+            ],
+            "question1": "You're a developer working on a large scale order processing application. After developing the features, you commit your code to AWS CodeCommit and begin building the project with AWS CodeBuild before it gets deployed to the server. The build is taking too long and the error points to an issue resolving dependencies from a third-party. You would like to prevent a build running this long in the future for similar underlying reasons.",
+            "question2": "Which of the following options represents the best solution to address this use-case?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Serverless Application Model"
+                },
+                {
+                    "id": 2,
+                    "value": "Elastic Beanstalk"
+                },
+                {
+                    "id": 3,
+                    "value": "CloudFormation"
+                },
+                {
+                    "id": 4,
+                    "value": "CodeDeploy"
+                }
+            ],
+            "question1": "A developer has been asked to create a web application to be deployed on EC2 instances. The developer just wants to focus on writing application code without worrying about server provisioning, configuration and deployment.",
+            "question2": "As a Developer Associate, which AWS service would you recommend for the given use-case?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Lambda Authorizer"
+                },
+                {
+                    "id": 2,
+                    "value": "IAM permissions with sigv4"
+                },
+                {
+                    "id": 3,
+                    "value": "Cognito User Pools"
+                },
+                {
+                    "id": 4,
+                    "value": "API Gateway User Pools"
+                }
+            ],
+            "question1": "The development team at a company creates serverless solutions using AWS Lambda. Functions are invoked by clients via AWS API Gateway which anyone can access. The team lead would like to control access using a 3rd party authorization mechanism.",
+            "question2": "As a Developer Associate, which of the following options would you recommend for the given use-case?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The deployment was run as a Rolling deployment, resulting in the resetting of EC2 burst balances"
+                },
+                {
+                    "id": 2,
+                    "value": "When a canary deployment fails, it resets the EC2 burst balances to zero"
+                },
+                {
+                    "id": 3,
+                    "value": "The deployment was either run with immutable updates or in traffic splitting mode"
+                },
+                {
+                    "id": 4,
+                    "value": "The deployment was run as a All-at-once deployment, flushing all the accumulated EC2 burst balances"
+                }
+            ],
+            "question1": "After a test deployment in ElasticBeanstalk environment, a developer noticed that all accumulated Amazon EC2 burst balances were lost.",
+            "question2": "Which of the following options can lead to this behavior?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "An Auto Scaling group can contain EC2 instances in only one Availability Zone of a Region"
+                },
+                {
+                    "id": 2,
+                    "value": "Auto Scaling groups that span across multiple Regions need to be enabled for all the Regions specified"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon EC2 Auto Scaling attempts to distribute instances evenly between the Availability Zones that are enabled for your Auto Scaling group"
+                },
+                {
+                    "id": 4,
+                    "value": "For Auto Scaling groups in a VPC, the EC2 instances are launched in subnets"
+                },
+                {
+                    "id": 5,
+                    "value": "An Auto Scaling group can contain EC2 instances in one or more Availability Zones within the same Region"
+                }
+            ],
+            "question1": "An IT company is configuring Auto Scaling for its Amazon EC2 instances spread across different AZs and Regions.",
+            "question2": "Which of the following scenarios are NOT correct about EC2 Auto Scaling? (Select two)"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Cognito Identity Pools"
+                },
+                {
+                    "id": 2,
+                    "value": "Cognito Sync"
+                },
+                {
+                    "id": 3,
+                    "value": "API Gateway"
+                },
+                {
+                    "id": 4,
+                    "value": "Cognito User Pools"
+                }
+            ],
+            "question1": "You are a developer for a web application written in .NET which uses the AWS SDK. You need to implement an authentication mechanism that returns a JWT (JSON Web Token).",
+            "question2": "Which AWS service will help you with token handling and management?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 30
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use backlog per instance metric with target tracking scaling policy"
+                },
+                {
+                    "id": 2,
+                    "value": "Use ECS service scheduler"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Docker swarm"
+                },
+                {
+                    "id": 4,
+                    "value": "Use ECS step scaling policy"
+                }
+            ],
+            "question1": "An e-commerce company has developed an API that is hosted on Amazon ECS. Variable traffic spikes on the application are causing order processing to take too long. The application processes orders using Amazon SQS queues. The ApproximateNumberOfMessagesVisible metric spikes at very high values throughout the day which triggers the CloudWatch alarm. Other ECS metrics for the API containers are well within limits.",
+            "question2": "As a Developer Associate, which of the following will you recommend for improving performance while keeping costs low?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 31
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "On-Demand Instances"
+                },
+                {
+                    "id": 2,
+                    "value": "Dedicated Hosts"
+                },
+                {
+                    "id": 3,
+                    "value": "Spot Instances"
+                },
+                {
+                    "id": 4,
+                    "value": "Dedicated Instances"
+                }
+            ],
+            "question1": "A cybersecurity firm wants to run their applications on single-tenant hardware to meet security guidelines.",
+            "question2": "Which of the following is the MOST cost-effective way of isolating their Amazon EC2 instances to a single tenant?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 32
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CloudTrail logs"
+                },
+                {
+                    "id": 2,
+                    "value": "CloudWatch metrics"
+                },
+                {
+                    "id": 3,
+                    "value": "ALB access logs"
+                },
+                {
+                    "id": 4,
+                    "value": "ALB request tracing"
+                }
+            ],
+            "question1": "An organization has offices across multiple locations and the technology team has configured an Application Load Balancer across targets in multiple Availability Zones. The team wants to analyze the incoming requests for latencies and the client's IP address patterns.",
+            "question2": "Which feature of the Load Balancer will help collect the required information?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 33
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Git credentials"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Access Keys"
+                },
+                {
+                    "id": 3,
+                    "value": "IAM username and password"
+                },
+                {
+                    "id": 4,
+                    "value": "SSH Keys"
+                }
+            ],
+            "question1": "CodeCommit is a managed version control service that hosts private Git repositories in the AWS cloud.",
+            "question2": "Which of the following credential types is NOT supported by IAM for CodeCommit?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 34
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Conditions"
+                },
+                {
+                    "id": 2,
+                    "value": "Outputs"
+                },
+                {
+                    "id": 3,
+                    "value": "Resources"
+                },
+                {
+                    "id": 4,
+                    "value": "Parameters"
+                }
+            ],
+            "question1": "A Developer at a company is working on a CloudFormation template to set up resources. Resources will be defined using code and provisioned based on certain conditions.",
+            "question2": "Which section of a CloudFormation template does not allow for conditions?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 35
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "X-Ray only works with AWS Lambda aliases"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable X-Ray sampling"
+                },
+                {
+                    "id": 3,
+                    "value": "Fix the IAM Role"
+                },
+                {
+                    "id": 4,
+                    "value": "Change the security group rules"
+                }
+            ],
+            "question1": "Recently in your organization, the AWS X-Ray SDK was bundled into each Lambda function to record outgoing calls for tracing purposes. When your team leader goes to the X-Ray service in the AWS Management Console to get an overview of the information collected, they discover that no data is available.",
+            "question2": "What is the most likely reason for this issue?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 36
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Cognito User Pools"
+                },
+                {
+                    "id": 2,
+                    "value": "Cognito Sync"
+                },
+                {
+                    "id": 3,
+                    "value": "Cognito Identity Pools"
+                },
+                {
+                    "id": 4,
+                    "value": "BeanStalk"
+                }
+            ],
+            "question1": "A university has created a student portal that is accessible through a smartphone app and web application. The smartphone app is available in both Android and IOS and the web application works on most major browsers. Students will be able to do group study online and create forum questions. All changes made via smartphone devices should be available even when offline and should synchronize with other devices.",
+            "question2": "Which of the following AWS services will meet these requirements?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 37
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Lambda Authorizer"
+                },
+                {
+                    "id": 2,
+                    "value": "Standard AWS IAM roles and policies"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Security Token Service (STS)"
+                },
+                {
+                    "id": 4,
+                    "value": "Cognito User Pools"
+                }
+            ],
+            "question1": "A developer is looking at establishing access control for an API that connects to a Lambda function downstream.",
+            "question2": "Which of the following represents a mechanism that CANNOT be used for authenticating with the API Gateway?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 38
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Configure Application Auto Scaling to manage Lambda provisioned concurrency on a schedule"
+                },
+                {
+                    "id": 2,
+                    "value": "No need to make any special provisions as Lambda is automatically scalable because of its serverless nature"
+                },
+                {
+                    "id": 3,
+                    "value": "Configure Application Auto Scaling to manage Lambda reserved concurrency on a schedule"
+                },
+                {
+                    "id": 4,
+                    "value": "Add an Application Load Balancer in front of the Lambda functions"
+                }
+            ],
+            "question1": "The development team at a retail company is gearing up for the upcoming Thanksgiving sale and wants to make sure that the application's serverless backend running via Lambda functions does not hit latency bottlenecks as a result of the traffic spike.",
+            "question2": "As a Developer Associate, which of the following solutions would you recommend to address this use-case?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 39
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Exponential Backoff technique to introduce delay in time before attempting to execute the operation again"
+                },
+                {
+                    "id": 2,
+                    "value": "Raise a service request with Amazon to increase the throttling limit for the SES API"
+                },
+                {
+                    "id": 3,
+                    "value": "Configure Timeout mechanism for each request made to the SES service"
+                },
+                {
+                    "id": 4,
+                    "value": "Implement retry mechanism for all 4xx errors to avoid throttling error"
+                }
+            ],
+            "question1": "A company uses Amazon Simple Email Service (SES) to cost-effectively send susbscription emails to the customers. Intermittently, the SES service throws the error: Throttling � Maximum sending rate exceeded.",
+            "question2": "As a developer associate, which of the following would you recommend to fix this issue?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 40
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "To deploy a container image to Lambda, the container image must implement the Lambda Runtime API"
+                },
+                {
+                    "id": 2,
+                    "value": "You can deploy Lambda function as a container image, with a maximum size of 15 GB"
+                },
+                {
+                    "id": 3,
+                    "value": "You can test the containers locally using the Lambda Runtime API"
+                },
+                {
+                    "id": 4,
+                    "value": "Lambda supports both Windows and Linux-based container images"
+                },
+                {
+                    "id": 5,
+                    "value": "You must create the Lambda function from the same account as the container registry in Amazon ECR"
+                }
+            ],
+            "question1": "A developer wants to package the code and dependencies for the application-specific Lambda functions as container images to be hosted on Amazon Elastic Container Registry (ECR).",
+            "question2": "Which of the following options are correct for the given requirement? (Select two)"
+        },
+        "answers": [
+            1,
+            5
+        ],
+        "id": 41
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Regional Reserved Instances"
+                },
+                {
+                    "id": 2,
+                    "value": "Both Regional Reserved Instances and Zonal Reserved Instances"
+                },
+                {
+                    "id": 3,
+                    "value": "Zonal Reserved Instances"
+                },
+                {
+                    "id": 4,
+                    "value": "Neither Regional Reserved Instances nor Zonal Reserved Instances"
+                }
+            ],
+            "question1": "A media publishing company is using Amazon EC2 instances for running their business-critical applications. Their IT team is looking at reserving capacity apart from savings plans for the critical instances.",
+            "question2": "As a Developer Associate, which of the following reserved instance types you would select to provide capacity reservations?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 42
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Stage Variables for development state of API"
+                },
+                {
+                    "id": 2,
+                    "value": "Redeploy the API to an existing stage or to a new stage"
+                },
+                {
+                    "id": 3,
+                    "value": "Developers need IAM permissions on API execution component of API Gateway"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable Lambda authorizer to access API"
+                }
+            ],
+            "question1": "As a Senior Developer, you are tasked with creating several API Gateway powered APIs along with your team of developers. The developers are working on the API in the development environment, but they find the changes made to the APIs are not reflected when the API is called.",
+            "question2": "As a Developer Associate, which of the following solutions would you recommend for this use-case?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 43
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon EC2 Auto Scaling adds 3 instances to the group"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon EC2 Auto Scaling adds 3 instances to the group and scales down 2 of those instances eventually"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon EC2 Auto Scaling does not add any instances to the group, but suggests changing the scaling policy to add one instance"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon EC2 Auto Scaling adds only 1 instance to the group"
+                }
+            ],
+            "question1": "An Auto Scaling group has a maximum capacity of 3, a current capacity of 2, and a scaling policy that adds 3 instances.",
+            "question2": "When executing this scaling policy, what is the expected outcome?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 44
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use the AWS CLI --dry-run option"
+                },
+                {
+                    "id": 2,
+                    "value": "Retrieve the policy using the EC2 metadata service and use the IAM policy simulator"
+                },
+                {
+                    "id": 3,
+                    "value": "Using the CLI, create a dummy EC2 and delete it using another CLI call"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the AWS CLI --test option"
+                }
+            ],
+            "question1": "You are a development team lead setting permissions for other IAM users with limited permissions. On the AWS Management Console, you created a dev group where new developers will be added, and on your workstation, you configured a developer profile. You would like to test that this user cannot terminate instances.",
+            "question2": "Which of the following options would you execute?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 45
+    }
+]

@@ -29,10 +29,6 @@ export default function Gallery() {
         <>
             <Accordion fluid styled>
                 {exams.map(exam => {
-                    let counterExams = 0;
-                    exam.exams.forEach(({ examsCount }) => {
-                        counterExams += examsCount
-                    })
                     return (
                         <>
                             <Accordion.Title
@@ -41,7 +37,7 @@ export default function Gallery() {
                                 onClick={(_, { index }) => setActiveIndex(Number(index === activeIndex ? NaN : 0))}
                             >
                                 <Icon name='dropdown' />
-                                {`${_.startCase(exam.type.replaceAll("_", " "))} (${counterExams} exams)`}
+                                {`${_.startCase(exam.type.replaceAll("_", " "))} (${exam.exams[0].id.length} exams)`}
                             </Accordion.Title>
                             <Accordion.Content active={activeIndex === 0}>
                                 <div style={{
@@ -50,12 +46,12 @@ export default function Gallery() {
                                     flexWrap: "wrap",
                                     justifyContent: "space-between"
                                 }}>
-                                    {exam.exams.map(examContainer => (
+                                    {exam.exams[0].id.map(examId => (
                                         <CardContent
                                             exam={{
                                                 type: exam.type,
                                                 image: exam.image,
-                                                id: examContainer.id,
+                                                id: examId,
                                             }}
                                             favoritesExams={favoritesExams}
                                             getFavorites={getFavorites}

@@ -1,0 +1,1280 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Cognito Identity Pools"
+                },
+                {
+                    "id": 2,
+                    "value": "IAM"
+                },
+                {
+                    "id": 3,
+                    "value": "Cognito Sync"
+                },
+                {
+                    "id": 4,
+                    "value": "Cognito User Pools"
+                }
+            ],
+            "question1": "Your mobile application needs to perform API calls to DynamoDB. You do not want to store AWS secret and access keys onto the mobile devices and need all the calls to DynamoDB made with a different identity per mobile device.",
+            "question2": "Which of the following services allows you to achieve this?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Application Load Balancer"
+                },
+                {
+                    "id": 2,
+                    "value": "Network Load Balancer"
+                },
+                {
+                    "id": 3,
+                    "value": "Classic Load Balancer"
+                },
+                {
+                    "id": 4,
+                    "value": "Elastic Load Balancer"
+                }
+            ],
+            "question1": "You are designing a high-performance application that requires millions of connections. You have several EC2 instances running Apache2 web servers and the application will require capturing the user�s source IP address and source port without the use of X-Forwarded-For.",
+            "question2": "Which of the following options will meet your needs?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "An ALB has three possible target types: Hostname, IP and Lambda"
+                },
+                {
+                    "id": 2,
+                    "value": "If you specify targets using an instance ID, traffic is routed to instances using any private IP address from one or more network interfaces"
+                },
+                {
+                    "id": 3,
+                    "value": "An ALB has three possible target types: Instance, IP and Lambda"
+                },
+                {
+                    "id": 4,
+                    "value": "If you specify targets using IP addresses, traffic is routed to instances using the primary private IP address"
+                },
+                {
+                    "id": 5,
+                    "value": "You can not specify publicly routable IP addresses to an ALB"
+                }
+            ],
+            "question1": "A developer is configuring an Application Load Balancer (ALB) to direct traffic to the application's EC2 instances and Lambda functions.",
+            "question2": "Which of the following characteristics of the ALB can be identified as correct? (Select two)"
+        },
+        "answers": [
+            3,
+            5
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "SQS + SES"
+                },
+                {
+                    "id": 2,
+                    "value": "SNS + Kinesis"
+                },
+                {
+                    "id": 3,
+                    "value": "SNS + SQS"
+                },
+                {
+                    "id": 4,
+                    "value": "SNS + Lambda"
+                }
+            ],
+            "question1": "DevOps engineers are developing an order processing system where notifications are sent to a department whenever an order is placed for a product. The system also pushes identical notifications of the new order to a processing module that would allow EC2 instances to handle the fulfillment of the order. In the case of processing errors, the messages should be allowed to be re-processed at a later stage. The order processing system should be able to scale transparently without the need for any manual or programmatic provisioning of resources.",
+            "question2": "Which of the following solutions can be used to address this use-case?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use rolling updates instead of a blue/green deployment"
+                },
+                {
+                    "id": 2,
+                    "value": "Use ElastiCache to maintain user sessions"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable sticky sessions in the Application Load Balancer"
+                },
+                {
+                    "id": 4,
+                    "value": "Use multicast to replicate session information"
+                }
+            ],
+            "question1": "An IT company uses a blue/green deployment policy to provision new Amazon EC2 instances in an Auto Scaling group behind a new Application Load Balancer for each new application version. The current set up requires the users to log in after every new deployment.",
+            "question2": "As a Developer Associate, what advice would you give to the company for resolving this issue?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Client Side Encryption"
+                },
+                {
+                    "id": 2,
+                    "value": "SSE-S3"
+                },
+                {
+                    "id": 3,
+                    "value": "SSE-KMS"
+                },
+                {
+                    "id": 4,
+                    "value": "SSE-C"
+                }
+            ],
+            "question1": "As part of internal regulations, you must ensure that all communications to Amazon S3 are encrypted.",
+            "question2": "For which of the following encryption mechanisms will a request get rejected if the connection is not using HTTPS?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "cloudformation package and cloudformation deploy"
+                },
+                {
+                    "id": 2,
+                    "value": "cloudformation package and cloudformation upload"
+                },
+                {
+                    "id": 3,
+                    "value": "cloudformation zip and cloudformation upload"
+                },
+                {
+                    "id": 4,
+                    "value": "cloudformation zip and cloudformation deploy"
+                }
+            ],
+            "question1": "Your company is in the process of building a DevOps culture and is moving all of its on-premise resources to the cloud using serverless architectures and automated deployments. You have created a CloudFormation template in YAML that uses an AWS Lambda function to pull HTML files from GitHub and place them into an Amazon Simple Storage Service (S3) bucket that you specify.",
+            "question2": "Which of the following AWS CLI commands can you use to upload AWS Lambda functions and AWS CloudFormation templates to AWS?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Run aws configure on the EC2 instance"
+                },
+                {
+                    "id": 2,
+                    "value": "Create an IAM Role for EC2"
+                },
+                {
+                    "id": 3,
+                    "value": "CloudFormation"
+                },
+                {
+                    "id": 4,
+                    "value": "EC2 User Data"
+                }
+            ],
+            "question1": "A company developed an app-based service for citizens to book transportation rides in the local community. The platform is running on AWS EC2 instances and uses Amazon Relational Database Service (RDS) for storing transportation data. A new feature has been requested where receipts would be emailed to customers with PDF attachments retrieved from Amazon Simple Storage Service (S3).",
+            "question2": "Which of the following options will provide EC2 instances with the right permissions to upload files to Amazon S3 and generate S3 Signed URL?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Kinesis"
+                },
+                {
+                    "id": 2,
+                    "value": "RDS"
+                },
+                {
+                    "id": 3,
+                    "value": "ElastiCache"
+                },
+                {
+                    "id": 4,
+                    "value": "DynamoDB"
+                }
+            ],
+            "question1": "You are assigned as the new project lead for a web application that processes orders for customers. You want to integrate event-driven processing anytime data is modified or deleted and use a serverless approach using AWS Lambda for processing stream events.",
+            "question2": "Which of the following databases should you choose from?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Git credentials generated from IAM"
+                },
+                {
+                    "id": 2,
+                    "value": "Use authentication offered by GitHub secure tokens"
+                },
+                {
+                    "id": 3,
+                    "value": "Use IAM Multi-Factor authentication"
+                },
+                {
+                    "id": 4,
+                    "value": "Use IAM user secret access key and access key ID"
+                }
+            ],
+            "question1": "A company would like to migrate the existing application code from a GitHub repository to AWS CodeCommit.",
+            "question2": "As an AWS Certified Developer Associate, which of the following would you recommend for migrating the cloned repository to CodeCommit over HTTPS?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Develop a Lambda function that will poll the S3 bucket and then insert the records into DynamoDB"
+                },
+                {
+                    "id": 2,
+                    "value": "Write a cron job that will execute a Lambda function at a scheduled time and insert the records into DynamoDB"
+                },
+                {
+                    "id": 3,
+                    "value": "Create an S3 event to invoke a Lambda function that inserts records into DynamoDB"
+                },
+                {
+                    "id": 4,
+                    "value": "Set up an event with Amazon CloudWatch Events that will monitor the S3 bucket and then insert the records into DynamoDB"
+                }
+            ],
+            "question1": "The development team at a company wants to insert vendor records into an Amazon DynamoDB table as soon as the vendor uploads a new file into an Amazon S3 bucket.",
+            "question2": "As a Developer Associate, which set of steps would you recommend to achieve this?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Change the bucket policy"
+                },
+                {
+                    "id": 2,
+                    "value": "Disable Server-Side Encryption"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable CORS"
+                },
+                {
+                    "id": 4,
+                    "value": "Amend the IAM policy"
+                }
+            ],
+            "question1": "You are storing your video files in a separate S3 bucket than your main static website in an S3 bucket. When accessing the video URLs directly the users can view the videos on the browser, but they can't play the videos while visiting the main website.",
+            "question2": "What is the root cause of this problem?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Hardcode the credentials in the application code"
+                },
+                {
+                    "id": 2,
+                    "value": "Use an IAM Instance Role"
+                },
+                {
+                    "id": 3,
+                    "value": "Use environment variables"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the SSM parameter store"
+                }
+            ],
+            "question1": "You have a web application hosted on EC2 that makes GET and PUT requests for objects stored in Amazon Simple Storage Service (S3) using the SDK for PHP. As the security team completed the final review of your application for vulnerabilities, they noticed that your application uses hardcoded IAM access key and secret access key to gain access to AWS services. They recommend you leverage a more secure setup, which should use temporary credentials if possible.",
+            "question2": "Which of the following options can be used to address the given use-case?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Keep the source code in Amazon EFS and start AWS CodePipeline whenever a file is updated"
+                },
+                {
+                    "id": 2,
+                    "value": "Keep the source code in an Amazon EBS volume and start AWS CodePipeline whenever there are updates to the source code"
+                },
+                {
+                    "id": 3,
+                    "value": "Keep the source code in an Amazon S3 bucket and start AWS CodePipeline whenever a file in the S3 bucket is updated"
+                },
+                {
+                    "id": 4,
+                    "value": "Keep the source code in an AWS CodeCommit repository and start AWS CodePipeline whenever a change is pushed to the CodeCommit repository"
+                },
+                {
+                    "id": 5,
+                    "value": "Keep the source code in an Amazon S3 bucket and set up AWS CodePipeline to recur at an interval of every 15 minutes"
+                }
+            ],
+            "question1": "A data analytics company with its IT infrastructure on the AWS Cloud wants to build and deploy its flagship application as soon as there are any changes to the source code.",
+            "question2": "As a Developer Associate, which of the following options would you suggest to trigger the deployment? (Select two)"
+        },
+        "answers": [
+            3,
+            4
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "'x-amz-server-side-encryption': 'SSE-S3'"
+                },
+                {
+                    "id": 2,
+                    "value": "'x-amz-server-side-encryption': 'AES256'"
+                },
+                {
+                    "id": 3,
+                    "value": "'x-amz-server-side-encryption': 'aws:kms'"
+                },
+                {
+                    "id": 4,
+                    "value": "'x-amz-server-side-encryption': 'SSE-KMS'"
+                }
+            ],
+            "question1": "Your development team uses the AWS SDK for Java on a web application that uploads files to several Amazon Simple Storage Service (S3) buckets using the SSE-KMS encryption mechanism. Developers are reporting that they are receiving permission errors when trying to push their objects over HTTP. Which of the following headers should they include in their request?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable KMS encryption"
+                },
+                {
+                    "id": 2,
+                    "value": "Use a git command line hook to encrypt the code client side"
+                },
+                {
+                    "id": 3,
+                    "value": "Repositories are automatically encrypted at rest"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS Lambda as a hook to encrypt the pushed code"
+                }
+            ],
+            "question1": "An organization recently began using AWS CodeCommit for its source control service. A compliance security team visiting the organization was auditing the software development process and noticed developers making many git push commands within their development machines. The compliance team requires that encryption be used for this activity.",
+            "question2": "How can the organization ensure source code is encrypted in transit and at rest?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Fix the IAM permissions for the CodeDeploy service role"
+                },
+                {
+                    "id": 2,
+                    "value": "Make the S3 bucket public"
+                },
+                {
+                    "id": 3,
+                    "value": "Fix the IAM permissions for the EC2 instance role"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable CodeDeploy Proxy"
+                }
+            ],
+            "question1": "Your AWS CodeDeploy deployment to T2 instances succeed. The new application revision makes API calls to Amazon S3 however the application is not working as expected due to authorization exceptions and you were assigned to troubleshoot the issue.",
+            "question2": "Which of the following should you do?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use the Request parameter: ?bypass_cache=1"
+                },
+                {
+                    "id": 2,
+                    "value": "Using the Header Bypass-Cache=1"
+                },
+                {
+                    "id": 3,
+                    "value": "Using the Header Cache-Control: max-age=0"
+                },
+                {
+                    "id": 4,
+                    "value": "Using the request parameter ?cache-control-max-age=0"
+                }
+            ],
+            "question1": "A financial services company with over 10,000 employees has hired you as the new Senior Developer. Initially caching was enabled to reduce the number of calls made to all API endpoints and improve the latency of requests to the company�s API Gateway.",
+            "question2": "For testing purposes, you would like to invalidate caching for the API clients to get the most recent responses. Which of the following should you do?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "'x-amz-server-side-encryption': 'SSE-S3'"
+                },
+                {
+                    "id": 2,
+                    "value": "'x-amz-server-side-encryption': 'aws:kms'"
+                },
+                {
+                    "id": 3,
+                    "value": "'x-amz-server-side-encryption': 'AES256'"
+                },
+                {
+                    "id": 4,
+                    "value": "'x-amz-server-side-encryption': 'SSE-KMS'"
+                }
+            ],
+            "question1": "You have a popular web application that accesses data stored in an Amazon Simple Storage Service (S3) bucket. Developers use the SDK to maintain the application and add new features. Security compliance requests that all new objects uploaded to S3 be encrypted using SSE-S3 at the time of upload. Which of the following headers must the developers add to their request?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "No, the max message size is 64KB"
+                },
+                {
+                    "id": 2,
+                    "value": "Yes, the max message size is 512KB"
+                },
+                {
+                    "id": 3,
+                    "value": "No, the max message size is 128KB"
+                },
+                {
+                    "id": 4,
+                    "value": "Yes, the max message size is 256KB"
+                }
+            ],
+            "question1": "Your company has been hired to build a resilient mobile voting app for an upcoming music award show that expects to have 5 to 20 million viewers. The mobile voting app will be marketed heavily months in advance so you are expected to handle millions of messages in the system. You are configuring Amazon Simple Queue Service (SQS) queues for your architecture that should receive messages from 20 KB to 200 KB.",
+            "question2": "Is it possible to send these messages to SQS?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Removing an instance role from an EC2 instance can take a few minutes before being active"
+                },
+                {
+                    "id": 2,
+                    "value": "The S3 bucket policy authorizes reads"
+                },
+                {
+                    "id": 3,
+                    "value": "The EC2 instance is using cached temporary IAM credentials"
+                },
+                {
+                    "id": 4,
+                    "value": "When a read is done on a bucket, there's a grace period of 5 minutes to do the same read again"
+                }
+            ],
+            "question1": "An EC2 instance has an IAM instance role attached to it, providing it read and write access to the S3 bucket 'my_bucket'. You have tested the IAM instance role and both reads and writes are working. You then remove the IAM role from the EC2 instance and test both read and write again. Writes stopped working but reads are still working.",
+            "question2": "What is the likely cause of this behavior?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Metrics are lagging in your CloudWatch dashboard and you should see the RCU and WCU peaking for the main table in a few minutes"
+                },
+                {
+                    "id": 2,
+                    "value": "The LSI is throttling so you need to provision more RCU and WCU to the LSI"
+                },
+                {
+                    "id": 3,
+                    "value": "Adding both an LSI and a GSI to a table is not recommended by AWS best practices as this is a known cause for creating throttles"
+                },
+                {
+                    "id": 4,
+                    "value": "The GSI is throttling so you need to provision more RCU and WCU to the GSI"
+                }
+            ],
+            "question1": "You have created a DynamoDB table to support your application and provisioned RCU and WCU to it so that your application has been running for over a year now without any throttling issues. Your application now requires a second type of query over your table and as such, you have decided to create an LSI and a GSI on a new table to support that use case. One month after having implemented such indexes, it seems your table is experiencing throttling.",
+            "question2": "Upon looking at the table's metrics, it seems the RCU and WCU provisioned are still sufficient. What's happening?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "SNS"
+                },
+                {
+                    "id": 2,
+                    "value": "SES"
+                },
+                {
+                    "id": 3,
+                    "value": "SQS"
+                },
+                {
+                    "id": 4,
+                    "value": "Kinesis"
+                }
+            ],
+            "question1": "Your development team has created a popular mobile app written for Android. The team is looking for a technology that can send messages to mobile devices using a mobile app.",
+            "question2": "Mobile app users will register and be given permissions to access AWS resources. Which technology would you recommend for subscribing users to messages?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Change the Elastic Beanstalk environment variables"
+                },
+                {
+                    "id": 2,
+                    "value": "Make a selective delete in Elastic Beanstalk"
+                },
+                {
+                    "id": 3,
+                    "value": "Convert the Elastic Beanstalk environment to a worker environment"
+                },
+                {
+                    "id": 4,
+                    "value": "Make a snapshot of the database before it gets deleted"
+                }
+            ],
+            "question1": "You have created a test environment in Elastic Beanstalk and as part of that environment, you have created an RDS database.",
+            "question2": "How can you make sure the database can be explored after the environment is destroyed?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create an S3 bucket policy and change it as users are added and removed"
+                },
+                {
+                    "id": 2,
+                    "value": "Create one customer-managed policy per user and attach them to the relevant users"
+                },
+                {
+                    "id": 3,
+                    "value": "Create inline policies for each user as they are onboarded"
+                },
+                {
+                    "id": 4,
+                    "value": "Create one customer-managed policy with policy variables and attach it to a group of all users"
+                }
+            ],
+            "question1": "AWS Certified Solutions Architect Associate",
+            "question2": "Your AWS account is now growing to 200 users and you would like to provide each of these users a personal space in the S3 bucket 'my_company_space' with the prefix /home/<username>, where they have read/write access.",
+            "question3": "How can you do this efficiently?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Deploy the X-Ray daemon agent as a sidecar container"
+                },
+                {
+                    "id": 2,
+                    "value": "Deploy the X-Ray daemon agent as a daemon set on ECS"
+                },
+                {
+                    "id": 3,
+                    "value": "Deploy the X-Ray daemon agent as a process on your EC2 instance"
+                },
+                {
+                    "id": 4,
+                    "value": "Provide the correct IAM task role to the X-Ray container"
+                },
+                {
+                    "id": 5,
+                    "value": "Provide the correct IAM instance role to the EC2 instance"
+                }
+            ],
+            "question1": "You would like to run the X-Ray daemon for your Docker containers deployed using AWS Fargate.",
+            "question2": "What do you need to do to ensure the setup will work? (Select two)"
+        },
+        "answers": [
+            1,
+            4
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Upload the compressed file using multipart upload"
+                },
+                {
+                    "id": 2,
+                    "value": "FTP the compressed file into an EC2 instance that runs in the same region as the S3 bucket. Then transfer the file from the EC2 instance into the S3 bucket"
+                },
+                {
+                    "id": 3,
+                    "value": "Upload the compressed file in a single operation"
+                },
+                {
+                    "id": 4,
+                    "value": "Upload the compressed file using multipart upload with S3 transfer acceleration"
+                }
+            ],
+            "question1": "A company ingests real-time data into its on-premises data center and subsequently a daily data feed is compressed into a single file and uploaded on Amazon S3 for backup. The typical compressed file size is around 2 GB.",
+            "question2": "Which of the following is the fastest way to upload the daily compressed file into S3?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Develop the SAM template locally => deploy the template to S3 => use your application in the cloud"
+                },
+                {
+                    "id": 2,
+                    "value": "Develop the SAM template locally => upload the template to CodeCommit => deploy your application to CodeDeploy"
+                },
+                {
+                    "id": 3,
+                    "value": "Develop the SAM template locally => upload the template to Lambda => deploy your application to the cloud"
+                },
+                {
+                    "id": 4,
+                    "value": "Develop the SAM template locally => upload the template to S3 => deploy your application to the cloud"
+                }
+            ],
+            "question1": "A media analytics company has built a streaming application on Lambda using Serverless Application Model (SAM).",
+            "question2": "As a Developer Associate, which of the following would you identify as the correct order of execution to successfully deploy the application?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The ALB is warming up"
+                },
+                {
+                    "id": 2,
+                    "value": "Security Groups"
+                },
+                {
+                    "id": 3,
+                    "value": "The application is down"
+                },
+                {
+                    "id": 4,
+                    "value": "IAM Roles"
+                }
+            ],
+            "question1": "You are responsible for an application that runs on multiple Amazon EC2 instances. In front of the instances is an Internet-facing load balancer that takes requests from clients over the internet and distributes them to the EC2 instances. A health check is configured to ping the index.html page found in the root directory for the health status. When accessing the website via the internet visitors of the website receive timeout errors.",
+            "question2": "What should be checked first to resolve the issue?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "KMS"
+                },
+                {
+                    "id": 2,
+                    "value": "ACM"
+                },
+                {
+                    "id": 3,
+                    "value": "S3"
+                },
+                {
+                    "id": 4,
+                    "value": "IAM"
+                }
+            ],
+            "question1": "You need to load SSL certificates onto your Load Balancers and also have EC2 instances dynamically retrieve them when needed for service to service two-way TLS communication.",
+            "question2": "What service should you use to centrally manage and automatically renew these SSL certificates?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 30
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Put the function and the dependencies in one folder and zip them together"
+                },
+                {
+                    "id": 2,
+                    "value": "Zip the function as-is with a package.json file so that AWS Lambda can resolve the dependencies for you"
+                },
+                {
+                    "id": 3,
+                    "value": "Upload the code through the AWS console and upload the dependencies as a zip"
+                },
+                {
+                    "id": 4,
+                    "value": "Zip the function and the dependencies separately and upload them in AWS Lambda as two parts"
+                }
+            ],
+            "question1": "Your Lambda function must use the Node.js drivers to connect to your RDS PostgreSQL database in your VPC.",
+            "question2": "How do you bundle your Lambda function to add the dependencies?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 31
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "RDS"
+                },
+                {
+                    "id": 2,
+                    "value": "Redshift"
+                },
+                {
+                    "id": 3,
+                    "value": "ElastiCache"
+                },
+                {
+                    "id": 4,
+                    "value": "DynamoDB"
+                }
+            ],
+            "question1": "You are working for a small organization that does not have a database administrator and the organization needs to install a database on the cloud quickly to support an accounting application used by thousands of users. The application will act as a backend and will perform (CRUD) operations such as create, read, update and delete as well as inner joins.",
+            "question2": "Which database is best suited for this scenario?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 32
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CloudTrail"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS X-Ray"
+                },
+                {
+                    "id": 3,
+                    "value": "VPC Flow Logs"
+                },
+                {
+                    "id": 4,
+                    "value": "CloudWatch Events"
+                }
+            ],
+            "question1": "Your client has tasked you with finding a service that would enable you to get cross-account tracing and visualization.",
+            "question2": "Which service do you recommend?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 33
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The Docker image is missing some tags"
+                },
+                {
+                    "id": 2,
+                    "value": "CodeBuild cannot work with custom Docker images"
+                },
+                {
+                    "id": 3,
+                    "value": "The Docker image is too big"
+                },
+                {
+                    "id": 4,
+                    "value": "Missing IAM permissions for the CodeBuild Service"
+                }
+            ],
+            "question1": "Your team lead has finished creating a CodeBuild project in the management console and a build spec has been defined for the project. After the build is run, CodeBuild fails to pull a Docker image into the build environment.",
+            "question2": "What is the most likely cause?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 34
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "HTTP 502: Bad gateway"
+                },
+                {
+                    "id": 2,
+                    "value": "HTTP 500: Internal server error"
+                },
+                {
+                    "id": 3,
+                    "value": "HTTP 504: Gateway timeout"
+                },
+                {
+                    "id": 4,
+                    "value": "HTTP 503: Service unavailable"
+                }
+            ],
+            "question1": "A developer has created a new Application Load Balancer but has not registered any targets with the target groups.",
+            "question2": "Which of the following errors would be generated by the Load Balancer?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 35
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The IAM service is experiencing downtime once an hour"
+                },
+                {
+                    "id": 2,
+                    "value": "Your application needs to renew the credentials after 1 hour when they expire"
+                },
+                {
+                    "id": 3,
+                    "value": "Your IAM policy is wrong"
+                },
+                {
+                    "id": 4,
+                    "value": "A lambda function revokes your access every hour"
+                }
+            ],
+            "question1": "A developer created an online shopping application that runs on EC2 instances behind load balancers. The same web application version is hosted on several EC2 instances and the instances run in an Auto Scaling group. The application uses STS to request credentials but after an hour your application stops working.",
+            "question2": "What is the most likely cause of this issue?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 36
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "SQS"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon S3"
+                },
+                {
+                    "id": 3,
+                    "value": "CloudWatch Events"
+                },
+                {
+                    "id": 4,
+                    "value": "Kinesis"
+                }
+            ],
+            "question1": "You are looking to invoke an AWS Lambda function every hour (similar to a cron job) in a serverless way.",
+            "question2": "Which event source should you use for your AWS Lambda function?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 37
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "!GetAtt"
+                },
+                {
+                    "id": 2,
+                    "value": "!ImportValue"
+                },
+                {
+                    "id": 3,
+                    "value": "!Sub"
+                },
+                {
+                    "id": 4,
+                    "value": "!Ref"
+                }
+            ],
+            "question1": "An IT company uses AWS CloudFormation templates to provision their AWS infrastructure for Amazon EC2, Amazon VPC, and Amazon S3 resources. Using cross-stack referencing, a developer creates a stack called NetworkStack which will export the subnetId that can be used when creating EC2 instances in another stack.",
+            "question2": "To use the exported value in another stack, which of the following functions must be used?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 38
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS_XRAY_TRACING_NAME"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS_XRAY_DEBUG_MODE"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS_XRAY_CONTEXT_MISSING"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS_XRAY_DAEMON_ADDRESS"
+                }
+            ],
+            "question1": "Which environment variable can be used by AWS X-Ray SDK to ensure that the daemon is correctly discovered on ECS?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 39
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "10"
+                },
+                {
+                    "id": 2,
+                    "value": "1"
+                },
+                {
+                    "id": 3,
+                    "value": "6"
+                },
+                {
+                    "id": 4,
+                    "value": "20"
+                }
+            ],
+            "question1": "One of your Kinesis Stream is experiencing increased traffic due to a sale day. Therefore your Kinesis Administrator has split shards and thus you went from having 6 shards to having 10 shards in your Kinesis Stream. Your consuming application is running a KCL-based application on EC2 instances.",
+            "question2": "What is the maximum number of EC2 instances that can be deployed to process the shards?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 40
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Configure CloudWatch Logs to directly read the logs from the on-premises server"
+                },
+                {
+                    "id": 2,
+                    "value": "Upload log files from the on-premises server to an EC2 instance which further forwards the logs to CloudWatch"
+                },
+                {
+                    "id": 3,
+                    "value": "Upload log files from the on-premises server to S3 and let CloudWatch process the files from S3"
+                },
+                {
+                    "id": 4,
+                    "value": "Configure the CloudWatch agent on the on-premises server by using IAM user credentials with permissions for CloudWatch"
+                }
+            ],
+            "question1": "A development team has a mix of applications hosted on-premises as well as on EC2 instances. The on-premises application controls all applications deployed on the EC2 instances. In case of any errors, the team wants to leverage Amazon CloudWatch to monitor and troubleshoot the on-premises application.",
+            "question2": "As a Developer Associate, which of the following solutions would you suggest to address this use-case?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 41
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable CORS"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable Encryption"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a bucket policy"
+                },
+                {
+                    "id": 4,
+                    "value": "Create an IAM role"
+                }
+            ],
+            "question1": "Your company is new to cloud computing and would like to host a static HTML5 website on the cloud and be able to access it via domain www.mycompany.com. You have created a bucket in Amazon Simple Storage Service (S3), enabled website hosting, and set the index.html as the default page. Finally, you create an Alias record in Amazon Route 53 that points to the S3 website endpoint of your S3 bucket.",
+            "question2": "When you test the domain www.mycompany.com you get the following error: 'HTTP response code 403 (Access Denied)'. What can you do to resolve this error?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 42
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Write the AWS Lambda code inline in CloudFormation in the AWS::Lambda::Function block as long as there are no third-party dependencies"
+                },
+                {
+                    "id": 2,
+                    "value": "Upload all the code as a zip to S3 and refer the object in AWS::Lambda::Function block"
+                },
+                {
+                    "id": 3,
+                    "value": "Write the AWS Lambda code inline in CloudFormation in the AWS::Lambda::Function block and reference the dependencies as a zip file stored in S3"
+                },
+                {
+                    "id": 4,
+                    "value": "Upload all the code to CodeCommit and refer to the CodeCommit Repository in AWS::Lambda::Function block"
+                },
+                {
+                    "id": 5,
+                    "value": "Upload all the code as a folder to S3 and refer the folder in AWS::Lambda::Function block"
+                }
+            ],
+            "question1": "Your company wants to move away from manually managing Lambda in the AWS console and wants to upload and update them using AWS CloudFormation.",
+            "question2": "How do you declare an AWS Lambda function in CloudFormation? (Select two)"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 43
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Set up an Amazon CloudWatch alarm that monitors status changes in Code Pipeline and triggers the Lambda function"
+                },
+                {
+                    "id": 2,
+                    "value": "Set up an Amazon CloudWatch Events rule that uses CodePipeline as an event source with the target as the Lambda function"
+                },
+                {
+                    "id": 3,
+                    "value": "Use the Lambda console to configure a trigger that invokes the Lambda function with CodePipeline as the event source"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the CodePipeline console to set up a trigger for the Lambda function"
+                }
+            ],
+            "question1": "An IT company leverages CodePipeline to automate its release pipelines. The development team wants to write a Lambda function that will send notifications for state changes within the pipeline.",
+            "question2": "As a Developer Associate, which steps would you suggest to associate the Lambda function with the event source?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 44
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable DynamoDB Accelerator (DAX) for DynamoDB and CloudFront for S3"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable ElastiCache Redis for DynamoDB and ElastiCache Memcached for S3"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable ElastiCache Redis for DynamoDB and CloudFront for S3"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable DAX for DynamoDB and ElastiCache Memcached for S3"
+                }
+            ],
+            "question1": "A financial services company has developed a REST API which is deployed in an Auto Scaling Group behind an Application Load Balancer. The API stores the data payload in DynamoDB and the static content is served through S3. Upon analyzing the usage pattern, it's found that 80% of the read requests are shared across all users.",
+            "question2": "As a Developer Associate, how can you improve the application performance while optimizing the cost with the least development effort?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 45
+    }
+]

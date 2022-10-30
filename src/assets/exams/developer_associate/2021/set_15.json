@@ -1,0 +1,1336 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "200 GiB size volume with 5000 IOPS"
+                },
+                {
+                    "id": 2,
+                    "value": "200 GiB size volume with 15000 IOPS"
+                },
+                {
+                    "id": 3,
+                    "value": "200 GiB size volume with 10000 IOPS"
+                },
+                {
+                    "id": 4,
+                    "value": "200 GiB size volume with 2000 IOPS"
+                }
+            ],
+            "question1": "A pharmaceutical company runs their database workloads on Provisioned IOPS SSD (io1) volumes.",
+            "question2": "As a Developer Associate, which of the following options would you identify as an INVALID configuration for io1 EBS volume types?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The maximum file size is 5 GB"
+                },
+                {
+                    "id": 2,
+                    "value": "You need to place a service limit request increase with AWS"
+                },
+                {
+                    "id": 3,
+                    "value": "Your IAM permissions are incorrect"
+                },
+                {
+                    "id": 4,
+                    "value": "You need to use multi-part upload for large files"
+                }
+            ],
+            "question1": "You are an administrator for a video-on-demand web application where content creators upload videos directly into S3. Recent support requests from customers state that uploading video files near 500GB size causes the website to break. After doing some investigation you find the following error: 'Your proposed upload exceeds the maximum allowed size'.",
+            "question2": "What must you do to solve this error?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Amazon SNS to develop event-driven applications that can share information"
+                },
+                {
+                    "id": 2,
+                    "value": "Use AWS Step Functions to coordinate and manage the components of order management and inventory tracking workflow"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Amazon Simple Queue Service (Amazon SQS) queue to pass information from order management to inventory tracking workflow"
+                },
+                {
+                    "id": 4,
+                    "value": "Configure Amazon EventBridge to track the flow of work from order management to inventory tracking systems"
+                }
+            ],
+            "question1": "A company wants to automate its order fulfillment and inventory tracking workflow. Starting from order creation to updating inventory to shipment, the entire process has to be tracked, managed and updated automatically.",
+            "question2": "Which of the following would you recommend as the most optimal solution for this requirement?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Cognito User pools to enable trusted third-party authenticated users to access DynamoDB"
+                },
+                {
+                    "id": 2,
+                    "value": "Create a new IAM user in the company's AWS account for each of the third-party authenticated users from the supplier organizations. The users can then use the IAM user credentials to access DynamoDB"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a new IAM group in the company's AWS account for each of the third-party authenticated users from the supplier organizations. The users can then use the IAM group credentials to access DynamoDB"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Cognito Identity pools to enable trusted third-party authenticated users to access DynamoDB"
+                }
+            ],
+            "question1": "The development team at a multi-national retail company wants to support trusted third-party authenticated users from the supplier organizations to create and update records in specific DynamoDB tables in the company's AWS account.",
+            "question2": "As a Developer Associate, which of the following solutions would you suggest for the given use-case?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Stop the Spot Instance"
+                },
+                {
+                    "id": 2,
+                    "value": "Reboot the Spot Instance"
+                },
+                {
+                    "id": 3,
+                    "value": "Terminate the Spot Instance"
+                },
+                {
+                    "id": 4,
+                    "value": "Hibernate the Spot Instance"
+                }
+            ],
+            "question1": "A new recruit is trying to configure what an Amazon EC2 should do when it interrupts a Spot Instance.",
+            "question2": "Which of the below CANNOT be configured as an interruption behavior?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use an AWS Lambda hook"
+                },
+                {
+                    "id": 2,
+                    "value": "Deploy a CloudFormation wrapper"
+                },
+                {
+                    "id": 3,
+                    "value": "Include config files in .ebextensions/ at the root of your source code"
+                },
+                {
+                    "id": 4,
+                    "value": "Use SSM parameter store as an input to your Elastic Beanstalk Configurations"
+                }
+            ],
+            "question1": "You are a developer working on a web application written in Java and would like to use AWS Elastic Beanstalk for deployment because it would handle deployment, capacity provisioning, load balancing, auto-scaling, and application health monitoring. In the past, you connected to your provisioned instances through SSH to issue configuration commands. Now, you would like a configuration mechanism that automatically applies settings for you.",
+            "question2": "Which of the following options would help do this?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Management Console might have been used to create the launch configuration"
+                },
+                {
+                    "id": 2,
+                    "value": "The default configuration for Auto Scaling was not set"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS CLI was used to create the launch configuration"
+                },
+                {
+                    "id": 4,
+                    "value": "SDK was used to create the launch configuration"
+                }
+            ],
+            "question1": "A development team has configured their Amazon EC2 instances for Auto Scaling. A Developer during routine checks has realized that only basic monitoring is active, as opposed to detailed monitoring.",
+            "question2": "Which of the following represents the best root-cause behind the issue?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Cognito User pools to facilitate sign up and user management for the mobile app"
+                },
+                {
+                    "id": 2,
+                    "value": "Create a custom solution using EC2 and DynamoDB to facilitate sign up and user management for the mobile app"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Cognito Identity pools to facilitate sign up and user management for the mobile app"
+                },
+                {
+                    "id": 4,
+                    "value": "Create a custom solution using Lambda and DynamoDB to facilitate sign up and user management for the mobile app"
+                }
+            ],
+            "question1": "The app development team at a social gaming mobile app wants to simplify the user sign up process for the app. The team is looking for a fully managed scalable solution for user management in anticipation of the rapid growth that the app foresees.",
+            "question2": "As a Developer Associate, which of the following solutions would you suggest so that it requires the LEAST amount of development effort?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Routing policies to re-route unintended access"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Bucket policy to block the unintended access"
+                },
+                {
+                    "id": 3,
+                    "value": "Share pre-signed URLs with resources that need access"
+                },
+                {
+                    "id": 4,
+                    "value": "It is not possible to implement time constraints on Amazon S3 Bucket access"
+                }
+            ],
+            "question1": "After a code review, a developer has been asked to make his publicly accessible S3 buckets private, and enable access to objects with a time-bound constraint.",
+            "question2": "Which of the following options will address the given use-case?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "VPN logs"
+                },
+                {
+                    "id": 2,
+                    "value": "BGP logs"
+                },
+                {
+                    "id": 3,
+                    "value": "Subnet logs"
+                },
+                {
+                    "id": 4,
+                    "value": "VPC Flow Logs"
+                }
+            ],
+            "question1": "A company is using a Border Gateway Protocol (BGP) based AWS VPN connection to connect from its on-premises data center to Amazon EC2 instances in the company�s account. The development team can access an EC2 instance in subnet A but is unable to access an EC2 instance in subnet B in the same VPC.",
+            "question2": "Which logs can be used to verify whether the traffic is reaching subnet B?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Make a GenerateDataKeyWithPlaintext API call that returns an encrypted copy of a data key. Use a plaintext key to encrypt the data"
+                },
+                {
+                    "id": 2,
+                    "value": "Make an Encrypt API call to encrypt the plaintext data as ciphertext using a customer master key (CMK) with imported key material"
+                },
+                {
+                    "id": 3,
+                    "value": "Make a GenerateDataKey API call that returns a plaintext key and an encrypted copy of a data key. Use a plaintext key to encrypt the data"
+                },
+                {
+                    "id": 4,
+                    "value": "Make a GenerateDataKeyWithoutPlaintext API call that returns an encrypted copy of a data key. Use an encrypted key to encrypt the data"
+                }
+            ],
+            "question1": "The development team at a company wants to encrypt a 111 GB object using AWS KMS.",
+            "question2": "Which of the following represents the best solution?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Kinesis Data Streams"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon SQS"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Kinesis Data Analytics"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Kinesis Data Firehose"
+                }
+            ],
+            "question1": "A leading financial services company offers data aggregation services for Wall Street trading firms. The company bills its clients based on per unit of clickstream data provided to the clients. As the company operates in a regulated industry, it needs to have the same ordered clickstream data available for auditing within a window of 7 days.",
+            "question2": "As a Developer Associate, which of the following AWS services do you think provides the ability to run the billing process and auditing process on the given clickstream data in the same order?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Assign more RAM to the function"
+                },
+                {
+                    "id": 2,
+                    "value": "Use environment variables to pass operational parameters"
+                },
+                {
+                    "id": 3,
+                    "value": "Move the Amazon S3 client initialization, out of your function handler"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable X-Ray integration"
+                }
+            ],
+            "question1": "Your team lead has requested code review of your code for Lambda functions. Your code is written in Python and makes use of the Amazon Simple Storage Service (S3) to upload logs to an S3 bucket. After the review, your team lead has recommended reuse of execution context to improve the Lambda performance.",
+            "question2": "Which of the following actions will help you implement the recommendation?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use CloudWatch Events to identify and notify any failures in the Lambda code"
+                },
+                {
+                    "id": 2,
+                    "value": "Use CodeDeploy to identify and notify any failures in the Lambda code"
+                },
+                {
+                    "id": 3,
+                    "value": "Use CodeCommit to identify and notify any failures in the Lambda code"
+                },
+                {
+                    "id": 4,
+                    "value": "The developers should insert logging statements in the Lambda function code which are then available via CloudWatch logs"
+                }
+            ],
+            "question1": "An IT company has migrated to a serverless application stack on the AWS Cloud with the compute layer being implemented via Lambda functions. The engineering managers would like to actively troubleshoot any failures in the Lambda functions.",
+            "question2": "As a Developer Associate, which of the following solutions would you suggest for this use-case?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Instances of a specific capacity type aren�t equally distributed across Availability Zones"
+                },
+                {
+                    "id": 2,
+                    "value": "There could be short-lived TCP connections between clients and instances"
+                },
+                {
+                    "id": 3,
+                    "value": "For Application Load Balancers, cross-zone load balancing is disabled by default"
+                },
+                {
+                    "id": 4,
+                    "value": "After you disable an Availability Zone, the targets in that Availability Zone remain registered with the load balancer, thereby receiving random bursts of traffic"
+                },
+                {
+                    "id": 5,
+                    "value": "Sticky sessions are enabled for the load balancer"
+                }
+            ],
+            "question1": "A developer from your team has configured the load balancer to route traffic equally between instances or across Availability Zones. However, Elastic Load Balancing (ELB) routes more traffic to one instance or Availability Zone than the others.",
+            "question2": "Why is this happening and how can it be fixed? (Select two)"
+        },
+        "answers": [
+            1,
+            5
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Opt for Rolling deployment"
+                },
+                {
+                    "id": 2,
+                    "value": "Opt for In-place deployment"
+                },
+                {
+                    "id": 3,
+                    "value": "Opt for Blue/Green deployment"
+                },
+                {
+                    "id": 4,
+                    "value": "Opt for Immutable deployment"
+                }
+            ],
+            "question1": "Your web application architecture consists of multiple Amazon EC2 instances running behind an Elastic Load Balancer with an Auto Scaling group having the desired capacity of 5 EC2 instances. You would like to integrate AWS CodeDeploy for automating application deployment. The deployment should re-route traffic from your application's original environment to the new environment.",
+            "question2": "Which of the following options will meet your deployment criteria?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Allows full S3 access to an Amazon Cognito user, but explicitly denies access to the Production bucket if the Cognito user is not authenticated"
+                },
+                {
+                    "id": 2,
+                    "value": "Allows IAM users to access their own home directory in Amazon S3, programmatically and in the console"
+                },
+                {
+                    "id": 3,
+                    "value": "Allows a user to manage a single Amazon S3 bucket and denies every other AWS action and resource if the user is not signed in using MFA within last thirty minutes"
+                },
+                {
+                    "id": 4,
+                    "value": "Allows full S3 access, but explicitly denies access to the Production bucket if the user has not signed in using MFA within the last thirty minutes"
+                }
+            ],
+            "question1": "An intern at an IT company is getting started with AWS Cloud and wants to understand the following Amazon S3 bucket access policy:",
+            "question2": "{",
+            "question3": "    \"Version\": \"2012-10-17\",",
+            "question4": "    \"Statement\": [",
+            "question5": "        {",
+            "question6": "            \"Sid\": \"ListAllS3Buckets\",",
+            "question7": "            \"Effect\": \"Allow\",",
+            "question8": "            \"Action\": [\"s3:ListAllMyBuckets\"],",
+            "question9": "            \"Resource\": \"arn:aws:s3:::*\"",
+            "question10": "        },",
+            "question11": "        {",
+            "question12": "            \"Sid\": \"AllowBucketLevelActions\",",
+            "question13": "            \"Effect\": \"Allow\",",
+            "question14": "            \"Action\": [",
+            "question15": "                \"s3:ListBucket\",",
+            "question16": "                \"s3:GetBucketLocation\"",
+            "question17": "            ],",
+            "question18": "            \"Resource\": \"arn:aws:s3:::*\"",
+            "question19": "        },",
+            "question20": "        {",
+            "question21": "            \"Sid\": \"AllowBucketObjectActions\",",
+            "question22": "            \"Effect\": \"Allow\",",
+            "question23": "            \"Action\": [",
+            "question24": "                \"s3:PutObject\",",
+            "question25": "                \"s3:PutObjectAcl\",",
+            "question26": "                \"s3:GetObject\",",
+            "question27": "                \"s3:GetObjectAcl\",",
+            "question28": "                \"s3:DeleteObject\"",
+            "question29": "            ],",
+            "question30": "            \"Resource\": \"arn:aws:s3:::*/*\"",
+            "question31": "        },",
+            "question32": "        {",
+            "question33": "            \"Sid\": \"RequireMFAForProductionBucket\",",
+            "question34": "            \"Effect\": \"Deny\",",
+            "question35": "            \"Action\": \"s3:*\",",
+            "question36": "            \"Resource\": [",
+            "question37": "                \"arn:aws:s3:::Production/*\",",
+            "question38": "                \"arn:aws:s3:::Production\"",
+            "question39": "            ],",
+            "question40": "            \"Condition\": {",
+            "question41": "                \"NumericGreaterThanIfExists\": {\"aws:MultiFactorAuthAge\": \"1800\"}",
+            "question42": "            }",
+            "question43": "        }",
+            "question44": "    ]",
+            "question45": "}",
+            "question46": "As a Developer Associate, can you help him identify what the policy is for?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The ECS agent Docker image must be re-built to connect to the other clusters"
+                },
+                {
+                    "id": 2,
+                    "value": "The EC2 instance is missing IAM permissions to join the other clusters"
+                },
+                {
+                    "id": 3,
+                    "value": "The security groups on the EC2 instance are pointing to the wrong ECS cluster"
+                },
+                {
+                    "id": 4,
+                    "value": "The cluster name Parameter has not been updated in the file /etc/ecs/ecs.config during bootstrap"
+                }
+            ],
+            "question1": "You are working for a shipping company that is automating the creation of ECS clusters with an Auto Scaling Group using an AWS CloudFormation template that accepts cluster name as its parameters. Initially, you launch the template with input value 'MainCluster', which deployed five instances across two availability zones. The second time, you launch the template with an input value 'SecondCluster'. However, the instances created in the second run were also launched in 'MainCluster' even after specifying a different cluster name.",
+            "question2": "What is the root cause of this issue?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Server-Side Encryption with Customer-Provided Keys (SSE-C)"
+                },
+                {
+                    "id": 2,
+                    "value": "Server-Side Encryption with Customer Master Keys (CMKs) Stored in AWS Key Management Service (SSE-KMS)"
+                },
+                {
+                    "id": 3,
+                    "value": "Server-Side Encryption with Secrets Manager"
+                },
+                {
+                    "id": 4,
+                    "value": "Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)"
+                }
+            ],
+            "question1": "A financial services company wants to ensure that the customer data is always kept encrypted on Amazon S3 but wants a fully managed solution to create, rotate and remove the encryption keys.",
+            "question2": "As a Developer Associate, which of the following would you recommend to address the given use-case?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The event has been processed successfully"
+                },
+                {
+                    "id": 2,
+                    "value": "The Lambda function invocation failed only once but succeeded thereafter"
+                },
+                {
+                    "id": 3,
+                    "value": "The event fails all processing attempts"
+                },
+                {
+                    "id": 4,
+                    "value": "The Lambda function invocation is synchronous"
+                },
+                {
+                    "id": 5,
+                    "value": "The Lambda function invocation is asynchronous"
+                }
+            ],
+            "question1": "A new member of your team is working on creating Dead Letter Queue (DLQ) for AWS Lambda functions.",
+            "question2": "As a Developer Associate, can you help him identify the use cases, wherein AWS Lambda will add a message into a DLQ after being processed? (Select two)"
+        },
+        "answers": [
+            3,
+            5
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Custom configuration for the X-Ray agents"
+                },
+                {
+                    "id": 2,
+                    "value": "Implement a network sampling rule"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable X-Ray sampling"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Filter Expressions in the X-Ray console"
+                }
+            ],
+            "question1": "An IT company has its serverless stack integrated with AWS X-Ray. The developer at the company has noticed a high volume of data going into X-Ray and the AWS monthly usage charges have skyrocketed as a result. The developer has requested changes to mitigate the issue.",
+            "question2": "As a Developer Associate, which of the following solutions would you recommend to obtain tracing trends while reducing costs with minimal disruption?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Cross-account IAM roles for programmatic and console access to S3 bucket objects"
+                },
+                {
+                    "id": 2,
+                    "value": "Use IAM roles and resource-based policies delegate access across accounts within different partitions via programmatic access only"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Resource-based policies and AWS Identity and Access Management (IAM) policies for programmatic-only access to S3 bucket objects"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Access Control List (ACL) and IAM policies for programmatic-only access to S3 bucket objects"
+                }
+            ],
+            "question1": "A large firm stores its static data assets on Amazon S3 buckets. Each service line of the firm has its own AWS account. For a business use case, the Finance department needs to give access to their S3 bucket's data to the Human Resources department.",
+            "question2": "Which of the below options is NOT feasible for cross-account access of S3 bucket objects?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create multiple CodePipelines for each environment and link them using AWS Lambda"
+                },
+                {
+                    "id": 2,
+                    "value": "Create deeply integrated AWS CodePipelines for each environment"
+                },
+                {
+                    "id": 3,
+                    "value": "Create one CodePipeline for your entire flow and add a manual approval step"
+                },
+                {
+                    "id": 4,
+                    "value": "Use CodePipeline with Amazon Virtual Private Cloud"
+                }
+            ],
+            "question1": "As part of employee skills upgrade, the developers of your team have been delegated few responsibilities of DevOps engineers. Developers now have full control over modeling the entire software delivery process, from coding to deployment. As the team lead, you are now responsible for any manual approvals needed in the process.",
+            "question2": "Which of the following approaches supports the given workflow?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use the header X-Forwarded-For"
+                },
+                {
+                    "id": 2,
+                    "value": "You can get the Client IP addresses from Elastic Load Balancing logs"
+                },
+                {
+                    "id": 3,
+                    "value": "Use the header X-Forwarded-From"
+                },
+                {
+                    "id": 4,
+                    "value": "You can get the Client IP addresses from server access logs"
+                }
+            ],
+            "question1": "Your company uses an Application Load Balancer to route incoming end-user traffic to applications hosted on Amazon EC2 instances. The applications capture incoming request information and store it in the Amazon Relational Database Service (RDS) running on Microsoft SQL Server DB engines.",
+            "question2": "As part of new compliance rules, you need to capture the client's IP address. How will you achieve this?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable versioning on both the buckets to facilitate correct functioning of the website"
+                },
+                {
+                    "id": 2,
+                    "value": "Configure CORS on the bucket B that is hosting the web fonts to allow Bucket A origin to make the requests"
+                },
+                {
+                    "id": 3,
+                    "value": "Configure CORS on the bucket A that is hosting the website to allow any origin to respond to requests"
+                },
+                {
+                    "id": 4,
+                    "value": "Update bucket policies on both bucket A and bucket B to allow successful loading of the web fonts on the website"
+                }
+            ],
+            "question1": "A digital marketing company has its website hosted on an Amazon S3 bucket A. The development team notices that the web fonts that are hosted on another S3 bucket B are not loading on the website.",
+            "question2": "Which of the following solutions can be used to address this issue?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS CloudWatch Log Agent"
+                },
+                {
+                    "id": 2,
+                    "value": "Integrate with AWS CodePipeline"
+                },
+                {
+                    "id": 3,
+                    "value": "Have a load balancer in front of your instances"
+                },
+                {
+                    "id": 4,
+                    "value": "CodeDeploy Agent"
+                }
+            ],
+            "question1": "You have a workflow process that pulls code from AWS CodeCommit and deploys to EC2 instances associated with tag group ProdBuilders. You would like to configure the instances to archive no more than two application revisions to conserve disk space.",
+            "question2": "Which of the following will allow you to implement this?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use ElastiCache to improve performance of compute-intensive workloads"
+                },
+                {
+                    "id": 2,
+                    "value": "Use ElastiCache to improve latency and throughput for read-heavy application workloads"
+                },
+                {
+                    "id": 3,
+                    "value": "Use ElastiCache to improve latency and throughput for write-heavy application workloads"
+                },
+                {
+                    "id": 4,
+                    "value": "Use ElastiCache to run highly complex JOIN queries"
+                },
+                {
+                    "id": 5,
+                    "value": "Use ElastiCache to improve performance of Extract-Transform-Load (ETL) workloads"
+                }
+            ],
+            "question1": "The development team at a social media company is considering using Amazon ElastiCache to boost the performance of their existing databases.",
+            "question2": "As a Developer Associate, which of the following use-cases would you recommend as the BEST fit for ElastiCache? (Select two)"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Lambda layers to connect to the internet and RDS separately"
+                },
+                {
+                    "id": 2,
+                    "value": "Configure lambda to connect to the public subnet that will give internet access and use Security Group to access RDS inside the private subnet"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Environment variables to pass in the RDS connection string"
+                },
+                {
+                    "id": 4,
+                    "value": "Configure Lambda to connect to VPC with private subnet and Security Group needed to access RDS"
+                }
+            ],
+            "question1": "You have migrated an on-premise SQL Server database to an Amazon Relational Database Service (RDS) database attached to a VPC inside a private subnet. Also, the related Java application, hosted on-premise, has been moved to an Amazon Lambda function.",
+            "question2": "Which of the following should you implement to connect AWS Lambda function to its RDS instance?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create an S3 bucket policy that authorises public access"
+                },
+                {
+                    "id": 2,
+                    "value": "Use an IAM role"
+                },
+                {
+                    "id": 3,
+                    "value": "Create an IAM programmatic user and store the access key and secret access key on the EC2 ~/.aws/credentials file."
+                },
+                {
+                    "id": 4,
+                    "value": "Use EC2 User Data"
+                }
+            ],
+            "question1": "An application runs on an EC2 instance and processes orders on a nightly basis. This EC2 instance needs to access the orders that are stored in S3.",
+            "question2": "How would you recommend the EC2 instance access the orders securely?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Implement Amazon ElastiCache Redis in Cluster Mode"
+                },
+                {
+                    "id": 2,
+                    "value": "Implement Amazon ElastiCache Memcached"
+                },
+                {
+                    "id": 3,
+                    "value": "Migrate the database to Amazon Redshift"
+                },
+                {
+                    "id": 4,
+                    "value": "Install Redis on an Amazon EC2 instance"
+                }
+            ],
+            "question1": "A company uses Amazon RDS as its database. For improved user experience, it has been decided that a highly reliable fully-managed caching layer has to be configured in front of RDS.",
+            "question2": "Which of the following is the right choice, keeping in mind that cache content regeneration is a costly activity?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 30
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Deploy your Lambda in a VPC"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Tags to distinguish the different versions"
+                },
+                {
+                    "id": 3,
+                    "value": "Use environment variables"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS Lambda aliases"
+                }
+            ],
+            "question1": "Recently, you started an online learning platform using AWS Lambda and AWS Gateway API. Your first version was successful, and you began developing new features for the second version. You would like to gradually introduce the second version by routing only 10% of the incoming traffic to the new Lambda version.",
+            "question2": "Which solution should you opt for?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 31
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Custom configuration of the X-Ray agents"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable X-Ray Deep linking to send only the most useful data to X-Ray"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable X-Ray Sampling"
+                },
+                {
+                    "id": 4,
+                    "value": "Send only the required data from client-side"
+                }
+            ],
+            "question1": "A company has their entire stack integrated with AWS X-Ray. A manager at the company noticed the skyrocketing AWS monthly usage charges for the X-Ray service. He tracked the abnormal bills to the high volume of input data going into X-Ray. As a Developer, you have been given the responsibility to fix this issue as quickly as possible, with minimal disruptions.",
+            "question2": "Which of the below is the optimal choice for this issue?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 32
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Standard Workflows on AWS Step Functions are suitable for long-running, durable, and auditable workflows that do not support any human approval steps"
+                },
+                {
+                    "id": 2,
+                    "value": "Both Standard and Express Workflows support all service integrations, activities, and design patterns"
+                },
+                {
+                    "id": 3,
+                    "value": "Express Workflows have a maximum duration of five minutes and Standard workflows have a maximum duration of 180 days or 6 months"
+                },
+                {
+                    "id": 4,
+                    "value": "You should use Express Workflows for workloads with high event rates and short duration"
+                },
+                {
+                    "id": 5,
+                    "value": "Standard Workflows on AWS Step Functions are suitable for long-running, durable, and auditable workflows that can also support any human approval steps"
+                }
+            ],
+            "question1": "A team is checking the viability of using AWS Step Functions for creating a banking workflow for loan approvals. The web application will also have human approval as one of the steps in the workflow.",
+            "question2": "As a developer associate, which of the following would you identify as the key characteristics for AWS Step Function? (Select two)"
+        },
+        "answers": [
+            4,
+            5
+        ],
+        "id": 33
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "HTTP_PROXY"
+                },
+                {
+                    "id": 2,
+                    "value": "MOCK"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS_PROXY"
+                },
+                {
+                    "id": 4,
+                    "value": "HTTP"
+                }
+            ],
+            "question1": "A company follows collaborative development practices. The engineering manager wants to isolate the development effort by setting up simulations of API components owned by various development teams.",
+            "question2": "Which API integration type is best suited for this requirement?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 34
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "S3 Access Points"
+                },
+                {
+                    "id": 2,
+                    "value": "S3 Cross-Origin Resource Sharing (CORS)"
+                },
+                {
+                    "id": 3,
+                    "value": "S3 Transfer Acceleration"
+                },
+                {
+                    "id": 4,
+                    "value": "S3 Access Analyzer"
+                }
+            ],
+            "question1": "A company has hosted its website on an Amazon S3 bucket and have used another Amazon S3 bucket for storing the rest of the assets like images, fonts, etc.",
+            "question2": "Which technique/mechanism will help the hosted website access its assets without access/permission issues?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 35
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "There is nothing called Organization Trail. The master account can, however, enable CloudTrail logging, to keep track of all activities across AWS accounts"
+                },
+                {
+                    "id": 2,
+                    "value": "By default, CloudTrail event log files are not encrypted"
+                },
+                {
+                    "id": 3,
+                    "value": "Member accounts do not have access to organization trail, neither do they have access to the Amazon S3 bucket that logs the files"
+                },
+                {
+                    "id": 4,
+                    "value": "Member accounts will be able to see the Organization trail, but cannot modify or delete it"
+                },
+                {
+                    "id": 5,
+                    "value": "By default, CloudTrail tracks only bucket-level actions. To track object-level actions, you need to enable Amazon S3 data events"
+                }
+            ],
+            "question1": "A multi-national enterprise uses AWS Organizations to manage its users across different divisions. Even though CloudTrail is enabled on the member accounts, managers have noticed that access issues to CloudTrail logs across different divisions and AWS Regions is becoming a bottleneck in troubleshooting issues. They have decided to use the organization trail to keep things simple.",
+            "question2": "What are the important points to remember when configuring an organization trail? (Select two)"
+        },
+        "answers": [
+            4,
+            5
+        ],
+        "id": 36
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use SQS short polling to retrieve messages from your Amazon SQS queues"
+                },
+                {
+                    "id": 2,
+                    "value": "Use SQS long polling to retrieve messages from your Amazon SQS queues"
+                },
+                {
+                    "id": 3,
+                    "value": "Use SQS message timer to retrieve messages from your Amazon SQS queues"
+                },
+                {
+                    "id": 4,
+                    "value": "Use SQS visibility timeout to retrieve messages from your Amazon SQS queues"
+                }
+            ],
+            "question1": "A high-frequency stock trading firm is migrating their messaging queues from self-managed message-oriented middleware systems to Amazon SQS. The development team at the company wants to minimize the costs of using SQS.",
+            "question2": "As a Developer Associate, which of the following options would you recommend to address the given use-case?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 37
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Stage Variables"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable API Gateway Caching"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Mapping Templates"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Amazon Kinesis Data Streams to stream incoming data and reduce the burden on Gateway APIs"
+                }
+            ],
+            "question1": "You have a three-tier web application consisting of a web layer using AngularJS, an application layer using an AWS API Gateway and a data layer in an Amazon Relational Database Service (RDS) database. Your web application allows visitors to look up popular movies from the past. The company is looking at reducing the number of calls made to endpoint and improve latency to the API.",
+            "question2": "What can you do to improve performance?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 38
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use AWS Step Functions activities to orchestrate the workflow"
+                },
+                {
+                    "id": 2,
+                    "value": "Use AWS Step Functions state machines to orchestrate the workflow"
+                },
+                {
+                    "id": 3,
+                    "value": "Use AWS Glue to orchestrate the workflow"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS Batch to orchestrate the workflow"
+                }
+            ],
+            "question1": "An e-commerce company has an order processing workflow with several tasks to be done in parallel as well as decision steps to be evaluated for successful processing of the order. All the tasks are implemented via Lambda functions.",
+            "question2": "Which of the following is the BEST solution to meet these business requirements?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 39
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Mapping Templates"
+                },
+                {
+                    "id": 2,
+                    "value": "Assign a Security Group to your API Gateway"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Account-level throttling"
+                },
+                {
+                    "id": 4,
+                    "value": "Restrict access by using CORS"
+                }
+            ],
+            "question1": "You team maintains a public API Gateway that is accessed by clients from another domain. Usage has been consistent for the last few months but recently it has more than doubled. As a result, your costs have gone up and would like to prevent other unauthorized domains from accessing your API.",
+            "question2": "Which of the following actions should you take?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 40
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a custom alarm for your ASG and make your instances trigger the alarm using PutAlarmData API"
+                },
+                {
+                    "id": 2,
+                    "value": "Migrate your application to AWS Lambda"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a custom metric in CloudWatch and make your instances send data to it using PutMetricData. Then, create an alarm based on this metric"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable detailed monitoring for EC2 and ASG to get the RAM usage data and create a CloudWatch Alarm on top of it"
+                }
+            ],
+            "question1": "As a developer, you are looking at creating a custom configuration for Amazon EC2 instances running in an Auto Scaling group. The solution should allow the group to auto-scale based on the metric of 'average RAM usage' for your Amazon EC2 instances.",
+            "question2": "Which option provides the best solution?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 41
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The IAM user stands in an invalid state, because of conflicting policies"
+                },
+                {
+                    "id": 2,
+                    "value": "The user will get access because it has an explicit allow"
+                },
+                {
+                    "id": 3,
+                    "value": "The user will be denied access because one of the policies has an explicit deny on it"
+                },
+                {
+                    "id": 4,
+                    "value": "The order of the policy matters. If policy 1 is before 2, then the user is denied access. If policy 2 is before 1, then the user is allowed access"
+                }
+            ],
+            "question1": "Two policies are attached to an IAM user. The first policy states that the user has explicitly been denied all access to EC2 instances. The second policy states that the user has been allowed permission for EC2:Describe action.",
+            "question2": "When the user tries to use 'Describe' action on an EC2 instance using the CLI, what will be the output?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 42
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Permissions boundaries, Identity and Access Management (IAM) policies"
+                },
+                {
+                    "id": 2,
+                    "value": "Query String Authentication, Access Control Lists (ACLs)"
+                },
+                {
+                    "id": 3,
+                    "value": "Bucket policies, Identity and Access Management (IAM) policies"
+                },
+                {
+                    "id": 4,
+                    "value": "IAM database authentication, Bucket policies"
+                },
+                {
+                    "id": 5,
+                    "value": "Query String Authentication, Permissions boundaries"
+                }
+            ],
+            "question1": "A telecom service provider stores its critical customer data on Amazon Simple Storage Service (Amazon S3).",
+            "question2": "Which of the following options can be used to control access to data stored on Amazon S3? (Select two)"
+        },
+        "answers": [
+            2,
+            3
+        ],
+        "id": 43
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "EBS volumes do not support in-flight encryption but do support encryption at rest using KMS"
+                },
+                {
+                    "id": 2,
+                    "value": "EBS volumes support in-flight encryption but does not support encryption at rest"
+                },
+                {
+                    "id": 3,
+                    "value": "EBS volumes don't support any encryption"
+                },
+                {
+                    "id": 4,
+                    "value": "EBS volumes support both in-flight encryption and encryption at rest using KMS"
+                }
+            ],
+            "question1": "A company has a workload that requires 14,000 consistent IOPS for data that must be durable and secure. The compliance standards of the company state that the data should be secure at every stage of its lifecycle on all of the EBS volumes they use.",
+            "question2": "Which of the following statements are true regarding data security on EBS?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 44
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use reserved concurrency to account for the compute-heavy workflows"
+                },
+                {
+                    "id": 2,
+                    "value": "Invoke the Lambda functions asynchronously to process the compute-heavy workflows"
+                },
+                {
+                    "id": 3,
+                    "value": "Increase the amount of memory available to the Lambda functions"
+                },
+                {
+                    "id": 4,
+                    "value": "Use provisioned concurrency to account for the compute-heavy workflows"
+                }
+            ],
+            "question1": "A cybersecurity company is running a serverless backend with several compute-heavy workflows running on Lambda functions. The development team has noticed a performance lag after analyzing the performance metrics for the Lambda functions.",
+            "question2": "As a Developer Associate, which of the following options would you suggest as the BEST solution to address the compute-heavy workloads?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 45
+    }
+]

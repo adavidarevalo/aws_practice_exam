@@ -1,0 +1,861 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CloudWatch monitoring is lagging"
+                },
+                {
+                    "id": 2,
+                    "value": "Write Capacity Units (WCU�s) are applied across to all your DynamoDB tables and this needs reconfiguration"
+                },
+                {
+                    "id": 3,
+                    "value": "Configured IAM policy is wrong"
+                },
+                {
+                    "id": 4,
+                    "value": "You have a hot partition"
+                }
+            ],
+            "question1": "Your web application reads and writes data to your DynamoDB table. The table is provisioned with 400 Write Capacity Units (WCU�s) shared across 4 partitions. One of the partitions receives 250 WCU/second while others receive much less. You receive the error 'ProvisionedThroughputExceededException'.",
+            "question2": "What is the likely cause of this error?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS CodeBuild"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Lambda"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Autoscaling"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Elastic Beanstalk"
+                },
+                {
+                    "id": 5,
+                    "value": "AWS Serverless Application Model (AWS SAM)"
+                }
+            ],
+            "question1": "AWS CloudFormation helps model and provision all the cloud infrastructure resources needed for your business.",
+            "question2": "Which of the following services rely on CloudFormation to provision resources (Select two)?"
+        },
+        "answers": [
+            4,
+            5
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Glue"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon Kinesis Firehose"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon Simple Queue Service (SQS)"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon Kinesis Data Streams"
+                }
+            ],
+            "question1": "A company has more than 100 million members worldwide enjoying 125 million hours of TV shows and movies each day. The company uses AWS for nearly all its computing and storage needs, which use more than 10,000 server instances on AWS. This results in an extremely complex and dynamic networking environment where applications are constantly communicating inside AWS and across the Internet. Monitoring and optimizing its network is critical for the company.",
+            "question2": "The company needs a solution for ingesting and analyzing the multiple terabytes of real-time data its network generates daily in the form of flow logs. Which technology/service should the company use to ingest this data economically and has the flexibility to direct this data to other downstream systems?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Amazon Cognito to enable Multi-Factor Authentication (MFA) when users log-in"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Lambda functions and RDS to create a custom solution for user management"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Lambda functions and DynamoDB to create a custom solution for user management"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Amazon SNS to send Multi-Factor Authentication (MFA) code via SMS to mobile app users"
+                },
+                {
+                    "id": 5,
+                    "value": "Use Amazon Cognito for user-management and facilitating the log-in/sign-up process"
+                }
+            ],
+            "question1": "A HealthCare mobile app uses proprietary Machine Learning algorithms to provide early diagnosis using patient health metrics. To protect this sensitive data, the development team wants to transition to a scalable user management system with log-in/sign-up functionality that also supports Multi-Factor Authentication (MFA)",
+            "question2": "Which of the following options can be used to implement a solution with the LEAST amount of development effort? (Select two)"
+        },
+        "answers": [
+            1,
+            5
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable RDS read replicas"
+                },
+                {
+                    "id": 2,
+                    "value": "Add an ElastiCache Cluster"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Elastic IP"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable Load Balancer stickiness"
+                }
+            ],
+            "question1": "You have deployed a traditional 3-tier web application architecture with a Classic Load Balancer, an Auto Scaling group, and an Amazon Relational Database Service (RDS) database. Users are reporting that they have to re-authenticate into the website often.",
+            "question2": "Which of the following represents a scalable solution to make the application tier stateless and outsource the session information?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon Elastic Container Service (Amazon ECS) on Fargate"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon Elastic Kubernetes Service (Amazon EKS) on Fargate"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Elastic Beanstalk"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon Elastic Container Service (Amazon ECS) on EC2"
+                }
+            ],
+            "question1": "Your company is planning to move away from reserving EC2 instances and would like to adopt a more agile form of serverless architecture.",
+            "question2": "Which of the folloiwng is the simplest and the least effort way of deploying the Docker containers on this serverless architecture?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Load-balancing, Autoscaling environment"
+                },
+                {
+                    "id": 2,
+                    "value": "Single Instance with Elastic IP"
+                },
+                {
+                    "id": 3,
+                    "value": "Dedicated worker environment"
+                },
+                {
+                    "id": 4,
+                    "value": "Single Instance Worker node"
+                }
+            ],
+            "question1": "You company runs business logic on smaller software components that perform various functions. Some functions process information in a few seconds while others seem to take a long time to complete. Your manager asked you to decouple components that take a long time to ensure software applications stay responsive under load. You decide to configure Amazon Simple Queue Service (SQS) to work with your Elastic Beanstalk configuration.",
+            "question2": "Which of the following Elastic Beanstalk environment should you choose to meet this requirement?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The total size of all environment variables shouldn't exceed 8 KB. There is no limit on the number of variables"
+                },
+                {
+                    "id": 2,
+                    "value": "The total size of all environment variables shouldn't exceed 4 KB. There is no limit on the number of variables"
+                },
+                {
+                    "id": 3,
+                    "value": "The total size of all environment variables shouldn't exceed 8 KB. The maximum number of variables that can be created is 50"
+                },
+                {
+                    "id": 4,
+                    "value": "The total size of all environment variables shouldn't exceed 4 KB. The maximum number of variables that can be created is 35"
+                }
+            ],
+            "question1": "You are a developer working with the AWS CLI to create Lambda functions that contain environment variables. Your functions will require over 50 environment variables consisting of sensitive information of database table names.",
+            "question2": "What is the total set size/number of environment variables you can create for AWS Lambda?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable CodeBuild Auto Scaling"
+                },
+                {
+                    "id": 2,
+                    "value": "Choose a high-performance instance type for your CodeBuild instances"
+                },
+                {
+                    "id": 3,
+                    "value": "Run CodeBuild in an Auto Scaling group"
+                },
+                {
+                    "id": 4,
+                    "value": "CodeBuild scales automatically, the organization does not have to do anything for scaling or for parallel builds"
+                }
+            ],
+            "question1": "An organization is moving its on-premises resources to the cloud. Source code will be moved to AWS CodeCommit and AWS CodeBuild will be used for compiling the source code using Apache Maven as a build tool. The organization wants the build environment should allow for scaling and running builds in parallel.",
+            "question2": "Which of the following options should the organization choose for their requirement?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Identity and Access Management (IAM)"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Lambda"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Web Application Firewall (AWS WAF)"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon Cognito"
+                }
+            ],
+            "question1": "A developer is configuring an Amazon API Gateway as a front door to expose backend business logic. To keep the solution cost-effective, the developer has opted for HTTP APIs.",
+            "question2": "Which of the following services are not available as an HTTP API via Amazon API Gateway?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Save the S3 key for each user's profile photo in a DynamoDB table and use a lambda function to dynamically generate a pre-signed URL. Reference this URL for display via the web application"
+                },
+                {
+                    "id": 2,
+                    "value": "Keep each user's profile image encoded in base64 format in an RDS table and reference it from the application for display"
+                },
+                {
+                    "id": 3,
+                    "value": "Make the S3 bucket public so that the application can reference the image URL for display"
+                },
+                {
+                    "id": 4,
+                    "value": "Keep each user's profile image encoded in base64 format in a DynamoDB table and reference it from the application for display"
+                }
+            ],
+            "question1": "As part of their on-boarding, the employees at an IT company need to upload their profile photos in a private S3 bucket. The company wants to build an in-house web application hosted on an EC2 instance that should display the profile photos in a secure way when the employees mark their attendance.",
+            "question2": "As a Developer Associate, which of the following solutions would you suggest to address this use-case?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use S3 Access Analyzer to identify the owners of all objects and change the ownership to the bucket owner"
+                },
+                {
+                    "id": 2,
+                    "value": "Use S3 CORS to make the S3 bucket owner, the owner of all objects in the bucket"
+                },
+                {
+                    "id": 3,
+                    "value": "Use S3 Object Ownership to default bucket owner to be the owner of all objects in the bucket"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Bucket Access Control Lists (ACLs) to control access on S3 bucket and then define its owner"
+                }
+            ],
+            "question1": "A development team uses shared Amazon S3 buckets to upload files. Due to this shared access, objects in S3 buckets have different owners making it difficult to manage the objects.",
+            "question2": "As a developer associate, which of the following would you suggest to automatically make the S3 bucket owner, also the owner of all objects in the bucket, irrespective of the AWS account used for uploading the objects?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Object tags cannot be replicated across AWS Regions using Cross-Region Replication"
+                },
+                {
+                    "id": 2,
+                    "value": "Once replication is enabled on a bucket, all old and new objects will be replicated"
+                },
+                {
+                    "id": 3,
+                    "value": "Same-Region Replication (SRR) and Cross-Region Replication (CRR) can be configured at the S3 bucket level, a shared prefix level, or an object level using S3 object tags"
+                },
+                {
+                    "id": 4,
+                    "value": "Replicated objects do not retain metadata"
+                },
+                {
+                    "id": 5,
+                    "value": "S3 lifecycle actions are not replicated with S3 replication"
+                }
+            ],
+            "question1": "To meet compliance guidelines, a company needs to ensure replication of any data stored in its S3 buckets.",
+            "question2": "Which of the following characteristics are correct while configuring an S3 bucket for replication? (Select two)"
+        },
+        "answers": [
+            3,
+            5
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "A custom software on the container instance could have failed and resulted in the container hanging in an unhealthy state till restarted again"
+                },
+                {
+                    "id": 2,
+                    "value": "You terminated the container instance while it was in STOPPED state, that lead to this synchronization issues"
+                },
+                {
+                    "id": 3,
+                    "value": "The container instance has been terminated with AWS CLI, whereas, for ECS instances, Amazon ECS CLI should be used to avoid any synchronization issues"
+                },
+                {
+                    "id": 4,
+                    "value": "You terminated the container instance while it was in RUNNING state, that lead to this synchronization issues"
+                }
+            ],
+            "question1": "A junior developer working on ECS instances terminated a container instance in Amazon Elastic Container Service (Amazon ECS) as per instructions from the team lead. But the container instance continues to appear as a resource in the ECS cluster.",
+            "question2": "As a Developer Associate, which of the following solutions would you recommend to fix this behavior?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use SSM Parameter Store"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Stage Variables"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Environment variables"
+                },
+                {
+                    "id": 4,
+                    "value": "Use S3"
+                }
+            ],
+            "question1": "Your application is deployed automatically using AWS Elastic Beanstalk. Your YAML configuration files are stored in the folder .ebextensions and new files are added or updated often. The DevOps team does not want to re-deploy the application every time there are configuration changes, instead, they would rather manage configuration externally, securely, and have it load dynamically into the application at runtime.",
+            "question2": "What option allows you to do this?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "REST APIs"
+                },
+                {
+                    "id": 2,
+                    "value": "REST or HTTP APIs"
+                },
+                {
+                    "id": 3,
+                    "value": "HTTP APIs"
+                },
+                {
+                    "id": 4,
+                    "value": "WebSocket APIs"
+                }
+            ],
+            "question1": "A banking application needs to send real-time alerts and notifications based on any updates from the backend services. The company wants to avoid implementing complex polling mechanisms for these notifications.",
+            "question2": "Which of the following types of APIs supported by the Amazon API Gateway is the right fit?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Open a support ticket with AWS"
+                },
+                {
+                    "id": 2,
+                    "value": "Create a high-resolution custom metric and push the data using a script triggered every 10 seconds"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable EC2 detailed monitoring"
+                },
+                {
+                    "id": 4,
+                    "value": "Simply get it from the CloudWatch Metrics"
+                }
+            ],
+            "question1": "A telecommunications company that provides internet service for mobile device users maintains over 100 c4.large instances in the us-east-1 region. The EC2 instances run complex algorithms. The manager would like to track CPU utilization of the EC2 instances as frequently as every 10 seconds.",
+            "question2": "Which of the following represents the BEST solution for the given use-case?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable the automated backup feature of Amazon RDS in a multi-AZ deployment that creates backups across multiple Regions"
+                },
+                {
+                    "id": 2,
+                    "value": "Use cross-Region Read Replicas"
+                },
+                {
+                    "id": 3,
+                    "value": "Use RDS Provisioned IOPS (SSD) Storage in place of General Purpose (SSD) Storage"
+                },
+                {
+                    "id": 4,
+                    "value": "Use database cloning feature of the RDS DB cluster"
+                },
+                {
+                    "id": 5,
+                    "value": "Enable the automated backup feature of Amazon RDS in a multi-AZ deployment that creates backups in a single AWS Region"
+                }
+            ],
+            "question1": "As a Senior Developer, you manage 10 Amazon EC2 instances that make read-heavy database requests to the Amazon RDS for PostgreSQL. You need to make this architecture resilient for disaster recovery.",
+            "question2": "Which of the following features will help you prepare for database disaster recovery? (Select two)"
+        },
+        "answers": [
+            2,
+            5
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Delete the existing prod stage. Create a new stage with the same name (prod) and deploy the tested version on this stage"
+                },
+                {
+                    "id": 2,
+                    "value": "API performance is optimized in a different way for prod environments. Hence, promoting test to prod is not correct. The promotion should be done by redeploying the API to the prod stage"
+                },
+                {
+                    "id": 3,
+                    "value": "Update stage variable value from the stage name of test to that of prod"
+                },
+                {
+                    "id": 4,
+                    "value": "Deploy the API without choosing a stage. This way, the working deployment will be updated in all stages"
+                }
+            ],
+            "question1": "A development team has deployed a REST API in Amazon API Gateway to two different stages - a test stage and a prod stage. The test stage is used as a test build and the prod stage as a stable build. After the updates have passed the test, the team wishes to promote the test stage to the prod stage.",
+            "question2": "Which of the following represents the optimal solution for this use-case?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use IAM permissions with sigv4"
+                },
+                {
+                    "id": 2,
+                    "value": "Use API Gateway User Pools"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Lambda Authorizer"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Cognito User Pools"
+                }
+            ],
+            "question1": "You are creating a mobile application that needs access to the AWS API Gateway. Users will need to register first before they can access your API and you would like the user management to be fully managed.",
+            "question2": "Which authentication option should you use for your API Gateway layer?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Configure ASG fast failover"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable RDS Multi-AZ"
+                },
+                {
+                    "id": 3,
+                    "value": "Change the scaling metric of auto-scaling policy to network bytes"
+                },
+                {
+                    "id": 4,
+                    "value": "Increase the minimum instance capacity of the Auto Scaling Group to 2"
+                }
+            ],
+            "question1": "You have an Auto Scaling group configured to a minimum capacity of 1 and a maximum capacity of 5, designed to launch EC2 instances across 3 Availability Zones. During a low utilization period, an entire Availability Zone went down and your application experienced downtime.",
+            "question2": "What can you do to ensure that your application remains highly available?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable RDS Read replicas"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable RDS Multi-AZ"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a cron event in CloudWatch, which triggers an AWS Lambda function that triggers the database snapshot"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable RDS automatic backups"
+                }
+            ],
+            "question1": "Your company has a three-year contract with a healthcare provider. The contract states that monthly database backups must be retained for the duration of the contract for compliance purposes. Currently, the limit on backup retention for automated backups, on Amazon Relational Database Service (RDS), does not meet your requirements.",
+            "question2": "Which of the following solutions can help you meet your requirements?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use the SQS Extended Client"
+                },
+                {
+                    "id": 2,
+                    "value": "Get a service limit increase from AWS"
+                },
+                {
+                    "id": 3,
+                    "value": "Use gzip compression"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the MultiPart API"
+                }
+            ],
+            "question1": "A media company uses Amazon Simple Queue Service (SQS) queue to manage their transactions. With changing business needs, the payload size of the messages is increasing. The Team Lead of the project is worried about the 256 KB message size limit that SQS has.",
+            "question2": "What can be done to make the queue accept messages of a larger size?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "aws ec2 monitor-instances --instance-ids i-1234567890abcdef0"
+                },
+                {
+                    "id": 2,
+                    "value": "aws ec2 run-instances --image-id ami-09092360 --monitoring State=enabled"
+                },
+                {
+                    "id": 3,
+                    "value": "aws ec2 run-instances --image-id ami-09092360 --monitoring Enabled=true"
+                },
+                {
+                    "id": 4,
+                    "value": "aws ec2 monitor-instances --instance-id i-1234567890abcdef0"
+                }
+            ],
+            "question1": "You have been asked by your Team Lead to enable detailed monitoring of the Amazon EC2 instances your team uses. As a Developer working on AWS CLI, which of the below command will you run?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use of Bucket Policies"
+                },
+                {
+                    "id": 2,
+                    "value": "Use of Access Control Lists (ACLs)"
+                },
+                {
+                    "id": 3,
+                    "value": "Use of IAM Roles"
+                },
+                {
+                    "id": 4,
+                    "value": "Use of Security Groups"
+                }
+            ],
+            "question1": "A recruit has created an Amazon Simple Storage Service (S3) bucket. He needs assistance in getting the security principles right for this bucket.",
+            "question2": "Which of the following is NOT a security practice for access control to S3 buckets?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Pre-configure the SQS queue to increase the capacity when messages hit a certain threshold"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable auto-scaling in the SQS queue"
+                },
+                {
+                    "id": 3,
+                    "value": "Convert the queue into FIFO ordered queue, since messages to the down system will be processed faster once they are ordered"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon SQS is highly scalable and does not need any intervention to handle the expected high volumes"
+                }
+            ],
+            "question1": "A company�s e-commerce website is expecting hundreds of thousands of visitors on Black Friday. The marketing department is concerned that high volumes of orders might stress SQS leading to message failures. The company has approached you for the steps to be taken as a precautionary measure against the high volumes.",
+            "question2": "What step will you suggest as a Developer Associate?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Move to Amazon Redshift"
+                },
+                {
+                    "id": 2,
+                    "value": "Setup ElastiCache in front of RDS"
+                },
+                {
+                    "id": 3,
+                    "value": "Setup RDS Read Replicas"
+                },
+                {
+                    "id": 4,
+                    "value": "Switch application code to AWS Lambda for better performance"
+                }
+            ],
+            "question1": "A mobile gaming company is experiencing heavy read traffic to its Amazon Relational Database Service (RDS) database that retrieves player�s scores and stats. The company is using RDS database instance type db.m5.12xlarge, which is not cost-effective for their budget. They would like to implement a strategy to deal with the high volume of read traffic, reduce latency, and also downsize the instance size to cut costs.",
+            "question2": "As a Developer, which of the following solutions do you recommend?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Amazon ElastiCache for Redis"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Amazon S3 Caching"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Amazon S3 Transfer Acceleration"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Amazon CloudFront"
+                }
+            ],
+            "question1": "Your company hosts a static website on Amazon Simple Storage Service (S3) written in HTML5. The website targets aviation enthusiasts and it has grown a worldwide audience with hundreds of thousands of visitors accessing the website now on a monthly basis. While users in the United States have a great user experience, users from other parts of the world are experiencing slow responses and lag.",
+            "question2": "Which service can mitigate this issue?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The EC2 instances are logging out the users because the instances never have access to the client IPs because of the Load Balancer"
+                },
+                {
+                    "id": 2,
+                    "value": "Application Load Balancer is in slow-start mode, which gives ALB a little more time to read and write session data"
+                },
+                {
+                    "id": 3,
+                    "value": "The Load Balancer does not have TLS enabled"
+                },
+                {
+                    "id": 4,
+                    "value": "The Load Balancer does not have stickiness enabled"
+                }
+            ],
+            "question1": "You are running a cloud file storage website with an Internet-facing Application Load Balancer, which routes requests from users over the internet to 10 registered Amazon EC2 instances. Users are complaining that your website always asks them to re-authenticate when they switch pages. You are puzzled because this behavior is not seen in your local machine or dev environment.",
+            "question2": "What could be the reason?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Correct the policy of the IAM user to allow the s3:Encrypt action"
+                },
+                {
+                    "id": 2,
+                    "value": "Correct the bucket policy of the S3 bucket to allow the IAM user to upload encrypted objects"
+                },
+                {
+                    "id": 3,
+                    "value": "Correct the policy of the IAM user to allow the kms:GenerateDataKey action"
+                },
+                {
+                    "id": 4,
+                    "value": "Correct the ACL of the S3 bucket to allow the IAM user to upload encrypted objects"
+                }
+            ],
+            "question1": "A development team has created a new IAM user that has s3:putObject permission to write to an S3 bucket. This S3 bucket uses server-side encryption with AWS KMS managed keys (SSE-KMS) as the default encryption. Using the access key ID and the secret access key of the IAM user, the application received an access denied error when calling the PutObject API.",
+            "question2": "As a Developer Associate, how would you resolve this issue?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 30
+    }
+]

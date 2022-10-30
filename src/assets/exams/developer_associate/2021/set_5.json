@@ -1,0 +1,1281 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "It should be accessible by one admin only after enabling Multi-factor authentication"
+                },
+                {
+                    "id": 2,
+                    "value": "It should be accessible using the access key id and secret access key"
+                },
+                {
+                    "id": 3,
+                    "value": "It should be accessible by 3 to 6 members of the IT team"
+                },
+                {
+                    "id": 4,
+                    "value": "It should be accessible by no one, throw away the passwords after creating the account"
+                }
+            ],
+            "question1": "When your company first created an AWS account, you began with a single sign-in principal called a root user account that had complete access to all AWS services and resources.",
+            "question2": "What should you do to adhere to best practices for using the root user account?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use a Lazy Loading strategy without TTL"
+                },
+                {
+                    "id": 2,
+                    "value": "Use DAX"
+                },
+                {
+                    "id": 3,
+                    "value": "Use a Lazy Loading strategy with TTL"
+                },
+                {
+                    "id": 4,
+                    "value": "Use a Write Through strategy"
+                }
+            ],
+            "question1": "You are running a web application where users can author blogs and share them with their followers. Most of the workflow is read based, but when a blog is updated, you would like to ensure that the latest data is served to the users (no stale data). The Developer has already suggested using ElastiCache to cope with the read load but has asked you to implement a caching strategy that complies with the requirements of the site.",
+            "question2": "Which strategy would you recommend?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable storage auto-scaling for RDS MySQL"
+                },
+                {
+                    "id": 2,
+                    "value": "Create read replica for RDS MySQL"
+                },
+                {
+                    "id": 3,
+                    "value": "Migrate RDS MySQL database to Aurora which offers storage auto-scaling"
+                },
+                {
+                    "id": 4,
+                    "value": "Migrate RDS MySQL database to DynamoDB which automatically allocates storage space when required"
+                }
+            ],
+            "question1": "A company has recently launched a new gaming application that the users are adopting rapidly. The company uses RDS MySQL as the database. The development team wants an urgent solution to this issue where the rapidly increasing workload might exceed the available database storage.",
+            "question2": "As a developer associate, which of the following solutions would you recommend so that it requires minimum development effort to address this requirement?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Custom platform"
+                },
+                {
+                    "id": 2,
+                    "value": "Docker single-container platform"
+                },
+                {
+                    "id": 3,
+                    "value": "Third-party platform"
+                },
+                {
+                    "id": 4,
+                    "value": "Docker multi-container platform"
+                }
+            ],
+            "question1": "Your client wants to deploy a service on EC2 instances, and as EC2 instances are added into an ASG, each EC2 instance should be running 3 different Docker Containers simultaneously.",
+            "question2": "What Elastic Beanstalk platform should they choose?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use a Lambda function"
+                },
+                {
+                    "id": 2,
+                    "value": "Use DynamoDB Streams"
+                },
+                {
+                    "id": 3,
+                    "value": "Use DAX"
+                },
+                {
+                    "id": 4,
+                    "value": "Use TTL"
+                }
+            ],
+            "question1": "You are storing bids information on your betting application and you would like to automatically expire DynamoDB table data after one week.",
+            "question2": "What should you use?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use SSE-S3 encryption"
+                },
+                {
+                    "id": 2,
+                    "value": "Upload as one part"
+                },
+                {
+                    "id": 3,
+                    "value": "Do a multi-part upload"
+                },
+                {
+                    "id": 4,
+                    "value": "Zip the video file before sending"
+                }
+            ],
+            "question1": "You are running a video website and provide users with S3 pre-signed URLs allowing your users to securely upload their video content onto your buckets. The average file size uploaded to your buckets is 500MB and you would like your users to efficiently send the content.",
+            "question2": "What would you recommend doing in the client SDK?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create an IAM role and attach it to your EC2 instance that helps you perform a 'describe' API call"
+                },
+                {
+                    "id": 2,
+                    "value": "Query the user data at http://169.254.169.254/latest/user-data"
+                },
+                {
+                    "id": 3,
+                    "value": "Query the metadata at http://169.254.169.254/latest/meta-data"
+                },
+                {
+                    "id": 4,
+                    "value": "Query the user data at http://254.169.254.169/latest/meta-data"
+                }
+            ],
+            "question1": "You are working with a t2.small instance bastion host that has the AWS CLI installed to help manage all the AWS services installed on it. You would like to know the security group and the instance id of the current instance.",
+            "question2": "Which of the following will help you fetch the needed information?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Worker Environments"
+                },
+                {
+                    "id": 2,
+                    "value": "Define a Lambda function"
+                },
+                {
+                    "id": 3,
+                    "value": "Use a Lifecycle Policy"
+                },
+                {
+                    "id": 4,
+                    "value": "Setup an .ebextensions file"
+                }
+            ],
+            "question1": "Your organization has set up a full CI/CD pipeline leveraging CodePipeline and the deployment is done on Elastic Beanstalk. This pipeline has worked for over a year now but you are approaching the limits of Elastic Beanstalk in terms of how many versions can be stored in the service.",
+            "question2": "How can you remove older versions that are not used by Elastic Beanstalk so that new versions can be created for your applications?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Segments"
+                },
+                {
+                    "id": 2,
+                    "value": "Annotations"
+                },
+                {
+                    "id": 3,
+                    "value": "Metadata"
+                },
+                {
+                    "id": 4,
+                    "value": "Sampling"
+                }
+            ],
+            "question1": "You have been collecting AWS X-Ray traces across multiple applications and you would now like to index your XRay traces to search and filter through them efficiently.",
+            "question2": "What should you use in your instrumentation?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "S3CrudPolicy"
+                },
+                {
+                    "id": 2,
+                    "value": "S3ReadPolicy"
+                },
+                {
+                    "id": 3,
+                    "value": "LambdaInvokePolicy"
+                },
+                {
+                    "id": 4,
+                    "value": "SQSPollerPolicy"
+                }
+            ],
+            "question1": "You are deploying Lambda functions that operate on your S3 buckets to read files and extract key metadata. The Lambda functions are managed using SAM.",
+            "question2": "Which Policy should you insert in your serverless model template to give buckets read access?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use DynamoDB instead of RDS as database"
+                },
+                {
+                    "id": 2,
+                    "value": "Contact AWS Support to increase the Lambda timeout to 60 minutes"
+                },
+                {
+                    "id": 3,
+                    "value": "Provision EC2 instances in an Auto Scaling group to poll the messages from an SQS queue"
+                },
+                {
+                    "id": 4,
+                    "value": "Provision an EC2 instance to poll the messages from an SQS queue"
+                }
+            ],
+            "question1": "A data analytics company ingests a large number of messages and stores them in an RDS database using Lambda. Because of the increased payload size, it is taking more than 15 minutes to process each message.",
+            "question2": "As a Developer Associate, which of the following options would you recommend to process each message in the MOST scalable way?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Mapping Templates"
+                },
+                {
+                    "id": 2,
+                    "value": "Canary Deployment"
+                },
+                {
+                    "id": 3,
+                    "value": "Stage Variables"
+                },
+                {
+                    "id": 4,
+                    "value": "Custom Authorizers"
+                }
+            ],
+            "question1": "You are a developer working on AWS Lambda functions that are triggered by Amazon API Gateway and would like to perform testing on a low volume of traffic for new API versions.",
+            "question2": "Which of the following features will accomplish this task?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use an AWS Lambda Hook"
+                },
+                {
+                    "id": 2,
+                    "value": "Use the AWS Encryption SDK"
+                },
+                {
+                    "id": 3,
+                    "value": "Specify a KMS key to use"
+                },
+                {
+                    "id": 4,
+                    "value": "Use In Flight encryption (SSL)"
+                }
+            ],
+            "question1": "You were assigned to a project that requires the use of the AWS CLI to build a project with AWS CodeBuild. Your project's root directory includes the buildspec.yml file to run build commands and would like your build artifacts to be automatically encrypted at the end.",
+            "question2": "How should you configure CodeBuild to accomplish this?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Deploy Lambda in S3"
+                },
+                {
+                    "id": 2,
+                    "value": "Deploy Lambda in a Global VPC"
+                },
+                {
+                    "id": 3,
+                    "value": "Use a Global DynamoDB table as a Lambda source"
+                },
+                {
+                    "id": 4,
+                    "value": "Use a [email protected]"
+                }
+            ],
+            "question1": "You would like to deploy a Lambda function globally so that requests are filtered at the AWS edge locations.",
+            "question2": "Which Lambda deployment mode do you need?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Only open up port 80"
+                },
+                {
+                    "id": 2,
+                    "value": "Only open up port 443"
+                },
+                {
+                    "id": 3,
+                    "value": "Open up port 80 & port 443"
+                },
+                {
+                    "id": 4,
+                    "value": "Assign an SSL certificate to the Load Balancer"
+                },
+                {
+                    "id": 5,
+                    "value": "Configure your EC2 instances to redirect HTTPS traffic to HTTP"
+                },
+                {
+                    "id": 6,
+                    "value": "Configure your EC2 instances to redirect HTTP traffic to HTTPS"
+                }
+            ],
+            "question1": "You would like your Elastic Beanstalk environment to expose an HTTPS endpoint and an HTTP endpoint. The HTTPS endpoint should be used to get in-flight encryption between your clients and your web servers, while the HTTP endpoint should only be used to redirect traffic to HTTPS and support URLs starting with http://.",
+            "question2": "What must be done to configure this setup? (Select three)"
+        },
+        "answers": [
+            3,
+            4,
+            6
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "--page-size"
+                },
+                {
+                    "id": 2,
+                    "value": "--filter-expression"
+                },
+                {
+                    "id": 3,
+                    "value": "--max-items"
+                },
+                {
+                    "id": 4,
+                    "value": "--projection-expression"
+                }
+            ],
+            "question1": "Which of the following CLI options will allow you to retrieve a subset of the attributes coming from a DynamoDB scan?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "ContentBasedDeduplication"
+                },
+                {
+                    "id": 2,
+                    "value": "ReceiveRequestAttemptId"
+                },
+                {
+                    "id": 3,
+                    "value": "MessageGroupId"
+                },
+                {
+                    "id": 4,
+                    "value": "MessageDeduplicationId"
+                }
+            ],
+            "question1": "You are using AWS SQS FIFO queues to get the ordering of messages on a per user_id basis. On top of this, you would like to make sure that duplicate messages should not be sent to SQS as this would cause application failure.",
+            "question2": "As a developer, which message parameter should you set for deduplicating messages?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a tmp/ directory in the source zip file and use it"
+                },
+                {
+                    "id": 2,
+                    "value": "Use the local directory /opt"
+                },
+                {
+                    "id": 3,
+                    "value": "Use the local directory /tmp"
+                },
+                {
+                    "id": 4,
+                    "value": "Use an S3 bucket"
+                }
+            ],
+            "question1": "Your Lambda function processes files for your customers and as part of that process, it creates a lot of intermediary files it needs to store on its disk and then discard.",
+            "question2": "What is the best way to store temporary files for your Lambda functions that will be discarded when the function stops running?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use a Write Through strategy without TTL"
+                },
+                {
+                    "id": 2,
+                    "value": "Use a Write Through strategy with TTL"
+                },
+                {
+                    "id": 3,
+                    "value": "Use a Lazy Loading strategy without TTL"
+                },
+                {
+                    "id": 4,
+                    "value": "Use a Lazy Loading strategy with TTL"
+                }
+            ],
+            "question1": "You are creating a web application in which users can follow each other. Some users will be more popular than others and thus their data will be requested very often. Currently, the user data sits in RDS and it has been recommended by your Developer to use ElastiCache as a caching layer to improve the read performance. The whole dataset of users cannot sit in ElastiCache without incurring tremendous costs and therefore you would like to cache only the most often requested users profiles there. As your website is high traffic, it is accepted to have stale data for users for a while, as long as the stale data is less than a minute old.",
+            "question2": "What caching strategy do you recommend implementing?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "DynamoDB Streams"
+                },
+                {
+                    "id": 2,
+                    "value": "ElastiCache"
+                },
+                {
+                    "id": 3,
+                    "value": "DynamoDB DAX"
+                },
+                {
+                    "id": 4,
+                    "value": "More partitions"
+                }
+            ],
+            "question1": "A popular mobile app retrieves data from an AWS DynamoDB table that was provisioned with read-capacity units (RCU�s) that are evenly shared across four partitions. One of those partitions is receiving more traffic than the other partitions, causing hot partition issues.",
+            "question2": "What technology will allow you to reduce the read traffic on your AWS DynamoDB table with minimal effort?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Set up an IAM user with read-only permissions for the S3 bucket. Configure the IAM user credentials in the user data of the EC2 instance"
+                },
+                {
+                    "id": 2,
+                    "value": "Set up an IAM user with read-only permissions for the S3 bucket. Configure AWS credentials for this user via AWS CLI on the EC2 instance"
+                },
+                {
+                    "id": 3,
+                    "value": "Set up an EC2 service role with read-only permissions for the S3 bucket and attach the role to the EC2 instance profile"
+                },
+                {
+                    "id": 4,
+                    "value": "Set up an S3 service role with read-only permissions for the S3 bucket and attach the role to the EC2 instance profile"
+                }
+            ],
+            "question1": "A media company wants to migrate a video editing service to Amazon EC2 while following security best practices. The videos are sourced and read from a non-public S3 bucket.",
+            "question2": "As a Developer Associate, which of the following solutions would you recommend for the given use-case?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "SSE-C"
+                },
+                {
+                    "id": 2,
+                    "value": "Client-Side Encryption"
+                },
+                {
+                    "id": 3,
+                    "value": "SSE-S3"
+                },
+                {
+                    "id": 4,
+                    "value": "SSE-KMS"
+                }
+            ],
+            "question1": "A security company is requiring all developers to perform server-side encryption with customer-provided encryption keys when performing operations in AWS S3. Developers should write software with C# using the AWS SDK and implement the requirement in the PUT, GET, Head, and Copy operations.",
+            "question2": "Which of the following encryption methods meets this requirement?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use DeleteMessage"
+                },
+                {
+                    "id": 2,
+                    "value": "Reduce the VisibilityTimeout"
+                },
+                {
+                    "id": 3,
+                    "value": "Increase the VisibilityTimeout"
+                },
+                {
+                    "id": 4,
+                    "value": "Implement a Dead Letter Queue"
+                }
+            ],
+            "question1": "Applications running on EC2 instances process messages from an SQS queue but sometimes they experience errors due to messages not being processed.",
+            "question2": "To isolate the messages, which option will help with further debugging?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use a separate CloudFormation template to load the SSL certificate onto the Load Balancer"
+                },
+                {
+                    "id": 2,
+                    "value": "Configure Health Checks"
+                },
+                {
+                    "id": 3,
+                    "value": "Open up the port 80 for the security group"
+                },
+                {
+                    "id": 4,
+                    "value": "Create a config file in the .ebextensions folder to configure the Load Balancer"
+                }
+            ],
+            "question1": "You would like your Elastic Beanstalk environment to expose an HTTPS endpoint instead of an HTTP endpoint to get in-flight encryption between your clients and your web servers.",
+            "question2": "What must be done to set up HTTPS on Beanstalk?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "DynamoDB Transactions"
+                },
+                {
+                    "id": 2,
+                    "value": "DynamoDB Streams"
+                },
+                {
+                    "id": 3,
+                    "value": "DynamoDB Indexes"
+                },
+                {
+                    "id": 4,
+                    "value": "DynamoDB TTL"
+                }
+            ],
+            "question1": "You are implementing a banking application in which you need to update the Exchanges DynamoDB table and the AccountBalance DynamoDB table at the same time or not at all.",
+            "question2": "Which DynamoDB feature should you use?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a Load Balancer and an auto scaling group"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Route 53"
+                },
+                {
+                    "id": 3,
+                    "value": "Provide a static private IP"
+                },
+                {
+                    "id": 4,
+                    "value": "Elastic IP"
+                }
+            ],
+            "question1": "You are running a public DNS service on an EC2 instance where the DNS name is pointing to the IP address of the instance. You wish to upgrade your DNS service but would like to do it without any downtime.",
+            "question2": "Which of the following options will help you accomplish this?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CodePipeline"
+                },
+                {
+                    "id": 2,
+                    "value": "CodeDeploy"
+                },
+                {
+                    "id": 3,
+                    "value": "CodeStar"
+                },
+                {
+                    "id": 4,
+                    "value": "CodeBuild"
+                }
+            ],
+            "question1": "You would like to have a one-stop dashboard for all the CI/CD needs of one of your projects. You don't need heavy control of the individual configuration of each component in your CI/CD, but need to be able to get a holistic view of your projects.",
+            "question2": "Which service do you recommend?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "S3 Access Logs"
+                },
+                {
+                    "id": 2,
+                    "value": "IAM"
+                },
+                {
+                    "id": 3,
+                    "value": "VPC Flow Logs"
+                },
+                {
+                    "id": 4,
+                    "value": "CloudTrail"
+                }
+            ],
+            "question1": "You are a cloud security engineer working for a popular cyber-forensics company that offers vulnerability scanning solutions to government contractors. The scanning solutions are integrated with AWS resources to monitor EC2 and S3 API calls which then display results to users on an analytical dashboard.",
+            "question2": "Which of the following AWS services makes this possible?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a role in the target unified account and allow roles in each sub-account to assume the role."
+                },
+                {
+                    "id": 2,
+                    "value": "Create a user in the target unified account and generate access and secret keys"
+                },
+                {
+                    "id": 3,
+                    "value": "Configure the X-Ray daemon to use an IAM instance role"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable Cross Account collection in the X-Ray console"
+                },
+                {
+                    "id": 5,
+                    "value": "Configure the X-Ray daemon to use access and secret keys"
+                }
+            ],
+            "question1": "Your company likes to operate multiple AWS accounts so that teams have their environments. Services deployed across these accounts interact with one another, and now there's a requirement to implement X-Ray traces across all your applications deployed on EC2 instances and AWS accounts.",
+            "question2": "As such, you would like to have a unified account to view all the traces. What should you in your X-Ray daemon set up to make this work? (Select two)"
+        },
+        "answers": [
+            1,
+            3
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Any file that was unversioned before enabling versioning will have the 'null' version"
+                },
+                {
+                    "id": 2,
+                    "value": "Versioning can be enabled only for a specific folder"
+                },
+                {
+                    "id": 3,
+                    "value": "Deleting a file is a recoverable operation"
+                },
+                {
+                    "id": 4,
+                    "value": "Overwriting a file increases its versions"
+                }
+            ],
+            "question1": "Your organization has a single Amazon Simple Storage Service (S3) bucket that contains folders labeled with customer names. Several administrators have IAM access to the S3 bucket and versioning is enabled to easily recover from unintended user actions.",
+            "question2": "Which of the following statements about versioning is NOT true based on this scenario?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 30
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "S3 Analytics"
+                },
+                {
+                    "id": 2,
+                    "value": "S3 Inventory"
+                },
+                {
+                    "id": 3,
+                    "value": "S3 Access Logs"
+                },
+                {
+                    "id": 4,
+                    "value": "S3 Select"
+                }
+            ],
+            "question1": "You would like to retrieve a subset of your dataset stored in S3 with the CSV format. You would like to retrieve a month of data and only 3 columns out of the 10.",
+            "question2": "You need to minimize compute and network costs for this, what should you use?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 31
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "MessageGroupId"
+                },
+                {
+                    "id": 2,
+                    "value": "MessageDeduplicationId"
+                },
+                {
+                    "id": 3,
+                    "value": "MessageOrderId"
+                },
+                {
+                    "id": 4,
+                    "value": "MessageHash"
+                }
+            ],
+            "question1": "You are using AWS SQS FIFO queues to get the ordering of messages on a per user_id basis.",
+            "question2": "As a developer, which message parameter should you set the value of user_id to guarantee the ordering?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 32
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "STS"
+                },
+                {
+                    "id": 2,
+                    "value": "Cognito User Pools"
+                },
+                {
+                    "id": 3,
+                    "value": "IAM permissions with sigv4"
+                },
+                {
+                    "id": 4,
+                    "value": "Lambda Authorizer"
+                }
+            ],
+            "question1": "You've just deployed an AWS Lambda function. The lambda function will be invoked via the API Gateway. The API Gateway will need to control access to it.",
+            "question2": "Which of the following mechanisms is not supported for API Gateway?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 33
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Setup a Web Server environment and a cron.yaml file"
+                },
+                {
+                    "id": 2,
+                    "value": "Setup a Worker environment and a cron.yaml file"
+                },
+                {
+                    "id": 3,
+                    "value": "Setup a Worker environment and a .ebextensions file"
+                },
+                {
+                    "id": 4,
+                    "value": "Setup a Web Server environment and a .ebextensions file"
+                }
+            ],
+            "question1": "As part of your video processing application, you are looking to perform a set of repetitive and scheduled tasks asynchronously. Your application is deployed on Elastic Beanstalk.",
+            "question2": "Which Elastic Beanstalk environment should you set up for performing the repetitive tasks?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 34
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use a caching strategy to update the cache and the backend at the same time"
+                },
+                {
+                    "id": 2,
+                    "value": "Use a caching strategy to write to the backend first and wait for the cache to expire via TTL"
+                },
+                {
+                    "id": 3,
+                    "value": "Use a caching strategy to write to the cache directly and sync the backend at a later time"
+                },
+                {
+                    "id": 4,
+                    "value": "Use a caching strategy to write to the backend first and then invalidate the cache"
+                }
+            ],
+            "question1": "The development team at an e-commerce company is preparing for the upcoming Thanksgiving sale. The product manager wants the development team to implement appropriate caching strategy on Amazon ElastiCache to withstand traffic spikes on the website during the sale. A key requirement is to facilitate consistent updates to the product prices and product description, so that the cache never goes out of sync with the backend.",
+            "question2": "As a Developer Associate, which of the following solutions would you recommend for the given use-case?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 35
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "--starting-token"
+                },
+                {
+                    "id": 2,
+                    "value": "--limit"
+                },
+                {
+                    "id": 3,
+                    "value": "--max-items"
+                },
+                {
+                    "id": 4,
+                    "value": "--next-token"
+                },
+                {
+                    "id": 5,
+                    "value": "--page-size"
+                }
+            ],
+            "question1": "You would like to paginate the results of an S3 List to show 100 results per page to your users and minimize the number of API calls that you will use.",
+            "question2": "Which CLI options should you use? (Select two)"
+        },
+        "answers": [
+            1,
+            3
+        ],
+        "id": 36
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "SSE-S3"
+                },
+                {
+                    "id": 2,
+                    "value": "SSE-C"
+                },
+                {
+                    "id": 3,
+                    "value": "SSE-KMS"
+                },
+                {
+                    "id": 4,
+                    "value": "Client Side Encryption"
+                }
+            ],
+            "question1": "Your company has developers worldwide with access to the company's Amazon Simple Storage Service (S3) buckets. The objects in the buckets are encrypted at the server-side but need more flexibility with access control, auditing, rotation, and deletion of keys. You would also like to limit who can use the key.",
+            "question2": "Which encryption mechanism best fits your needs?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 37
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a gateway endpoint for S3 and add it as a target in the route table of the custom VPC. Create an interface endpoint for DynamoDB and then connect to the DynamoDB service using the private IP address"
+                },
+                {
+                    "id": 2,
+                    "value": "Create a separate gateway endpoint for S3 and DynamoDB each. Add two new target entries for these two gateway endpoints in the route table of the custom VPC"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a gateway endpoint for DynamoDB and add it as a target in the route table of the custom VPC. Create an interface endpoint for S3 and then connect to the S3 service using the private IP address"
+                },
+                {
+                    "id": 4,
+                    "value": "Create a separate interface endpoint for S3 and DynamoDB each. Then connect to these services using the private IP address"
+                }
+            ],
+            "question1": "An e-commerce company has multiple EC2 instances operating in a private subnet which is part of a custom VPC. These instances are running an image processing application that needs to access images stored on S3. Once each image is processed, the status of the corresponding record needs to be marked as completed in a DynamoDB table.",
+            "question2": "How would you go about providing private access to these AWS resources which are not part of this custom VPC?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 38
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Leverage horizontal scaling for the application's persistence layer by adding Oracle RAC on AWS"
+                },
+                {
+                    "id": 2,
+                    "value": "Leverage SQS with asynchronous AWS Lambda calls to decouple the application and data tiers"
+                },
+                {
+                    "id": 3,
+                    "value": "Leverage horizontal scaling for the web and application tiers by using Auto Scaling groups and Application Load Balancer"
+                },
+                {
+                    "id": 4,
+                    "value": "Leverage vertical scaling for the application instance by provisioning a larger Amazon EC2 instance size"
+                }
+            ],
+            "question1": "A company's e-commerce application becomes slow when traffic spikes. The application has a three-tier architecture (web, application and database tier) that uses synchronous transactions. The development team at the company has identified certain bottlenecks in the application tier but it does not want to change the underlying application architecture.",
+            "question2": "As a developer associate, which of the following solutions would you suggest to meet the required application response times while accounting for any traffic spikes?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 39
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "aws ecs run-task --cluster default --task-definition ecs-demo"
+                },
+                {
+                    "id": 2,
+                    "value": "aws ecs create-service --service-name ecs-simple-service --task-definition ecs-demo --desired-count 10"
+                },
+                {
+                    "id": 3,
+                    "value": "docker-compose create ecs-simple-service"
+                },
+                {
+                    "id": 4,
+                    "value": "aws ecr create-service --service-name ecs-simple-service --task-definition ecs-demo --desired-count 10"
+                }
+            ],
+            "question1": "Your company is shifting towards Elastic Container Service (ECS) to deploy applications. The process should be automated using the AWS CLI to create a service where at least ten instances of a task definition are kept running under the default cluster.",
+            "question2": "Which of the following commands should be executed?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 40
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create an IAM role in Account B with access to DynamoDB. Modify the trust policy of the execution role in Account A to allow the execution role of Lambda to assume the IAM role in Account B. Update the Lambda function code to add the AssumeRole API call"
+                },
+                {
+                    "id": 2,
+                    "value": "Create an IAM role in Account B with access to DynamoDB. Modify the trust policy of the role in Account B to allow the execution role of Lambda to assume this role. Update the Lambda function code to add the AssumeRole API call"
+                },
+                {
+                    "id": 3,
+                    "value": "Add a resource policy to the DynamoDB table in AWS Account B to give access to the Lambda function in Account A"
+                },
+                {
+                    "id": 4,
+                    "value": "Create a clone of the Lambda function in AWS Account B so that it can access the DynamoDB table in the same account"
+                }
+            ],
+            "question1": "The development team at a retail organization wants to allow a Lambda function in its AWS Account A to access a DynamoDB table in another AWS Account B.",
+            "question2": "As a Developer Associate, which of the following solutions would you recommend for the given use-case?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 41
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use a FilterExpression"
+                },
+                {
+                    "id": 2,
+                    "value": "Specify a ProjectionExpression"
+                },
+                {
+                    "id": 3,
+                    "value": "Use a Scan"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the --query parameter"
+                }
+            ],
+            "question1": "As an AWS Certified Developer Associate, you have been hired to consult with a company that uses the NoSQL database for mobile applications. The developers are using DynamoDB to perform operations such as GetItem but are limited in knowledge. They would like to be more efficient with retrieving some attributes rather than all.",
+            "question2": "Which of the following recommendations would you provide?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 42
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Swap out Kinesis Data Streams with Kinesis Data Firehose"
+                },
+                {
+                    "id": 2,
+                    "value": "Swap out Kinesis Data Streams with SQS Standard queues"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Enhanced Fanout feature of Kinesis Data Streams"
+                },
+                {
+                    "id": 4,
+                    "value": "Swap out Kinesis Data Streams with SQS FIFO queues"
+                }
+            ],
+            "question1": "An analytics company is using Kinesis Data Streams (KDS) to process automobile health-status data from the taxis managed by a taxi ride-hailing service. Multiple consumer applications are using the incoming data streams and the engineers have noticed a performance lag for the data delivery speed between producers and consumers of the data streams.",
+            "question2": "As a Developer Associate, which of the following options would you suggest for improving the performance for the given use-case?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 43
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "HTTP 403"
+                },
+                {
+                    "id": 2,
+                    "value": "HTTP 500"
+                },
+                {
+                    "id": 3,
+                    "value": "HTTP 503"
+                },
+                {
+                    "id": 4,
+                    "value": "HTTP 504"
+                }
+            ],
+            "question1": "A developer has just completed configuring the Application Load Balancer for the EC2 instances. Just as he started testing his configuration, he realized that he has missed assigning target groups to his ALB.",
+            "question2": "Which error code should he expect in his debug logs?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 44
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a cross-stack reference and use the Export output field to flag the value of VPC from the network stack. Then use Ref intrinsic function to reference the value of VPC into the web application stack"
+                },
+                {
+                    "id": 2,
+                    "value": "Create a cross-stack reference and use the Outputs output field to flag the value of VPC from the network stack. Then use Ref intrinsic function to reference the value of VPC into the web application stack"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a cross-stack reference and use the Outputs output field to flag the value of VPC from the network stack. Then use Fn::ImportValue intrinsic function to import the value of VPC into the web application stack"
+                },
+                {
+                    "id": 4,
+                    "value": "Create a cross-stack reference and use the Export output field to flag the value of VPC from the network stack. Then use Fn::ImportValue intrinsic function to import the value of VPC into the web application stack"
+                }
+            ],
+            "question1": "The development team at an IT company uses CloudFormation to manage its AWS infrastructure. The team has created a network stack containing a VPC with subnets and a web application stack with EC2 instances and an RDS instance. The team wants to reference the VPC created in the network stack into its web application stack.",
+            "question2": "As a Developer Associate, which of the following solutions would you recommend for the given use-case?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 45
+    }
+]

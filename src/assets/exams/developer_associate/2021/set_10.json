@@ -1,0 +1,1289 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "RDS MySQL"
+                },
+                {
+                    "id": 2,
+                    "value": "RDS MS Sequel Server"
+                },
+                {
+                    "id": 3,
+                    "value": "RDS PostGreSQL"
+                },
+                {
+                    "id": 4,
+                    "value": "RDS Maria DB"
+                },
+                {
+                    "id": 5,
+                    "value": "RDS Oracle"
+                }
+            ],
+            "question1": "You are working on integrating an application with AWS RDS databases.",
+            "question2": "To ensure best practices which of the following AWS RDS database can be configured with IAM Database Authentication? (Select two)"
+        },
+        "answers": [
+            1,
+            3
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS X-Ray"
+                },
+                {
+                    "id": 2,
+                    "value": "API CloudTrail"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon API Gateway"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Lambda"
+                }
+            ],
+            "question1": "Your company is providing services to many consumers who may connect to one or more AWS services. This has resulted in a complex architecture that is difficult to manage and does not scale well. You want a single interface to manage these services to consumers.",
+            "question2": "As a Developer Associate which of the following AWS service would you select to refactor this architecture?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Deploy using Immutable"
+                },
+                {
+                    "id": 2,
+                    "value": "Deploy using All at once"
+                },
+                {
+                    "id": 3,
+                    "value": "Deploy using Rolling with additional batch"
+                },
+                {
+                    "id": 4,
+                    "value": "Deploy using Rolling"
+                }
+            ],
+            "question1": "You work at an e-commerce company �decodeskills� which uses AWS Elastic Beanstalk to manage its infrastructure. You want to deploy a new version of the application which requires high availability and has high traffic flow. The new deployment must have minimal impact and rollback as soon as possible.",
+            "question2": "Which of the deployment policy should be used to achieve this?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Time bound access is not possible on S3"
+                },
+                {
+                    "id": 2,
+                    "value": "Share pre-signed URLs with resources"
+                },
+                {
+                    "id": 3,
+                    "value": "Allow public access to all resources"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Bucket policy to block unwanted access"
+                }
+            ],
+            "question1": "A developer has recently joined an e-commerce company and asked to write CloudFormation templates. After writing the script you asked your team lead to review the code. He suggested to make the s3 buckets public and allow time-bound access to objects stored in bucket.",
+            "question2": "As a Developer Associate which of the following options will you suggest to resolve the given use-case?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Allow access to Amazon Aurora from trusted third-party authenticated users using Cognito Identity pools"
+                },
+                {
+                    "id": 2,
+                    "value": "Create new IAM user for each third-party authenticated users to access Amazon Aurora."
+                },
+                {
+                    "id": 3,
+                    "value": "Allow access to Amazon Aurora from trusted third-party authenticated users using Cognito User pools"
+                },
+                {
+                    "id": 4,
+                    "value": "Create new IAM roles for each third-party authenticated users to access Amazon Aurora."
+                }
+            ],
+            "question1": "You are working as a developer at an IT company and there is a requirement such that trusted authenticated users from third-party organization should be given access to AWS Aurora database for creation/updation of records.",
+            "question2": "Which of the following can be used for this use case?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon SQS"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon RDS read replica"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon ElastiCache"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon RDS Multi-AZ"
+                }
+            ],
+            "question1": "Your company is using Amazon RDS Oracle instances for its application database tier and Tomcat servers for its web tier. There are many repeated read requests queries from web to the database.",
+            "question2": "Which of the following AWS service would increase in performance by adding in-memory store for repeated read queries?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CloudTrail"
+                },
+                {
+                    "id": 2,
+                    "value": "SSM"
+                },
+                {
+                    "id": 3,
+                    "value": "CloudWatch Metrics"
+                },
+                {
+                    "id": 4,
+                    "value": "X-Ray"
+                },
+                {
+                    "id": 5,
+                    "value": "CloudWatch Alarms"
+                }
+            ],
+            "question1": "Your manager wants to monitor all functions code for error rates with the possibility of creating alarms on top of them.",
+            "question2": "Which of the following options should be chosen? (select two)"
+        },
+        "answers": [
+            3,
+            5
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Parameters"
+                },
+                {
+                    "id": 2,
+                    "value": "Outputs"
+                },
+                {
+                    "id": 3,
+                    "value": "Conditions"
+                },
+                {
+                    "id": 4,
+                    "value": "Resources"
+                }
+            ],
+            "question1": "A development team at an IT company has used CloudFormation template for setting up resources which are defined using code and then provisioned based on some conditions.",
+            "question2": "Which of the following section of CloudFormation template doesn�t support conditions?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Specify a FilterExpression parameter"
+                },
+                {
+                    "id": 2,
+                    "value": "Specify ProjectionExpression"
+                },
+                {
+                    "id": 3,
+                    "value": "Use the --query parameter"
+                },
+                {
+                    "id": 4,
+                    "value": "Use a key"
+                }
+            ],
+            "question1": "You work at a mobile game development company which uses NoSQL DynamoDB database. While retrieving data from DynamoDB using GetItem operation, all attributes are returned in the output, but you want to fetch only few attributes.",
+            "question2": "Which of the following should you use to get the attributes you want?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable AWS X-Ray Tracing"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable AWS X-Ray Sampling"
+                },
+                {
+                    "id": 3,
+                    "value": "Send less data from client side"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS X-Ray Annotations"
+                }
+            ],
+            "question1": "The AWS Account which development team uses is billed very high this month because the team has integrated all CloudFormation stacks with AWS X-Ray and very high volume of data is going into X-Ray.",
+            "question2": "As a Developer Associate how can you fix this issue with minimal disruption in application?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Account from which budget forecast is generated doesn�t have full privileges"
+                },
+                {
+                    "id": 2,
+                    "value": "Budget forecast generation takes around 5 weeks of AWS usage data"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS CloudWatch is not configured properly"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Account is not root account"
+                }
+            ],
+            "question1": "Your company has recently shifted to AWS Cloud and configured the budget forecast using AWS Budget alerts to manage cost. You found that no alerts are generated even after 2-3 weeks of account creation.",
+            "question2": "Which of the following could be the reason?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use AWS Glue"
+                },
+                {
+                    "id": 2,
+                    "value": "Use DynamoDB on demand backups"
+                },
+                {
+                    "id": 3,
+                    "value": "Use AWS EMR"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS Data pipeline"
+                }
+            ],
+            "question1": "You work at a mobile game development company which uses NoSQL DynamoDB database. The team decided to make backups of some DynamoDB table data on AWS S3 so that they can use it for some analytics after downloading it locally.",
+            "question2": "Which of the following options is NOT feasible for this use case?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Standard Reserved instances"
+                },
+                {
+                    "id": 2,
+                    "value": "Scheduled Reserved instances"
+                },
+                {
+                    "id": 3,
+                    "value": "Convertible Reserved instances"
+                },
+                {
+                    "id": 4,
+                    "value": "Dedicated Instances"
+                }
+            ],
+            "question1": "Your company decodeskills is provisioning AWS EC2 instances for a new client. The infrastructure is needed for 2-3 years and instance type of the AWS instances can change based on requirements.",
+            "question2": "As a Developer Associate which of the following instance type would you recommend to the senior manager to choose such that the cost can be reduced?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon SQS"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon SNS"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon S3 Acceleration Transfer"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon Kinesis Firehose"
+                }
+            ],
+            "question1": "An application will ingest data at a very high throughput from many sources and must store the data in an Amazon S3 bucket. Which service would BEST accomplish this task?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use a dead-letter queue to handle message processing failures"
+                },
+                {
+                    "id": 2,
+                    "value": "Use long polling to handle message processing failures"
+                },
+                {
+                    "id": 3,
+                    "value": "Use short polling to handle message processing failures"
+                },
+                {
+                    "id": 4,
+                    "value": "Use a temporary queue to handle message processing failures"
+                }
+            ],
+            "question1": "Your company uses Amazon SQS queues to decouple the application architecture. The development team has observed message processing failures for a scenario when a user hits a specific site in the application, the application code fails.",
+            "question2": "As a Developer Associate, how would you handle such message failures?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Simple Storage Service (S3)"
+                },
+                {
+                    "id": 2,
+                    "value": "Elastic Container Service (ECS)"
+                },
+                {
+                    "id": 3,
+                    "value": "Elastic Container Registry (ECR)"
+                },
+                {
+                    "id": 4,
+                    "value": "Elastic Block Store (EBS)"
+                }
+            ],
+            "question1": "A company wants to use custom Docker Images in CodeBuild as input source for its future applications. As an AWS Certified Developer Associate which of the following AWS services will to recommend to the development team to store and deploy these images?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "ALB Access logs"
+                },
+                {
+                    "id": 2,
+                    "value": "CloudWatch metrics"
+                },
+                {
+                    "id": 3,
+                    "value": "ALB Security group"
+                },
+                {
+                    "id": 4,
+                    "value": "CloudTrail logs"
+                },
+                {
+                    "id": 5,
+                    "value": "AWS X-Ray tracing"
+                }
+            ],
+            "question1": "You company operates from different locations and ALB is used in it�s application to balance load across targets in multiple AZ�s.",
+            "question2": "Which of the following can give information about client�s IP address patterns and latency using incoming requests?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Cannot be done"
+                },
+                {
+                    "id": 2,
+                    "value": "Cron jobs to trigger AWS Lambda to check the state of your service"
+                },
+                {
+                    "id": 3,
+                    "value": "CloudWatch Events Rules with AWS Lambda"
+                },
+                {
+                    "id": 4,
+                    "value": "Open a support ticket with AWS"
+                }
+            ],
+            "question1": "Which of the following methods can be used to trigger AWS Lambda on the basis of a state change from a resource?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Host the library on Amazon S3 and reference to it from the Lambda function."
+                },
+                {
+                    "id": 2,
+                    "value": "Import the necessary Lambda blueprint when creating the function."
+                },
+                {
+                    "id": 3,
+                    "value": "Install the library locally and upload a ZIP file of the Lambda function."
+                },
+                {
+                    "id": 4,
+                    "value": "Modify the function runtime to include the necessary library."
+                }
+            ],
+            "question1": "As a Developer associate how would you utilize custom libraries in AWS Lambda which is being used in one of the projects you are working on at your company?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Configure and use an IAM role for tasks."
+                },
+                {
+                    "id": 2,
+                    "value": "Create a Docker image that runs the X-Ray daemon."
+                },
+                {
+                    "id": 3,
+                    "value": "Register the application with X-Ray."
+                },
+                {
+                    "id": 4,
+                    "value": "Install the X-Ray daemon on the underlying EC2 instance."
+                },
+                {
+                    "id": 5,
+                    "value": "Configure and use an IAM EC2 instance role."
+                },
+                {
+                    "id": 6,
+                    "value": "Add instrumentation to the application code for X-Ray."
+                }
+            ],
+            "question1": "You are working on a project deployed on AWS Cloud and want to enable AWS X-Ray for the application running in Amazon ECS environment.",
+            "question2": "As a Developer associate which all combination of steps will you use to enable AWS X-Ray? (Select three)"
+        },
+        "answers": [
+            1,
+            2,
+            6
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create an API Gateway Lambda authorizer"
+                },
+                {
+                    "id": 2,
+                    "value": "Create an Amazon Cognito identity pool"
+                },
+                {
+                    "id": 3,
+                    "value": "Setup usage plans and distribute API keys to the customers"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS Single Sign-on to authenticate the customers"
+                }
+            ],
+            "question1": "What is the SAFEST way to authenticate customers with a token to provide additional security for APIs deployed on Amazon API Gateway?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Connect the Lambda function to an Internet Gateway"
+                },
+                {
+                    "id": 2,
+                    "value": "Connect an AWS VPN to Lambda to connect to the Internet"
+                },
+                {
+                    "id": 3,
+                    "value": "Add an Elastic IP to the Lambda function"
+                },
+                {
+                    "id": 4,
+                    "value": "Add a NAT Gateway to a public subnet and specify a route in the private subnet"
+                }
+            ],
+            "question1": "As a part of your project, you have created an AWS Lambda function that is connected to a VPC to access an application running a private subnet. But you realize that the Lambda function pulls data from an Internet-based service and is no longer able to connect to the Internet. How would you rectify this?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Twofish"
+                },
+                {
+                    "id": 2,
+                    "value": "ECB"
+                },
+                {
+                    "id": 3,
+                    "value": "Advanced Encryption Standard"
+                },
+                {
+                    "id": 4,
+                    "value": "Triple DES"
+                }
+            ],
+            "question1": "Which of the following type of block cipher is offered by Amazon S3 for server side encryption (SSE)?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon S3 Standard"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon S3 Glacier"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon RDS"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon DynamoDB"
+                }
+            ],
+            "question1": "You have an application in which files are up to 4 GB in size. These files are to be stored for long periods of time and are accessed directly by applications with varying frequency. Which storage solution would best fit?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS API Gateway"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS X-Ray"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS CloudWatch"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS CloudTrail"
+                }
+            ],
+            "question1": "Your company decodeskills uses AWS API Gateway in a microservice based architecture which processes API Calls from users and cache requests. In the testing phase you are getting HTTP 501 error.",
+            "question2": "As a Developer Associate which of the following AWS service will you use to troubleshoot this?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Between clients and CloudFront as well as between CloudFront and backend"
+                },
+                {
+                    "id": 2,
+                    "value": "Between clients and CloudFront only"
+                },
+                {
+                    "id": 3,
+                    "value": "Between CloudFront and backend only"
+                },
+                {
+                    "id": 4,
+                    "value": "Neither between clients and CloudFront nor between CloudFront and backend"
+                }
+            ],
+            "question1": "Your company �decodeskills� leverages Amazon CloudFront to provide content via the internet to customers and wants to enforce end-to-end connections using HTTPS so that content is protected.",
+            "question2": "Which of the following options is available for HTTPS in AWS CloudFront?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Encrypt the data before sending it to Amazon S3"
+                },
+                {
+                    "id": 2,
+                    "value": "Use AWS KMS with automatic key rotation"
+                },
+                {
+                    "id": 3,
+                    "value": "Export a key from AWS KMS to encrypt the data"
+                },
+                {
+                    "id": 4,
+                    "value": "Import a custom key into AWS KMS with annual rotation enabled"
+                }
+            ],
+            "question1": "In one of your application you want to store documents in Amazon S3 that will require encryption at rest and the encryption keys must be rotated annually.",
+            "question2": "What of the following can be used to achieve this?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Send less data from client side"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable AWS X-Ray Sampling"
+                },
+                {
+                    "id": 3,
+                    "value": "Use AWS X-Ray Annotations"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable AWS X-Ray Tracing"
+                }
+            ],
+            "question1": "The AWS Account which development team uses is billed very high this month because the team has integrated all CloudFormation stacks with AWS X-Ray and very high volume of data is going into X-Ray.",
+            "question2": "As a Developer Associate how can you fix this issue with minimal disruption in application?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "By default, CloudTrail event log files are not encrypted"
+                },
+                {
+                    "id": 2,
+                    "value": "Member accounts will be able to see the Organization trail, but cannot modify or delete it"
+                },
+                {
+                    "id": 3,
+                    "value": "There is nothing called Organization Trail. The master account can, however, enable CloudTrail logging, to keep track of all activities across AWS accounts"
+                },
+                {
+                    "id": 4,
+                    "value": "Member accounts do not have access to organization trail, neither do they have access to the Amazon S3 bucket that logs the files"
+                },
+                {
+                    "id": 5,
+                    "value": "By default, CloudTrail tracks only bucket-level actions. To track object-level actions, you need to enable Amazon S3 data events"
+                }
+            ],
+            "question1": "A multi-national enterprise uses AWS Organizations to manage its users across different divisions. Even though CloudTrail is enabled on the member accounts, managers have noticed that access issues to CloudTrail logs across different divisions and AWS Regions is becoming a bottleneck in troubleshooting issues. They have decided to use the organization trail to keep things simple.",
+            "question2": "What are the important points to remember when configuring an organization trail? (Select two)"
+        },
+        "answers": [
+            2,
+            5
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Resources"
+                },
+                {
+                    "id": 2,
+                    "value": "Conditions"
+                },
+                {
+                    "id": 3,
+                    "value": "Outputs"
+                },
+                {
+                    "id": 4,
+                    "value": "Mappings"
+                }
+            ],
+            "question1": "You work at an e-commerce company and want to deploy an AWS Elastic Beanstalk application needs in multiple regions and want to use different Amazon Machine Image (AMI) in each region. As a Developer Associate which of the following CloudFormation template section would you use to specify the correct AMI for each region?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 30
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create an AWS Lambda function with an API Gateway front-end"
+                },
+                {
+                    "id": 2,
+                    "value": "Configure an Amazon EC2 instance with Apache"
+                },
+                {
+                    "id": 3,
+                    "value": "Share an Amazon EFS volume as a static website"
+                },
+                {
+                    "id": 4,
+                    "value": "Configure an Amazon S3 bucket as a static website"
+                }
+            ],
+            "question1": "A Developer needs to launch a serverless static website. The Developer needs to get the website up and running quickly and easily. What should the Developer do?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 31
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Add an event to the S3 bucket for all object create events and use AWS Step Functions"
+                },
+                {
+                    "id": 2,
+                    "value": "Add an event to the S3 bucket for PUT and POST events and use an Amazon SNS Topic"
+                },
+                {
+                    "id": 3,
+                    "value": "Add an event to the S3 bucket for PUT and POST events and use an Amazon SQS queue"
+                },
+                {
+                    "id": 4,
+                    "value": "Add an event to the S3 bucket for PUT and POST events and use an AWS Lambda function"
+                }
+            ],
+            "question1": "Your client has a requirement that their team needs to be notified when a new object is uploaded to a specific Amazon S3 bucket. What is the best way for you to do this?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 32
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Lambda Aliases"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Stage Variables"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Lambda Versions"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Mapping Templates"
+                }
+            ],
+            "question1": "Your company deploys applications using serverless, and there is an additional requirement from client to add AWS API Gateway so that lambda functions can be updated to new variant based on matching with the API Gateway stages like dev, test & prod.",
+            "question2": "As a Developer Associate which of the following AWS features will you suggest to developers for this requirement? (Select two)"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 33
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Auto Scaling adds 4 instances to the group"
+                },
+                {
+                    "id": 2,
+                    "value": "No instances will be added as after scaling policy the number of instances become 5 which is greater than maximum capacity."
+                },
+                {
+                    "id": 3,
+                    "value": "Auto Scaling adds 5 instances to the group"
+                },
+                {
+                    "id": 4,
+                    "value": "Auto Scaling group will throw an Error"
+                }
+            ],
+            "question1": "A developer at your company is using an AWS Auto Scaling group which have current capacity of 2, maximum capacity of 6 and a scaling policy which adds 5 instances.",
+            "question2": "Which of the following are INCORRECT options? (Select three)"
+        },
+        "answers": [
+            2,
+            3,
+            4
+        ],
+        "id": 34
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "IAM permissions with sigv4"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Cognito User Pools"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Lambda Authorizer"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Cognito Identity Pools"
+                }
+            ],
+            "question1": "You company creates serverless application which uses Lambda Functions called from AWS API Gateway. The API�s are public to all users.",
+            "question2": "As a Developer Associate which of the following options would you select so that access to API Gateway is controlled using third-party authorization mechanism?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 35
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS KMS receives CMK from client for every Encrypt call, and then encrypts the data with that encryption key"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS KMS sends the CMK to the client, which then performs the encryption and then deletes the CMK"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS KMS generates a new CMK for every Encrypt call and then encrypts the data with that key"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS KMS stores the CMK, and receives data from clients, which it sends back after encryption"
+                }
+            ],
+            "question1": "As a Developer Associate which of the following options do you think describes how the KMS Encryption works?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 36
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create an Amazon Cognito identity pool"
+                },
+                {
+                    "id": 2,
+                    "value": "Create an API Gateway Lambda authorizer"
+                },
+                {
+                    "id": 3,
+                    "value": "Setup usage plans and distribute API keys to the customers"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS Single Sign-on to authenticate the customers"
+                }
+            ],
+            "question1": "What is the SAFEST way to authenticate customers with a token to provide additional security for APIs deployed on Amazon API Gateway?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 37
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS CloudFront Key Pairs"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS EC2 Instance Key Pairs"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS IAM User passwords"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS IAM User Access Keys"
+                }
+            ],
+            "question1": "Which of the following type of AWS security credentials is only created by the Amazon Account root user?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 38
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Virtual MFA devices"
+                },
+                {
+                    "id": 2,
+                    "value": "U2F security key"
+                },
+                {
+                    "id": 3,
+                    "value": "SMS based MFA"
+                },
+                {
+                    "id": 4,
+                    "value": "Hardware MFA device"
+                }
+            ],
+            "question1": "In addition to regular sign-in credentials, AWS supports Multi-Factor Authentication (MFA) for accounts with privileged access.",
+            "question2": "Which of the following Multi-Factor Authentication (MFA) mechanisms is NOT supported for root user authentication of accounts with privileged access?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 39
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Sampling"
+                },
+                {
+                    "id": 2,
+                    "value": "Segments"
+                },
+                {
+                    "id": 3,
+                    "value": "Annotations"
+                },
+                {
+                    "id": 4,
+                    "value": "Metadata"
+                }
+            ],
+            "question1": "You have to gather AWS X-Ray traces from multiple applications running in your organization. For that, you would require to index your XRay traces to search and filter through them efficiently.",
+            "question2": "Which instrumentation should you use?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 40
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Run the aws configure AWS CLI command and specify the access key id and secret access key."
+                },
+                {
+                    "id": 2,
+                    "value": "Sign the AWS CLI command using the signature version 4 process."
+                },
+                {
+                    "id": 3,
+                    "value": "Pass the access key id and secret access key as parameters for each AWS CLI command."
+                },
+                {
+                    "id": 4,
+                    "value": "Specify a role for the EC2 instance with the necessary privileges."
+                }
+            ],
+            "question1": "You are working on an application running on an EC2 instance which needs to manage the AWS infrastructure.",
+            "question2": "How can you configure the EC2 instance to make AWS API calls securely?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 41
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use AWS Cognito Identity Pool"
+                },
+                {
+                    "id": 2,
+                    "value": "Use AWS X-Ray tracing to charge for API�s"
+                },
+                {
+                    "id": 3,
+                    "value": "Use API Gateway Usage Plans"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Lambda Usage plans"
+                }
+            ],
+            "question1": "You work at an IT company which provides many features to its users. Recently the development team has created a new feature for which the company decided to charge from the users. The company uses REST API�s as endpoint for the new feature.",
+            "question2": "As a developer Associate which of the following options will you suggest to the team for offering paid features?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 42
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "!ImportValue"
+                },
+                {
+                    "id": 2,
+                    "value": "!Sub"
+                },
+                {
+                    "id": 3,
+                    "value": "!Join"
+                },
+                {
+                    "id": 4,
+                    "value": "!Ref"
+                },
+                {
+                    "id": 5,
+                    "value": "!GetAtt"
+                }
+            ],
+            "question1": "You are newly assigned to a cloud team which uses CloudFormation templated for provisioning of serverless architecture. The template provisions NoSQL DynamoDB database also.",
+            "question2": "Which intrinsic function can be used output the connection endpoint for the NoSQL DynamoDB database?"
+        },
+        "answers": [
+            5
+        ],
+        "id": 43
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Embed and encrypt access keys in code for continuous deployment."
+                },
+                {
+                    "id": 2,
+                    "value": "Delete all access keys for the account root user."
+                },
+                {
+                    "id": 3,
+                    "value": "Use the same access key in all applications for consistency."
+                },
+                {
+                    "id": 4,
+                    "value": "Use Amazon IAM roles instead of access keys where possible."
+                }
+            ],
+            "question1": "Which of the following is correct about how access keys should be managed in AWS according to best practices? (Select two.)"
+        },
+        "answers": [
+            2,
+            4
+        ],
+        "id": 44
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Deploy the X-Ray daemon agent as a sidecar container"
+                },
+                {
+                    "id": 2,
+                    "value": "Provide the correct IAM instance role to the EC2 instance"
+                },
+                {
+                    "id": 3,
+                    "value": "Deploy the X-Ray daemon agent as a process on your EC2 instance"
+                },
+                {
+                    "id": 4,
+                    "value": "Provide the correct IAM task role to the X-Ray container"
+                },
+                {
+                    "id": 5,
+                    "value": "Deploy the X-Ray daemon agent as a daemon set on ECS"
+                }
+            ],
+            "question1": "Your project lead wants you to run the X-Ray daemon for your Docker containers deployed using AWS Fargate.",
+            "question2": "What do you need to do to ensure it to work? (Select two)"
+        },
+        "answers": [
+            1,
+            4
+        ],
+        "id": 45
+    }
+]

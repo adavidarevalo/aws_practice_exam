@@ -1,0 +1,1296 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon S3 Standard"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon S3 Glacier"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon RDS"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon DynamoDB"
+                }
+            ],
+            "question1": "You have an application in which files are up to 3 GB in size. These files are to be stored for long periods of time and are accessed directly by applications with varying frequency. Which storage solution would best fit?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Geolocation routing policy"
+                },
+                {
+                    "id": 2,
+                    "value": "Failover routing policy"
+                },
+                {
+                    "id": 3,
+                    "value": "Simple routing policy"
+                },
+                {
+                    "id": 4,
+                    "value": "Latency routing policy"
+                }
+            ],
+            "question1": "You work at a Game-streaming company which uses Route 53 to distribute the traffic. Your manager wants the users from India to be served from servers present in India and rest of the users should be restricted from accessing the servers through DNS queries.",
+            "question2": "Which of the following Route 52 policy can be used for this use case?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "By default, CloudTrail tracks only bucket-level actions. To track object-level actions, you need to enable Amazon S3 data events"
+                },
+                {
+                    "id": 2,
+                    "value": "There is nothing called Organization Trail. The master account can, however, enable CloudTrail logging, to keep track of all activities across AWS accounts"
+                },
+                {
+                    "id": 3,
+                    "value": "Member accounts will be able to see the Organization trail, but cannot modify or delete it"
+                },
+                {
+                    "id": 4,
+                    "value": "By default, CloudTrail event log files are not encrypted"
+                },
+                {
+                    "id": 5,
+                    "value": "Member accounts do not have access to organization trail, neither do they have access to the Amazon S3 bucket that logs the files"
+                }
+            ],
+            "question1": "A multi-national enterprise uses AWS Organizations to manage its users across different divisions. Even though CloudTrail is enabled on the member accounts, managers have noticed that access issues to CloudTrail logs across different divisions and AWS Regions is becoming a bottleneck in troubleshooting issues. They have decided to use the organization trail to keep things simple.",
+            "question2": "What are the important points to remember when configuring an organization trail? (Select two)"
+        },
+        "answers": [
+            3
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "game_type"
+                },
+                {
+                    "id": 2,
+                    "value": "price"
+                },
+                {
+                    "id": 3,
+                    "value": "game_id"
+                },
+                {
+                    "id": 4,
+                    "value": "developer_name"
+                }
+            ],
+            "question1": "Your works at an online game development company and the company decided to shift its database from RDS to NoSQL DynamoDB. The database contains the attributes: game_id, game_type, developer_name and price.",
+            "question2": "Which of the following attributes can be chosen as partition key for the NoSQL DynamoDB?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon ECS with the EC2 launch type"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon ECS with the Fargate launch type"
+                },
+                {
+                    "id": 3,
+                    "value": "An Amazon ECS Service with Auto Scaling"
+                },
+                {
+                    "id": 4,
+                    "value": "An Amazon ECS Cluster with Auto Scaling"
+                }
+            ],
+            "question1": "Your company �decodeskills� runs 20 microservices applications that use Docker containers and is planning to migrate all the containers to Amazon ECS. Workloads are highly fluctuating and therefore your company prefers to be charged per running task.",
+            "question2": "As a developer associate, which solution you think would suit your company�s requirements?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "ElasticCache database defined externally and referenced through environment variables"
+                },
+                {
+                    "id": 2,
+                    "value": "ElasticCache bundled along with the source code of application"
+                },
+                {
+                    "id": 3,
+                    "value": "ElasticCache defined in root directory"
+                },
+                {
+                    "id": 4,
+                    "value": "ElasticCache defined in .ebextensions/"
+                }
+            ],
+            "question1": "A company named Encodeskill has created an application which uses ElasticCache for storing user session. Developers decided to deploy the application using Elastic Beanstalk in such a way that user data stored in ElasticCache should be recreated for every new deployment.",
+            "question2": "Which configuration will allow developers to achieve this?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Setting up an .ebextensions file"
+                },
+                {
+                    "id": 2,
+                    "value": "Defining a Lambda function"
+                },
+                {
+                    "id": 3,
+                    "value": "Using Worker Environments"
+                },
+                {
+                    "id": 4,
+                    "value": "Using Lifecycle Policy"
+                }
+            ],
+            "question1": "Last year you developed a CI/CD pipeline using CodePipeline. Deployment was done on Elastic Beanstalk. You notice that the limits on number of versions that can be stored in the Elastic Beanstalk are going to end soon. You now think to get rid of older versions which are unused so that you can create new versions of the application.",
+            "question2": "Which of the following options would you choose to do so?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CloudTrail"
+                },
+                {
+                    "id": 2,
+                    "value": "CloudWatch Metrics"
+                },
+                {
+                    "id": 3,
+                    "value": "X-Ray"
+                },
+                {
+                    "id": 4,
+                    "value": "CloudWatch Alarms"
+                },
+                {
+                    "id": 5,
+                    "value": "SSM"
+                }
+            ],
+            "question1": "Your manager wants to monitor all functions code for error rates with the possibility of creating alarms on top of them.",
+            "question2": "Which of the following options should be chosen? (select two)"
+        },
+        "answers": [
+            2,
+            4
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "5000000"
+                },
+                {
+                    "id": 2,
+                    "value": "Unlimited"
+                },
+                {
+                    "id": 3,
+                    "value": "5000"
+                },
+                {
+                    "id": 4,
+                    "value": "1000000"
+                }
+            ],
+            "question1": "Your company uses AWS SQS for one of its application to send and receive meassages.",
+            "question2": "Which of the following is correct about maximum number of messages that can be stored in an AWS SQS queue?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable AWS X-Ray Sampling"
+                },
+                {
+                    "id": 2,
+                    "value": "Use AWS X-Ray Annotations"
+                },
+                {
+                    "id": 3,
+                    "value": "Send less data from client side"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable AWS X-Ray Tracing"
+                }
+            ],
+            "question1": "The AWS Account which development team uses is billed very high this month because the team has integrated all CloudFormation stacks with AWS X-Ray and very high volume of data is going into X-Ray.",
+            "question2": "As a Developer Associate how can you fix this issue with minimal disruption in application?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "cloudformation compress and cloudformation deploy"
+                },
+                {
+                    "id": 2,
+                    "value": "cloudformation package and cloudformation deploy"
+                },
+                {
+                    "id": 3,
+                    "value": "cloudformation package and cloudformation upload"
+                },
+                {
+                    "id": 4,
+                    "value": "cloudformation compress and cloudformation upload"
+                }
+            ],
+            "question1": "A company �decodeskills� has hired you to move all its on-premise resources to the cloud. Company�s manager wants you to use only serverless architectures and automated deployments to do so. You plan for it that you will create a CloudFormation template in YAML to pull HTML files from company�s repository on GitHub using AWS Lambda function and put those files into an S3 bucket that company specifies.",
+            "question2": "You now have to upload AWS Lambda functions and AWS CloudFormation templates to AWS. The AWS CLI commands that will help you are?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable Health Checks"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable Stickiness"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable Multi AZ deployments"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable SSL"
+                }
+            ],
+            "question1": "Your team has created an application running in the eu-west-1 region with three availability zones (eu-west-1a, eu-west-1b, and eu-west-1c) whose incoming web traffic is routed by a load balancer. You notice that the load balancer continues to route traffic to the crashed instance causing intermittent issues.",
+            "question2": "Which of the following should the development team do to minimize this problem?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "docker pull test.dkr.ecr.us-east-1.amazonaws.com/decodeskills:latest"
+                },
+                {
+                    "id": 2,
+                    "value": "aws docker push test.dkr.ecr.us-east-1.amazonaws.com/decodeskills:latest"
+                },
+                {
+                    "id": 3,
+                    "value": "docker build -t test.dkr.ecr.us-east-1.amazonaws.com/decodeskills:latest"
+                },
+                {
+                    "id": 4,
+                    "value": "docker login -u $AWS_ACCESS_KEY_ID -p $AWS_SECRET_ACCESS_KEY"
+                },
+                {
+                    "id": 5,
+                    "value": "$(aws ecr get-login --no-include-email)"
+                }
+            ],
+            "question1": "Which of the following commands will help you pull existing Docker images from ECR repository called �decodeskills�? (Select two)"
+        },
+        "answers": [
+            1,
+            5
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "RDS database defined externally and referenced in code"
+                },
+                {
+                    "id": 2,
+                    "value": "RDS database defined in .ebextensions/"
+                },
+                {
+                    "id": 3,
+                    "value": "RDS database defined in root directory of Beanstalk"
+                },
+                {
+                    "id": 4,
+                    "value": "RDS database defined externally and referenced through environment variables"
+                }
+            ],
+            "question1": "A company named Encodeskill has created an application which uses RDS as its main data storage. Developers decided to deploy the application using Elastic Beanstalk but they must ensure that RDS database should be reusable for every new deployment.",
+            "question2": "Which configuration will allow developers to achieve this?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Access control list (ACL)"
+                },
+                {
+                    "id": 2,
+                    "value": "Identity-based policy"
+                },
+                {
+                    "id": 3,
+                    "value": "Permissions boundary"
+                },
+                {
+                    "id": 4,
+                    "value": "Resource-based policy"
+                },
+                {
+                    "id": 5,
+                    "value": "AWS Organizations Service Control Policy (SCP)"
+                }
+            ],
+            "question1": "Which of the following policy types can be used to grant permissions (Select three)?"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use environment variables"
+                },
+                {
+                    "id": 2,
+                    "value": "Make database client initialization outside the function handler"
+                },
+                {
+                    "id": 3,
+                    "value": "Increase RAM of the function"
+                },
+                {
+                    "id": 4,
+                    "value": "Reduce RAM of the function"
+                }
+            ],
+            "question1": "Your work at an IT company which implements AWS security Orchestration and Automation for its clients. AWS lambda functions written in python are used to handle violations and security misconfigurations. The team lead reviewed the code written by one of the Developer and suggested him to make reuse of execution context to enhance AWS Lambda performance.",
+            "question2": "As a Developer Associate which of the following will you suggest to the developer?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "X-Forwarded-Proto"
+                },
+                {
+                    "id": 2,
+                    "value": "X-Forwarded-Port"
+                },
+                {
+                    "id": 3,
+                    "value": "X-Forwarded-For"
+                },
+                {
+                    "id": 4,
+                    "value": "X-Forwarded-ClientIP"
+                }
+            ],
+            "question1": "You are working on developing a dashboard for your application which uses Application Load Balancer. You want client IP�s to analyze some patterns to be used in dashboard.",
+            "question2": "Which of the following headers can be used for this use-case?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "40"
+                },
+                {
+                    "id": 2,
+                    "value": "100"
+                },
+                {
+                    "id": 3,
+                    "value": "50"
+                },
+                {
+                    "id": 4,
+                    "value": "10"
+                }
+            ],
+            "question1": "Your team member has created a serverless application that uses an AWS Lambda function to process Amazon S3 events. The Lambda function executes 10 times per second and takes 10 seconds to complete each execution.",
+            "question2": "How many concurrent executions will the Lambda function require?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Resources"
+                },
+                {
+                    "id": 2,
+                    "value": "Mappings"
+                },
+                {
+                    "id": 3,
+                    "value": "Dependencies"
+                },
+                {
+                    "id": 4,
+                    "value": "Conditions"
+                }
+            ],
+            "question1": "You asked your team-mate to review code of the CloudFormation YAML template you developed. He reviewed and found an invalid section in it.",
+            "question2": "Which of the following is an invalid section in CloudFormation template?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CloudFormation"
+                },
+                {
+                    "id": 2,
+                    "value": "CodeCommit"
+                },
+                {
+                    "id": 3,
+                    "value": "CodeDeploy"
+                },
+                {
+                    "id": 4,
+                    "value": "CodeBuild"
+                }
+            ],
+            "question1": "Manager in a company decodeskills told its developer to use AWS Elastic Beanstalk for deploying new applications and asked him to find name of the service on which AWS Elastic Beanstalk relies upon.",
+            "question2": "What is the name of the AWS service?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CodeBuild cannot talk to ECR because of security group issues"
+                },
+                {
+                    "id": 2,
+                    "value": "You must delete and re-create ECR repository"
+                },
+                {
+                    "id": 3,
+                    "value": "The IAM permissions are wrong for the CodeBuild service"
+                },
+                {
+                    "id": 4,
+                    "value": "The ECS instances are misconfigured and must contain additional data in /etc/ecs/ecs.config"
+                }
+            ],
+            "question1": "You are trying to push the Docker images stored in ECR with AWS CodePipeline and AWS CodeBuild. But you get an authorization issue at last step. What issue may have occurred?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable timeout in AWS CodeBuild"
+                },
+                {
+                    "id": 2,
+                    "value": "Increase AWS Lambda timeout"
+                },
+                {
+                    "id": 3,
+                    "value": "Use AWS X-Ray"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS CloudWatch Events"
+                }
+            ],
+            "question1": "You're the developer of an e-commerce website which includes very big scale order processing application. Application uses AWS lambda behind Rest API�s, Codecommit for Continuous Integration of code and Codebuild to build the project. You found that build phase is taking time and projects an error saying there is issue in resolving dependencies from third parties.",
+            "question2": "Which option is the best solution to make build phase complete fast and not take this long in future?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "IAM"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Secrets Manager"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS KMS"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Systems Manager"
+                },
+                {
+                    "id": 5,
+                    "value": "AWS Certificate Manager"
+                }
+            ],
+            "question1": "To enable HTTPS connections for his web application deployed on the AWS Cloud, a developer is in the process of creating server certificate.",
+            "question2": "Which of the following AWS entities are used to deploy SSL/TLS server certificates in a web application for HTTPS connections? (Select two)"
+        },
+        "answers": [
+            1,
+            5
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Check and fix the IAM permissions for the AWS EC2 instance role"
+                },
+                {
+                    "id": 2,
+                    "value": "Make the AWS S3 bucket public"
+                },
+                {
+                    "id": 3,
+                    "value": "Check and fix the IAM permissions for the AWS CodeDeploy service role"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable AWS CodeDeploy Proxy"
+                }
+            ],
+            "question1": "After successful AWS CodeDeploy deployment to instances, an API call to Amazon S3 is made. However, the application throws an authorization exceptions. Which of the following actions you should do to troubleshoot the issue?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Access Keys"
+                },
+                {
+                    "id": 2,
+                    "value": "IAM username and password"
+                },
+                {
+                    "id": 3,
+                    "value": "SSH Keys"
+                },
+                {
+                    "id": 4,
+                    "value": "Git credentials"
+                }
+            ],
+            "question1": "Which of the following credential types are supported by IAM for CodeCommit? (Choose 3)"
+        },
+        "answers": [
+            1,
+            3,
+            4
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "X-Ray"
+                },
+                {
+                    "id": 2,
+                    "value": "CloudTrail"
+                },
+                {
+                    "id": 3,
+                    "value": "CloudWatch Metrics"
+                },
+                {
+                    "id": 4,
+                    "value": "CloudWatch Alarms"
+                },
+                {
+                    "id": 5,
+                    "value": "SSM"
+                }
+            ],
+            "question1": "Your manager wants to monitor all functions code for error rates with the possibility of creating alarms on top of them.",
+            "question2": "Which of the following options should be chosen? (select two)"
+        },
+        "answers": [
+            3,
+            4
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The Lambda function failed, and the Lambda service retried the invocation with a delay"
+                },
+                {
+                    "id": 2,
+                    "value": "An AWS S3 outage caused duplicate entries of the same log file"
+                },
+                {
+                    "id": 3,
+                    "value": "The application stopped intermittently and then resumed"
+                },
+                {
+                    "id": 4,
+                    "value": "The S3 bucket name was specified incorrectly"
+                }
+            ],
+            "question1": "Your company �decodeskills� has an application that logs all information to Amazon S3. You have an AWS Lambda function already in place to process the log files. This function gets invoked whenever there is a new log file. However, when checking the Lambda function logs, duplicate entries with the same request ID are found.",
+            "question2": "What is the BEST explanation for the duplicate entries?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "RDS Maria DB"
+                },
+                {
+                    "id": 2,
+                    "value": "RDS MySQL"
+                },
+                {
+                    "id": 3,
+                    "value": "RDS MS Sequel Server"
+                },
+                {
+                    "id": 4,
+                    "value": "RDS Oracle"
+                },
+                {
+                    "id": 5,
+                    "value": "RDS PostGreSQL"
+                }
+            ],
+            "question1": "AWS Certified Solutions Architect Associate",
+            "question2": "You are working on integrating an application with AWS RDS databases.",
+            "question3": "To ensure best practices which of the following AWS RDS database can be configured with IAM Database Authentication? (Select two)"
+        },
+        "answers": [
+            2,
+            5
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CodeBuild"
+                },
+                {
+                    "id": 2,
+                    "value": "Elastic Beanstalk"
+                },
+                {
+                    "id": 3,
+                    "value": "CodeCommit"
+                },
+                {
+                    "id": 4,
+                    "value": "CodeDeploy"
+                }
+            ],
+            "question1": "A developer of company decodeskills is asked to create an application which can be deployed across a fleet of EC2 instances. Which AWS service he should use to configure blue-green deployment in the application with full control over the deployment steps."
+        },
+        "answers": [
+            4
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The target is a Lambda function and the request body exceeds 1 MB."
+                },
+                {
+                    "id": 2,
+                    "value": "The target is a Lambda function and the response body exceeds 1 MB."
+                },
+                {
+                    "id": 3,
+                    "value": "You configured an AWS WAF web access control list (web ACL) and there was an error executing the web ACL rules."
+                },
+                {
+                    "id": 4,
+                    "value": "The target groups for the load balancer have no registered targets."
+                }
+            ],
+            "question1": "You made an application and configured ALB for fleet of EC2 instances. But you are getting Error HTTP 503 when you tested the application.",
+            "question2": "Which of the following could be the reason for it?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 30
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS CloudTrail"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS X-Ray"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS CloudWatch Events"
+                },
+                {
+                    "id": 4,
+                    "value": "ALB Access logs"
+                }
+            ],
+            "question1": "You company has multiple AWS accounts for different teams like dev, test, QA and prod.",
+            "question2": "Which of the following AWS service can be used to trace and debug the data across these AWS accounts and visualize it in a central account?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 31
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon ECS cluster"
+                },
+                {
+                    "id": 2,
+                    "value": "Docker in an application package"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon ECS task definition"
+                },
+                {
+                    "id": 4,
+                    "value": "CLI for Elastic Beanstalk"
+                }
+            ],
+            "question1": "You company is deploying a multi-container Docker environment in AWS Elastic Beanstalk. Which of the following is required to configure container instances in the environment?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 32
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Secrets Manager"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Systems Manager"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS SSM Parameter Store"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS KMS"
+                }
+            ],
+            "question1": "You are working on an application which uses DynamoDB database. For security purposes you want to store database connection credentials securely and automatically rotate also.",
+            "question2": "Which of the following AWS service can be used for this?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 33
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Setup an API in front of the ALB using API Gateway and use an integration request to map the request to the Lambda function"
+                },
+                {
+                    "id": 2,
+                    "value": "Create a target group and register the Lambda function using the AWS CLI"
+                },
+                {
+                    "id": 3,
+                    "value": "Create an Auto Scaling Group (ASG) and register the Lambda function in the launch configuration"
+                },
+                {
+                    "id": 4,
+                    "value": "Configure an event-source mapping between the ALB and the Lambda function"
+                }
+            ],
+            "question1": "As a developer associate, you plan to use a Lambda function that processes incoming requests from an Application Load Balancer (ALB).",
+            "question2": "Which of the following options would you choose to achieve this?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 34
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use AWS CloudTrail to get the records"
+                },
+                {
+                    "id": 2,
+                    "value": "Use SSM Parameter Store Access Logs in CloudWatch Logs to get the records"
+                },
+                {
+                    "id": 3,
+                    "value": "Use SSM Parameter Store Access Logs in S3 to get the records"
+                },
+                {
+                    "id": 4,
+                    "value": "Use SSM Parameter Store List feature to get the records"
+                }
+            ],
+            "question1": "Your team wants to make dashboard for different API calls. The dashboard should also display details about who called that API and the time as well. The team specifically want to know details about SSM Parameter Store API calls.",
+            "question2": "Which of the following options can be used to collect information for the dashboard?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 35
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Define an appspec.yml file in the root directory"
+                },
+                {
+                    "id": 2,
+                    "value": "Define a buildspec.yml file in the root directory"
+                },
+                {
+                    "id": 3,
+                    "value": "Define an appspec.yml file in the codebuild/ directory"
+                },
+                {
+                    "id": 4,
+                    "value": "Define a buildspec.yml file in the codebuild/ directory"
+                }
+            ],
+            "question1": "You have just replaced your company's Jenkins based CI/CD platform with AWS CodeBuild.",
+            "question2": "Which of the following options should you choose to programmatically define your build steps?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 36
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Deploy new version using All at once deployment policy"
+                },
+                {
+                    "id": 2,
+                    "value": "Deploy new version to a separate environment via Blue/Green Deployment, and then change Route 53 records to the two environments to redirect traffic to the new version."
+                },
+                {
+                    "id": 3,
+                    "value": "Deploy new version using Rolling deployment policy"
+                },
+                {
+                    "id": 4,
+                    "value": "Deploy new version using Rolling with additional batch deployment policy"
+                }
+            ],
+            "question1": "An e-commerce company uses AWS Elastic Beanstalk to manage its infrastructure. The Manager wants the developer to deploy new version of the application with minimum downtime and it should rollback quickly if deployment goes down.",
+            "question2": "Which of the following options would the developer follow?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 37
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "BeforeInstall => ApplicationStart => DownloadBundle => ValidateService"
+                },
+                {
+                    "id": 2,
+                    "value": "ValidateService => BeforeInstall =>DownloadBundle => ApplicationStart"
+                },
+                {
+                    "id": 3,
+                    "value": "BeforeInstall => ValidateService =>DownloadBundle => ApplicationStart"
+                },
+                {
+                    "id": 4,
+                    "value": "DownloadBundle => BeforeInstall => ApplicationStart => ValidateService"
+                }
+            ],
+            "question1": "Which of the following options does NOT lists the correct order of lifecycle events for deployment process on AWS via CodeDeploy? (Multiple choices)"
+        },
+        "answers": [
+            1,
+            2,
+            3
+        ],
+        "id": 38
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Delay a message's visibility timeout using DelaySeconds action"
+                },
+                {
+                    "id": 2,
+                    "value": "Extend a message's visibility timeout using WaitTimeSeconds action to long poll"
+                },
+                {
+                    "id": 3,
+                    "value": "Reduce a message's visibility timeout using ChangeMessageVisibility action"
+                },
+                {
+                    "id": 4,
+                    "value": "Extend a message's visibility timeout using ChangeMessageVisibility action"
+                }
+            ],
+            "question1": "Your company decodeskills allows users to add black & white video and music on the application running on EC2 instance and all these files are pushed into SQS queue for processing. The application then processes the video and outputs a colored video along with attaching the music into it. This processing for every video takes 15 seconds on average. Sometimes the processing takes more time.",
+            "question2": "Which of the following options should the developers use to ensure that the files are not processed by multiple consumers of the SQS queue?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 39
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Put multi docker containers into a single task definition using an EC2 Launch Type"
+                },
+                {
+                    "id": 2,
+                    "value": "Put multi docker containers into multiple separate task definitions using a Fargate Launch Type"
+                },
+                {
+                    "id": 3,
+                    "value": "Put multi docker containers into multiple separate task definitions using an EC2 Launch Type"
+                },
+                {
+                    "id": 4,
+                    "value": "Put multi docker containers into a single task definition using a Fargate Launch Type"
+                }
+            ],
+            "question1": "Decodeskills is an MNC which has a development team which handles e-commerce web application. The developers want to run a serverless data store service on multiple docker containers using shared memory.",
+            "question2": "Which of the following ECS configurations can be used ?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 40
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a high-resolution custom metric and push the data using a script triggered every 10 seconds"
+                },
+                {
+                    "id": 2,
+                    "value": "Simply get it from the CloudWatch Metrics"
+                },
+                {
+                    "id": 3,
+                    "value": "Open a support ticket with AWS"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable EC2 detailed monitoring"
+                }
+            ],
+            "question1": "A telecommunications company that provides internet service for mobile device users maintains over 100 c4.large instances in the us-east-1 region. The EC2 instances run complex algorithms. The manager would like to track CPU utilization of the EC2 instances as frequently as every 10 seconds.",
+            "question2": "Which of the following represents the BEST solution for the given use-case?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 41
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "CloudTrail logs"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS X-Ray tracing"
+                },
+                {
+                    "id": 3,
+                    "value": "CloudWatch metrics"
+                },
+                {
+                    "id": 4,
+                    "value": "ALB Security group"
+                },
+                {
+                    "id": 5,
+                    "value": "ALB Access logs"
+                }
+            ],
+            "question1": "You company operates from different locations and ALB is used in it�s application to balance load across targets in multiple AZ�s.",
+            "question2": "Which of the following can give information about client�s IP address patterns and latency using incoming requests?"
+        },
+        "answers": [
+            5
+        ],
+        "id": 42
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "10"
+                },
+                {
+                    "id": 2,
+                    "value": "40"
+                },
+                {
+                    "id": 3,
+                    "value": "20"
+                },
+                {
+                    "id": 4,
+                    "value": "5"
+                }
+            ],
+            "question1": "As a Developer Associate you are supposed to decide the Read Capacity Units (RCU) of the NoSQL DynamoDB database based on the throughput requirements. The new application on which you are working on requires throughput of 20 strong consistent reads of 6KB in size each.",
+            "question2": "How many RCU will you use when configuring DynamoDB table?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 43
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use Amazon ElastiCache to store the session state"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable session stickiness using elastic load balancers"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Amazon S3 to store the session state"
+                },
+                {
+                    "id": 4,
+                    "value": "Use Amazon CloudFront to store the session state"
+                }
+            ],
+            "question1": "You work at an e-commerce company which uses web application and you are migrating on-premises session state to AWS Cloud. The want to make application fault tolerant, highly scalable, and want that any service interruption should not affect the user experience.",
+            "question2": "Which of the following is the best option to store the session state?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 44
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "!ImportValue"
+                },
+                {
+                    "id": 2,
+                    "value": "!Join"
+                },
+                {
+                    "id": 3,
+                    "value": "!Ref"
+                },
+                {
+                    "id": 4,
+                    "value": "!Sub"
+                }
+            ],
+            "question1": "You are newly assigned to a cloud team which uses CloudFormation templated for provisioning of serverless architecture. To make the provisioning more dynamic your lead asked to use parameters so that values can be changed later.",
+            "question2": "Which intrinsic function can be used to refer the parameters used in the template?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 45
+    }
+]
