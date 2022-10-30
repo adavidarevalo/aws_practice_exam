@@ -159,7 +159,7 @@ export default function Question() {
                                     label={option.value}
                                     name='checkboxRadioGroup'
                                     value={option.id.toString()}
-                                    checked={state.answers.find(({ questionId }) => questionId === actualQuestion.toString())?.solutionId.includes(option.id.toString())}
+                                    checked={!!state.answers.find(({ questionId }) => questionId === actualQuestion.toString())?.solutionId.includes(option.id.toString())}
                                     onClick={(e, { value }) => handleSelect(value as string)}
                                 />
                             </Form.Field>
