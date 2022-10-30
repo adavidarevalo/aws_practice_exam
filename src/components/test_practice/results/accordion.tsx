@@ -4,21 +4,17 @@ import { QuestionContext } from '../../context/question'
 import { IAnswer } from '../../utils/axios'
 import AccordionItem from './accordion_item'
 
-interface IProps {
-    answerValidated: IAnswer[]
-}
 
-export default function AccordionLists({ answerValidated }: IProps) {
+export default function AccordionLists() {
     const {
         examsList,
     } = useContext(QuestionContext)
 
     return (
         <Accordion fluid styled>
-            {examsList?.questions.map(question => (
+            {examsList.map(question => (
                 <AccordionItem
                     question={question}
-                    answerValidated={answerValidated}
                 />
             ))}
         </Accordion>

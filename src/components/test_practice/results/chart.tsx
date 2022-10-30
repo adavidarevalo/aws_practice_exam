@@ -1,9 +1,16 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
-import { IProps } from './accordion_options';
 import style from './result.module.sass'
 
 ChartJS.register(ArcElement, Tooltip, Legend);
+
+export interface IProps {
+    answerValidated: {
+        answerCorrect: number,
+        answerIncorrect: number,
+        answerOmitted: number,
+    }
+}
 
 export default function Chart({ answerValidated }: IProps) {
     const { answerCorrect, answerIncorrect, answerOmitted } = answerValidated

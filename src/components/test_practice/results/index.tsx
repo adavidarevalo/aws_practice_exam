@@ -22,13 +22,25 @@ export default function Result() {
         const questionScoreValue = 1000 / examsList.length
         let score = 0
         let passExam = false
+        const answerValidated = {
+            answerCorrect: 0,
+            answerIncorrect: 0,
+            answerOmitted: 0,
+        }
+
         examsList.forEach(question => {
             const element = answers.filter(({ questionId }) => questionId === question.id.toString())
-            if (element.length === 0) return
+            if (element.length === 0) {
+                answerValidated.answerOmitted += 1
+                return
+            }
 
             if (_.difference(question.answers.map(x => x.toString), element[0].solutionId as any[])) {
-                score += questionScoreValue
+                answerValidated.answerIncorrect += 1
+                return
             }
+            answerValidated.answerCorrect += 1
+            score += questionScoreValue
         })
 
         score > 720 && {
@@ -37,7 +49,8 @@ export default function Result() {
 
         return {
             passExam,
-            score
+            score,
+            answerValidated
         }
     }, [
         examsList
@@ -55,9 +68,9 @@ export default function Result() {
                         : "No paso, intentalo nuevamente 😥😥😥"
                 }</h1>
                 <h3>Puntuación: {score.score.toFixed(2)} / 1000</h3>
-                {/*        <Chart answerValidated={answerValidated} />*/}
-                {/* <AccordionOptions answerValidated={answerValidated} /> */}
-                {/* <AccordionLists answerValidated={answerValidated.answerValidated} /> */}
+                <Chart answerValidated={score.answerValidated} />
+                <AccordionOptions answerValidated={score.answerValidated} />
+                <AccordionLists />
             </div>
         </>
     )

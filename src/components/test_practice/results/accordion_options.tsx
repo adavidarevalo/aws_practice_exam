@@ -1,11 +1,7 @@
 import { Icon, Label } from 'semantic-ui-react'
 import ChangeLanguageButton from '../../change_language_button'
-import { IResultValidateExam } from '../../utils/axios'
 import style from './result.module.sass'
-
-export interface IProps {
-  answerValidated: IResultValidateExam
-}
+import { IProps } from './chart';
 
 export default function AccordionOptions({ answerValidated }: IProps) {
   const { answerCorrect, answerIncorrect, answerOmitted } = answerValidated

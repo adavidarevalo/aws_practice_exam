@@ -5,7 +5,7 @@ export type QuestionsContextState = {
     setExams: React.Dispatch<React.SetStateAction<IExam[]>>
 };
 
-import React, { createContext, useState, FC } from "react";
+import React, { createContext, useState } from "react";
 import { IGallery, TFormType } from "../utils/axios";
 
 const contextDefaultValues: QuestionsContextState = {

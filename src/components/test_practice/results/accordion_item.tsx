@@ -1,6 +1,7 @@
+import _ from 'lodash';
 import React, { useContext, useMemo, useState } from 'react'
 import { Accordion, Icon, Label, List } from 'semantic-ui-react'
-import { IQuestion, QuestionContext } from '../../context/question';
+import { IExam, IQuestion, QuestionContext } from '../../context/question';
 import { IAnswer } from '../../utils/axios';
 
 interface IProps {
@@ -12,14 +13,27 @@ interface IProps {
     answerValidated: IAnswer[]
 }
 
-export default function AccordionItem({ question, answerValidated }: IProps) {
+export default function AccordionItem({ question }: { question: any }) {
     const [isOpen, setIsOpen] = useState(false)
     const {
         state
     } = useContext(QuestionContext)
 
-    const result = useMemo<IAnswer>((): IAnswer => {
-        return answerValidated.find(answer => answer.questionId === question.id) as IAnswer
+    const { answers } = state
+
+    const { isCorrectQuestion } = useMemo(() => {
+        let isCorrectQuestion = null
+        const q = answers.filter(({ questionId }) => Number(questionId) === question.id)
+        if (q.length === 0) {
+            isCorrectQuestion = null
+        }
+        if (q.length === 1) {
+            isCorrectQuestion = !_.difference(q[0].solutionId.map(x => Number(x)), question.answers)
+        }
+
+        return {
+            isCorrectQuestion
+        }
     }, [])
 
     return (
@@ -33,19 +47,19 @@ export default function AccordionItem({ question, answerValidated }: IProps) {
                 <Icon name='dropdown' />
                 <h3
                     style={{ width: "90%", margin: "0px" }}
-                >{question[state.language].question}</h3>
+                >{question[state.language].question1}</h3>
                 <Label>
-                    {result.isCorrectAnswer && (
+                    {isCorrectQuestion && (
                         <>
                             <Icon name='check circle' color='green' /> Correct
                         </>
                     )}
-                    {result.isCorrectAnswer === false && (
+                    {isCorrectQuestion === false && (
                         <>
                             <Icon name='circle' color='red' /> Incorrect
                         </>
                     )}
-                    {result.isCorrectAnswer === null && (
+                    {isCorrectQuestion === null && (
                         <>
                             <Icon name='minus circle' color='grey' /> Omitted
                         </>
@@ -54,10 +68,16 @@ export default function AccordionItem({ question, answerValidated }: IProps) {
             </Accordion.Title>
             <Accordion.Content active={isOpen}>
                 <List bulleted>
-                    {question[state.language].options.map((option) => (
-                        <List.Item style={{
-                            color: result.solutionId.includes(option.id as string) && "green"
-                        }}>{option.value}</List.Item>
+                    {question[state.language].options.map((option: {
+                        id: number;
+                        value: string
+                    }) => (
+                        <List.Item
+                            key={option.id}
+                            style={{
+                                color: question.answers.includes(option.id) && "green"
+                            }}
+                        >{option.value}</List.Item>
                     ))}
                 </List>
             </Accordion.Content>
