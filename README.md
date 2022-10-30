@@ -1,6 +1,6 @@
 # AWS Test practice.
 <picture>
-  <img alt="AWS Icon" src="https://logos-world.net/wp-content/uploads/2021/08/Amazon-Web-Services-AWS-Logo.png" style="width:200px">
+  <img alt="AWS Icon" src="https://elchapuzasinformatico.com/wp-content/uploads/2022/07/Amazon-AWS-Ingresos-Beneficios-Segundo-Trimestre-2022.jpg">
 </picture>
 
 
