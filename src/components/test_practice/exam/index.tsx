@@ -26,6 +26,9 @@ import exams from './../../../assets/exams/index'
 //     }[]
 // }
 
+
+//.sort(() => Math.random() - 0.5)
+
 export default function Exam() {
     const {
         state,

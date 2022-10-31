@@ -9,15 +9,16 @@ export default function ChangeLanguageButton() {
     } = useContext(QuestionContext)
 
     const handleChangeLanguage = () => {
-        setState(prevState => ({
-            ...prevState,
-            language: prevState.language === 'es' ? 'en' : 'es'
-        }))
+        // setState(prevState => ({
+        //     ...prevState,
+        //     language: prevState.language === 'es' ? 'en' : 'es'
+        // }))
     }
 
     return (
         <Button
-            content={state.language === 'es' ? 'Ingles' : "Español"}
+            // content={state.language === 'es' ? 'Ingles' : "Español"}
+            content={'Ingles'}
             onClick={handleChangeLanguage}
         />
     )
