@@ -28,7 +28,7 @@ export default function AccordionItem({ question }: { question: any }) {
             isCorrectQuestion = null
         }
         if (q.length === 1) {
-            isCorrectQuestion = !_.difference(q[0].solutionId.map(x => Number(x)), question.answers)
+            isCorrectQuestion = _.difference(q[0].solutionId.map(x => Number(x)), question.answers).length === 0
         }
 
         return {

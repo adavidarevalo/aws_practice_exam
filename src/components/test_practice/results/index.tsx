@@ -34,11 +34,13 @@ export default function Result() {
                 answerValidated.answerOmitted += 1
                 return
             }
+            const t = element[0].solutionId.map(x => Number(x))
 
-            if (_.difference(question.answers.map(x => x.toString), element[0].solutionId as any[])) {
+            if (_.difference(element[0].solutionId.map(x => Number(x)), question.answers).length > 0) {
                 answerValidated.answerIncorrect += 1
                 return
             }
+
             answerValidated.answerCorrect += 1
             score += questionScoreValue
         })

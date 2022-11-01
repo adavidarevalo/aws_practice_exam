@@ -1,23 +1,26 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react';
+import { QuestionContext } from '../components/context/question';
 import HelmetMetaData from '../components/helmet_meta_data'
 import Exam from '../components/test_practice/exam'
 import StartExam from '../components/test_practice/start_exam'
 
 export default function PracticeExams() {
-    const [statePage, setStatePage] = useState<number>(1)
+    const { state, setState } = useContext(QuestionContext)
+    const { isExamActive } = state
 
     return (
         <>
             <HelmetMetaData title="AWS Exam" />
-            {statePage === 1 && (
+            {isExamActive === false && (
                 <StartExam
                     accepted={() => {
-                        setStatePage(2)
+                        setState(prevState => ({
+                            ...prevState,
+                            isExamActive: true
+                        }))
                     }} />
             )}
-            {
-                statePage === 2 && (<Exam />)
-            }
+            {isExamActive && <Exam />}
         </>
     )
 }

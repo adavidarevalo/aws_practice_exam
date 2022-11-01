@@ -9,26 +9,6 @@ import { examList, IExam, QuestionContext } from '../../context/question'
 import Result from '../results'
 import exams from './../../../assets/exams/index'
 
-// export interface IQuestionsLists {
-//     question: String,
-//     question_2?: String,
-//     options: string[],
-//     answer: string[],
-//     id: string
-// }
-
-// export interface IState {
-//     actualQuestion: number;
-//     activeFlags: number[]
-//     answers: {
-//         questionId: string,
-//         solutionId: string[]
-//     }[]
-// }
-
-
-//.sort(() => Math.random() - 0.5)
-
 export default function Exam() {
     const {
         state,

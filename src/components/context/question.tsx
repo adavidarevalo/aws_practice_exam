@@ -15,7 +15,8 @@ const contextDefaultValues: QuestionsContextState = {
         answers: [],
         language: "en",
         isFinishExam: false,
-        galleryExam: []
+        galleryExam: [],
+        isExamActive: false
     },
     setState: () => { },
     examsList: [],
@@ -59,7 +60,8 @@ export interface IState {
     }[],
     language: TLanguage;
     isFinishExam: boolean
-    galleryExam: IGallery[]
+    galleryExam: IGallery[],
+    isExamActive: boolean
 }
 
 export interface IExam {
@@ -95,6 +97,7 @@ const QuestionProvider = ({ children }: { children: JSX.Element }) => {
         language: "en",
         isFinishExam: false,
         galleryExam: [],
+        isExamActive: false
     })
 
     const [examsList, setExams] = useState<IExam[]>([])
