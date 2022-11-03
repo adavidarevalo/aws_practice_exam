@@ -1,0 +1,826 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Group the SQS API operations in batches"
+                },
+                {
+                    "id": 2,
+                    "value": "Use single queue operations"
+                },
+                {
+                    "id": 3,
+                    "value": "Use long polling for SQS queues"
+                },
+                {
+                    "id": 4,
+                    "value": "Use short polling for SQS queues"
+                }
+            ],
+            "question1": "Your developing a system that will be sending messages to an SQS queue. Another application will be running on an EC2 Instance that will be used to process the messages. Which of the following are BEST practices when it comes to making COST effective use of the SOS queues? Choose 2 answers from the options given below ?"
+        },
+        "answers": [
+            1,
+            3
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Consider using Dynamo DB global tables"
+                },
+                {
+                    "id": 2,
+                    "value": "Consider using a higher throughput for the tables"
+                },
+                {
+                    "id": 3,
+                    "value": "Consider deploying an Elastic Cache in front of Dynamo DB"
+                },
+                {
+                    "id": 4,
+                    "value": "Consider using Dynamo DS acceleration"
+                }
+            ],
+            "question1": "A company currently has an application that works with Dynamo DB. The application is a high revenue generating application for the company. Their current response time for their read workloads Is In the order of milliseconds. But to bump up hits to their pages, they want to reduce the response time to microseconds. Which of the following would you suggest to fulfill this requirement?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Ensure that Encryption is enabled the bucket AWS(Amazon Web Service) server-side encryption"
+                },
+                {
+                    "id": 2,
+                    "value": "Ensure that the a bucket policy Is In place with a condition of ?aws: Multi Factor Auth Present?: ?true? with a Deny policy"
+                },
+                {
+                    "id": 3,
+                    "value": "Ensure that Encryption is enabled the bucket using KMS keys"
+                },
+                {
+                    "id": 4,
+                    "value": "Ensure that the a bucket policy is in place with a condition of �aws: Multi Factor Auth Presenr: ?false? with a Deny policy"
+                }
+            ],
+            "question1": "Your company is planning on storing documents in an 53 bucket. The documents are sensitive, and employees should use Multi Factor authentication when trying to access documents. Which of the following must be done to fulfill this requirement?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Put the database connection string in AWS(Amazon Web Service) Systems Manager Parameter Store"
+                },
+                {
+                    "id": 2,
+                    "value": "Put the database connection string In the app.json file"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Lambda Environment variables"
+                },
+                {
+                    "id": 4,
+                    "value": "Place the database connection string in the AWS(Amazon Web Service) Lambda function itself since all lambda functions are encrypted at rest"
+                }
+            ],
+            "question1": "You?re developing an application that is going to be hosted in AWS(Amazon Web Service) Lambda. The function will make calls to a database. The security mandate is that all connection strings should be kept secure. Which of the following is the MOST secure way to implement this?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Configure an Index document"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable Web Site hosting"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable versioning for the bucket"
+                },
+                {
+                    "id": 4,
+                    "value": "Ensure that permissions are set for Website access"
+                }
+            ],
+            "question1": "You are planning on hosting a static web site using the features available with S3. Which of the following steps need to be carried out in order to ensure that you can host your static web site in S3. Choose 3 answers from the options given below ?"
+        },
+        "answers": [
+            1,
+            2,
+            4
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create an SNS topics to handle the processing of messages"
+                },
+                {
+                    "id": 2,
+                    "value": "Create an SQS queue to handle the processing of messages"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a Lambda function to process the messages from the queue"
+                },
+                {
+                    "id": 4,
+                    "value": "Create an EC2 Instance to process the messages from the queue"
+                }
+            ],
+            "question1": "You are a team lead for the development of an application that will be hosted in AWS. The application will consist of a front end which will allow users to upload files. Part of the application will consist of sending and processing of messages by a backend service. You have been told to reduce the cost for the backend service S ,but also ensure efficiency. Which of the following would you consider in the implementation of the backend service? Choose 2 answers from the options given below ?"
+        },
+        "answers": [
+            2,
+            3
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "All-at-Once"
+                },
+                {
+                    "id": 2,
+                    "value": "Gradual"
+                },
+                {
+                    "id": 3,
+                    "value": "Linear"
+                },
+                {
+                    "id": 4,
+                    "value": "Canary"
+                }
+            ],
+            "question1": "You have a new version of the Lambda function in place. You have been told that all traffic needs to be shifted instantaneously to the new function. Which deployment technique would you employ in Code Deploy?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a separate index on the table"
+                },
+                {
+                    "id": 2,
+                    "value": "Make use of queries based on the partition key"
+                },
+                {
+                    "id": 3,
+                    "value": "Use lAM polices with specific conditions"
+                },
+                {
+                    "id": 4,
+                    "value": "Make use of queries based on the sort"
+                }
+            ],
+            "question1": "Exam : AWS(Amazon Web Service) Certified Solutions Architect Associate",
+            "question2": "An application currently makes Dynamo DB tables. There is a requirement that a user can only view certain items in the table. How can this be accomplished?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Configure the Access Keys on the EC2 instance to access Code Pipeline"
+                },
+                {
+                    "id": 2,
+                    "value": "Configure an EC2 Instance with Jenkins Installed"
+                },
+                {
+                    "id": 3,
+                    "value": "Use the AWS(Amazon Web Service) Code Build service"
+                },
+                {
+                    "id": 4,
+                    "value": "Configure an lAM Role for EC2 to access Code Pipeline"
+                }
+            ],
+            "question1": "You?re the team lead for an application. You have been instructed to make use of Jenkins for your Cl/CD pipeline and other AWS(Amazon Web Service) Services for deployment purposes. Which of the following would you consider fulfilling this requirement?"
+        },
+        "answers": [
+            2,
+            4
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The lAM Role attached to the function does not have access to Dynamo DB"
+                },
+                {
+                    "id": 2,
+                    "value": "You need to deploy the function first"
+                },
+                {
+                    "id": 3,
+                    "value": "The timeout of the function has been reached."
+                },
+                {
+                    "id": 4,
+                    "value": "You need to create a version for the function first"
+                }
+            ],
+            "question1": "You?ve created a Lambda function with the default settings. You add code to this function which makes calls to Dynamo DB. You try and test the function. But the function is not completing Its execution. Which of the following might be probable causes for this? Choose 2 answers from the options given below"
+        },
+        "answers": [
+            1,
+            3
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Security pools"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS STS with lAM"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Cognito Identity pools"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS lAM pools"
+                }
+            ],
+            "question1": "Your company is developing an application that will primarily be used by users on their mobile devices. The users need to have the ability to authenticate themselves via identity providers through Security Assertion Markup Language 2.0 Which of the following service should be used for user management?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Have the application fetch an access key from an Amazon 53 bucket at run time."
+                },
+                {
+                    "id": 2,
+                    "value": "Embed the Access keys in the application"
+                },
+                {
+                    "id": 3,
+                    "value": "Launch the applications Amazon EC2 instance with an lAM role."
+                },
+                {
+                    "id": 4,
+                    "value": "Create environment variables in the EC2 Instance with the Access Keys"
+                }
+            ],
+            "question1": "Your application must write to an SQS queue. Your corporate security policies require that AWS(Amazon Web Service) credentials are always encrypted and are rotated at least once a week. How can you securely provide credentials that allow your application to write to the queue?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Try to keep the number of indexes to a minimum"
+                },
+                {
+                    "id": 2,
+                    "value": "Avoid indexing tables with a lot of write activity"
+                },
+                {
+                    "id": 3,
+                    "value": "Avoid indexing tables with a lot of read activity"
+                },
+                {
+                    "id": 4,
+                    "value": "Try to create as many indexes as possible"
+                }
+            ],
+            "question1": "A company currently has an application that works with Dynamo DB. You have been requested to increase the performance of the underlying queries for the Dynamo DB table by using Indexes. Which of the following are the best practices when It comes to working with Indexes efficiently? Choose 2 answers from the options given below?"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Change the lAM policy for the AP gateway to enable anonymous access"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable CORS for the methods in the API gateway"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable CORS for the lambda function"
+                },
+                {
+                    "id": 4,
+                    "value": "Change the LAM policy for the Lambda function to enable anonymous access"
+                }
+            ],
+            "question1": "You?ve just configured a Lambda function that sits behind the API gateway service. When you try to invoke the Lambda function via the API gateway service from Java script in your HTML page, you receive the following error. No �Access-Control-Allow-Origin header is present on the requested resource. Origin null? is therefore not allowed access What can be done to resolve this error?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Ops work"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Code Commit"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Code Build"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Elastic Beanstalk"
+                }
+            ],
+            "question1": "Your development team currently uses Jenkins for managing the Cl process. You need to move the process on to AWS. Which of the following service would be the ideal service for this requirement?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Lambda Authorizers"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Cognito User pool"
+                },
+                {
+                    "id": 3,
+                    "value": "API Methods"
+                },
+                {
+                    "id": 4,
+                    "value": "API stages"
+                }
+            ],
+            "question1": "As a developer , you have created some Lambda functions and are now hosting them via the AWS(Amazon Web Service) API gateway service. You need to control access to the API gateway. Which of the following can be Incorporated to control access to the API gateway? Choose 2 answers from the options given below? Please select:"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Change the storage class"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable Encryption for the bucket"
+                },
+                {
+                    "id": 3,
+                    "value": "Host a static web site"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable cross region replication for the bucket"
+                }
+            ],
+            "question1": "You are the team lead for an application that is already in production and making use of S3 buckets. Users from another country have now started actively using the objects in the 53 bucket. Which of the following can be done to reduce the latency of access to objects for the new users?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Change the throughput capacity on the tables"
+                },
+                {
+                    "id": 2,
+                    "value": "Consider using multiple sort keys"
+                },
+                {
+                    "id": 3,
+                    "value": "Consider using global tables"
+                },
+                {
+                    "id": 4,
+                    "value": "Use exponential back off in your requests from the application"
+                }
+            ],
+            "question1": "Your application is making requests to a Dynamo DB table. Due to the certain surge of requests , you are now getting throttling errors in your application. Which of the following can be used to resolve such errors? Choose 2 answers from the options given below?"
+        },
+        "answers": [
+            1,
+            4
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Elastic beanstalk"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Dynamo DB"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Red shift"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Ops work"
+                }
+            ],
+            "question1": "Your company currently used Puppet as its configuration management software. You are the development lead and now have to deploy an application for development onto AWS. You have to leverage your company?s existing scripts on Puppet for deployment of the environment. Which of the following would be S the best service for deployment of the application?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable Read Replicas for the database and make the reporting module point to the Read Replica"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable Multi-AZ for the database make the reporting module point to the Secondary database"
+                },
+                {
+                    "id": 3,
+                    "value": "Move the database to Dynamo DB and make the reporting module point to the new Dynamo DB table"
+                },
+                {
+                    "id": 4,
+                    "value": "Place an Elastic Load Balancer in front of the reporting part of the application"
+                }
+            ],
+            "question1": "An application is currently in production that makes calls to an AWS(Amazon Web Service) RDS Instance. The reporting part of the application Is taking a hit and is experiencing a lot of performance issues. Which of the following can be used to alleviate the Issue faced by the reporting module of the application?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a canary release in the API gateway service"
+                },
+                {
+                    "id": 2,
+                    "value": "Create a new Lambda function and a new API gateway. Give the users the new URL"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a new version of the existing Lambda function and a new API gateway. Give the users the new URL"
+                },
+                {
+                    "id": 4,
+                    "value": "Create another resource and method. Deploy the API. Give the users the new URL"
+                }
+            ],
+            "question1": "You?ve deployed an application using AWS(Amazon Web Service) Lambda and the API gateway service. You need to deploy a newer version of the application. Management has instructed that the newer version be tested by a few users first before being fully deployed? How can you accomplish this In the easiest way possible?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Ensure that Kinesis streams are used to transfer the data from the producers"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable Encryption for a Kinesis Data Fire hose"
+                },
+                {
+                    "id": 3,
+                    "value": "Install an SSL certificate in Kinesis Data Fire hose"
+                },
+                {
+                    "id": 4,
+                    "value": "Ensure that all data records are transferred via SSL"
+                }
+            ],
+            "question1": "Your developing an application which will make use of Kinesis Fire hose for streaming the records onto the Simple Storage Service. You company policy mandates that all data needs to be encrypted at rest. How can you achieve this with Kinesis Fire hose? Choose 2 answers for the options given below?"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "A Lambda function and expose the Lambda function to the customers. Pass the ID as a parameter to the function"
+                },
+                {
+                    "id": 2,
+                    "value": "Expose the GET method in the API Gateway"
+                },
+                {
+                    "id": 3,
+                    "value": "Expose the GET method in the Lambda function"
+                },
+                {
+                    "id": 4,
+                    "value": "An API gateway with a Lambda function to process the customer information"
+                }
+            ],
+            "question1": "So customers should be able to get their details whilst providing the ID to the API. Which of the following would you define to fulfill this requirement? Choose 2 answers from the options given below ?"
+        },
+        "answers": [
+            2,
+            4
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Dynamo DB"
+                },
+                {
+                    "id": 2,
+                    "value": "AWSS3"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Red shift"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS RDS"
+                }
+            ],
+            "question1": "You?re are a developer for a company that has been hired to lead the application development for a company. The application needs to interact with a backend data store. The application would need to perform many complex join operations on the data store. Which of the following would be ideal data store for the application?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "demoaws bucket/201 9-14-03-1 5-O0-00!Imagel .jpg"
+                },
+                {
+                    "id": 2,
+                    "value": "demoawsbucket/232a-201 9-14-03-15-00-00/ I magel .jpg"
+                },
+                {
+                    "id": 3,
+                    "value": "demoaws bucket/201 9-14-03-1 5-O0-00!Imagel .jpg"
+                },
+                {
+                    "id": 4,
+                    "value": "demoawsbucket/sample/232a-20 19.14-03-1 5.00-00 Image l .jpg"
+                }
+            ],
+            "question1": "Your company is planning on using the Simple Storage service to host objects that will be accessed by users. In order to ensure optimal performance when requests are made to get the objects from the bucket, which of the following is the right way to use define the keys for optimal performance?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Ensure that the X-Ray daemon process is installed with the Lambda function"
+                },
+                {
+                    "id": 2,
+                    "value": "Ensure that the Lambda function is registered with X-Ray"
+                },
+                {
+                    "id": 3,
+                    "value": "Ensure that the lAM Role assigned to the Lambda function has access to the X-Ray function"
+                },
+                {
+                    "id": 4,
+                    "value": "Ensure that the lAM Role assigned to the X-Ray function has access to the Lambda function"
+                }
+            ],
+            "question1": "You?ve developed an AWS(Amazon Web Service) Lambda function but are running into a lot of performance Issues. You decide to use the AWS(Amazon Web Service) X-Ray service to diagnose the issues. Which of the following must be done to ensure that you can use the XRay service with your Lambda function?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "5"
+                },
+                {
+                    "id": 2,
+                    "value": "40"
+                },
+                {
+                    "id": 3,
+                    "value": "20"
+                },
+                {
+                    "id": 4,
+                    "value": "10"
+                }
+            ],
+            "question1": "An application is being designed to make use of Dynamo DB. As per the requirements, the table will accept items which are of 6 KB of size per second. The number of requests per second is estimated to be around 1 If strong consistency is required , what should be the read capacity set for the table?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Specify a partition key name and value in the equality condition"
+                },
+                {
+                    "id": 2,
+                    "value": "Specify a filter expression"
+                },
+                {
+                    "id": 3,
+                    "value": "Specify a key condition expression in the query"
+                },
+                {
+                    "id": 4,
+                    "value": "Specify a sort key name and value in the equality condition"
+                }
+            ],
+            "question1": "Your developing an application that is working with a Dynamo DB table. You need to create a query which has a search criterion. Which of the following must be done in order to work with search queries? Choose 2 answers from the options given below ?"
+        },
+        "answers": [
+            1,
+            3
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The name assigned to the function is not correct."
+                },
+                {
+                    "id": 2,
+                    "value": "The amount of memory assigned to the function is not enough."
+                },
+                {
+                    "id": 3,
+                    "value": "The timeout specified for the function is too less."
+                },
+                {
+                    "id": 4,
+                    "value": "The amount of CPU assigned to the function Is not enough."
+                }
+            ],
+            "question1": "You have created a local Java based Lambda function. You then package and upload the function to AWS. You try to run the function with the default settings, but the function does not run as expected. Which of the following could be the reasons for the Issue? Choose 2 answers from the options given below?"
+        },
+        "answers": [
+            2,
+            3
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Read capacity set to 10 for 1 KB reads of data at eventual consistency"
+                },
+                {
+                    "id": 2,
+                    "value": "Read capacity set to 10 for 4KB reads of data at eventual consistency"
+                },
+                {
+                    "id": 3,
+                    "value": "Read capacity set to 10 for 4KB reads of data at strong consistency"
+                },
+                {
+                    "id": 4,
+                    "value": "Read capacity set to 15 for 1 KB reads of data at strong consistency"
+                }
+            ],
+            "question1": "A Dynamo DB table is set to have a write capacity of 10. Which of the following will give the maximum read throughput for the table?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 30
+    }
+]

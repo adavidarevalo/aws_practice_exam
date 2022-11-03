@@ -1,0 +1,838 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create an Amazon SNS topic and configure your on-call team email addresses as subscribers. Create a secondary Amazon SNS topic for alarms and configure your Cloud Watch alarms to notify this topic when triggered. Create an HTTP subscriber to this topic that notifies your application via HTTP POST when an alarm is triggered. Use the AWS(Amazon Web Service) SDK tools to integrate your application with Amazon SNS and send messages to the first topic so that onc all engineers receive alerts."
+                },
+                {
+                    "id": 2,
+                    "value": "Create an Amazon SNS topic and an Amazon SOS queue. Configure the Amazon SQS queue as a subscriber to the Amazon SNS topic. Configure Cloud Watch alarms to notify this topic when an alarm is triggered. Create an Amazon EC2 Auto Scaling group with both minimum and desired Instances configured to 0. Worker nodes in this group spawn when messages are added to the queue. Workers then use Amazon Simple Email Service to send messages to your on call teams."
+                },
+                {
+                    "id": 3,
+                    "value": "Create an Amazon SNS topic for each on-call group, and configure each of these with the team member emails as subscribers. Create another Amazon SNS topic and configure your Cloud Watch alarms to notify this topic when triggered. Create an HTTP subscriber to this topic that notifies your application via HTTP POST when an alarm is triggered. Use the AWS(Amazon Web Service) SDK tools to integrate your application with Amazon SNS and send messages to the correct team topic when on shift. �"
+                },
+                {
+                    "id": 4,
+                    "value": "Create an Amazon SNS topic and configure your on-call team email addresses as subscribers. Use the AWS(Amazon Web Service) SDK tools to integrate your application with Amazon SNS and send messages to this new topic. Notifications will be sent to on-call users when a Cloud Watch alarm is triggered."
+                }
+            ],
+            "question1": "Your company has multiple applications running on AWS. Your company wants to develop a tool that notifies on-call teams Immediately via email when an alarm Is triggered in your environment. You have multiple on- call teams that work different shifts, and the tool should handle notifying the correct teams at the correct times. How should you implement this solution?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Deploy your web application as an AWS(Amazon Web Service) Elastic Beanstalk application. Use the default Elastic Beanstalk Cloud watch metrics to capture 500 Internal Server Errors. Set a Cloud Watch alarm on that metric."
+                },
+                {
+                    "id": 2,
+                    "value": "Use Amazon Simple Email Service to notify an on-call engineer when a Cloud Watch alarm is triggered."
+                },
+                {
+                    "id": 3,
+                    "value": "Use Amazon Simple Notification Service to notify an on-call engineer when a Cloud Watch alarm is triggered."
+                },
+                {
+                    "id": 4,
+                    "value": "Install a Cloud Watch Logs Agent on your servers to stream web application logs to Cloud Watch."
+                },
+                {
+                    "id": 5,
+                    "value": "Create a Cloud Watch Logs group and define metric filters that capture 500 Internal Server Errors. Set a Cloud Watch alarm on that metric."
+                }
+            ],
+            "question1": "You use Amazon Cloud Watch as your primary monitoring system for your web application. After a recent software deployment, your users are getting Intermittent 500 Internal Server Errors when using the web application. You want to create a Cloud Watch alarm, and notify an on-call engineer when these occur. How can you accomplish this using AWS(Amazon Web Service) services? Choose three answers from the options given below Please select:"
+        },
+        "answers": [
+            3,
+            4
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The instances will be registered with ELS once the process has resumed"
+                },
+                {
+                    "id": 2,
+                    "value": "The instances will not be registered with ELB. You must manually register when the process is resumed ."
+                },
+                {
+                    "id": 3,
+                    "value": "Auto Scaling will not launch the instances during this period because of the suspension"
+                },
+                {
+                    "id": 4,
+                    "value": "It is not possible to suspend the Add To Load Balancer process"
+                }
+            ],
+            "question1": "You have an Auto Scaling group with an Elastic Load Balancer. You decide to suspend the Auto Scaling Add To Load Balancer for a short period of time. What will happen to the instances launched during the suspension period?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a full second stack of instances, cut the DNS over to the new stack of instances, and change the ONS back if a rollback is needed."
+                },
+                {
+                    "id": 2,
+                    "value": "Redeploy with AWS(Amazon Web Service) Elastic Beanstalk and Elastic Beanstalk versions. Use Route 53 Weighted Round Robin records to adjust the proportion of traffic hitting the two ELB5"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a second ELB. Auto Scaling. Create the AMI with the new app. Use a new launch configuration. Use � Route 53 Weighted Round Robin records to adjust the proportion of traffic hitting the two ELBs. �"
+                },
+                {
+                    "id": 4,
+                    "value": "Create new AMIs with the new app. Then use the new EC2 instances in half proportion to the older instances."
+                }
+            ],
+            "question1": "You currently have the following setup in AWS(Amazon Web Service) 1)An Elastic Load Balancer 2) Auto scaling Group which launches EC Instances 3) AMIs with your code pre-installed You want to deploy the updates to your app to only a certain number of users. You want to have a cost-effective solution. You should also be able to revert back quickly. Which of the below solutions is the most feasible one?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a new launch configuration with the new instance type"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Elastic Beanstalk to deploy the new application with the new instance type"
+                },
+                {
+                    "id": 3,
+                    "value": "Use Cloud formation to deploy the new application with the new instance type"
+                },
+                {
+                    "id": 4,
+                    "value": "Create new EC2 instances with the new instance type and attach it to the Auto scaling Group"
+                }
+            ],
+            "question1": "You have deployed an application to AWS(Amazon Web Service) which makes use of Auto scaling to launch new instances. You now want to change the instance type for the new instances. Which of the following is one of the action items to achieve this deployment?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Add an Amazon S3 bucket policy with a condition statement that requires multi-factor authentication in order to delete objects and enable bucket versioning."
+                },
+                {
+                    "id": 2,
+                    "value": "Use AWS(Amazon Web Service) Data Pipeline with multi-factor authentication to securely deploy code from the Amazon 53 bucket to your Amazon EC2 instances."
+                },
+                {
+                    "id": 3,
+                    "value": "Add an Amazon S3 bucket policy with a condition statement to allow access only from Amazon EC2 instances with RFC 1918 P addresses and enable bucket versioning."
+                },
+                {
+                    "id": 4,
+                    "value": "Create an Amazon Identity and Access Management role with authorization to access the Amazon S3 bucket, and launch all of your application?s Amazon EC2 instances with this role."
+                },
+                {
+                    "id": 5,
+                    "value": "Use a configuration management service to deploy AWS(Amazon Web Service) Identity and Access Management user credentials to the Amazon EC2 instances. Use these credentials to securely access the Amazon 53 bucket when deploying code."
+                },
+                {
+                    "id": 6,
+                    "value": "Use AWS(Amazon Web Service) Data Pipeline to lifecycle the data in your Amazon 53 bucket to Amazon Glacier on a weekly basis."
+                }
+            ],
+            "question1": "You have a code repository that uses Amazon 53 as a data store. During a recent audit of your security controls, some concerns were raised about maintaining the integrity of the data in the Amazon S3 bucket. Another concern was raised around securely deploying code from Amazon S3 to applications running on Amazon EC2 in a virtual private cloud. What are some measures that you can implement to mitigate these concerns? Choose two answers from the options given below."
+        },
+        "answers": [
+            5
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create and mount a new, encrypted Amazon EBS volume. Move the data to the new volume. Delete the old Amazon EBS volume"
+                },
+                {
+                    "id": 2,
+                    "value": "Copy an unencrypted snapshot of an unencrypted volume, you can encrypt the copy. Volumes restored from this encrypted copy will also be encrypted."
+                },
+                {
+                    "id": 3,
+                    "value": "It Is not possible to encrypt an EBS volume, you must use a lifecycle policy to transfer data to S3 for encryption"
+                },
+                {
+                    "id": 4,
+                    "value": "Un mount the EBS volume, take a snapshot and encrypt the snapshot. Re-mount the Amazon EBS volume"
+                }
+            ],
+            "question1": "Your application stores sensitive information on and EBS volume attached to your EC2 instance. How can you protect your information? Choose two answers from the options given below Please select:"
+        },
+        "answers": [
+            1
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Configure your AWS(Amazon Web Service) Ops Works layer to use the AWS-provided recipe for distributed host configuration, and configure the instance hostname and file path parameters in your recipes settings."
+                },
+                {
+                    "id": 2,
+                    "value": "Create a Chef Recipe to update this configuration file, configure your AWS(Amazon Web Service) Ops Works stack to use custom cookbooks, and assign this recipe to the Configure Lifecycle Event of the specific layer."
+                },
+                {
+                    "id": 3,
+                    "value": "Create a Chef Recipe to update this configuration file, configure your AWS(Amazon Web Service) Ops Works stack to use custom cookbooks, and assign this recipe to execute when instances are launched."
+                },
+                {
+                    "id": 4,
+                    "value": "Update this configuration file by writing a script to poll the AWS(Amazon Web Service) Ops Works service API for new instances. Configure your base AMI to execute this script on Operating System startup."
+                }
+            ],
+            "question1": "You have been tasked with deploying a scalable distributed system using AWS(Amazon Web Service) Ops Works. Your distributed system is required to scale on demand. As it is distributed, each node must hold a configuration file that Includes the hostnames of the other Instances within the layer. How should you configure AWS(Amazon Web Service) Ops Works to manage scaling this application dynamically?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "You are not able to associate an lAM role with an instance"
+                },
+                {
+                    "id": 2,
+                    "value": "You won?t be able to use that role with an instance unless you also create a user and associate it with that specific role"
+                },
+                {
+                    "id": 3,
+                    "value": "You won?t be able to use that role with an instance unless you also create a user group and associate it wit?h, that specific role."
+                },
+                {
+                    "id": 4,
+                    "value": "You need to create an instance profile and associate it with that specific role."
+                }
+            ],
+            "question1": "You have a set of EC2 instances hosted in AWS. You have created a role named Demo Role and assigned that role to a policy, but you are unable to use that role with an instance. Why is this the case."
+        },
+        "answers": [
+            4
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "On the web servers, create a scheduled task that executes a script to rotate and transmit the logs to Amazon Glacier. Ensure that the operating system shutdown procedure triggers a logs transmission when the Amazon EC2 instance is stopped/terminated. Use Amazon Data Pipeline to process the data in Amazon Glacier and run reports every hour."
+                },
+                {
+                    "id": 2,
+                    "value": "Install an Amazon Cloud watch Logs Agent on every web server during the bootstrap process. Create a Cloud Watch log group and define Metric Filters to create custom metrics that track unique visitors from the streaming web server logs. Create a scheduled task on an Amazon EC2 instance that runs every hour to generate a new report based on the Cloud watch custom metrics."
+                },
+                {
+                    "id": 3,
+                    "value": "On the web servers, create a scheduled task that executes a script to rotate and transmit the logs to an Amazon 53 bucket. Ensure that the operating system shutdown procedure triggers a logs transmission when the Amazon EC2 instance is stopped/terminated. Use AWS(Amazon Web Service) Data Pipeline to move log data from the Amazon S3 bucket to Amazon Redshift In order to process and run reports every hour."
+                },
+                {
+                    "id": 4,
+                    "value": "Install an AWS(Amazon Web Service) Data Pipeline Logs Agent on every web server during the bootstrap process. Create a log group object In AWS(Amazon Web Service) Data Pipeline, and define Metric Filters to move processed log data directly from the web servers to Amazon Red shift and run reports every hour."
+                }
+            ],
+            "question1": "You have a large number of web servers in an Auto Scaling group behind a load balancer. On an hourly basis, you want to filter and process the logs to collect data on unique visitors, and then put that data in a durable data store in order to run reports. Web servers In the Auto Scaling group are constantly launching and terminating based on your scaling policies, but you do not want to lose any of the log data from these servers during a stop/termination initiated by a user or by Auto Scaling. What two approaches will meet these requirements? Choose two answers from the options given below?."
+        },
+        "answers": [
+            2,
+            3
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Store AWS(Amazon Web Service) keys in global variables within your application and configure the application to use these credentials when making requests."
+                },
+                {
+                    "id": 2,
+                    "value": "Create an Amazon S3 role in lAM with access to the specific Dynamo DB tables, and assign It to the bucket hosting your website."
+                },
+                {
+                    "id": 3,
+                    "value": "Configure a web identity federation role within lAM to enable access to the correct Dynamo DB resources and retrieve temporary credentials. .,"
+                },
+                {
+                    "id": 4,
+                    "value": "Configure 53 bucket tags with your AWS(Amazon Web Service) access keys (or your bucket hosing your website so that the application can query them for access."
+                }
+            ],
+            "question1": "Your company has developed a web application and is hosting it in an Amazon 53 bucket configured for static website hosting. The application is using the AWS(Amazon Web Service) SDK for JavaScript in the browser to access data stored in an Amazon Dynamo DB table. How can you ensure that API keys for access to your data In Dynamo DB are kept secure?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Ensure that snapshots of the Amazon EBS volumes are created as a backup."
+                },
+                {
+                    "id": 2,
+                    "value": "Ensure that the Amazon EBS volume Is encrypted."
+                },
+                {
+                    "id": 3,
+                    "value": "Ensure that the i/O block sizes for the test are randomly selected."
+                },
+                {
+                    "id": 4,
+                    "value": "Ensure that the Amazon EBS volumes have been pre-warmed by reading all the blocks before the test."
+                }
+            ],
+            "question1": "As part of your continuous deployment process, your application undergoes an I/O load performance test before It is deployed to production using new AMIs. The application uses one Amazon Elastic Block Store (EBS) PIOPS volume per instance and requires consistent I/O performance. Which of the following must be carried out to ensure that I/O load performance tests yield the correct results in a repeatable manner?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a custom resource type using template developer. custom resource template. and Cloud Formation."
+                },
+                {
+                    "id": 2,
+                    "value": "Use a configuration management tool such as Chef, Puppet. or Ensile."
+                },
+                {
+                    "id": 3,
+                    "value": "Specify more mappings and separate your template into multiple templates by using nested stacks."
+                },
+                {
+                    "id": 4,
+                    "value": "Specify the custom resource by separating your template into multiple templates by using nested stacks"
+                }
+            ],
+            "question1": "As an architect you have decided to use Cloud Formation instead of Ops Works or Elastic Beanstalk for deploying the applications in your company. Unfortunately. you have discovered that there is a resource type that Is not supported by Cloud Formation. What can you do to get around this. Please select:"
+        },
+        "answers": [
+            1
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Configure your application to write logs to a separate Amazon EBS volume with the delete on termination field set to false. Create a script that moves the logs from the instance to Amazon 53 once an hour. -"
+                },
+                {
+                    "id": 2,
+                    "value": "Configure your application to write logs to the Instance?s ephemeral disk, because this storage is free and has good write performance. Create a script that moves the logs from the instance to Amazon S3 once an hour."
+                },
+                {
+                    "id": 3,
+                    "value": "Configure your application to write logs to the instance?s default Amazon EBS boot volume, because this storage already exists. Create a script that moves the logs from the instance to Amazon 53 once an hour."
+                },
+                {
+                    "id": 4,
+                    "value": "Create an Amazon 53 lifecycle configuration to move log files from Amazon 53 to Amazon Glacier after seven days."
+                },
+                {
+                    "id": 5,
+                    "value": "Write a script that is configured to be executed when the instance is stopped or terminated and that will upload any remaining logs on the instance to Amazon S3."
+                },
+                {
+                    "id": 6,
+                    "value": "Create a housekeeping script that runs on a T2 micro instance managed by an Auto Scaling group for high availability."
+                }
+            ],
+            "question1": "You work for an insurance company and are responsible for the day-to-day operations of your company?s online quote system used to provide insurance quotes to members of the public. Your company wants to use the application logs generated by the system to better understand customer behavior. Industry, regulations also require that you retain all application logs for the system indefinitely in order to investigate fraudulent claims in the future. You have been tasked with designing a log management system with the following requirements: - All log entries must be retained by the system, even during unplanned instance failure, The customer insight team requires immediate access to the logs from the past seven days. The fraud investigation team requires access to all historic logs, but will wait up to 24 hours before these logs are available. How would you meet these requirements in a cost-effective manner? Choose three answers from the options below?"
+        },
+        "answers": [
+            1,
+            4,
+            6
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create and mount a new, encrypted Amazon EBS volume. Move the data to the new volume. Delete the old Amazon EBS volume"
+                },
+                {
+                    "id": 2,
+                    "value": "It Is not possible to encrypt an EBS volume, you must use a lifecycle policy to transfer data to 53 for encryption."
+                },
+                {
+                    "id": 3,
+                    "value": "Copy an unencrypted snapshot of an unencrypted volume, you can encrypt the copy. Volumes restored from this encrypted copy will also be encrypted."
+                },
+                {
+                    "id": 4,
+                    "value": "un mount the s volume, take a snapshot and encrypt the snapshot. Re-mount the Amazon EBS volume"
+                }
+            ],
+            "question1": "Your application stores sensitive information on and EBS volume attached to your EC2 instance. How can you protect your information? Choose two answers from the options given below Please select:"
+        },
+        "answers": [
+            1
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Launch more Amazon EC2 instances to ensure high availability. de-register each Amazon EC2 instance from the load balancer, upgrade it and test it. and then register it again with the load balancer."
+                },
+                {
+                    "id": 2,
+                    "value": "Set up Amazon Route 53 health checks to fail over from any Amazon EC2 instance that is currently being deployed to."
+                },
+                {
+                    "id": 3,
+                    "value": "Create a new load balancer with new Amazon EC2 instances, carry out the deployment, and then switch DNS over to the new load balancer using Amazon Route 53 after testing."
+                },
+                {
+                    "id": 4,
+                    "value": "Using AWS(Amazon Web Service) Cloud Formation, create a test stack for validating the code, and then deploy the code to each production Amazon EC2 instance."
+                }
+            ],
+            "question1": "Your application is currently running on Amazon EC2 instances behind a load balancer. Your management has decided to use a Blue/Green deployment strategy. How should you Implement this for each deployment? Please select:"
+        },
+        "answers": [
+            3
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Install the Cloud Watch Logs Agent on your AMI, and configure Cloud Watch Logs Agent to stream your logs."
+                },
+                {
+                    "id": 2,
+                    "value": "Install the Cloud Watch monitoring agent on your AMI. and set up new SNS alert for Cloud Watch metrics that triggers the Cloud Watch monitoring agent to backup all logs on the ephemeral drive."
+                },
+                {
+                    "id": 3,
+                    "value": "Configure your Auto Scaling policies to create a snapshot of all ephemeral storage on terminate."
+                },
+                {
+                    "id": 4,
+                    "value": "Configure the ephemeral policies on your Auto Scaling group to back up on terminate."
+                }
+            ],
+            "question1": "You currently run your infrastructure on Amazon EC2 instances behind an Auto Scaling group> All logs for your application are currently written to ephemeral storage. Recently your company experienced a major bug in code that made it through testing and was ultimately deployed to your fleet. This bug triggered your Auto Scaling group to scale up and back down before you could successfully retrieve the logs off your server to better assist you in troubleshooting the bug. Which technique should you use to make sure you are able to review your logs after your Instances have shut down?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create separate templates based on functionality, create nested stacks with Cloud promotion."
+                },
+                {
+                    "id": 2,
+                    "value": "Use Cloud Formation custom resources to handle dependencies between stacks"
+                },
+                {
+                    "id": 3,
+                    "value": "Create multiple templates in one Cloud Formation stack"
+                },
+                {
+                    "id": 4,
+                    "value": "Combine all resources into one template for version control and automation."
+                }
+            ],
+            "question1": "You have been requested to use Cloud Formation to maintain version control and achieve automation for the applications In your organization. How can you best use Cloud Formation to keep everything agile and maintain multiple environments while keeping cost down?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create multiple templates in one Cloud Formation stack."
+                },
+                {
+                    "id": 2,
+                    "value": "Create separate templates based on functionality, create nested stacks with Cloud Formation."
+                },
+                {
+                    "id": 3,
+                    "value": "Combine all resources into one template for version control and automation."
+                },
+                {
+                    "id": 4,
+                    "value": "Use Cloud Formation custom resources to handle dependencies between stacks"
+                }
+            ],
+            "question1": "You have been requested to use Cloud Formation to maintain version control and achieve automation for the applications In your organization. How can you best use Cloud Formation to keep everything agile and maintain multiple environments while keeping cost down?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Using an AWS(Amazon Web Service) Cloud Formation template. re-deploy your application behind a load balancer. launch a new AWS(Amazon Web Service) Cloud Formation stack during each deployment, update your load balancer to send half your traffic to the ne stack while you test, after verification update the load ba lancer to send 100% of traffic to the new stack, and then terminate the old stack."
+                },
+                {
+                    "id": 2,
+                    "value": "Re-deploy your application on AWS(Amazon Web Service) Elastic Beanstalk, and take advantage of Elastic Beanstalk deployment types."
+                },
+                {
+                    "id": 3,
+                    "value": "Using an AWS(Amazon Web Service) Ops Works stack, re-deploy your application behind an Elastic Load Balancing load balancer and take advantage of Ops Works stack versioning, during deployment create a new version of your application, tell Ops Works to launch the new version behind your load balancer. and when the new version is launched, terminate the old Ops Works stack."
+                },
+                {
+                    "id": 4,
+                    "value": "Re-deploy your application behind a load balancer that uses Auto Scaling groups, create a new Identical Auto Scaling group. and associate it to the load balancer. During deployment, set the desired number of instances on the old Auto Scaling group to zero, and when all instances have terminated, delete the old Auto Scaling group."
+                }
+            ],
+            "question1": "After a daily scrum with your development teams, you?ve agreed that using Blue/Green style deployments would benefit the team. Which technique should you use to deliver this new requirement? Please select:"
+        },
+        "answers": [
+            4
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "On the web servers, create a scheduled task that executes a script to rotate and transmit the logs to Amazon Glacier. Ensure that the operating system shutdown procedure triggers a logs transmission when the Amazon EC2 instance is stopped/terminated. Use Amazon Data Pipeline to process the data in Amazon Glacier and run reports every hour."
+                },
+                {
+                    "id": 2,
+                    "value": "Install an AWS(Amazon Web Service) Data Pipeline Logs Agent on every web server during the bootstrap process Create a log group object In AWS(Amazon Web Service) Data Pipeline, and define Metric Filters to move processed log data directly from the web servers to Amazon Red shift and run reports every hour."
+                },
+                {
+                    "id": 3,
+                    "value": "Install an Amazon Cloud watch Logs Agent on every web server during the bootstrap process. Create a Cloud Watch log group and define Metric Filters to create custom metrics that track unique visitors from the streaming web server logs. Create a scheduled task on an Amazon EC2 instance that runs every hour to generate a new report based on the Cloud watch custom metrics."
+                },
+                {
+                    "id": 4,
+                    "value": "On the web servers, create a scheduled task that executes a script to rotate and transmit the logs to an Amazon S3 bucket. Ensure that the operating system shutdown procedure triggers a logs transmission when the Amazon EC2 instance is stopped/terminated. Use AWS(Amazon Web Service) Data Pipeline to move log data from the Amazon S3 bucket to Amazon Redshift In order to process and run reports every hour."
+                }
+            ],
+            "question1": "You have a large number of web servers in an Auto Scaling group behind a load balancer. On an hourly basis, you want to filter and process the logs to collect data on unique visitors, and then put that data In a durable data store in order to run reports. Web servers In the Auto Scaling group are constantly launching and terminating based on your scaling policies, but you do not want to lose any of the log data from these servers during a stop/termination initiated by a user or by Auto Scaling. What two approaches will meet these requirements? Choose two answers from the options given below?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Using Amazon SNS. create a notification on any new Amazon 53 objects that automatically updates a new Dynamo DB table to store all metadata about the new object. Subscribe the application to the Amazon SNS topic to update its internal Amazon 53 object metadata cache from the Dynamo DS table."
+                },
+                {
+                    "id": 2,
+                    "value": "Create a new Dynamo DS table. Use the new Dynamo DS table to store all metadata about all objects uploaded to Amazon 53. Any time a new object is uploaded, update the application?s internal Amazon 53 object metadata cache from Dynamo DB."
+                },
+                {
+                    "id": 3,
+                    "value": "Update your Amazon 53 buckets lifecycle policies to automatically push a list of objects to a new bucket. a use this list to view objects associated with the application?s bucket."
+                },
+                {
+                    "id": 4,
+                    "value": "Upload all files to an Elastic Cache file cache server. Update your application to now read all file metadata from the Elastic Cache file cache server, and configure the Elastic Cache policies to push all files to Amazon 53 for long- term storage."
+                }
+            ],
+            "question1": "After reviewing the last quarter?s monthly bills, management has noticed an increase in the overall bill from Amazon. After researching this increase in cost, you discovered that one of your new services Is doing a lot of GET Bucket API calls to Amazon S3 to build a metadata cache of all objects in the applications bucket. Your boss has asked you to come up with a new cost-effective way to help reduce the amount of these new GET Bucket API calls. What process should you use to help mitigate the cost?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "It is not possible for the stack creation to wait until one service is created and launched"
+                },
+                {
+                    "id": 2,
+                    "value": "Use the Wait Condition resource to hold the creation of the other dependent resources"
+                },
+                {
+                    "id": 3,
+                    "value": "Use a Creation Policy to wait for the creation of the other dependent resources"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the Hold Condition resource to hold the creation of the other dependent resources"
+                }
+            ],
+            "question1": "You are using Cloud Formation to launch an EC2 instance and then configure an application after the instance is launched. You need the stack creation of the ELB and Auto Scaling to wait until the EC2 Instance is launched and configured properly. How do you do this? Please select:"
+        },
+        "answers": [
+            3
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Using AWS(Amazon Web Service) Cloud Formation, create a Cloud Watch Logs Log Group and send the operating system and application logs of interest using the Cloud Watch Logs Agent."
+                },
+                {
+                    "id": 2,
+                    "value": "Using configuration management, set up remote logging to send events to Amazon Kinesis and insert the into Amazon Cloud Search or Amazon Red shift. depending on available analytic tools."
+                },
+                {
+                    "id": 3,
+                    "value": "Using AWS(Amazon Web Service) Cloud Formation, merge the application logs with the operating system logs, and use lAM Roles to allow both teams to have access to view console output from Amazon EC2."
+                },
+                {
+                    "id": 4,
+                    "value": "Using AWS(Amazon Web Service) Cloud Formation and configuration management, set up remote logging to send events via UDP packets to Cloud Trail."
+                }
+            ],
+            "question1": "The operations team and the development team want a single place to view both operating system and application logs. How should you implement this using AWS(Amazon Web Service) services? Choose two from the options below"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon Cloud Watch"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon Simple Notification Service"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon Simple Email Service"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon Simple Queue Service"
+                }
+            ],
+            "question1": "You need to monitor specific metrics from your application and send real-time alerts to your Devops Engineer. Which of the below services will fulfill this requirement? Choose two answers Please select:"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Using Amazon Cloud Watch metrics, pull your Elastic Load Balancing outbound data transfer metrics monthly, and include them with your billing report to show which application is causing higher bandwidth usage."
+                },
+                {
+                    "id": 2,
+                    "value": "Deliver custom metrics to Amazon Cloud Watch per application that breaks down application data transfer into multiple. more specific data points."
+                },
+                {
+                    "id": 3,
+                    "value": "Use Amazon Cloud Watch Logs to run a map-reduce on your logs to determine high usage and data transfer"
+                },
+                {
+                    "id": 4,
+                    "value": "Update your Amazon Cloud Watch metrics to use five-second granularity, which will give better detailed metrics that can be combined with your billing data to pinpoint anomalies."
+                }
+            ],
+            "question1": "Management has reported an increase in the monthly bill from Amazon web services, and they are extremely concerned with this increased cost. Management has asked you to determine the exact cause of this increase, After reviewing the billing report, you notice an increase In the data transfer cost. How can you provide management with a better insight into data transfer use?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The health check is not checking the application process"
+                },
+                {
+                    "id": 2,
+                    "value": "You do not have the time range in the health check property configured"
+                },
+                {
+                    "id": 3,
+                    "value": "It is not possible for a health check to monitor a process that involves the application"
+                },
+                {
+                    "id": 4,
+                    "value": "The health check is not configured properly"
+                }
+            ],
+            "question1": "You have an application running a specific process that is critical to the application?s functionality, and have added the health check process to your Auto Scaling group. The instances are showing healthy but the application Itself is not working as it should. What could be the issue with the health check, since It is still showing the instances as healthy."
+        },
+        "answers": [
+            1
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Manages the ELB and running a daemon process on each instance"
+                },
+                {
+                    "id": 2,
+                    "value": "Manages a Amazon SQS queue and running a daemon process on each instance"
+                },
+                {
+                    "id": 3,
+                    "value": "Manages a Amazon SNS Topic and running a daemon process on each instance"
+                },
+                {
+                    "id": 4,
+                    "value": "Manages Lambda functions and running a daemon process on each instance"
+                }
+            ],
+            "question1": "If your application performs operations or workflows that take a long time to complete, what service"
+        },
+        "answers": [
+            2
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "use Cloud Formation templates"
+                },
+                {
+                    "id": 2,
+                    "value": "Configuration Management Templates"
+                },
+                {
+                    "id": 3,
+                    "value": "Saved Configurations"
+                },
+                {
+                    "id": 4,
+                    "value": "Saved Templates"
+                }
+            ],
+            "question1": "You have deployed an Elastic Beanstalk application in a new environment and want to save the current state of your environment in a document. You want to be able to restore your environment to the current state later or possibly create a new environment. You also want to make sure you have a restore point. How can you achieve this?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Place each developers own public key into a private S3 bucket, use instance profiles and configuration management to create a user account for each developer on all instances, and place the users public keys into the appropriate account. ..-"
+                },
+                {
+                    "id": 2,
+                    "value": "Place the credentials provided by Amazon Elastic Compute Cloud (EC2) into a secure Amazon Sample Storage Service (53) bucket with encryption enabled. Assign AWS(Amazon Web Service) Identity and Access Management (lAM) users to each developer so they can download the credentials file,"
+                },
+                {
+                    "id": 3,
+                    "value": "Place the credentials provided by Amazon EC2 onto an MFA encrypted USB drive, and physically share it with each developer so that the private key never leaves the office."
+                },
+                {
+                    "id": 4,
+                    "value": "Place an internally created private key into a secure 53 bucket with server-side encryption using customer keys and configuration management, create a service account on all the instances using this private key, and assi1 lAM users to each developer so they can download the file."
+                }
+            ],
+            "question1": "Your development team wants account-level access to production instances in order to do live debugging of a highly secure environment. Which of the following should you do?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 30
+    }
+]

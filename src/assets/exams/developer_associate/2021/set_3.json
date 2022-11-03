@@ -1102,9 +1102,8 @@
                     "value": "Use server-side encryption with customer-provided encryption key (SSE-C)"
                 }
             ],
-            "question1": "AWS SCS-C01 Certified Security Speciality Practice Exam Set 2",
-            "question2": "A media company is building an application that needs to store video files in Amazon S3. Management requires that the files be encrypted before they are sent to Amazon S3 for storage. The encryption keys need to be managed by an in-house security team but the key itself is stored on AWS.",
-            "question3": "Which solution should the company use to meet these requirements?"
+            "question1": "A media company is building an application that needs to store video files in Amazon S3. Management requires that the files be encrypted before they are sent to Amazon S3 for storage. The encryption keys need to be managed by an in-house security team but the key itself is stored on AWS.",
+            "question2": "Which solution should the company use to meet these requirements?"
         },
         "answers": [
             2

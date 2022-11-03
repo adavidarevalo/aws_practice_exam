@@ -14,6 +14,13 @@ import developer_associate13 from "./developer_associate/2021/set_13.json"
 import developer_associate14 from "./developer_associate/2021/set_14.json"
 import developer_associate15 from "./developer_associate/2021/set_15.json"
 import developer_associate16 from "./developer_associate/2021/set_16.json"
+import developer_associate17 from "./developer_associate/2021/set_17.json"
+import developer_associate18 from "./developer_associate/2021/set_18.json"
+import developer_associate19 from "./developer_associate/2021/set_19.json"
+import developer_associate20 from "./developer_associate/2021/set_20.json"
+import developer_associate21 from "./developer_associate/2021/set_21.json"
+import developer_associate22 from "./developer_associate/2021/set_22.json"
+import developer_associate23 from "./developer_associate/2021/set_23.json"
 
 const exams = {
     developer_associate1,
@@ -31,7 +38,14 @@ const exams = {
     developer_associate13,
     developer_associate14,
     developer_associate15,
-    developer_associate16
+    developer_associate16,
+    developer_associate17,
+    developer_associate18,
+    developer_associate19,
+    developer_associate20,
+    developer_associate21,
+    developer_associate22,
+    developer_associate23
 }
 
 export default exams

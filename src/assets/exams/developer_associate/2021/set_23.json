@@ -1,0 +1,167 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Code Deploy"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Cloud front"
+                },
+                {
+                    "id": 3,
+                    "value": "AWSECS"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS SQS"
+                }
+            ],
+            "question1": "Your developing an application that is going to make use of Docker containers. You need to use an orchestration service on the AWS(Amazon Web Service) Cloud for managing the application. Which of the following service would you use for this purpose?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Check Cloud watch logs"
+                },
+                {
+                    "id": 2,
+                    "value": "Check AWS(Amazon Web Service) Trusted Advisor"
+                },
+                {
+                    "id": 3,
+                    "value": "Check AWS(Amazon Web Service) Inspector"
+                },
+                {
+                    "id": 4,
+                    "value": "Check VPC Flow Logs"
+                }
+            ],
+            "question1": "You?ve just created an AWS(Amazon Web Service) Lambda function. You?re running the function , but the output of the function is not as expected. You need to check and see what is the issue? Which of the following can help the developer debug the issue with the Lambda function?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Using Route 53 with Latency Routing policies"
+                },
+                {
+                    "id": 2,
+                    "value": "Using Elastic Beanstalk with the swap URL feature"
+                },
+                {
+                    "id": 3,
+                    "value": "Using Route 53 wIth Weighted Routing policies"
+                },
+                {
+                    "id": 4,
+                    "value": "Using Auto scaling Groups to scale on demands for both deployments"
+                }
+            ],
+            "question1": "Your working as a team lead for your company. You have been told to manage the Blue Green Deployment methodology for one of the applications. Which of the following are some of the approaches for implementing this methodology? Choose 2 answers from the options given below ?"
+        },
+        "answers": [
+            2,
+            3
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Trusted Advisor"
+                },
+                {
+                    "id": 2,
+                    "value": "VPC Flow Logs"
+                },
+                {
+                    "id": 3,
+                    "value": "Cloud trail"
+                },
+                {
+                    "id": 4,
+                    "value": "Cloud watch"
+                }
+            ],
+            "question1": "You?ve just deployed an AWS(Amazon Web Service) Lambda function. This Lambda function would be invoked via the API gateway service. You want to know if there were any errors while the Lambda function was being invoked. Which of the following service would allow you to check the performance of your underlying Lambda function?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Network Load Balancer"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Route 53"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Classic Load Balancer"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Application Load Balancer"
+                }
+            ],
+            "question1": "Your developing an application that is going to make use of Docker containers. Traffic needs to be routed based on demand to the application. Dynamic host port mapping would be used for the docker containers. Which of the following would you use for distribution of traffic to the docker containers?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Resource policies"
+                },
+                {
+                    "id": 2,
+                    "value": "Key policies a"
+                },
+                {
+                    "id": 3,
+                    "value": "AM Policies"
+                },
+                {
+                    "id": 4,
+                    "value": "Lambda authorizers"
+                }
+            ],
+            "question1": "A company is planning on using the API gateway service to expose API?s to external users. They need to ensure the right authorization measures are ki place. Which of the following can be used to control access to API in the API gateway? Choose 3 answers from the options given below ?"
+        },
+        "answers": [
+            1,
+            3,
+            4
+        ],
+        "id": 6
+    }
+]

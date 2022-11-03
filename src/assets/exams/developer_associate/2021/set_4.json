@@ -699,9 +699,8 @@
                     "value": "Create one customer-managed policy with policy variables and attach it to a group of all users"
                 }
             ],
-            "question1": "AWS Certified Solutions Architect Associate",
-            "question2": "Your AWS account is now growing to 200 users and you would like to provide each of these users a personal space in the S3 bucket 'my_company_space' with the prefix /home/<username>, where they have read/write access.",
-            "question3": "How can you do this efficiently?"
+            "question1": "Your AWS account is now growing to 200 users and you would like to provide each of these users a personal space in the S3 bucket 'my_company_space' with the prefix /home/<username>, where they have read/write access.",
+            "question2": "How can you do this efficiently?"
         },
         "answers": [
             4

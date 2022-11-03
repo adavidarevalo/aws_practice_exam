@@ -1,0 +1,818 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "In the application root folder"
+                },
+                {
+                    "id": 2,
+                    "value": "In the packages folder"
+                },
+                {
+                    "id": 3,
+                    "value": "In the .eb extensions folder"
+                },
+                {
+                    "id": 4,
+                    "value": "In the confag folder"
+                }
+            ],
+            "question1": "You?re a developer at a company that needs to deploy an application using Elastic Beanstalk. There is a requirement to place a health check. configure file for the environment, In which of the following location should this config file be placed to ensure It is part of the elastic beanstalk environment?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Dynamo DB"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS S3"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS RDS"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Red shift"
+                }
+            ],
+            "question1": "Your application has the requirement to store data in a backend data store. Indexing should be possible on the data, but the data does not perform to any schema. Which of the following would be the ideal data store to choose for this application?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Elastic Beanstalk"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS SOS"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Ops Work"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Cloud formation"
+                }
+            ],
+            "question1": "Your company is planning on creating new development environments in AWS. They want to make use of their existing Chef recipes which they use for their on-premise configuration for servers in AWS. Which of the following service would be ideal to use in this regard?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Rolling with additional batch"
+                },
+                {
+                    "id": 2,
+                    "value": "mmutable"
+                },
+                {
+                    "id": 3,
+                    "value": "All at once"
+                },
+                {
+                    "id": 4,
+                    "value": "Pr lung"
+                }
+            ],
+            "question1": "Your company has asked you to maintain an application using Elastic Beanstalk. They have mentioned that when updates are made to the application , that the infrastructure maintains its full capacity. Which of the following deployment methods should you use for this requirement?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "There is not enough time assigned to the function"
+                },
+                {
+                    "id": 2,
+                    "value": "There Is not enough memory assigned to the function"
+                },
+                {
+                    "id": 3,
+                    "value": "The lAM Rob assigned to the Lambda function does not have the necessary permission to create Lop"
+                },
+                {
+                    "id": 4,
+                    "value": "You?ve not enabled versioning for the Lambda function"
+                }
+            ],
+            "question1": "You add the necessary print statements In the code to assist In the debugging. You go to Cloud watch logs � but you see no logs for the lambda function. Which of the following could be the underlying issue for this?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Simple Queue Service"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Code Build"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Simple Notification Service"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Code Pipeline"
+                }
+            ],
+            "question1": "You are in charge of developing an application that will make use of AWS(Amazon Web Service) services. There is a key requirement from an architecture point of view that the entire system Is decoupled to ensure less dependency. Which of the following is an ideal service to use to decouple different parts of a system?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a read replica of the Dynamo DB table"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable Dynamo DB Accelerator"
+                },
+                {
+                    "id": 3,
+                    "value": "E You?ve developed a Lambda function and are now In the process of debugging It."
+                },
+                {
+                    "id": 4,
+                    "value": "Enable MuIti.AZ for the Dynamo DO table"
+                }
+            ],
+            "question1": "A company is planning on using Dynamo DB as their data store. The tables In Dynamo DB will be receiving millions of requests. Which of the following can be used to ensure the latency of requests to the Dynamo DB table is kept at a minimal? Please select:"
+        },
+        "answers": [
+            2
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Change the Bucket policy for the bucket to allow access from the other bucket"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable Replication so that the objects get replicated to the other bucket"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable CORS for the bucket"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable versioning for the underlying 53 bucket."
+                }
+            ],
+            "question1": "A static web site has been hosted on a bucket and is now being accessed by users. One of the web pages java script section has been changed to access data which is hosted in another S3 bucket. Now that same web page Is no longer loading in the browser. Which of the following can help alleviate the error?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Configure SNS notifications"
+                },
+                {
+                    "id": 2,
+                    "value": "Assign a dead letter queue"
+                },
+                {
+                    "id": 3,
+                    "value": "Use AWS(Amazon Web Service) Cloud trail logs"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS(Amazon Web Service) Cloud watch metrics"
+                }
+            ],
+            "question1": "You have a lambda function that is processed asynchronously. You need a way to check and debug issues if the function falls? How could you accomplish this?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable Cloud trail for the region"
+                },
+                {
+                    "id": 2,
+                    "value": "Install the Cloud watch agent on the Instance"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a dashboard for the key Cloud watch metrics"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the VPC Flow logs to get the logs from the Instance"
+                }
+            ],
+            "question1": "Your planning on deploying a built application onto an EC2 Instance. There will be a number of tests conducted on this Instance. You want to have the ability to capture the logs from the web server so that it can help diagnose any issues if they occur? How can you achieve this?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Ensure that the Security Group ID?S are mentioned when configuring the Lambda function"
+                },
+                {
+                    "id": 2,
+                    "value": "Ensure that the subnet ID?s are mentioned when configuring the Lambda function"
+                },
+                {
+                    "id": 3,
+                    "value": "Ensure that the NACL IDs are mentioned when configuring the Lambda function"
+                },
+                {
+                    "id": 4,
+                    "value": "Ensure that the VPC Flow Log ID?S are mentioned when configuring the Lambda function"
+                }
+            ],
+            "question1": "You?ve developed a set of scripts using AWS(Amazon Web Service) Lambda. These scripts need to access EC2 Instances in a VPC. Which of the following needs to be done to ensure that the AWS(Amazon Web Service) Lambda function can access the resources In the VPC. Choose 2 answers from the options given below ?"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use AWS(Amazon Web Service) Cloud trail logs"
+                },
+                {
+                    "id": 2,
+                    "value": "Set the Lambda function debugging level to verbose"
+                },
+                {
+                    "id": 3,
+                    "value": "Put logging statements In your code"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS(Amazon Web Service) Cloud watch metrics"
+                }
+            ],
+            "question1": "As a developer you have created a Lambda function that is used to work with a bucket in Amazon S3. The Lambda function is not working as expected. You need to debug the issue and understand what?s the underlying Issue. How can you accomplish this?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a dashboard for the key Cloud watch metrics"
+                },
+                {
+                    "id": 2,
+                    "value": "Use the VPC Flow logs to get the logs from the Instance"
+                },
+                {
+                    "id": 3,
+                    "value": "Install the Cloud watch agent on the Instance"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable Cloud trail for the region"
+                }
+            ],
+            "question1": "Your planning on deploying a built application onto an EC2 Instance. There will be a number of tests conducted on this Instance. You want to have the ability to capture the logs from the web server so that it can help diagnose any issues if they occur? How can you achieve this?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a custom metric Cloud Watch filter on your load balancer"
+                },
+                {
+                    "id": 2,
+                    "value": "Use a Cloud Watch Logs Agent"
+                },
+                {
+                    "id": 3,
+                    "value": "Use AWS(Amazon Web Service) Cloud Trail with your load balancer"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable access logs on the load balancer ,"
+                }
+            ],
+            "question1": "You are in charge of deploying an application that will be hosted on an EC2 Instance and sit behind an Elastic Load balancer. You have been requested to monitor the incoming connections to the Elastic Load Balancer. Which of the below options can suffice this requirement?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "You?ve not enabled versioning for the Lambda function"
+                },
+                {
+                    "id": 2,
+                    "value": "The lAM Rob assigned to the Lambda function does not have the necessary permission to create Lop"
+                },
+                {
+                    "id": 3,
+                    "value": "There Is not enough memory assigned to the function"
+                },
+                {
+                    "id": 4,
+                    "value": "There is not enough time assigned to the function"
+                }
+            ],
+            "question1": "You add the necessary print statements In the code to assist In the debugging. You go to Cloud watch logs � but you see no logs for the lambda function. Which of the following could be the underlying issue for this?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use the SDK for Kinesis to encrypt the data before being stored at rest"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable chent-side encryption for Kinesis streams"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable server-side encryption for Kinesis streams"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the AWS(Amazon Web Service) CLI to encrypt the data"
+                }
+            ],
+            "question1": "You are planning to use AWS(Amazon Web Service) Kinesis streams for an application being developed for a company. The company policy mandates that all data is stored at rest. How can you accomplish this in the easiest way possible for Kinesis streams?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Parallel Scans"
+                },
+                {
+                    "id": 2,
+                    "value": "Large Page size"
+                },
+                {
+                    "id": 3,
+                    "value": "Reduced page size"
+                },
+                {
+                    "id": 4,
+                    "value": "Sequential scans"
+                }
+            ],
+            "question1": "An application has been making use of AWS(Amazon Web Service) Dynamo DB for its back-end data store. The size of the table has now grown to 20 GB , and the scans on the table are causing throttling errors. Which of the following should now be implemented to avoid such errors?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Dynamo DB Streams"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Table Accelerator"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Dynamo DB Encryption"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Dynamo DS Accelerator"
+                }
+            ],
+            "question1": "Your application currently interacts with a Dynamo DB table. Records are inserted into the table via the application. There Is now a requirement to ensure that whenever Items are updated In the Dynamo DB primary table, another record is inserted into a secondary table. Which of the below feature should be used when developing such a solution?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Cognito Data"
+                },
+                {
+                    "id": 2,
+                    "value": "Cognito Callbacks"
+                },
+                {
+                    "id": 3,
+                    "value": "Cognito Streams"
+                },
+                {
+                    "id": 4,
+                    "value": "Cognito Events"
+                }
+            ],
+            "question1": "Your application currently makes use of AWS(Amazon Web Service) Cognito for managing user identities. You want to analyze the information that is stored in AWS(Amazon Web Service) Cognito for your application. Which of the following features of AWS(Amazon Web Service) Cognito should you use for this purpose?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Code Pipeline"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Code Build"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Simple Queue Service"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Simple Notification Service"
+                }
+            ],
+            "question1": "You are in charge of developing an application that will make use of AWS(Amazon Web Service) services. There is a key requirement from an architecture point of view that the entire system Is decoupled to ensure less dependency. Which of the following is an ideal service to use to decouple different parts of a system?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Rolling with additional batch"
+                },
+                {
+                    "id": 2,
+                    "value": "Pr lung"
+                },
+                {
+                    "id": 3,
+                    "value": "All at once"
+                },
+                {
+                    "id": 4,
+                    "value": "mmutable"
+                }
+            ],
+            "question1": "Your company has asked you to maintain an application using Elastic Beanstalk. They have mentioned that when updates are made to the application , that the infrastructure maintains its full capacity. Which of the following deployment methods should you use for this requirement?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create an application lifecycle policy"
+                },
+                {
+                    "id": 2,
+                    "value": "Create multiple environments and deploy the different versions to different environments"
+                },
+                {
+                    "id": 3,
+                    "value": "Create multiple applications and deploy the different versions to different applications"
+                },
+                {
+                    "id": 4,
+                    "value": "Delete the application versions manually"
+                }
+            ],
+            "question1": "Your company has asked you to maintain an application using Elastic Beanstalk. At times , you normally hit the application version limit when deploying new versions of the application. Which of the following Is the most effective way to manage this issue?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Authenticate your users at the application level, and send an SMS token message to the user. Create an Amazon 53 bucket with the same name as the SMS message token, and move the users objects to that bucket."
+                },
+                {
+                    "id": 2,
+                    "value": "Use a key-based naming scheme comprised from the user IDs for all user objects in a single Amazon 53bucket."
+                },
+                {
+                    "id": 3,
+                    "value": "Use AWS(Amazon Web Service) Identity and Access Management (lAM) user accounts as your application-level user database. offload the burden of authentication from your application code."
+                },
+                {
+                    "id": 4,
+                    "value": "Create an Amazon S3 bucket per user, and use your application to generate the 53 URI for the appropriatef? content."
+                },
+                {
+                    "id": 5,
+                    "value": "Authenticate your users at the application level, and use AWS(Amazon Web Service) Security Token Service (STS) to grant token- based authorization to S3 objects."
+                }
+            ],
+            "question1": "Your mobile application includes a photo-sharing service that is expecting tens of thousands of users at launch. You will leverage Amazon Simple Storage Service (S3) for storage of the user Images. and you must decide how to authenticate and authorize your users for access to these images. You also need to manage the storage of these images. Which two of the following approaches should you use? Choose two answers from the options below ?"
+        },
+        "answers": [
+            2,
+            5
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "example aws bucket/201 9-14-03-1 5-00-CO/photo 1 .jpg"
+                },
+                {
+                    "id": 2,
+                    "value": "exampleawsbucketl232a-201 9-14-03-1 5-00-00/photo l .jpg"
+                },
+                {
+                    "id": 3,
+                    "value": "example aws bucket/sample/232a-201 9-14-03-1 5-O0-OOphotol .jpg"
+                },
+                {
+                    "id": 4,
+                    "value": "example aws bucket/sample/photol .jpg"
+                }
+            ],
+            "question1": "Your company is planning on using the Simple Storage service to host objects that will be accessed by users. There is a speculation that there would be roughly 3000 GET requests per second. Which of the following is the right way to use object keys for optimal performance?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon S3 will now throttle the requests since they are now being encrypted using KMS"
+                },
+                {
+                    "id": 2,
+                    "value": "You need to also enable version ing to ensure optimal performance"
+                },
+                {
+                    "id": 3,
+                    "value": "You are now exceeding the throttle limits for KMS API calls"
+                },
+                {
+                    "id": 4,
+                    "value": "You need to also enable CORS to ensure optimal performance"
+                }
+            ],
+            "question1": "Your company currently stores its objects in S3. The current request rate is around 2000 GET requests per second. There is now a mandate for objects to be encrypted at rest. So you enable encryption using KMS. There are now performance issues being encountered. What could be the main reason behind this?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable Dynamo DB Accelerator"
+                },
+                {
+                    "id": 2,
+                    "value": "Create a read replica of the Dynamo DB table"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable MuIti.AZ for the Dynamo DO table"
+                },
+                {
+                    "id": 4,
+                    "value": "E You?ve developed a Lambda function and are now In the process of debugging It."
+                }
+            ],
+            "question1": "A company is planning on using Dynamo DB as their data store. The tables In Dynamo DB will be receiving millions of requests. Which of the following can be used to ensure the latency of requests to the Dynamo DB table is kept at a minimal? Please select:"
+        },
+        "answers": [
+            1
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Assign an lAM user to the Lambda function"
+                },
+                {
+                    "id": 2,
+                    "value": "Change the memory assigned to the function to 1 GB"
+                },
+                {
+                    "id": 3,
+                    "value": "Ensure that the underlying programming language is changed to python"
+                },
+                {
+                    "id": 4,
+                    "value": "Change the timeout for the function"
+                }
+            ],
+            "question1": "A Lambda function has been developed with the default settings and is using Node.js. The function makes calls to a Dynamo DB table. The code was first tested and executed on an EC2 Instance in the same language and took 300 seconds to execute. When the lambda function is executed , it is not adding the required rows to the Dynamo DB table. What needs to be changed in order to ensure that the Lambda function works as desired?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Post your log data to an Amazon Kinesis data stream, and subscribe your logprocessing application so that is configured to process your logging data."
+                },
+                {
+                    "id": 2,
+                    "value": "Publish your log data to an Amazon S3 bucket. Use AWS(Amazon Web Service) Cloud Formation to create an Auto Scaling group scale your post-processing application which is configured to pull down your log files stored an Amazon S3."
+                },
+                {
+                    "id": 3,
+                    "value": "Publish your data to Cloud Watch Logs. and configure your application to Auto scale to handle the load on demand."
+                },
+                {
+                    "id": 4,
+                    "value": "Create a multi-AZ Amazon RDS My SQL cluster, post the logging data to run a map reduce job to retrieve the required information on user counts."
+                }
+            ],
+            "question1": "Your current log analysis application takes more than four hours to generate a report of the top 10 users of your web application. You have been asked to implement a system that can report this information in real time, ensure that the report Is always up to date, and handle increases in the number of requests to your web application. Choose the option that is cost-effective and can fulfill the requirements?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Red shift"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Dynam005"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Simple Storage Service"
+                },
+                {
+                    "id": 4,
+                    "value": "AWSRDSW"
+                }
+            ],
+            "question1": "You?ve been instructed to develop a mobile application that will make use of AWS(Amazon Web Service) services. You need to decide on a data store to store the user sessions. Which of the following would be an Ideal data store for session management?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Place the entire SDK dependencies In Amazon 53"
+                },
+                {
+                    "id": 2,
+                    "value": "Make sure the libraries are installed in the beginning of the function"
+                },
+                {
+                    "id": 3,
+                    "value": "Selectively only include the libraries that are required"
+                },
+                {
+                    "id": 4,
+                    "value": "Make sure that the dependencies are put In the root folder"
+                }
+            ],
+            "question1": "You are developing a function that will be hosted in AWS(Amazon Web Service) Lambda. The function will be developed in .Net. There are a number of external libraries that are needed for the code to run. Which of the following Is the best practice when it comes to working with external dependencies for AWS(Amazon Web Service) Lambda?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 30
+    }
+]

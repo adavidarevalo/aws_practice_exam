@@ -1,0 +1,814 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable CORS for the bucket"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable versioning for the underlying 53 bucket."
+                },
+                {
+                    "id": 3,
+                    "value": "Change the Bucket policy for the bucket to allow access from the other bucket"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable Replication so that the objects get replicated to the other bucket"
+                }
+            ],
+            "question1": "A static web site has been hosted on a bucket and is now being accessed by users. One of the web pages java script section has been changed to access data which is hosted in another S3 bucket. Now that same web page Is no longer loading in the browser. Which of the following can help alleviate the error?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Query the Instance Meta Data"
+                },
+                {
+                    "id": 2,
+                    "value": "Have an Admin get the IP address from the console"
+                },
+                {
+                    "id": 3,
+                    "value": "Query the Instance User Data"
+                },
+                {
+                    "id": 4,
+                    "value": "Make the application run IF Config"
+                }
+            ],
+            "question1": "You?re developing an application that will be hosted on an EC2 Instance. This will be part of an Auto scaling Group. The application needs to get the private IP of the instance so that it can send it across to a controller- based application. Which of the following can be done to achieve this?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Order of data is possible across all shards in a stream ."
+                },
+                {
+                    "id": 2,
+                    "value": "You cannot guarantee the order of data across multiple shards. Its possible only within a shard"
+                },
+                {
+                    "id": 3,
+                    "value": "You need to use Kinesis fire hose to guarantee the order of data"
+                },
+                {
+                    "id": 4,
+                    "value": "Order of data is not possible at all in Kinesis streams"
+                }
+            ],
+            "question1": "You?re developing an application that is going to make use of Amazon Kinesis. Due to the high throughput, you decide to have multiple shards for the streams. Which of the following is TRUE when it comes to processing data across multiple shards?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Ensure a condition is set in the bucket policy"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable MFA for the underlying bucket"
+                },
+                {
+                    "id": 3,
+                    "value": "Ensure that a condition Is set In an lAM policy."
+                },
+                {
+                    "id": 4,
+                    "value": "Enable CORS for the underlying bucket"
+                }
+            ],
+            "question1": "You1ve been asked to develop an application on the AWS(Amazon Web Service) Cloud. The application will be used to store confidential documents in an S3 bucket. You need to ensure that the bucket is defined in such a way that it does not accept objects that are not encrypted?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "155"
+                },
+                {
+                    "id": 2,
+                    "value": "160"
+                },
+                {
+                    "id": 3,
+                    "value": "10"
+                },
+                {
+                    "id": 4,
+                    "value": "16"
+                }
+            ],
+            "question1": "Company B is writing 10 items to the products table every second. Each item is 15.5Kb in size. What would be the required provisioned write throughput for best performance? Choose the correct answer from the options below?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "30"
+                },
+                {
+                    "id": 2,
+                    "value": "6"
+                },
+                {
+                    "id": 3,
+                    "value": "20"
+                },
+                {
+                    "id": 4,
+                    "value": "10"
+                }
+            ],
+            "question1": "An application is being developed that is going to write data to a Dynamo DB table. You have to setup the read and write throughput for the table. Data is going to be read at the rate of 300 items every 30 seconds. Each item is of size 6KB. The reads can be eventual consistent reads. What should be the read capacity that needs to be set on the table?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create AM users for each developer and provide access to the repository"
+                },
+                {
+                    "id": 2,
+                    "value": "Create an lAM Group. add the lAM users and then provide access to the repository"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable public access for the repository"
+                },
+                {
+                    "id": 4,
+                    "value": "Create a cross account role. give the role the privileges. Provide the role ARN to the developers"
+                }
+            ],
+            "question1": "Your team has a Code Commit repository in your account. You need to give access to a set of developer?s in another account access to your Code Commit repository. Which of the following is the most effective way to grant access?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Elastic Cache � Mem cached"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Elastic Beanstalk"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Ops work"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Elastic Cache - Red is"
+                }
+            ],
+            "question1": "You?ve been hired to develop a gaming application for a large company. The application will be developed using AWS(Amazon Web Service) resources. You need to ensure the right services are used during the development and subsequent deployment of the application. Which of the following would you consider Incorporating to ensure leader boards can be maintained accurately in the application?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "In the .eb extensions folder"
+                },
+                {
+                    "id": 2,
+                    "value": "In the packages folder"
+                },
+                {
+                    "id": 3,
+                    "value": "In the confag folder"
+                },
+                {
+                    "id": 4,
+                    "value": "In the application root folder"
+                }
+            ],
+            "question1": "You?re a developer at a company that needs to deploy an application using Elastic Beanstalk. There is a requirement to place a health check. configure file for the environment, In which of the following location should this config file be placed to ensure It is part of the elastic beanstalk environment?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Configure S3 bucket tags with your AWS(Amazon Web Service) access keys for your bucket hosing your website so that the application can query them for access."
+                },
+                {
+                    "id": 2,
+                    "value": "Configure a web identity federation role within lAM to enable access to the correct DynamoDB resources and retrieve temporary credentials."
+                },
+                {
+                    "id": 3,
+                    "value": "Create an Amazon S3 role in lAM with access to the specific DynamoD5 tables, and assign it to the bucket hosting your website."
+                },
+                {
+                    "id": 4,
+                    "value": "Store AWS(Amazon Web Service) keys In global variables within your application and configure the application to use these credentials when making requests"
+                }
+            ],
+            "question1": "Your company has developed a web application and is hosting it in an Amazon S3 bucket configured for static website hosting. The application Is using the AWS(Amazon Web Service) SDK for JavaScript In the browser to access data stored in an Amazon Dynamo DB table. How can you ensure that API keys for access to your data in Dynamo DB are kept secure?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use hash key prefixes for the object keys"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable versioning for the objects"
+                },
+                {
+                    "id": 3,
+                    "value": "Use a Cloud front distribution in front of the 53 bucket"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable Cross Region Replication for the bucket"
+                }
+            ],
+            "question1": "Your company is planning on using the Simple Storage service to host objects that will be accessed by users. There is a speculation that there would be roughly 3000 GET requests per second. Which of the following could be used to ensure optimal performance? Choose 2 answers from the options given below?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a Lambda function to install the script"
+                },
+                {
+                    "id": 2,
+                    "value": "Place the script in the Liser data for the Instance"
+                },
+                {
+                    "id": 3,
+                    "value": "Place a scheduled task on the instance that starts as soon as the Instance is launched"
+                },
+                {
+                    "id": 4,
+                    "value": "Place the script in the metadata for the instance"
+                }
+            ],
+            "question1": "You?ve developed an application script that needs to be bootstrapped into instances that are launched via an Auto scaling Group. How would you achieve this in the east way possible?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Add the .FIFO extension to the Standard SOS Queue"
+                },
+                {
+                    "id": 2,
+                    "value": "Use the FlFO SQS Queues"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable FIFO on an existing SQS Standard Queue"
+                },
+                {
+                    "id": 4,
+                    "value": "Consider using SNS"
+                }
+            ],
+            "question1": "An application needs to make use of a messaging system. The messages need to be processed in the order they are received and also no duplicates should be allowed. Which of the following would you use for this purpose?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Lambda and AWS(Amazon Web Service) API gateway"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS EC2 and AWS(Amazon Web Service) Elastic Load Balancer"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS SQS and Cloud front"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS 53 and Cloud front"
+                }
+            ],
+            "question1": "Which of the following combination of services can be used for development and hosting of the REST full service? Choose 2 answers from the options below ?"
+        },
+        "answers": [
+            1,
+            2
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Simple Storage Service"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Dynamo DB"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Glacier"
+                },
+                {
+                    "id": 4,
+                    "value": "EBS Volumes"
+                }
+            ],
+            "question1": "You?ve been asked to develop an application on the AWS(Amazon Web Service) Cloud. The application will involve picking up videos from users and placing them in an ideal and durable data store. Which of the following would be an ideal data store, ensuring that components are properly decoupled?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create an lAM group with public access"
+                },
+                {
+                    "id": 2,
+                    "value": "Use AWS(Amazon Web Service) Cognito with unauthenticated access enabled"
+                },
+                {
+                    "id": 3,
+                    "value": "Use AWS(Amazon Web Service) STS with SAML"
+                },
+                {
+                    "id": 4,
+                    "value": "Create an lAM user with public access"
+                }
+            ],
+            "question1": "You are developing a mobile based application that needs to make use of an authentication service. There are a set of videos files which need to be accessed via unauthenticated access. How can you BEST achieve this using AWS?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Elastic Beanstalk"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Ops Work"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS SOS"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Cloud formation"
+                }
+            ],
+            "question1": "Your company is planning on creating new development environments in AWS. They want to make use of their existing Chef recipes which they use for their on-premise configuration for servers in AWS. Which of the following service would be ideal to use in this regard?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Before lnstall->After Install->Validate Service-> Application Start"
+                },
+                {
+                    "id": 2,
+                    "value": "Application Stop-> Before lnstall >After I nstal l->Application Start"
+                },
+                {
+                    "id": 3,
+                    "value": "Before install-> Application Stop-> Validate Service-> Application Start"
+                },
+                {
+                    "id": 4,
+                    "value": "Before lnstall->After Install-> Application Stop-> Application Start"
+                }
+            ],
+            "question1": "Which of the following is the right sequence of hooks that get called in AWS(Amazon Web Service) Code Deploy?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Dynamo DB"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Red shift"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS RDS"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS S3"
+                }
+            ],
+            "question1": "Your application has the requirement to store data in a backend data store. Indexing should be possible on the data, but the data does not perform to any schema. Which of the following would be the ideal data store to choose for this application?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use AWS(Amazon Web Service) Cloud watch metrics"
+                },
+                {
+                    "id": 2,
+                    "value": "Use AWS(Amazon Web Service) Cloud trail logs"
+                },
+                {
+                    "id": 3,
+                    "value": "Assign a dead letter queue"
+                },
+                {
+                    "id": 4,
+                    "value": "Configure SNS notifications"
+                }
+            ],
+            "question1": "You have a lambda function that is processed asynchronously. You need a way to check and debug issues if the function falls? How could you accomplish this?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use the AWS(Amazon Web Service) CLI instead of the SDK to push the metrics"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable encryption for the requests"
+                },
+                {
+                    "id": 3,
+                    "value": "Ensure that all metrics have a timestamp before sending them across"
+                },
+                {
+                    "id": 4,
+                    "value": "Use exponential back off in your requests"
+                }
+            ],
+            "question1": "Your application is developed to pick up metrics from several servers and push them off to Cloud watch. At times � the application gets client (4xx) errors. Which of the following can be done from the programming side to resolve such errors?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The right AMI is not chosen for the EC2 instance"
+                },
+                {
+                    "id": 2,
+                    "value": "Ensure that the lAM Role attached permission to upload data onto X-Ray"
+                },
+                {
+                    "id": 3,
+                    "value": "Ensure that the lAM Role attached to the instance has permission to upload data onto Cloud watch"
+                },
+                {
+                    "id": 4,
+                    "value": "The X-Ray daemon is not installed on the EC2 instance"
+                }
+            ],
+            "question1": "You have deployed an application an EC2 Instance. This application makes calls to a Dynamo DB service. There are numerous performance issues present in the application. You decide to use the XRay service to debug the performance Issues. You are not able to see the trails in the XRay service. Which of the following could be the underlying issue? Choose 2 answers from the options given below ?"
+        },
+        "answers": [
+            2,
+            4
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use the cloud formation package command to package the deployment"
+                },
+                {
+                    "id": 2,
+                    "value": "Use the cloud formation package command to deploy the template"
+                },
+                {
+                    "id": 3,
+                    "value": "Place the function code in the .eb extensions folder"
+                },
+                {
+                    "id": 4,
+                    "value": "Place the function code in the root directory along with the YAML file"
+                }
+            ],
+            "question1": "You have the following YAML file given to you which is required to deploy a Lambda function using server less deployment. AWS(Amazon Web Service) Template Format Version: �2010-09-09? Transform: AWS::Serverless-201 6-1 0-31 Resources: Test Function: Type: AWS::Server less::Function Properties: Handler: index. handler Runtime: nodejs6.10 Environment: Variables: 53_BUCKET: demo bucket Which of the following is required to ensure the deployment can take place?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable CRR on the bucket"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable versioning on the bucket"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable CORS on the bucket"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable encryption the bucket"
+                }
+            ],
+            "question1": "Your company is hosting a static web site in S3. The code has recently been changes wherein Java script calls are being made to the web pages in the same bucket via the FQDN. But the browser Is blocking the requests. What should be done to alleviate the issue?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create another AWS(Amazon Web Service) Lambda ALIAS and give the link to that version to the customers."
+                },
+                {
+                    "id": 2,
+                    "value": "Create a deployment package that would automatically change the link to the new Lambda version"
+                },
+                {
+                    "id": 3,
+                    "value": "Create another AWS(Amazon Web Service) Lambda version and give the link to that version to the customers."
+                },
+                {
+                    "id": 4,
+                    "value": "Create another stage in the API gateway"
+                }
+            ],
+            "question1": "A company currently allows access to their API?s to customers via the API gateway. Currently all clients have a 6-month period to move from using the older API?s to newer versions of the API?s. The code for the API is hosted in AWS(Amazon Web Service) Lambda. Which of the following is the ideal strategy to employ in such a situation?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable Indexes for the table"
+                },
+                {
+                    "id": 2,
+                    "value": "Increase the read and write throughput for the table"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable Multi-AZ for the Dynamo DB table"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable global tables for Dynamo DB"
+                }
+            ],
+            "question1": "Your team is developing a solution that will make use of Dynamo DB tables. Due to the nature of the application, the data is needed across a couple of regions across the world. Which of the following would help reduce the latency of requests to Dynamo DB from different regions?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create one Lambda function and create several ALIAS for each database"
+                },
+                {
+                    "id": 2,
+                    "value": "Create one Lambda function and create several versions for each database"
+                },
+                {
+                    "id": 3,
+                    "value": "Create one Lambda function and create environment variables for each database"
+                },
+                {
+                    "id": 4,
+                    "value": "Create a Lambda function for each environment so that each function can point to its respective database"
+                }
+            ],
+            "question1": "Your developing a common lambda function that will be used across several environments such as staging, development etc. The lambda function needs to interact with a database In each of these environments. What is the best way to develop the Lambda function?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use AWS(Amazon Web Service) STS with SAML"
+                },
+                {
+                    "id": 2,
+                    "value": "Create an lAM group with public access"
+                },
+                {
+                    "id": 3,
+                    "value": "Create an lAM user with public access"
+                },
+                {
+                    "id": 4,
+                    "value": "Use AWS(Amazon Web Service) Cogn Ito with MFA"
+                }
+            ],
+            "question1": "An application needs to use an authentication in AWS. Users need to have MFA enabled when trying to log into the application. Which of the following can be used for this purpose?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Change all the queries to ensure they use the partition key"
+                },
+                {
+                    "id": 2,
+                    "value": "Add an index for the Dynamo DB table"
+                },
+                {
+                    "id": 3,
+                    "value": "Change the read capacity on the table"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable global tables for Dynamo DB"
+                }
+            ],
+            "question1": "An application is currently accessing a Dynamo DB table. Currently the tables queries are performing well. Changes have been made to the application and now the performance of the application is starting to degrade. After looking at the changes , you see that the queries are making use of an attribute which is not the partition key? Which of the following would be the adequate change to make to resolve the issue?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Place the access keys in the Docker containers"
+                },
+                {
+                    "id": 2,
+                    "value": "Create Task lAM Roles"
+                },
+                {
+                    "id": 3,
+                    "value": "Place lAM Roles for the underlying EC2 Instances"
+                },
+                {
+                    "id": 4,
+                    "value": "Place the access keys in the EC2 Instances"
+                }
+            ],
+            "question1": "You have docker containers which are going to be deployed in the AWS(Amazon Web Service) Elastic Container Service. You need to ensure that instances of containers cannot access each other since these different instances are going to be used by Individual customers. How can you accomplish this?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 30
+    }
+]

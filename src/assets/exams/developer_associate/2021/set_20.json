@@ -1,0 +1,827 @@
+[
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "You will need to work with the Request and Response Data mapping"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable CORS"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable Payload compression"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable multiple stages"
+                }
+            ],
+            "question1": "You have a legacy application that works via XML messages. You need to place the application behind the API gateway In order for customers to make API calls. Which of the following would you need to configure?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 1
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Change the VisibilityTime out for each message and then delete the message after processing is completed."
+                },
+                {
+                    "id": 2,
+                    "value": "Delete the message and change the visibility timeout."
+                },
+                {
+                    "id": 3,
+                    "value": "Process the message . change the visibility timeout. Delete the message"
+                },
+                {
+                    "id": 4,
+                    "value": "Process the message and delete the message"
+                }
+            ],
+            "question1": "An application needs to make use of an SQS queue for working with messages. An SQS queue has been created with the default settings. The application needs 60 seconds to process each message. Which of the following step need to be carried out by the application. ?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 2
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Add a cross account role"
+                },
+                {
+                    "id": 2,
+                    "value": "Embed the access keys in the code pipeline process"
+                },
+                {
+                    "id": 3,
+                    "value": "Define a customer master key In KMS"
+                },
+                {
+                    "id": 4,
+                    "value": "Create a reference Code Pipeline instance in the other account"
+                }
+            ],
+            "question1": "You have been instructed to use the Code Pipeline service for the Cl/CD automation in your company. Due to security reasons � the resources that would be part of the deployment are placed in another account. Which of the following steps need to be carried out to accomplish this deployment? Choose 2 answers from the options given below ?"
+        },
+        "answers": [
+            1,
+            3
+        ],
+        "id": 3
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "The EBS Volume needs to be reattached again for the instance profile to take effect"
+                },
+                {
+                    "id": 2,
+                    "value": "You need to restart the instance for the Role settings to take effect"
+                },
+                {
+                    "id": 3,
+                    "value": "The Environment variables which were set for CLI access are taking priority"
+                },
+                {
+                    "id": 4,
+                    "value": "The CLI is corrupted . hence the credentials are not being revoked"
+                }
+            ],
+            "question1": "Exam : AWS(Amazon Web Service) Certified Solutions Architect Associate",
+            "question2": "Your team developed and deployed an application on an EC2 Instance. To test the application, you were given access credentials which also included the rights to write to an S3 bucket. Once the testing was confirmed , an lAM Role was assigned to the Instance. This role only has permissions to read from the bucket. But you notice that the application still has access to write to the 53 bucket. Why is this the case?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 4
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Ensure to create an Integration request"
+                },
+                {
+                    "id": 2,
+                    "value": "Ensure to enable DAX"
+                },
+                {
+                    "id": 3,
+                    "value": "Ensure to enable CORS"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable Binary payloads"
+                }
+            ],
+            "question1": "As a developer you have been told to create an API gateway stage that will directly interact with Dynamo DB tables. Which of the following feature of the API gateway must be used to ensure this requirement can be fulfilled?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 5
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use the API gateway to call the recursive code."
+                },
+                {
+                    "id": 2,
+                    "value": "Use versioning for the recursive function"
+                },
+                {
+                    "id": 3,
+                    "value": "Avoid using recursive code altogether"
+                },
+                {
+                    "id": 4,
+                    "value": "Place the recursive function in a separate package"
+                }
+            ],
+            "question1": "You just developed code in AWS(Amazon Web Service) Lambda that makes use of recursive functions. After several invocations, you are beginning to see throttling errors In the metrics. Which of the following should be done to resolve this issue?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 6
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use the cloud formation deploy command"
+                },
+                {
+                    "id": 2,
+                    "value": "Use the cloud formation package command"
+                },
+                {
+                    "id": 3,
+                    "value": "Use the sam deploy command"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the sam package command"
+                }
+            ],
+            "question1": "You are planning on using the Server less Application model which will be used to deploy a server less application consisting of a Node.js function. Which of the following steps need to be carried out? Choose 2 answers from the options given below?"
+        },
+        "answers": [
+            3,
+            4
+        ],
+        "id": 7
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "You have enabled Encryption on the bucket as well . that Is why the space Is being consumed"
+                },
+                {
+                    "id": 2,
+                    "value": "Monitoring has been enabled for the bucket"
+                },
+                {
+                    "id": 3,
+                    "value": "You have enabled CRR on the bucket as well . that is why the space is being consumed"
+                },
+                {
+                    "id": 4,
+                    "value": "This is the normal behavior since the logs are being delivered to the same bucket"
+                }
+            ],
+            "question1": "As a developer , you have enable server logging on an S3 bucket. You have a simple static web page with CSS pages uploaded to the bucket which Is 1 MB in total size. After a duration of 2 weeks � you come back and see that the size of the bucket has increased to 50MB. Which of the following could be a reason for this?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 8
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Make use of Cognito user pools"
+                },
+                {
+                    "id": 2,
+                    "value": "Make the application call a Lambda function instead."
+                },
+                {
+                    "id": 3,
+                    "value": "There is an issue with the stage defined on the API gateway. hence define a new stage"
+                },
+                {
+                    "id": 4,
+                    "value": "Enable COPS for the API gateway"
+                }
+            ],
+            "question1": "You have an application that is hosted on an EC2 Instance. This application is part of a custom domain wwv. demo.? in. The application has been changed to make calls to the API gateway. But the browser Is not rendering the responses and Java script errors are being seen in the developer console. What must be done to ensure that this issue can be resolved?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 9
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS Dynamo DB"
+                },
+                {
+                    "id": 2,
+                    "value": "Kinesis Data Fire hose"
+                },
+                {
+                    "id": 3,
+                    "value": "Kinesis Streams"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Red shift"
+                }
+            ],
+            "question1": "Your company has a large set of data sets that need to be streamed directly into Amazon 53. Which of the following would be perfect for such a requirement?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 10
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Amazon Elastic Cache � Red is"
+                },
+                {
+                    "id": 2,
+                    "value": "Amazon Elastic cache � Mem cached"
+                },
+                {
+                    "id": 3,
+                    "value": "Amazon SQS queues"
+                },
+                {
+                    "id": 4,
+                    "value": "Amazon Lambda"
+                }
+            ],
+            "question1": "A company is planning on using a cache service for their application. Which of the following should be used for this purpose? An important requirement is that trying to recover data lost in cache is an expensive affair for the company, which they would want to avoid?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 11
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Ensure to create one entire stack from the template"
+                },
+                {
+                    "id": 2,
+                    "value": "Package the templates together and use the cloud formation deploy command"
+                },
+                {
+                    "id": 3,
+                    "value": "Look towards breaking the templates into smaller manageable templates"
+                },
+                {
+                    "id": 4,
+                    "value": "Package the templates together and use the cloud formation package command"
+                }
+            ],
+            "question1": "A company has a cloud formation template that is used to create a huge list of resources. It creates a VPC, subnets, EC2 Instances , Auto scaling Groups, Load Balancers etc. Which of the following should be considered when designing such Cloud formation templates?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 12
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create an ALIAS with the -routing-config parameter"
+                },
+                {
+                    "id": 2,
+                    "value": "Create a version with the -routingconfig parameter"
+                },
+                {
+                    "id": 3,
+                    "value": "Update the ALIAS with the -routingconfig parameter"
+                },
+                {
+                    "id": 4,
+                    "value": "Update the version with the -routing-config parameter"
+                }
+            ],
+            "question1": "Your application currently points to several Lambda functions in AWS. A change is being made to one of the Lambda functions. You need to ensure that application traffic Is shifted slowly from one Lambda function to the other. Which of the following steps would you carry out?"
+        },
+        "answers": [
+            1,
+            3
+        ],
+        "id": 13
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWSSAML"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Cognito"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Federation"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS STS with PAM"
+                }
+            ],
+            "question1": "Your company is developing an application that will primarily be used by users on their mobile devices. The users need to have the ability to authenticate themselves via identity providers such as Face book. Which of the following service should be used for user management?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 14
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use the command aws sts decode-authorization-message"
+                },
+                {
+                    "id": 2,
+                    "value": "Use the command aws get authorization-message"
+                },
+                {
+                    "id": 3,
+                    "value": "Use the lAM Policy simulator, enter the error message to get the human read ble format"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the command aws set authorization-message"
+                }
+            ],
+            "question1": "When calling an API operation on an EC2 Instance, the following error message was returned A client error (Un authorized Operation) occurred when calling the Run instances operation: You are not authorized to perform this operation. Encoded authorization failure message: oGsbAalV7wlfj8zUqebH UAN HzFbm kzlLlxyjy9xwhl H k99U_cUq 1 FleZnskWDjQl wSHStVfdCEyZlLGoccGpCi Jvowq6mNimO Which of the following can be used to get a human readable error message?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 15
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use the Customer master key to generate a data key for the encryption process"
+                },
+                {
+                    "id": 2,
+                    "value": "Use the Customer master key to decrypt the data"
+                },
+                {
+                    "id": 3,
+                    "value": "Use the generated data key to decrypt the data"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the Customer master key to encrypt the data"
+                }
+            ],
+            "question1": "You are developing a Java based application that needs to make use of the AWS(Amazon Web Service) KMS service for encryption. Which of the following must be done for the encryption and decryption process? Choose 2 answers from the options given below?"
+        },
+        "answers": [
+            1,
+            3
+        ],
+        "id": 16
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Consider using string partition keys"
+                },
+                {
+                    "id": 2,
+                    "value": "Consider using large tables"
+                },
+                {
+                    "id": 3,
+                    "value": "Consider using queries"
+                },
+                {
+                    "id": 4,
+                    "value": "Consider using parallel scans"
+                }
+            ],
+            "question1": "Your team is developing a solution that will make use of Dynamo DB tables. Currently the application is designed to perform scans on the entire table. Which of the following can be done to improve the performance of the application when it interacts with the Dynamo DB table? Choose 2 answers from the options given below ?"
+        },
+        "answers": [
+            3,
+            4
+        ],
+        "id": 17
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a Cloud Trail"
+                },
+                {
+                    "id": 2,
+                    "value": "Use Cloud watch metrics"
+                },
+                {
+                    "id": 3,
+                    "value": "Use the STS logging service"
+                },
+                {
+                    "id": 4,
+                    "value": "Monitor the Cloud watch logs service"
+                }
+            ],
+            "question1": "Your company is hosting a set of resources on the AWS(Amazon Web Service) Cloud. There is now a security requirement that states that all requests to the STS service be monitored. How can you accomplish this requirement? Please select:"
+        },
+        "answers": [
+            1
+        ],
+        "id": 18
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Strong consistent reads of a maximum of 20 KB per second"
+                },
+                {
+                    "id": 2,
+                    "value": "Strong consistent reads of a maximum of 40 KB per second"
+                },
+                {
+                    "id": 3,
+                    "value": "Maximum writes of 5KB per second"
+                },
+                {
+                    "id": 4,
+                    "value": "Eventual consistent reads of a maximum of 20 KB per second"
+                },
+                {
+                    "id": 5,
+                    "value": "Eventual consistent reads of a maximum of 40 KB per second"
+                }
+            ],
+            "question1": "Practice Exam : AWS(Amazon Web Service) Certified Solutions Architect Associate",
+            "question2": "You?ve define a Dynamo DB table with a read capacity of 5 and a write capacity of 5. Which of the following statements are TRUE? Choose 3 answers from the options given below ? Please select:"
+        },
+        "answers": [
+            1,
+            3,
+            5
+        ],
+        "id": 19
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Give permissions to the AWS(Amazon Web Service) Code Deploy service via an lAM Role"
+                },
+                {
+                    "id": 2,
+                    "value": "Use the aws ssm get-parameters with the �with-no-decryption option"
+                },
+                {
+                    "id": 3,
+                    "value": "Give permissions to the AWS(Amazon Web Service) Code Deploy service via AWS(Amazon Web Service) Access Keys"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the aws ssm get-parameters with the �with-decryption option"
+                }
+            ],
+            "question1": "Your using the AWS(Amazon Web Service) Code Deploy service to deploy an application onto AWS. The application uses secure parameters which are stored in the AWS(Amazon Web Service) Systems Manager Parameter store. Which of the following must be done, so that the deployment can be automated via Code Deploy? Choose 2 answers from the options given below ?"
+        },
+        "answers": [
+            1,
+            4
+        ],
+        "id": 20
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Place a cloud front distribution In front of the database"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable Read Replicas for the database"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable Multi-AZ for the database"
+                },
+                {
+                    "id": 4,
+                    "value": "Move the database to Dynamo DB"
+                }
+            ],
+            "question1": "An application is currently in production that makes calls to an AWS(Amazon Web Service) RDS Instance. The application consists of a reporting module and a transactional system. Due high load times , the response time for the application used to get very high. This was being attributed to the number of queries being fired against the database system. Which of the following can be used to resolve the response time for the application? Please select:"
+        },
+        "answers": [
+            2
+        ],
+        "id": 21
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS EC2"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS API Gateway"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Lambda"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS SQS"
+                }
+            ],
+            "question1": "A company is planning on using Amazon Kinesis fire hose to stream data into an 53 bucket They need the data to be transformed first before it can be sent to the 53 bucket. Which of the following would be used for the transformation process?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 22
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Use the aws iam get.custom-policy command"
+                },
+                {
+                    "id": 2,
+                    "value": "Get the AWS(Amazon Web Service) lAM Access keys first"
+                },
+                {
+                    "id": 3,
+                    "value": "Get the context keys first"
+                },
+                {
+                    "id": 4,
+                    "value": "Use the aws iam simulate-custom-policy command"
+                }
+            ],
+            "question1": "You have defined some custom policies in AWS. You need to test out the permissions assigned to those policies. Which of the following can be used for this purpose via the CLI? Choose 2 answers from the options given below ?"
+        },
+        "answers": [
+            3,
+            4
+        ],
+        "id": 23
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable Multi-AZ for the database"
+                },
+                {
+                    "id": 2,
+                    "value": "Place an SQS queue in front of the database"
+                },
+                {
+                    "id": 3,
+                    "value": "Place an Elastic Cache in front of the database"
+                },
+                {
+                    "id": 4,
+                    "value": "Place a cloud front distribution in front of the database"
+                }
+            ],
+            "question1": "An application is currently in production that makes calls to an AWS(Amazon Web Service) RDS Instance. The database has recently been facing performance problems. It has been noticed that the same queries are putting a strain on the database. Which of the following can be used to resolve the issue?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 24
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Deny permission to upload an object if the header includes x-allow-encryption"
+                },
+                {
+                    "id": 2,
+                    "value": "Deny permission to upload an object if the header includes x-amz-serverside-encryption"
+                },
+                {
+                    "id": 3,
+                    "value": "Deny permission to upload an object If the header does not include xallow-encryption"
+                },
+                {
+                    "id": 4,
+                    "value": "Deny permission to upload an object if the header does not include x-amz-server-sideencryption"
+                }
+            ],
+            "question1": "A company is storing sensitive data in their 53 bucket. The company policy states that all objects in the S3 bucket need to be encrypted at rest. Which of the following help ensure this policy is met?"
+        },
+        "answers": [
+            4
+        ],
+        "id": 25
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Read capacity set to 5 for 4KB reads of data at eventual consistency"
+                },
+                {
+                    "id": 2,
+                    "value": "Read capacity set to 5 for 1 KB reads of data at eventual consistency"
+                },
+                {
+                    "id": 3,
+                    "value": "Read capacity set to 5 for 4KB reads of data at strong consistency"
+                },
+                {
+                    "id": 4,
+                    "value": "Read capacity set to 15 for 1 KB reads of data at strong consistency"
+                }
+            ],
+            "question1": "A Dynamo DB table is set to have a Read capacity of 5. Which of the following will give the maximum read throughput for the table?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 26
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "AWS RDS MYSQL"
+                },
+                {
+                    "id": 2,
+                    "value": "AWS Dynamo DB"
+                },
+                {
+                    "id": 3,
+                    "value": "AWS Red Shift"
+                },
+                {
+                    "id": 4,
+                    "value": "AWS Aurora"
+                }
+            ],
+            "question1": "You are developing an application for your company. They need to ensure that the JSON data generated by the application is stored In a backend store. Which of the following is the ideal data store for this scenario?"
+        },
+        "answers": [
+            2
+        ],
+        "id": 27
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Generate the SDI< for the API"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable support for binary payloads"
+                },
+                {
+                    "id": 3,
+                    "value": "Ensure that a deployment Is created In the API gateway"
+                },
+                {
+                    "id": 4,
+                    "value": "Ensure that CORS is enabled for the API gateway"
+                }
+            ],
+            "question1": "You need to give the API gateway URL to a set of users for testing. What must be done before the users can test the API?"
+        },
+        "answers": [
+            3
+        ],
+        "id": 28
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Enable streams for Dynamo DB"
+                },
+                {
+                    "id": 2,
+                    "value": "Enable a scan on the entire table to check for changes"
+                },
+                {
+                    "id": 3,
+                    "value": "Enable global tables for Dynamo DB"
+                },
+                {
+                    "id": 4,
+                    "value": "Create a query to check for changes"
+                }
+            ],
+            "question1": "An application currently makes use of Dynamo DB tables. There are thousand requests made per second on the Dynamo DB table. Another application takes the changes to the items In the Dynamo DB table, for further analytics processing. Which of the following can be affectively used to manage this requirement?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 29
+    },
+    {
+        "en": {
+            "options": [
+                {
+                    "id": 1,
+                    "value": "Create a Pipeline using AWS(Amazon Web Service) Code Pipeline. Configure a stage for Unit testing as well in the Pipeline."
+                },
+                {
+                    "id": 2,
+                    "value": "Use AWS(Amazon Web Service) Code Commit to host your code repository. Use the build tool in AWS(Amazon Web Service) Code Commit to build your pipeline"
+                },
+                {
+                    "id": 3,
+                    "value": "Create a Pipeline in the AWS(Amazon Web Service) Code Build Service"
+                },
+                {
+                    "id": 4,
+                    "value": "Create a Pipeline in the AWS(Amazon Web Service) Code Star service"
+                }
+            ],
+            "question1": "Your team has developed an application that makes use of AWS(Amazon Web Service) resources. In order to provide frequent releases to the customer, you are required to automate the Cl/CD process. Which of the following can be used for this purpose?"
+        },
+        "answers": [
+            1
+        ],
+        "id": 30
+    }
+]
