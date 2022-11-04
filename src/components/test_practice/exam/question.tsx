@@ -1,8 +1,9 @@
-import { useContext, useMemo, useState } from 'react'
+import { useContext, useEffect, useMemo, useState } from 'react'
 import { Button, Checkbox, Form, Icon, Popup } from 'semantic-ui-react'
 import _ from "lodash"
 import { IQuestion, IState, QuestionContext } from '../../context/question'
 import ChangeLanguageButton from '../../change_language_button'
+import usePressKey from '../../../hook/use_press_key'
 
 interface IQuestionData {
     question: string,
@@ -32,7 +33,23 @@ export default function Question() {
         examsList,
     } = useContext(QuestionContext)
 
+    const [navigateOptionsArrow, setNavigateOptionsArrow] = useState(0)
+
     const { actualQuestion, activeFlags } = state
+
+    const ArrowRight = usePressKey('ArrowRight')
+    const ArrowLeft = usePressKey('ArrowLeft')
+    const ArrowUp = usePressKey('ArrowUp')
+    const ArrowDown = usePressKey('ArrowDown')
+    const Space = usePressKey(' ')
+
+    useEffect(() => {
+        if (ArrowRight) handleNextQuestion()
+        if (ArrowLeft) handleBackQuestion()
+        if (ArrowUp) handleChangeOption('up')
+        if (ArrowDown) handleChangeOption('down')
+        if (Space) selectOption()
+    }, [ArrowRight, ArrowLeft, ArrowUp, ArrowDown, Space])
 
     const { questions, options } = useMemo<IExam>(() => {
         if (examsList.length === 0) return {
@@ -54,7 +71,21 @@ export default function Question() {
         }
     }, [actualQuestion, state.language, examsList])
 
+    const selectOption = () => {
+        handleSelect(options[navigateOptionsArrow].id.toString())
+    }
+
+
+    const handleChangeOption = (opt: string) => {
+        if (opt === "up" && navigateOptionsArrow === 0) return
+        if (opt === "down" && navigateOptionsArrow === options.length - 1) return
+        setNavigateOptionsArrow(prevState => {
+            return opt === "up" ? prevState - 1 : prevState + 1
+        })
+    }
+
     const handleNextQuestion = () => {
+        if (actualQuestion === examsList.length) return
         setState(prevState => ({
             ...prevState,
             actualQuestion: actualQuestion + 1
@@ -62,6 +93,7 @@ export default function Question() {
     }
 
     const handleBackQuestion = () => {
+        if (actualQuestion === 1) return
         setState(prevState => ({
             ...prevState,
             actualQuestion: actualQuestion - 1
@@ -152,8 +184,11 @@ export default function Question() {
                         <h3 key={index}>{question}</h3>
                     ))}
                     <Form style={{ marginTop: "30px" }}>
-                        {options.map((option) => (
+                        {options.map((option, index) => (
                             <Form.Field key={option.id}>
+                                {navigateOptionsArrow === index && (
+                                    <Icon color='green' size='tiny' name='circle' />
+                                )}
                                 <Checkbox
                                     radio
                                     label={option.value}

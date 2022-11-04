@@ -19,6 +19,7 @@ export default function Result() {
     const { answers } = state
 
     const score = useMemo(() => {
+        console.log('X1')
         const questionScoreValue = 1000 / examsList.length
         let score = 0
         let passExam = false
@@ -44,9 +45,8 @@ export default function Result() {
             answerValidated.answerCorrect += 1
             score += questionScoreValue
         })
-
-        score > 720 && {
-            passExam: true
+        if (score >= 750) {
+            passExam = true
         }
 
         return {

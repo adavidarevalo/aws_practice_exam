@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Dropdown, DropdownProps, Icon, Label, Menu, MenuItemProps } from 'semantic-ui-react'
 import { QuestionContext } from '../context/question'
-import style from './header.module.scss'
 import { Legend } from 'chart.js';
 
 type nav = "Home" | "Exam"
@@ -39,9 +38,7 @@ export default function Header() {
         setState
     } = useContext(QuestionContext)
 
-    const handleChangeQuestion = (
-        _: React.SyntheticEvent<HTMLElement, Event>,
-        { value }: DropdownProps) => {
+    const handleChangeQuestion = (value: string) => {
         setState(prevState => ({
             ...prevState,
             actualQuestion: Number(value)
@@ -62,34 +59,40 @@ export default function Header() {
                 </Menu.Item>
             ))}
             {(examsList.length > 0) && (
-                <Menu.Item position='right'
-                    className={style.dropdown_container}
-                >
+                <Menu.Item position='right'>
                     <Dropdown
                         button
                         floating
+                        fluid
                         disabled={state.isFinishExam}
-                        onChange={handleChangeQuestion}
-                        options={examsList.map((question) => {
-                            const isResolved = state.answers.find(({ questionId }) => questionId === question.id.toString())
-                            return ({
-                                text: <p>Pregunta {question.id} {
-                                    state.activeFlags.includes(Number(question.id))
-                                        ? <Icon name='flag' color="yellow" />
-                                        : !!isResolved === false && <Label>Omitido</Label>
-                                }
-                                </p>,
-                                value: question.id,
-                                key: question.id
-                            })
-                        })}
                         direction="left"
                         text={`Preguntas (${examsList.length})`}
-                    // style={{
-                    //     maxHeight: "80vh",
-                    //     overflowX: "auto"
-                    // }}
-                    />
+                    >
+                        <Dropdown.Menu
+                            style={{
+                                maxHeight: "80vh",
+                                overflowX: "auto"
+                            }}
+                        >
+                            {examsList.map((question) => {
+                                const isResolved = state.answers.find(({ questionId }) => questionId === question.id.toString())
+                                return (
+                                    <Dropdown.Item
+                                        key={question.id}
+                                        onClick={() => handleChangeQuestion(question.id)}
+                                    >
+                                        <p>
+                                            Pregunta {question.id} {
+                                                state.activeFlags.includes(Number(question.id))
+                                                    ? <Icon name='flag' color="yellow" />
+                                                    : !!isResolved === false && <Label>Omitido</Label>
+                                            }
+                                        </p>
+                                    </Dropdown.Item>
+                                )
+                            })}
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </Menu.Item>
             )}
         </Menu>

@@ -9,7 +9,7 @@ interface IProps {
 
 const languageOptions = [
     { key: 'Ingles', text: 'Ingles', value: 'en' },
-    { key: 'Spanish', text: 'Español', value: 'es' }
+    // { key: 'Spanish', text: 'Español', value: 'es' }
 ]
 export default function StartExam({ accepted }: IProps) {
     const navigate = useNavigate()

@@ -13,7 +13,6 @@ export default function Exam() {
     const {
         state,
         setState,
-        examsList,
         setExams
     } = useContext(QuestionContext)
     const { formType, id } = useParams();
@@ -26,12 +25,16 @@ export default function Exam() {
     useEffect(() => {
         getExam()
         return () => {
-            setState(prevState => ({
-                ...prevState,
-                actualQuestion: 1,
-                answers: [],
-                isFinishExam: false
-            }))
+            console.log('X1')
+            // setState(prevState => ({
+            //     ...prevState,
+            //     actualQuestion: 1,
+            //     answers: [],
+            //     isFinishExam: false,
+            //     activeFlags: [],
+            //     isExamActive: false
+            // }))
+            // setExams([])
         }
     }, [])
 

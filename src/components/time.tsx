@@ -31,7 +31,12 @@ export default function TimeClock() {
     const secondTime = seconds < 10 ? `0${seconds}` : `${seconds}`;
     const minuteTime = minutes < 10 ? `0${minutes}` : `${minutes}`;
     return (
-        <div>
+        <div
+            style={{
+                width: 100,
+                textAlign: "end"
+            }}
+        >
             <span>{hourTime}</span>:<span>{minuteTime}</span>:
             <span>{secondTime}</span>
         </div>
