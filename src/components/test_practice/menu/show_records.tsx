@@ -4,7 +4,6 @@ import { RootObject } from './gallery'
 import style from './show_records.module.scss'
 
 export default function ShowRecords({ record }: { record: RootObject[] }) {
-    console.log("🚀 ~ file: show_records.tsx ~ line 5 ~ ShowRecords ~ record", record)
     return (
         <Popup
             content={

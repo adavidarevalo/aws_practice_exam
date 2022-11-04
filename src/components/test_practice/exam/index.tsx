@@ -25,7 +25,6 @@ export default function Exam() {
     useEffect(() => {
         getExam()
         return () => {
-            console.log('X1')
             // setState(prevState => ({
             //     ...prevState,
             //     actualQuestion: 1,
