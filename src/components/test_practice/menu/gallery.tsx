@@ -8,8 +8,26 @@ import exams from './../../../assets/exams/index.json'
 import { Accordion, Icon } from 'semantic-ui-react'
 import _ from 'lodash'
 
+
+export interface AnswerValidated {
+    answerCorrect: number;
+    answerIncorrect: number;
+    answerOmitted: number;
+}
+export interface RootObject {
+    set: string;
+    type: string;
+    passExam: boolean;
+    score: number;
+    answerValidated: AnswerValidated;
+    date: Date;
+}
+
+
+
 export default function Gallery() {
     const [activeIndex, setActiveIndex] = useState(NaN)
+    const [records, setRecords] = useState<RootObject[]>([])
 
     const [favoritesExams, setFavoritesExams] = useState<{
         id: string,
@@ -18,7 +36,16 @@ export default function Gallery() {
 
     useEffect(() => {
         getFavorites()
+        getProgress()
     }, [])
+
+    const getProgress = () => {
+        const data = getStore("myProgress")
+
+        if (!!data === false) return
+
+        setRecords(data)
+    }
 
     const getFavorites = (): void => {
         const getFavorites = getStore('favoritesExams')
@@ -46,17 +73,21 @@ export default function Gallery() {
                                     flexWrap: "wrap",
                                     justifyContent: "space-between"
                                 }}>
-                                    {exam.exams[0].id.map(examId => (
-                                        <CardContent
-                                            exam={{
-                                                type: exam.type,
-                                                image: exam.image,
-                                                id: examId,
-                                            }}
-                                            favoritesExams={favoritesExams}
-                                            getFavorites={getFavorites}
-                                        />
-                                    ))}
+                                    {exam.exams[0].id.map(examId => {
+                                        const record = records.filter(x => x.type === exam.type && x.set === examId)
+                                        return (
+                                            <CardContent
+                                                exam={{
+                                                    type: exam.type,
+                                                    image: exam.image,
+                                                    id: examId,
+                                                }}
+                                                record={record}
+                                                favoritesExams={favoritesExams}
+                                                getFavorites={getFavorites}
+                                            />
+                                        )
+                                    })}
                                 </div>
                             </Accordion.Content>
                         </>

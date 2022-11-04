@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import { Button, Card, Icon, Image } from 'semantic-ui-react'
 import { IGallery } from '../../utils/axios'
 import { toggleStore } from '../../utils/store'
+import { RootObject } from './gallery'
+import ShowRecords from './show_records'
 
 export interface IProps {
     exam: IGallery,
@@ -12,9 +14,10 @@ export interface IProps {
         type: string
     }[],
     getFavorites: () => void
+    record: RootObject[]
 }
 
-export default function CardContent({ exam, favoritesExams, getFavorites }: IProps) {
+export default function CardContent({ exam, favoritesExams, record, getFavorites }: IProps) {
     const { type, id, image } = exam
 
     const navigate = useNavigate()
@@ -38,8 +41,14 @@ export default function CardContent({ exam, favoritesExams, getFavorites }: IPro
             <Image src={image} wrapped ui={false} />
             <Card.Content>
                 <Card.Header>Test {id}</Card.Header>
-                <Card.Description>
+                <Card.Description
+                    style={{
+                        display: "flex",
+                        justifyContent: "space-between"
+                    }}
+                >
                     {_.startCase(type.replace('_', ' '))}
+                    {record.length > 0 && <ShowRecords record={record} />}
                 </Card.Description>
             </Card.Content>
             <Card.Content extra>
