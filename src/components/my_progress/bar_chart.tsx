@@ -31,7 +31,11 @@ function BarChart() {
     }
 
     if (!!progress === false) {
-        return <h3>There are not data yet.</h3>
+        return <h3
+            style={{
+                textAlign: "center"
+            }}
+        >There are not data yet.</h3>
     }
 
     progress.forEach((data: any, index: number) => {
