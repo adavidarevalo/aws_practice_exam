@@ -1,5 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Button, Icon } from 'semantic-ui-react'
+import usePressKey from '../../../hook/use_press_key'
 import { QuestionContext } from '../../context/question'
 import TimeClock from '../../time'
 
@@ -7,6 +8,13 @@ export default function Footer() {
     const {
         setState
     } = useContext(QuestionContext)
+
+    const terminateExam = usePressKey('Escape')
+
+    useEffect(() => {
+        if (terminateExam) handleFinishExam()
+    }, [terminateExam])
+
 
     const handleFinishExam = () => {
         setState(prevState => ({

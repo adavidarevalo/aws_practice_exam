@@ -42,6 +42,7 @@ export default function Question() {
     const ArrowUp = usePressKey('ArrowUp')
     const ArrowDown = usePressKey('ArrowDown')
     const Space = usePressKey(' ')
+    const favorite = usePressKey('f')
 
     useEffect(() => {
         if (ArrowRight) handleNextQuestion()
@@ -49,7 +50,8 @@ export default function Question() {
         if (ArrowUp) handleChangeOption('up')
         if (ArrowDown) handleChangeOption('down')
         if (Space) selectOption()
-    }, [ArrowRight, ArrowLeft, ArrowUp, ArrowDown, Space])
+        if (favorite) handleSaveFlag()
+    }, [ArrowRight, ArrowLeft, ArrowUp, ArrowDown, Space, favorite])
 
     const { questions, options } = useMemo<IExam>(() => {
         if (examsList.length === 0) return {
