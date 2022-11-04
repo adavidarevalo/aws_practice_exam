@@ -9,6 +9,7 @@ import Loading from '../../loading'
 import AccordionOptions from './accordion_options'
 import style from './result.module.sass'
 import _ from 'lodash';
+import { getStore, setStore } from './../../utils/store'
 
 export default function Result() {
     const {
@@ -19,7 +20,6 @@ export default function Result() {
     const { answers } = state
 
     const score = useMemo(() => {
-        console.log('X1')
         const questionScoreValue = 1000 / examsList.length
         let score = 0
         let passExam = false
@@ -35,7 +35,6 @@ export default function Result() {
                 answerValidated.answerOmitted += 1
                 return
             }
-            const t = element[0].solutionId.map(x => Number(x))
 
             if (_.difference(element[0].solutionId.map(x => Number(x)), question.answers).length > 0) {
                 answerValidated.answerIncorrect += 1
@@ -48,7 +47,6 @@ export default function Result() {
         if (score >= 750) {
             passExam = true
         }
-
         return {
             passExam,
             score,
@@ -57,6 +55,38 @@ export default function Result() {
     }, [
         examsList
     ])
+
+    const updateStore = () => {
+        const url = window.location.pathname.split('/')
+        const progress = getStore('myProgress')
+
+        const data = {
+            set: url[url.length - 1],
+            type: url[url.length - 2],
+            ...score,
+            date: new Date()
+        }
+
+        if (!!progress === false) {
+            setStore('myProgress', [data])
+            return
+        }
+
+        if (data.set !== progress[progress.length - 1].set &&
+            data.score !== progress[progress.length - 1].score &&
+            data.type !== progress[progress.length - 1].type
+        ) {
+            setStore('myProgress', [
+                ...progress,
+                data
+            ])
+        }
+    }
+
+    useEffect(() => {
+        updateStore()
+    }, [])
+
 
     return (
         <>

@@ -3,7 +3,7 @@ import CardContent from './card_content'
 import { QuestionContext } from '../../context/question'
 import Loading from '../../loading'
 import MainApi from "./../../utils/axios"
-import { gerStore } from '../../utils/store'
+import { getStore } from '../../utils/store'
 import exams from './../../../assets/exams/index.json'
 import { Accordion, Icon } from 'semantic-ui-react'
 import _ from 'lodash'
@@ -21,7 +21,7 @@ export default function Gallery() {
     }, [])
 
     const getFavorites = (): void => {
-        const getFavorites = gerStore('favoritesExams')
+        const getFavorites = getStore('favoritesExams')
         setFavoritesExams(getFavorites || [])
     }
 

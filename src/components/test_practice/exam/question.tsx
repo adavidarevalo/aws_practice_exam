@@ -185,7 +185,13 @@ export default function Question() {
                     ))}
                     <Form style={{ marginTop: "30px" }}>
                         {options.map((option, index) => (
-                            <Form.Field key={option.id}>
+                            <Form.Field
+                                key={option.id}
+                                style={{
+                                    display: "flex",
+                                    alignItems: "baseline"
+                                }}
+                            >
                                 {navigateOptionsArrow === index && (
                                     <Icon color='green' size='tiny' name='circle' />
                                 )}

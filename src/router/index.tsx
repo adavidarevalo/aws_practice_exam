@@ -5,6 +5,7 @@ import NotFound from '../containers/not_found'
 import PracticeExams from '../containers/practiceExams'
 import TestPracticeMenu from '../components/test_practice/menu'
 import QuestionProvider from '../components/context/question'
+import MyProgress from '../containers/my_progress'
 
 export default function PrincipalRouter() {
     return (
@@ -15,6 +16,7 @@ export default function PrincipalRouter() {
                         <Route path="/" element={<Home />} />
                         <Route path="/practice-exam" element={<TestPracticeMenu />} />
                         <Route path="/practice-exam/:formType/:id" element={<PracticeExams />} />
+                        <Route path="/my_progress" element={<MyProgress />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </PrincipalHeader>

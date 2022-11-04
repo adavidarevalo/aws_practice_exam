@@ -4,11 +4,11 @@ import { Dropdown, DropdownProps, Icon, Label, Menu, MenuItemProps } from 'seman
 import { QuestionContext } from '../context/question'
 import { Legend } from 'chart.js';
 
-type nav = "Home" | "Exam"
+type nav = "Home" | "Exam" | "My Progress"
 
 export default function Header() {
     const [navSelected, setNavSelected] = useState<nav>("Home")
-    const menuItems: nav[] = ["Home", "Exam"]
+    const menuItems: nav[] = ["Home", "Exam", "My Progress"]
 
     useEffect(() => {
         const queryString = window.location.pathname;
@@ -28,7 +28,7 @@ export default function Header() {
 
     const routerNav = {
         Home: "",
-        Documentation: "documentation",
+        "My Progress": "my_progress",
         Exam: "practice-exam"
     }
 

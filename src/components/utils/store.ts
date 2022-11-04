@@ -17,6 +17,8 @@ export const toggleStore = (type: string, id: string, storeKey: string) => {
     store.set(storeKey, [...(data || []), { type, id }])
 }
 
-export const gerStore = (storeKey: string) => {
+export const getStore = (storeKey: string) => {
     return store.get(storeKey)
 }
+
+export const setStore = (key: string, value: any[]) => store.set(key, value)
