@@ -24,17 +24,6 @@ export default function Exam() {
 
     useEffect(() => {
         getExam()
-        return () => {
-            // setState(prevState => ({
-            //     ...prevState,
-            //     actualQuestion: 1,
-            //     answers: [],
-            //     isFinishExam: false,
-            //     activeFlags: [],
-            //     isExamActive: false
-            // }))
-            // setExams([])
-        }
     }, [])
 
     return (

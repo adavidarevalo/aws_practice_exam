@@ -28,8 +28,8 @@ export default function TimeClock() {
     });
 
     const hourTime = hours < 10 ? `0${hours}` : `${hours}`;
-    const secondTime = seconds < 10 ? `0${seconds}` : `${seconds}`;
     const minuteTime = minutes < 10 ? `0${minutes}` : `${minutes}`;
+    const secondTime = seconds < 10 ? `0${seconds}` : `${seconds}`;
     return (
         <div
             style={{

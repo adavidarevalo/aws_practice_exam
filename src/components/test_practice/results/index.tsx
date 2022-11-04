@@ -72,9 +72,7 @@ export default function Result() {
             return
         }
 
-        if (data.set !== progress[progress.length - 1].set &&
-            data.score !== progress[progress.length - 1].score &&
-            data.type !== progress[progress.length - 1].type
+        if (data.set !== progress[progress.length - 1].set
         ) {
             setStore('myProgress', [
                 ...progress,
